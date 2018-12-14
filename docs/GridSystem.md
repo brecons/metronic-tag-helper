@@ -1,8 +1,8 @@
-# Grid System
+ï»¿# Grid System
 
 Use the powerful mobile-first flexbox [Bootstrap Grid System](https://getbootstrap.com/docs/4.0/layout/grid/) to build layouts of all shapes and sizes thanks to a twelve column system, five default responsive tiers, Sass variables and mixins, and dozens of predefined classes.
 
-Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive. All Bootstrap Grid System features are covered from the Mecons Tag Helper!
+Bootstrapâ€™s grid system uses a series of containers, rows, and columns to layout and align content. Itâ€™s built with flexbox and is fully responsive. All Bootstrap Grid System features are covered from the Mecons Tag Helper!
 
 <img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/grid-system_01.png" width="743" alt="Mecons Grid System">
 
