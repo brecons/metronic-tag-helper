@@ -1,0 +1,5 @@
+site_name: Mecons
+nav:
+    - Home: index.md
+    - About: GettingStarted.md
+theme: readthedocs
