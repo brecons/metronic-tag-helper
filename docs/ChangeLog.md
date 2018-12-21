@@ -1,8 +1,21 @@
-# Change Logs &amp; Releases
+# Change Logs and Releases
 
 In this page, you can find a record of all the changes made to Mecons such as bug fixes, new features, etc.
 
-## Version 2.2.0 <small class="release-date">Currently not released</small>
+## Version 2.3.0 <small class="release-date">Currently not released</small>
+
+This version supports **Metronic v5.5.5** and contains new tag helpers and some bugfixes.
+
+<ul class="changelog">
+    <li class="ch-changed">Form Controls: Wrong <code>for</code> attribute generated in label tags.</li>
+    <li class="ch-changed">Modal: The <code>bc-toggle-text</code> attribute is not longer mandatory. This makes it possible to render a modal dialog without a button.</li>
+</ul>
+
+<a href="https://www.nuget.org/packages/BSolutions.Mecons/2.3.0" class="btn btn-info">
+    <i class="fa fa-link"></i> Source and Download
+</a>
+
+## Version 2.2.0 <small class="release-date">Dec. 06, 2018</small>
 
 This version supports **Metronic v5.5.5** and contains new tag helpers and some bugfixes. Also the version of Mecons is compatible with `netcoreapp2.2`.
 

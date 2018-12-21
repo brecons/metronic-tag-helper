@@ -59,6 +59,10 @@ Create a directory named `Mecons` within the project root. Copy the license file
 The Mecons License Key can be set in the `Startup.cs` within the `ConfigureServices` method:
 
 ```csharp
+using BSolutions.Mecons
+
+...
+
 public void ConfigureServices(IServiceCollection services)
 {
     services.AddMvc();

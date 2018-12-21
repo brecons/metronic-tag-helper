@@ -2,7 +2,7 @@
 
 Mecons is a chargeable Tag Helper library for the Metronic Admin Theme by Keenthemes. In this open source project, only the documentation of Mecons is published. This should give customers the opportunity to fix errors themselves and to add missing information.
 
-This documentation is published on https://www.brecons.net/Documentation/Mecons?view=Overview
+This documentation is published on https://www.brecons.net/Documentation/Mecons
 
 ## Issues
 
