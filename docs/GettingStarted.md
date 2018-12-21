@@ -19,15 +19,3 @@ For a successful Mecons installation, you have to met the following requirements
     <strong>RAR Format:</strong>
     The installation package is compressed in RAR format (<code>*.rar</code>). To unpack the installation package, you need a compression utility such as <a href="https://www.winrar.de/download.php" target="_blank">WinRAR</a>.
 </div>
-
-### Requirements Screencast
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/5_8lP6RBFqE?rel=0&amp;showinfo=0" allowfullscreen></iframe>
-
-## Installation
-
-The installation of Mecons is not really difficult. Check our screencast and learn how to create a Mecons compatible project, integrate the Metronic Admin Theme and install the Mecons Tag Helpers. If you not able to view the screencast, check our installation guide.
-
-### Installation Screencast
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/p4_bip0sMe0?rel=0&amp;showinfo=0" allowfullscreen></iframe>
