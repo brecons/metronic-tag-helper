@@ -1,4 +1,4 @@
-﻿# Grid System
+# Grid System
 
 Use the powerful mobile-first flexbox [Bootstrap Grid System](https://getbootstrap.com/docs/4.0/layout/grid/) to build layouts of all shapes and sizes thanks to a twelve column system, five default responsive tiers, Sass variables and mixins, and dozens of predefined classes.
 
