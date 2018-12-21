@@ -8,6 +8,7 @@ This version supports **Metronic v5.5.5** and contains new tag helpers and some 
 
 <ul class="changelog">
     <li class="ch-changed">Form Controls: Wrong <code>for</code> attribute generated in label tags.</li>
+    <li class="ch-changed">Modal: The <code>bc-toggle-text</code> attribute is not longer mandatory. This makes it possible to render a modal dialog without a button.</li>
 </ul>
 
 <a href="https://www.nuget.org/packages/BSolutions.Mecons/2.3.0" class="btn btn-info">
