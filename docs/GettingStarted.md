@@ -15,6 +15,11 @@ For a successful Mecons installation, you have to met the following requirements
     Download the installation package for Mecons directly after your purchase or download it from the <a href="https://www.brecons.net/Profile" class="alert-link">User Profile</a> on our website.
 </div>
 
+<div class="alert alert-warning" role="alert">
+    <strong>RAR Format:</strong>
+    The installation package is compressed in RAR format (<code>*.rar</code>). To unpack the installation package, you need a compression utility such as <a href="https://www.winrar.de/download.php" target="_blank">WinRAR</a>.
+</div>
+
 ### Requirements Screencast
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/5_8lP6RBFqE?rel=0&amp;showinfo=0" allowfullscreen></iframe>
