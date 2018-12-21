@@ -18,17 +18,17 @@ Currently the following languages are supported:
         <tr>
             <td>English</td>
             <td><span class="label label-success">Supported</span></td>
-            <td><span class="label label-info">Version 1.0</span></td>
+            <td><span class="label label-info">Version 2.0.0</span></td>
         </tr>
         <tr>
             <td>German</td>
             <td><span class="label label-success">Supported</span></td>
-            <td><span class="label label-info">Version 1.0</span></td>
+            <td><span class="label label-info">Version 2.0.0</span></td>
         </tr>
         <tr>
             <td>French</td>
             <td><span class="label label-secondary">Planned</span></td>
-            <td><span class="label label-info">Version 2.3</span></td>
+            <td><span class="label label-info">Version 2.3.0</span></td>
         </tr>
     </tbody>
 </table>
