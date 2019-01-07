@@ -28,3 +28,9 @@ public void ConfigureServices(IServiceCollection services)
     services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
 }
 ```
+
+<div class="alert alert-warning" role="alert">
+    <strong>Warning:</strong> If <code>IHttpContextAccessor</code> is not registered, an <code>InvalidOperationException</code> may occur:
+    <i>Unable to resolve service for type 'Microsoft.AspNetCore.Http.IHttpContextAccessor' while attempting to activate
+    'YourCompany.YourProject.Controllers.YourController'.</i>
+</div>
