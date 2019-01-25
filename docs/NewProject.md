@@ -14,7 +14,7 @@ In the following dialog choose the ***.NET Core*** Framework and the ***ASP.NET 
 
 ## Add Service Configuration
 
-To ensure that Mecons runs correctly it is necessary to adapt the `Startup.cs`. Register inside the `ConfigureServices` method a singleton for the `IActionContextAccessor` and import the namespace `Microsoft.AspNetCore.Mvc.Infrastructure`.
+To ensure that Mecons runs correctly it is necessary to adapt the `Startup.cs`. Register inside the `ConfigureServices` method a singleton for the `IActionContextAccessor` and `IHttpContextAccessor`. Finally import the namespace `Microsoft.AspNetCore.Mvc.Infrastructure`.
 
 ```csharp
 using Microsoft.AspNetCore.Mvc.Infrastructure
@@ -25,6 +25,11 @@ public void ConfigureServices(IServiceCollection services)
 {
     services.AddMvc();
 
+    services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
     services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
 }
 ```
+
+<div class="alert alert-warning" role="alert">
+    <strong>Warning:</strong> If the services are not registered, an <code>InvalidOperationException</code> may occur.
+</div>

@@ -2,17 +2,21 @@
 
 In this page, you can find a record of all the changes made to Mecons such as bug fixes, new features, etc.
 
-## Version 2.3.0 <small class="release-date">Currently not released</small>
+## Version 2.2.1 <small class="release-date">Jan. 25, 2019</small>
 
 This version supports **Metronic v5.5.5** and contains new tag helpers and some bugfixes.
 
 <ul class="changelog">
+    <li class="ch-added">Add an French language file and full support of culture code <code>fr</code>.</li>
     <li class="ch-added">Add an Italian language file and full support of culture code <code>it</code>.</li>
     <li class="ch-changed">Form Controls: Wrong <code>for</code> attribute generated in label tags.</li>
     <li class="ch-changed">Modal: The <code>bc-toggle-text</code> attribute is not longer mandatory. This makes it possible to render a modal dialog without a button.</li>
+    <li class="ch-changed">Datatable: Tag Helper now provides a JavaScript instance that allows client-side customization of the datatable.</li>
+    <li class="ch-fixed">An error occurred while licensing Mecons when hosting the application in local IIS.</li>
+    <li class="ch-fixed">The Datatable don't parse the form data during ajax calls correctly.</li>
 </ul>
 
-<a href="https://www.nuget.org/packages/BSolutions.Mecons/2.3.0" class="btn btn-info">
+<a href="https://www.nuget.org/packages/BSolutions.Mecons/2.2.1" class="btn btn-info">
     <i class="fa fa-link"></i> Source and Download
 </a>
 
