@@ -12,6 +12,7 @@ This version supports **Metronic v5.5.5** and contains new tag helpers and some 
     <li class="ch-changed">Modal: The <code>bc-toggle-text</code> attribute is not longer mandatory. This makes it possible to render a modal dialog without a button.</li>
     <li class="ch-changed">Datatable: Tag Helper now provides a JavaScript instance that allows client-side customization of the datatable.</li>
     <li class="ch-fixed">An error occurred while licensing Mecons when hosting the application in local IIS.</li>
+    <li class="ch-fixed">The Datatable don't parse the form data during ajax calls correctly.</li>
 </ul>
 
 <a href="https://www.nuget.org/packages/BSolutions.Mecons/2.3.0" class="btn btn-info">
