@@ -2,7 +2,7 @@
 
 In this page, you can find a record of all the changes made to Mecons such as bug fixes, new features, etc.
 
-## Version 2.3.0 <small class="release-date">Currently not released</small>
+## Version 2.2.1 <small class="release-date">Jan. 25, 2019</small>
 
 This version supports **Metronic v5.5.5** and contains new tag helpers and some bugfixes.
 
@@ -16,7 +16,7 @@ This version supports **Metronic v5.5.5** and contains new tag helpers and some 
     <li class="ch-fixed">The Datatable don't parse the form data during ajax calls correctly.</li>
 </ul>
 
-<a href="https://www.nuget.org/packages/BSolutions.Mecons/2.3.0" class="btn btn-info">
+<a href="https://www.nuget.org/packages/BSolutions.Mecons/2.2.1" class="btn btn-info">
     <i class="fa fa-link"></i> Source and Download
 </a>
 
