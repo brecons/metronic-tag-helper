@@ -7,6 +7,7 @@ In this page, you can find a record of all the changes made to Mecons such as bu
 This version supports **Metronic v5.5.5** and contains new tag helpers and some bugfixes.
 
 <ul class="changelog">
+    <li class="ch-added">Add an French language file and full support of culture code <code>fr</code>.</li>
     <li class="ch-added">Add an Italian language file and full support of culture code <code>it</code>.</li>
     <li class="ch-changed">Form Controls: Wrong <code>for</code> attribute generated in label tags.</li>
     <li class="ch-changed">Modal: The <code>bc-toggle-text</code> attribute is not longer mandatory. This makes it possible to render a modal dialog without a button.</li>
