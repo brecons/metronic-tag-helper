@@ -27,13 +27,13 @@ Currently the following languages are supported:
         </tr>
         <tr>
             <td>French</td>
-            <td><span class="label label-secondary">Planned</span></td>
-            <td><span class="label label-info">Version 2.5.0</span></td>
+            <td><span class="label label-secondary">Supported</span></td>
+            <td><span class="label label-info">Version 2.2.1</span></td>
         </tr>
         <tr>
             <td>Italian</td>
             <td><span class="label label-success">Supported</span></td>
-            <td><span class="label label-info">Version 2.5.0</span></td>
+            <td><span class="label label-info">Version 2.2.1</span></td>
         </tr>
     </tbody>
 </table>
