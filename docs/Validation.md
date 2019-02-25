@@ -38,15 +38,15 @@ A **server-side** validation will execute in the controller logic after a postba
 public class RegisterViewModel
 {
     [Display(Name = "User Name")]
-    [LocalizedRequired]
+    [Required]
     public string Name { get; set; }
 
     [Display(Name = "Password")]
-    [LocalizedRequired]
+    [Required]
     public string Password { get; set; }
 
     [Display(Name = "Confirm Password")]
-    [LocalizedCompare("Password")]
+    [Compare("Password")]
     public string PasswordConfirmation { get; set; }
 
     [Display(Name = "Country")]
