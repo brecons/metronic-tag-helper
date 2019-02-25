@@ -49,7 +49,7 @@ The last challenge is to send the data back to the Datatable. Use the `Datatable
 public DatatableAjaxResponse<ShipViewModel> Post(IFormCollection data)
 {
     // Get all ships from database
-    IQueryable<ShipViewModel> items = ShipRepository.Instance.GetAll();
+    IQueryable<ShipViewModel> items = this.GetAll();
 
     // Get all form data from Datatable request
     var request = new DatatableAjaxRequest(data);
@@ -58,13 +58,13 @@ public DatatableAjaxResponse<ShipViewModel> Post(IFormCollection data)
     var response = new DatatableAjaxResponse<ShipViewModel> (items.Count(), request);
 
     // Ordering
-    IQueryable<ShipViewModel> query = items.Sort<ShipViewModel>(request);
+    IQueryable<ShipViewModel> query = items.Sort<ShipViewModel>(response);
 
     // Searching
-    query = query.Search(request);
+    query = query.Search(request, response);
 
     // Paging
-    query = query.Select(request);
+    query = query.Select(response);
 
     response.Data = query.ToList();
 
