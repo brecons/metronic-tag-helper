@@ -1,7 +1,7 @@
-site_name: Mecons
+site_name: Mecons Tag Helper
 nav:
 - Home: Index.md
 - Installation:
-    - Requirements: Requirements.md
+    - Requirements: requirements.md
     - Create new Project: NewProject.md
 theme: readthedocs
