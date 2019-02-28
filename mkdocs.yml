@@ -1,7 +1,7 @@
 site_name: Mecons
 nav:
-    - Home: 'index.md'
-    - Installation:
-        - 'Requirements': 'Requirements.md'
-        - 'Create new Project': 'NewProject.md'
+- Home: 'Index.md'
+- Installation:
+    - 'Requirements': 'Requirements.md'
+    - 'Create new Project': 'NewProject.md'
 theme: readthedocs
