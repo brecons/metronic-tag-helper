@@ -9,4 +9,8 @@ nav:
         - 'Requirements': 'installation/requirements.md'
         - 'Create new Project': 'installation/create-new-project.md'
     - Localization: 'localization.md'
+    - Layout:
+        - 'Grid System': 'layout/grid-system.md'
+    - Content:
+        - 'Alert': 'content/alert.md'
 theme: readthedocs
