@@ -1,0 +1,16 @@
+site_name: Mecons
+site_url: https://www.brecons.net
+site_description: An enterprise Tag Helper Library for Metronic - the most complete and trusted admin theme.
+site_author: Bremus Solutions
+repo_name: https://github.com/brecons/metronic-tag-helper.git
+nav:
+    - Overview: 'index.md'
+    - Installation:
+        - 'Requirements': 'installation/requirements.md'
+        - 'Create new Project': 'installation/create-new-project.md'
+    - Localization: 'localization.md'
+    - Layout:
+        - 'Grid System': 'layout/grid-system.md'
+    - Content:
+        - 'Alert': 'content/alert.md'
+theme: readthedocs
