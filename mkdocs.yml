@@ -3,6 +3,9 @@ site_url: https://www.brecons.net
 site_description: Project documentation with Markdown.
 site_author: MkDocs Team
 nav:
-    - Home: index.md
-    - About: GettingStarted.md
+    - Overview: 'index.md'
+    - User Guide:
+        - 'Requirements': 'requirements.md'
+        - 'Create new Project': 'create-new-project.md'
+    - Localization: 'localization.md'
 theme: readthedocs
