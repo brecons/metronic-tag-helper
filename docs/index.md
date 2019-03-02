@@ -22,11 +22,11 @@ Target Framework | Version | Target Framework Moniker (TFM) | Support
 3. Open Visual Studio 2017 and create a new **ASP.NET Core Web Application**.
 4. Add the marked lines to `ConfigureServices` method in <code><mark>Startup.cs</mark></code>:
 
-    ```csharp hl_lines="4 5"
-    public void ConfigureServices(IServiceCollection services)
-    {
-        services.AddMvc();
-        services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-        services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
-    }
-    ```
+```csharp hl_lines="4 5"
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddMvc();
+    services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+    services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
+}
+```
