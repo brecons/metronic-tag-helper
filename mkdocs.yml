@@ -3,6 +3,14 @@ site_url: https://www.brecons.net
 site_description: An enterprise Tag Helper Library for Metronic - the most complete and trusted admin theme.
 site_author: Bremus Solutions
 repo_name: https://github.com/brecons/metronic-tag-helper.git
+
+theme:
+    name: mkdocs
+    highlightjs: true
+    hljs_languages:
+        - yaml
+        - django
+
 nav:
     - 'Overview': 'index.md'
     - Installation:
@@ -55,4 +63,8 @@ nav:
         - 'Data Annotation': 'forms/data-annotation.md'
         - 'Validation': 'forms/validation.md'
     - Change Log: 'change-log.md'
-theme: readthedocs
+
+copyright: Copyright &copy; 2017 - 2019 <a href="https://www.bremus-solutions.de">Bremus Solutions</a>. All Right Reserved.
+
+plugins:
+    - search

@@ -15,6 +15,8 @@ Currently the following languages are supported:
 | French | Supported | Version 2.2.1
 | Italian | Supported | Version 2.2.1
 
+---
+
 ## Usage of Localization
 
 To localize the Tag Helpers, Mecons uses the `CultureInfo` set in the <a href="https://docs.microsoft.com/de-de/dotnet/api/system.globalization.cultureinfo.currentculture?view=netcore-2.1">current thread</a>.
