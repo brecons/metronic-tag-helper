@@ -7,8 +7,6 @@ repo_name: https://github.com/brecons/metronic-tag-helper.git
 theme: readthedocs
 markdown_extensions:
   - admonition
-  - codehilite
-      linenums: true
 
 nav:
     - Overview: 'index.md'
