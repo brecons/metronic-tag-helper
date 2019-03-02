@@ -29,7 +29,6 @@ Thread.CurrentThread.CurrentCulture = new CultureInfo("de-DE");
 ```
 
 !!! Note
-
     For a complete list of all `CultureInfo` names, visit [https://msdn.microsoft.com/en-us/library/hh441729.aspx](https://msdn.microsoft.com/en-us/library/hh441729.aspx).
 
 The `CultureInfo` for your ASP.NET Core web application is best set in the `Startup.cs` within the `Configure` method:
@@ -47,5 +46,4 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 ```
 
 !!! Note
-
     If Mecons can not find a suitable language file for the thread culture, the English language file will be used.
