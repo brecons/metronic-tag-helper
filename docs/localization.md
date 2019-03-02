@@ -4,7 +4,7 @@ The Mecons Tag Helper supports multiple languages and are localized. This applie
 
 ---
 
-## Support
+## Supported Languages
 
 Currently the following languages are supported:
 

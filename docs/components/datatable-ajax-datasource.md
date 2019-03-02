@@ -2,6 +2,8 @@
 
 The Mecons Datatable component supports remote data binding. For remote data binding you can specify a remote data source that returns data in JSON/JSONP format. It also defines the schema model of the data source received from the remote data source. In addition to the visualization, the Datatable provides built-in support for operations over data such as sorting, filtering and paging performed in user browser (frontend).
 
+---
+
 ## Configuration
 
 ### Url <span class="badge info">Mandatory</span>

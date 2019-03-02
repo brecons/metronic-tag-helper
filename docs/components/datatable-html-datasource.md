@@ -2,6 +2,8 @@
 
 The Mecons Datatable component supports initialization from HTML table. It also defines the schema model of the data source. In addition to the visualization, the Datatable provides built-in support for operations over data such as sorting, filtering and paging performed in user browser (frontend).
 
+---
+
 ## Usage
 
 To provide a traditional HTML table as Datatable, place your HTML table markup in your view and set your favorite Datatable attributes. No serverside code or processing is needed.

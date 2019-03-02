@@ -18,6 +18,8 @@ This version supports **Metronic v5.5.5** and contains new tag helpers and some 
 * Fixed an error while licensing Mecons when hosting the application in local IIS.
 * Fixed that the Datatable don't parse the form data during ajax calls correctly.
 
+---
+
 ## Version 2.2.0
 
 ***Release Date: Dec. 06, 2018***
@@ -41,6 +43,8 @@ This version supports **Metronic v5.5.5** and contains new tag helpers and some 
 * Solved exception when `bc-color` is not set in [Progress Widget](content/progress-widget.md).
 * Solved exception when `bc-color` is not set in [Stats Widget](content/stats-widget.md).
 
+---
+
 ## Version 2.1.0
 
 Release Date: Sep. 15, 2018
@@ -59,9 +63,7 @@ This version supports **Metronic v5.5.4** and contains new tag helpers and some 
     <li class="ch-fixed">Forms: Static Tag Helper crashes when no property is binded.</li>
 </ul>
 
-<a href="https://www.nuget.org/packages/BSolutions.Mecons/2.1.0" class="btn btn-info">
-    <i class="fa fa-link"></i> Source and Download
-</a>
+---
 
 ## Version 2.0.1
 
@@ -81,9 +83,7 @@ This version supports **Metronic v5.1** and contains some breaking changes and m
     <li class="ch-fixed">Forms: The Summernote Tag Helper has a problem with ' (inverted comma) character.</li>
 </ul>
 
-<a href="https://www.nuget.org/packages/BSolutions.Mecons/2.0.1" class="btn btn-info">
-    <i class="fa fa-link"></i> Source and Download
-</a>
+---
 
 ## Version 2.0.0
 
@@ -117,7 +117,3 @@ This version supports **Metronic v5.0.7.1** and is the initial release of the Me
     <li class="ch-added">Tag Helper for Timeline</li>
     <li class="ch-added">Tag Helper for Tooltip</li>
 </ul>
-
-<a href="https://www.nuget.org/packages/BSolutions.Mecons/2.0.0" class="btn btn-info">
-    <i class="fa fa-link"></i> Source and Download
-</a>

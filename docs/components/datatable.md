@@ -4,37 +4,25 @@ The Datatable is a highly flexible tool which extends the HTML table with advanc
 
 <img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/datatable_01.png" width="922" alt="Mecons Datatable">
 
+---
+
 ## Data Sources
 
 There are several ways to bind data to a Datatable. Click on your favorite data source to learn more about their use.
 
-<div class="row">
-    <div class="col-md-6">
-        <div class="promo left small-icon">
-            <i class="fa fa-html5"></i>
-            <h3>HTML Data Source</h3>
-            <p>
-                The Mecons Datatable component supports initialization from HTML table. It also defines
-                the schema model of the data source.
-            </p>
-            <p>
-                <a href="/Documentation/Mecons?view=DatatableHtmlDatasource" class="btn btn-default">Learn more</a>
-            </p>
-        </div>
-    </div>
-    <div class="col-md-6">
-        <div class="promo left small-icon">
-            <i class="fa fa-cloud"></i>
-            <h3>AJAX Data Source</h3>
-            <p>
-                The Mecons Datatable component supports remote data binding. For remote data binding you can specify a remote data source that returns data in JSON/JSONP format.
-            </p>
-            <p>
-                <a href="/Documentation/Mecons?view=DatatableAjaxDatasource" class="btn btn-default">Learn more</a>
-            </p>
-        </div>
-    </div>
-</div>
+### <i class="fa fa-html5"></i> HTML Data Source
+
+The Mecons Datatable component supports initialization from HTML table. It also defines the schema model of the data source.
+
+[Learn more](datatable-html-datasource.md)
+
+### <i class="fa fa-cloud"></i> AJAX Data Source
+
+The Mecons Datatable component supports remote data binding. For remote data binding you can specify a remote data source that returns data in JSON/JSONP format.
+
+[Learn more](datatable-ajax-datasource.md)
+
+---
 
 ## Datatable Configuration `<datatable>`
 
@@ -100,6 +88,8 @@ This option allows the search abilities of Datatables to be enabled or disabled.
 ```
 
 Control the speed of search and data load request to reduce the search call frequency automatically. Use the `bc-search-delay` attribute to set the number of milliseconds. By default, the search delay is `400` milliseconds.
+
+---
 
 ## Column Configuration `<datatable-column>`
 

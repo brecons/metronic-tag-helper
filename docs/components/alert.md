@@ -10,7 +10,9 @@ Provide contextual feedback messages for typical user actions with a handful of 
 </alert>
 ```
 
-## Configuration `<alert>`
+---
+
+## Configuration
 
 ### Color
 
