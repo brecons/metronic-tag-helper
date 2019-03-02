@@ -13,6 +13,8 @@ Target Framework | Version | Target Framework Moniker (TFM) | Support
 .NET Standard | 1.6 | `netstandard1.6` | Supported
 .NET Standard | 2.0 | `netstandard2.0` | Supported
 
+---
+
 ## Quickstart
 
 1. Download the latest version of **Mecons Tag Helper Library** from [CodeCanyon](file:///C:/Git/mecons-tag-helper/Envato%20Package/docs/index.html).
@@ -20,10 +22,11 @@ Target Framework | Version | Target Framework Moniker (TFM) | Support
 3. Open Visual Studio 2017 and create a new **ASP.NET Core Web Application**.
 4. Add the marked lines to `ConfigureServices` method in <code><mark>Startup.cs</mark></code>:
 
-   ```csharp
-   public void ConfigureServices(IServiceCollection services)
-   {
-       services.AddMvc();
-       services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-       services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
-   }
+    ```csharp hl_lines="4 5"
+    public void ConfigureServices(IServiceCollection services)
+    {
+        services.AddMvc();
+        services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+        services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
+    }
+    ```
