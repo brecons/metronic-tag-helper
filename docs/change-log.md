@@ -6,51 +6,40 @@ In this page, you can find a record of all the changes made to Mecons such as bu
 
 ## Version 2.2.1
 
-Release Date: Jan. 25, 2019
+***Release Date: Jan. 25, 2019***
 
 This version supports **Metronic v5.5.5** and contains new tag helpers and some bugfixes.
 
-* (added) Add an French language file and full support of culture code `fr`.
-* (added) Add an Italian language file and full support of culture code `it`.
-* (changed) Form Controls: Wrong `for` attribute generated in label tags.
-* (changed) Modal: The `bc-toggle-text` attribute is not longer mandatory. This makes it possible to render a modal dialog without a button.
-* (changed) Datatable: Tag Helper now provides a JavaScript instance that allows client-side customization of the datatable.
-* (fixed) An error occurred while licensing Mecons when hosting the application in local IIS.
-* (fixed) The Datatable don't parse the form data during ajax calls correctly.
-
-[Source and Download](https://www.nuget.org/packages/BSolutions.Mecons/2.2.1)
+* Add a French language file and full support of culture code `fr`.
+* Add an Italian language file and full support of culture code `it`.
+* Fixed wrong `for` attribute generation in label tags of Form Controls.
+* Change the `bc-toggle-text` attribute of Modal to no longer mandatory. This makes it possible to render a modal dialog without a button.
+* Datatable Tag Helper now provides a JavaScript instance that allows client-side customization of the datatable.
+* Fixed an error while licensing Mecons when hosting the application in local IIS.
+* Fixed that the Datatable don't parse the form data during ajax calls correctly.
 
 ## Version 2.2.0
 
-Release Date: Dec. 06, 2018
+***Release Date: Dec. 06, 2018***
 
 This version supports **Metronic v5.5.5** and contains new tag helpers and some bugfixes. Also the version of Mecons is compatible with `netcoreapp2.2`.
 
-***Important***: The licensing procedure has changed! Please read the *Add Mecons License* section on <a href="/Documentation/Mecons?view=MeconsInstallation">Mecons Installation</a> page.
-
-<ul class="changelog">
-    <li class="ch-added">Tag Helper for <a href="/Documentation/Mecons?view=Controls_Touchspin">Touchspin</a>.</li>
-    <li class="ch-added">Tag Helper for <a href="/Documentation/Mecons?view=Controls_Switch">Switch</a>.</li>
-    <li class="ch-added">Tag Helper for <a href="/Documentation/Mecons?view=Controls_Timepicker">Timepicker</a>.</li>
-    <li class="ch-added">Tag Helper for <a href="/Documentation/Mecons?view=Controls_Daterangepicker">Daterangepicker</a>.</li>
-    <li class="ch-added">Input Tag Helper: Support for button rendering with <code>&lt;input type="button" /&gt;</code> tags.</li>
-    <li class="ch-added"> Data Binding support for <a href="/Documentation/Mecons?view=Controls_NoUiSlider">noUiSlider</a> Tag Helper: The dictionary attribute <code>asp-for-*</code> is available.</li>
-    <li class="ch-added">The <a href="/Documentation/Mecons?view=Controls_NoUiSlider">noUiSlider Tag Helper</a> now supports pips / scales</li>
-    <li class="ch-added">Add support for Target Framework Moniker (TFM) <code>netcoreapp2.2</code>.</li>
-    <li class="ch-changed">Add a new page for Tag Helper <a href="/Documentation/Mecons?view=Localization">Localization</a> in the documentation.</li>
-    <li class="ch-changed">The Tag Helper for <a href="/Documentation/Mecons?view=Controls_Datepicker">DatePicker</a> is now fully localized.</li>
-    <li class="ch-changed">New licensing procedure without separate config file. Check <a href="/Documentation/Mecons?view=MeconsInstallation">Mecons Installation</a> for more informations.</li>
-    <li class="ch-changed"><a href="/Documentation/Mecons?view=Datatable">Data Table</a>: The <code>bc-title</code> attribute of columns are not longer mandatory.</li>
-    <li class="ch-changed">The <a href="/Documentation/Mecons?view=Controls_Dropzone">Dropzone</a> Tag Helper now provides a public instance to which it's easy to bind events.</li>
-    <li class="ch-changed">The <code>bc-sliders</code> attribute no longer exists for the <a href="/Documentation/Mecons?view=Controls_NoUiSlider">noUiSlider</a> Tag Helper. Instead, the sliders are now defined using the <code>bc-slider-*</code> attribute.</li>
-    <li class="ch-changed">Switch from bower package manager to <a href="https://yarnpkg.com" target="_blank">Yarn</a>.</li>
-    <li class="ch-fixed"><a href="/Documentation/Mecons?view=ProgressWidget">Progress Widget</a>: Exception when <code>bc-color</code> is not set.</li>
-    <li class="ch-fixed"><a href="/Documentation/Mecons?view=StatsWidget">Stats Widget</a>: Exception when <code>bc-color</code> is not set.</li>
-</ul>
-
-<a href="https://www.nuget.org/packages/BSolutions.Mecons/2.2.0" class="btn btn-info">
-    <i class="fa fa-link"></i> Source and Download
-</a>
+* Add new Tag Helper for [Touchspin](forms/touchspin.md).
+* Add new Tag Helper for [Switch](forms/switch.md).
+* Add new Tag Helper for [Timepicker](forms/timepicker.md).
+* Add new Tag Helper for [Daterangepicker](forms/daterangepicker.md).
+* Add support for button rendering with `<input type="button" />` in [Input Tag Helper](forms/input.md).
+* Add data binding support for [noUiSlider Tag Helper](forms/nouislider.md). The dictionary attribute `asp-for-*` is available.
+* Add support for pips / scales in [noUiSlider Tag Helper](forms/nouislider.md).
+* Add a new page for [Tag Helper Localization](localization.md) in the documentation.
+* The [Datepicker Tag Helper] is now fully localized.
+* New licensing procedure without separate config file. Check [Mecons Installation](installation/mecons-installation.md) for more informations.
+* Change the `bc-title` attribute of [Datatable Tag Helper](components/datatable.md) columns to not longer mandatory.
+* The [Dropzone Tag Helper](forms/dropzone.md) now provides a public instance to which it's easy to bind events.
+* The `bc-sliders` attribute no longer exists for the [noUiSlider Tag Helper](forms/nouislider.md). Instead, the sliders are now defined using the `bc-slider-*` attribute.
+* Switch from bower package manager to [Yarn](https://yarnpkg.com).
+* Solved exception when `bc-color` is not set in [Progress Widget](content/progress-widget.md).
+* Solved exception when `bc-color` is not set in [Stats Widget](content/stats-widget.md).
 
 ## Version 2.1.0
 

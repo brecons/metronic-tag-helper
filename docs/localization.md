@@ -2,6 +2,8 @@
 
 The Mecons Tag Helper supports multiple languages and are localized. This applies on the one hand to all texts and labels generated within a Tag Helper, but also to date and time outputs.
 
+---
+
 ## Support
 
 Currently the following languages are supported:
@@ -24,10 +26,9 @@ Use the following code snippet to modify the `CultureInfo` for the current threa
 Thread.CurrentThread.CurrentCulture = new CultureInfo("de-DE");
 ```
 
-<div class="alert alert-info" role="alert">
-    <strong>Please note:</strong>
-    For a complete list of all <code>CultureInfo</code> names, visit https://msdn.microsoft.com/en-us/library/hh441729.aspx.
-</div>
+!!! Note
+
+    For a complete list of all `CultureInfo` names, visit [https://msdn.microsoft.com/en-us/library/hh441729.aspx](https://msdn.microsoft.com/en-us/library/hh441729.aspx).
 
 The `CultureInfo` for your ASP.NET Core web application is best set in the `Startup.cs` within the `Configure` method:
 
@@ -43,7 +44,6 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 }
 ```
 
-<div class="alert alert-info" role="alert">
-    <strong>Default Language:</strong>
+!!! Note
+
     If Mecons can not find a suitable language file for the thread culture, the English language file will be used.
-</div>

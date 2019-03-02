@@ -2,6 +2,8 @@
 
 The Mecons Tag Helper Library comes with 30+ components, controls and UI widgets. Mecons provides a full [Keenthemes Metronic](http://keenthemes.com/metronic/) integration. Mecons is distributed as a enterprise library which can easily installed via NuGet. To activate the Tag Helper Library please buy a license for Mecons in our shop.
 
+---
+
 ## Supported Platforms
 
 The Mecons Tag Helper Library is only available for ASP.NET Core applications. The following target frameworks are supported:
