@@ -18,8 +18,11 @@ Target Framework | Version | Target Framework Moniker (TFM) | Support
 ## Quickstart
 
 1. Download the latest version of **Mecons Tag Helper Library** from [CodeCanyon](file:///C:/Git/mecons-tag-helper/Envato%20Package/docs/index.html).
+
 2. Download the latest version of **Metronic Admin Theme** from [ThemeForest](https://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes).
+
 3. Open Visual Studio 2017 and create a new **ASP.NET Core Web Application**.
+
 4. Add the marked lines to `ConfigureServices` method in `Startup.cs`:
 
 ```csharp hl_lines="4 5"
