@@ -28,7 +28,7 @@ Use the following code snippet to modify the `CultureInfo` for the current threa
 Thread.CurrentThread.CurrentCulture = new CultureInfo("de-DE");
 ```
 
-!!! Info
+!!! Note
     For a complete list of all `CultureInfo` names, visit [https://msdn.microsoft.com/en-us/library/hh441729.aspx](https://msdn.microsoft.com/en-us/library/hh441729.aspx).
 
 The `CultureInfo` for your ASP.NET Core web application is best set in the `Startup.cs` within the `Configure` method:
