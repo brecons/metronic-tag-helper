@@ -5,7 +5,7 @@ site_author: Bremus Solutions
 repo_name: https://github.com/brecons/metronic-tag-helper.git
 
 theme:
-    name: mkdocs
+    name: readthedocs
     highlightjs: true
     hljs_languages:
         - yaml
