@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Bremus Solutions">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>AJAX Datasource - Mecons Tag Helper</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "AJAX Datasource";
+    var mkdocs_page_input_path = "components\\datatable-ajax-datasource.md";
+    var mkdocs_page_url = "/components/datatable-ajax-datasource/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Mecons Tag Helper</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Overview</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Installation</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="/installation/requirements.md">Requirements</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../installation/create-new-project/">Create new Project</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../installation/metronic-integration/">Metronic Integration</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="/installation/mecons-installation/">Mecons Installation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="/installation/disable-rendering/">Disable Tag Helper Rendering</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../localization/">Localization</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Layout</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../layout/grid-system/">Grid System</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../layout/stack/">Stack</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Components</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../alert/">Alert</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../datatable/">Datatable</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../modal/">Modal</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../popover/">Popover</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../progress/">Progress</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../tooltip/">Tooltip</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Content</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../content/anchor/">Anchor</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/badge/">Badge</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/icon/">Icon</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/portlet/">Portlet</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/progress-widget/">Progress Widget</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/stats-widget/">Stats Widget</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/table/">Table</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/tabs/">Tabs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/timeline/">Timeline</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Forms</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../forms/form-layout/">Form Layout</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/form-controls/">Form Controls</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/button/">Button</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/dropdown-button/">Dropdown Button</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/button-group/">Button Group</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/textarea/">Textarea</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/checkbox-list/">Checkbox List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/dropzone/">Dropzone</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/datepicker/">Datepicker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/daterangepicker/">Daterangepicker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/input/">Input</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/timepicker/">Timepicker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/markdown/">Markdown</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/summernote/">Summernote</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/nouislider/">NoUiSlider</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/select/">Select</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/switch/">Switch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/static/">Static</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/touchspin/">Touchspin</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/data-annotation/">Data Annotation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/validation/">Validation</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../change-log/">Change Log</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Mecons Tag Helper</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>AJAX Datasource</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="ajax-datasource">AJAX Datasource</h1>
+<p>The Mecons Datatable component supports remote data binding. For remote data binding you can specify a remote data source that returns data in JSON/JSONP format. It also defines the schema model of the data source received from the remote data source. In addition to the visualization, the Datatable provides built-in support for operations over data such as sorting, filtering and paging performed in user browser (frontend).</p>
+<hr />
+<h2 id="configuration">Configuration</h2>
+<h3 id="url-mandatory">Url <span class="badge info">Mandatory</span></h3>
+<p>Use the <code>bc-ajax-url</code> attribute to specify the url to the web service which provides the data for the Datatable. This property is mandatory for remote data binding.</p>
+<h3 id="method">Method</h3>
+<p>Choose a HTTP method for requesting the web service by setting the <code>bc-ajax-method</code> attribute. Possible methods are <code>Post</code> (default), <code>Get</code>, <code>Put</code> and <code>Delete</code>.</p>
+<h3 id="timeout">Timeout</h3>
+<p>Set a number of milliseconds before the request ended. Default is <code>30000</code>, equal to 30 seconds.</p>
+<h3 id="params">Params</h3>
+<p>Your own API may requires some parameter to call for getting the data. E.g. token, search keywords, IDs, etc. Specify query parameters with the <code>bc-ajax-param-*</code> attribute. This query parameters will be sent along in the Datatable API request.</p>
+<h3 id="headers">Headers</h3>
+<p>Set custom HTTP headers with the <code>bc-ajax-header-*</code> attribute for the API call.</p>
+<h3 id="serverside-processing">Serverside Processing</h3>
+<p>With the Mecons Datatable it is possible to process the paging, filtering and sorting logic on serverside within your API method. It is possible to enable the serverside processing individually for this functionalities.</p>
+<ul>
+<li>Set the <code>bc-ajax-paging</code> to <code>true</code> to process the paging logic on serverside.</li>
+<li>Set the <code>bc-ajax-filtering</code> to <code>true</code> and handle the data filtering in the API method.</li>
+<li>Set the <code>bc-ajax-sorting</code> to <code>true</code> and sort your data by the specified column on serverside.</li>
+</ul>
+<h2 id="usage">Usage</h2>
+<p>In order to connect a remote data source (like a REST API) to a Datatable, it is necessary to provide a web service. Also, the necessary Tag Helper Markup must be accommodated on the corresponding view.</p>
+<h3 id="controller">Controller</h3>
+<p>Within the API controller it is very easy to receive all transmitted form data from the Datatable request. Use our Mecons <code>DatatableAjaxRequest</code> model class to parse the form data of the API action into a simple type-safe object.</p>
+<p>We also assist you in sorting, searching and selecting records. Import the <code>BSolutions.Mecons.Controls.Datatable.Extensions</code> namespace into your controller and use the <code>FilterExtensions</code> to proceed your data.</p>
+<p>The last challenge is to send the data back to the Datatable. Use the <code>DatatableAjaxResponse&lt;T&gt;</code> class, which transmits the data correctly in the right structure to the Datatable.</p>
+<pre><code class="csharp">[HttpPost]
+public DatatableAjaxResponse&lt;ShipViewModel&gt; Post(IFormCollection data)
+{
+    // Get all ships from database
+    IQueryable&lt;ShipViewModel&gt; items = this.GetAll();
+
+    // Get all form data from Datatable request
+    var request = new DatatableAjaxRequest(data);
+
+    // Initialize a new Datatable response object
+    var response = new DatatableAjaxResponse&lt;ShipViewModel&gt; (items.Count(), request);
+
+    // Ordering
+    IQueryable&lt;ShipViewModel&gt; query = items.Sort&lt;ShipViewModel&gt;(response);
+
+    // Searching
+    query = query.Search(request, response);
+
+    // Paging
+    query = query.Select(response);
+
+    response.Data = query.ToList();
+
+    return response;
+}
+</code></pre>
+
+<h3 id="view">View</h3>
+<p>Within the view place the <code>&lt;datatable&gt;</code> tag helper and define your columns with the <code>&lt;datatable-column&gt;</code> Tag Helper. Important is, that you set the <code>bc-field</code> attribute on each column with the name of the associated data field.</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/datatable-ajax_01.png" width="933" alt="Datatable AJAX Datasource View"></p>
+<pre><code class="markup">&lt;row&gt;
+    &lt;column xs-size=&quot;4&quot;&gt;
+        &lt;input type=&quot;text&quot; class=&quot;form-control m-input m-input--solid&quot; placeholder=&quot;Search...&quot; id=&quot;generalSearch&quot;&gt;
+    &lt;/column&gt;
+&lt;/row&gt;
+&lt;row&gt;
+    &lt;column&gt;
+        &lt;datatable bc-ajax-url=&quot;/api/Demo/&quot; bc-ajax-sorting=&quot;true&quot; bc-ajax-filtering=&quot;true&quot; bc-ajax-paging=&quot;true&quot; bc-search-input=&quot;generalSearch&quot;&gt;
+            &lt;datatable-column bc-field=&quot;recordID&quot; bc-title=&quot;#&quot; bc-width=&quot;50&quot; /&gt;
+            &lt;datatable-column bc-field=&quot;shipCountry&quot; bc-title=&quot;Ship Country&quot; bc-template=&quot;{{shipCountry}}-{{shipCity}}&quot; /&gt;
+            &lt;datatable-column bc-field=&quot;shipCity&quot; bc-title=&quot;Ship City&quot; bc-width=&quot;110&quot; /&gt;
+            &lt;datatable-column class=&quot;actions&quot;&gt;
+            &lt;!--
+            function (row) {
+                return &quot;&lt;a class='btn btn-info' href='/Product/&quot; + row.recordID + &quot;'&gt;Edit&lt;/a&gt;&quot;;
+            }
+            --&gt;
+            &lt;/datatable-column&gt;
+        &lt;/datatable&gt;
+    &lt;/column&gt;
+&lt;/row&gt;
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2017 - 2019 <a href="https://www.bremus-solutions.de">Bremus Solutions</a>. All Right Reserved.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

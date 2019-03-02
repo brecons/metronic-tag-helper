@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Bremus Solutions">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Radio List - Mecons Tag Helper</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Radio List";
+    var mkdocs_page_input_path = "forms\\Controls_RadioList.md";
+    var mkdocs_page_url = "/forms/Controls_RadioList/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Mecons Tag Helper</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Overview</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Installation</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="/installation/requirements.md">Requirements</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../installation/create-new-project/">Create new Project</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../installation/metronic-integration/">Metronic Integration</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="/installation/mecons-installation/">Mecons Installation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="/installation/disable-rendering/">Disable Tag Helper Rendering</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../localization/">Localization</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Layout</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../layout/grid-system/">Grid System</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../layout/stack/">Stack</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Components</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../components/alert/">Alert</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../components/datatable/">Datatable</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../components/modal/">Modal</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../components/popover/">Popover</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../components/progress/">Progress</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../components/tooltip/">Tooltip</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Content</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../content/anchor/">Anchor</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/badge/">Badge</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/icon/">Icon</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/portlet/">Portlet</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/progress-widget/">Progress Widget</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/stats-widget/">Stats Widget</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/table/">Table</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/tabs/">Tabs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/timeline/">Timeline</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Forms</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../form-layout/">Form Layout</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../form-controls/">Form Controls</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../button/">Button</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../dropdown-button/">Dropdown Button</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../button-group/">Button Group</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../textarea/">Textarea</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../checkbox-list/">Checkbox List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../dropzone/">Dropzone</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../datepicker/">Datepicker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../daterangepicker/">Daterangepicker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../input/">Input</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../timepicker/">Timepicker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../markdown/">Markdown</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../summernote/">Summernote</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../nouislider/">NoUiSlider</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../select/">Select</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../switch/">Switch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../static/">Static</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../touchspin/">Touchspin</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../data-annotation/">Data Annotation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../validation/">Validation</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../change-log/">Change Log</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Mecons Tag Helper</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Radio List</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="radio-list">Radio List</h1>
+<p>The <code>&lt;radio-list&gt;</code> tag helper is a wrapper for radio input elements. For a correct rendering it is necessary to embedding all radios into a radio list.</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/radiolist_01.png" width="178" alt="Mecons Radio List"></p>
+<pre><code class="markup">&lt;radio-list bc-label=&quot;Default Radiobuttons&quot;&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;radio1&quot; bc-label=&quot;Default&quot; /&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;radio1&quot; bc-label=&quot;Disabled&quot; disabled /&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;radio1&quot; bc-label=&quot;Checked&quot; checked /&gt;
+&lt;/radio-list&gt;
+</code></pre>
+
+<h2 id="configuration">Configuration</h2>
+<h3 id="inline">Inline</h3>
+<p>Radios can rendered on the same horizontal row by adding the <code>bc-inline</code> attribute to the list wrapper.</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/radiolist_02.png" width="328" alt="Inline Radio List"></p>
+<pre><code class="markup">&lt;radio-list bc-inline=&quot;true&quot;&gt;
+    ...
+&lt;/radio-list&gt;
+</code></pre>
+
+<h3 id="label">Label</h3>
+<p>To set a label for a list of radios use the <code>bc-label</code> attribute.</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/radiolist_03.png" width="185" alt="Radio List Label"></p>
+<pre><code class="markup">&lt;radio-list bc-label=&quot;Default Radios&quot;&gt;
+    ...
+&lt;/radio-list&gt;
+</code></pre>
+
+<h3 id="help">Help</h3>
+<p>To set a help text for a list of radios use the <code>bc-help</code> attribute.</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/radiolist_04.png" width="343" alt="Radio List Help"></p>
+<pre><code class="markup">&lt;radio-list bc-label=&quot;Inline Radios&quot; bc-help=&quot;Some help text goes here&quot; bc-inline=&quot;true&quot;&gt;
+    ...
+&lt;/radio-list&gt;
+</code></pre>
+
+<h3 id="items">Items</h3>
+<p>To bind a list of items to a Radio List use the <code>bc-items</code> attribute. This attribute accepts an object of <code>List&lt;SelectListItem&gt;</code>.</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/radiolist_05.png" width="369" alt="Radio List Items"></p>
+<h4 id="view">View</h4>
+<pre><code class="markup">@model BSolutions.Mecons.Test.Models.DataBindingViewModel
+
+&lt;radio-list bc-label=&quot;Character&quot; bc-items=&quot;Model.Characters&quot; bc-inline=&quot;true&quot;&gt;&lt;/radio-list&gt;
+</code></pre>
+
+<h4 id="view-model">View Model</h4>
+<pre><code class="csharp">public class DataBindingViewModel
+{
+    public List&lt;SelectListItem&gt; Characters { get; set; } = new List&lt;SelectListItem&gt;();
+
+    public DataBindingViewModel()
+    {
+        this.Characters.Add(new SelectListItem { Value = &quot;0&quot;, Text = &quot;Calm&quot; });
+        this.Characters.Add(new SelectListItem { Value = &quot;1&quot;, Text = &quot;Bright&quot; });
+        this.Characters.Add(new SelectListItem { Value = &quot;2&quot;, Text = &quot;Lively&quot; });
+        this.Characters.Add(new SelectListItem { Value = &quot;3&quot;, Text = &quot;Crazy&quot; });
+    }
+}
+</code></pre>
+
+<p>It is also possible to bind the values of an enumeration to a Radio List. Use the <code>Html.GetEnumSelectList&lt;TEnum&gt;()</code> method of the HtmlHelper class to return a select list for the given enum type.</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/radiolist_06.png" width="204" alt=""></p>
+<h4 id="view_1">View</h4>
+<pre><code class="markup">@model BSolutions.Mecons.Test.Models.DataBindingViewModel
+
+&lt;radio-list bc-label=&quot;Gender&quot; bc-inline=&quot;true&quot; bc-items=&quot;Html.GetEnumSelectList&lt;Gender&gt;()&quot;&gt;&lt;/radio-list&gt;
+</code></pre>
+
+<h4 id="enumeration">Enumeration</h4>
+<pre><code class="csharp">public enum Gender
+{
+    [Display(Name = &quot;Male&quot;)]
+    Male,
+
+    [Display(Name = &quot;Female&quot;)]
+    Female
+}
+</code></pre>
+
+<h2 id="data-binding">Data Binding</h2>
+<p>Model binding in ASP.NET Core MVC maps data from HTTP requests to action method parameters. With <code>asp-for</code> attribute of the Radio List it is possible to bind selected option to a model parameter.</p>
+<h3 id="view_2">View</h3>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/radiolist_07.png" width="304" alt=""></p>
+<pre><code class="markup">@model BSolutions.Mecons.Test.Models.DataBindingViewModel
+
+&lt;form-group&gt;
+&lt;radio-list asp-for=&quot;Gender&quot; bc-items=&quot;Html.GetEnumSelectList&lt;Gender&gt;()&quot;&gt;&lt;/radio-list&gt;
+&lt;/form-group&gt;
+&lt;form-group&gt;
+    &lt;radio-list asp-for=&quot;Character&quot; bc-items=&quot;Model.Characters&quot;&gt;&lt;/radio-list&gt;
+&lt;/form-group&gt;
+</code></pre>
+
+<h3 id="view-model_1">View Model</h3>
+<pre><code class="csharp">public class DataBindingViewModel
+{
+    [Display(Name = &quot;Gender&quot;)]
+    public Gender Gender { get; set; }
+
+    [Display(Name = &quot;Character&quot;)]
+    public string Character { get; set; }
+
+    public List&lt;SelectListItem&gt; Characters { get; set; } = new List&lt;SelectListItem&gt;();
+}
+
+public enum Gender
+{
+    Male,
+    Female
+}
+</code></pre>
+
+<h3 id="controller">Controller</h3>
+<pre><code class="csharp">public IActionResult DataBinding()
+{
+    var model = new DataBindingViewModel();
+    model.Characters.Add(new SelectListItem { Value = &quot;0&quot;, Text = &quot;Calm&quot; });
+    model.Characters.Add(new SelectListItem { Value = &quot;1&quot;, Text = &quot;Bright&quot; });
+    model.Characters.Add(new SelectListItem { Value = &quot;2&quot;, Text = &quot;Lively&quot; });
+    model.Characters.Add(new SelectListItem { Value = &quot;3&quot;, Text = &quot;Crazy&quot; });
+
+    return View(model);
+}
+
+[HttpPost]
+public IActionResult DataBinding(DataBindingViewModel model)
+{
+    // Get selected Gender with model.Gender
+
+    // Get selected Character with model.Character
+}
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2017 - 2019 <a href="https://www.bremus-solutions.de">Bremus Solutions</a>. All Right Reserved.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

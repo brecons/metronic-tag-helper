@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Bremus Solutions">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Datatable - Mecons Tag Helper</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Datatable";
+    var mkdocs_page_input_path = "components\\datatable.md";
+    var mkdocs_page_url = "/components/datatable/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Mecons Tag Helper</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Overview</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Installation</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="/installation/requirements.md">Requirements</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../installation/create-new-project/">Create new Project</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../installation/metronic-integration/">Metronic Integration</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="/installation/mecons-installation/">Mecons Installation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="/installation/disable-rendering/">Disable Tag Helper Rendering</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../localization/">Localization</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Layout</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../layout/grid-system/">Grid System</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../layout/stack/">Stack</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Components</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../alert/">Alert</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Datatable</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#datatable">Datatable</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#data-sources">Data Sources</a></li>
+        
+            <li><a class="toctree-l4" href="#datatable-configuration-ltdatatablegt">Datatable Configuration &lt;datatable&gt;</a></li>
+        
+            <li><a class="toctree-l4" href="#column-configuration-ltdatatable-columngt">Column Configuration &lt;datatable-column&gt;</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../modal/">Modal</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../popover/">Popover</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../progress/">Progress</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../tooltip/">Tooltip</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Content</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../content/anchor/">Anchor</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/badge/">Badge</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/icon/">Icon</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/portlet/">Portlet</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/progress-widget/">Progress Widget</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/stats-widget/">Stats Widget</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/table/">Table</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/tabs/">Tabs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/timeline/">Timeline</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Forms</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../forms/form-layout/">Form Layout</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/form-controls/">Form Controls</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/button/">Button</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/dropdown-button/">Dropdown Button</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/button-group/">Button Group</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/textarea/">Textarea</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/checkbox-list/">Checkbox List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/dropzone/">Dropzone</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/datepicker/">Datepicker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/daterangepicker/">Daterangepicker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/input/">Input</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/timepicker/">Timepicker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/markdown/">Markdown</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/summernote/">Summernote</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/nouislider/">NoUiSlider</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/select/">Select</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/switch/">Switch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/static/">Static</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/touchspin/">Touchspin</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/data-annotation/">Data Annotation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/validation/">Validation</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../change-log/">Change Log</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Mecons Tag Helper</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Components &raquo;</li>
+        
+      
+    
+    <li>Datatable</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="datatable">Datatable</h1>
+<p>The Datatable is a highly flexible tool which extends the HTML table with advanced interaction controls.</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/datatable_01.png" width="922" alt="Mecons Datatable"></p>
+<hr />
+<h2 id="data-sources">Data Sources</h2>
+<p>There are several ways to bind data to a Datatable. Click on your favorite data source to learn more about their use.</p>
+<h3 id="html-data-source"><i class="fa fa-html5"></i> HTML Data Source</h3>
+<p>The Mecons Datatable component supports initialization from HTML table. It also defines the schema model of the data source.</p>
+<p><a href="../datatable-html-datasource/">Learn more</a></p>
+<h3 id="ajax-data-source"><i class="fa fa-cloud"></i> AJAX Data Source</h3>
+<p>The Mecons Datatable component supports remote data binding. For remote data binding you can specify a remote data source that returns data in JSON/JSONP format.</p>
+<p><a href="../datatable-ajax-datasource/">Learn more</a></p>
+<hr />
+<h2 id="datatable-configuration-ltdatatablegt">Datatable Configuration <code>&lt;datatable&gt;</code></h2>
+<h3 id="sorting">Sorting</h3>
+<p>To enable column sorting for the Datatable, set the <code>bc-sorting</code> attribute to <code>true</code>. By default, all columns of the Datatable are sortable if this attribute is set. To disable sorting for specific columns check Sorting in the Column Configuration.</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/datatable_02.png" width="914" alt="Datatable Sorting"></p>
+<pre><code class="markup">&lt;datatable bc-sorting=&quot;true&quot;&gt; ... &lt;/datatable&gt;
+</code></pre>
+
+<h3 id="paging">Paging</h3>
+<p>Datatables can split the rows into individual pages, which is an efficient method of showing a large number of records in a small space. To enable paging set the <code>bc-paging</code> attribute to <code>true</code>.</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/datatable_03.png" width="924" alt="Datatable Paging"></p>
+<pre><code class="markup">&lt;datatable bc-paging=&quot;true&quot;&gt; ... &lt;/datatable&gt;
+</code></pre>
+
+<h3 id="page-size">Page Size</h3>
+<p>Define a number of rows to display on a single page with <code>bc-page-size</code> attribute when using pagination. This attribute only has an effect if the <code>bc-paging</code> attribute is set to <code>true</code>. By default, the page size is set to <code>10</code>.</p>
+<h3 id="height">Height</h3>
+<p>By default, the height of the table depends on its content. A fixed height can be set with the <code>bc-height</code> attribute. If the content is now higher than the defined height, a scroll bar is displayed. The height is expressed as an integer and in pixels (px).</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/datatable_04.png" width="919" alt="Datatable Height"></p>
+<pre><code class="markup">&lt;datatable bc-height=&quot;200&quot;&gt; ... &lt;/datatable&gt;
+</code></pre>
+
+<h3 id="header">Header</h3>
+<p>Set the <code>bc-header</code> attribute to <code>false</code> to hide the table header for the Datatable. By default, the table header is shown and the attribute is <code>true</code>.</p>
+<h3 id="footer">Footer</h3>
+<p>Set the <code>bc-footer</code> attribute to <code>true</code> to show a table footer at the bottom of the Datatable.</p>
+<h3 id="searching">Searching</h3>
+<p>This option allows the search abilities of Datatables to be enabled or disabled. To enable searching it is necessary to specify a search input field with the <code>bc-search-input</code> attribute. The value specified here is the <code>id</code> of the input field.</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/datatable_05.png" width="929" alt="Datatable Searching"></p>
+<pre><code class="markup">&lt;row&gt;
+    &lt;column xs-size=&quot;4&quot;&gt;
+        &lt;input id=&quot;generalSearch&quot; type=&quot;text&quot; class=&quot;form-control m-input m-input--solid&quot; placeholder=&quot;Search...&quot;&gt;
+    &lt;/column&gt;
+&lt;/row&gt;
+&lt;row&gt;
+    &lt;column&gt;
+        &lt;datatable bc-search-input=&quot;generalSearch&quot;&gt;
+    &lt;/column&gt;
+&lt;/row&gt;
+</code></pre>
+
+<p>Control the speed of search and data load request to reduce the search call frequency automatically. Use the <code>bc-search-delay</code> attribute to set the number of milliseconds. By default, the search delay is <code>400</code> milliseconds.</p>
+<hr />
+<h2 id="column-configuration-ltdatatable-columngt">Column Configuration <code>&lt;datatable-column&gt;</code></h2>
+<h3 id="field-mandatory">Field <span class="badge info">Mandatory</span></h3>
+<p>The data field name of the column will be set with the <code>bc-field</code> attribute. This attribute maps a field of the data source to the defined column.</p>
+<h3 id="title">Title</h3>
+<p>The title name will be displayed as header or footer and can set with <code>bc-title</code> attribute. This is the displayed title of the column.</p>
+<h3 id="sorting_1">Sorting</h3>
+<p>When the sorting is enabled on <code>&lt;datatable&gt;</code> level, by default all columns can be sorted. If you want to disable sorting for a column, set the <code>bc-sorting</code> attribute to <code>false</code>.</p>
+<h3 id="searching_1">Searching</h3>
+<p>When a search input field is specified on <code>&lt;datatable&gt;</code> level, by default all columns are searchable. If you want to disable searching for a column, set the <code>bc-searching</code> attribute to <code>false</code>.</p>
+<h3 id="width">Width</h3>
+<p>By default, all columns have the same width. Define a custom column width with the <code>bc-width</code> attribute. The width is expressed as an integer and in pixels (px).</p>
+<h3 id="alignment">Alignment</h3>
+<p>The horizontal alignment of cells text for a specific column can set with <code>bc-alignment</code> attribute. Possible alignments are <code>Left</code> (default), <code>Center</code> or <code>Right</code>.</p>
+<h3 id="overflow">Overflow</h3>
+<p>The <code>bc-overflow</code> attribute specifies what should happen if content overflows a cell in within a column. The possible values of this attribute equals the <a href="https://www.w3schools.com/cssref/pr_pos_overflow.asp">CSS Overflow Property</a>. By default, the overflow is set to <code>Initial</code>.</p>
+<h3 id="template">Template</h3>
+<p>There are two ways to influence the appearance of a column. The placeholder provides an easy way to enrich or modify the content of a cell. An own template script offers the full flexibility for the free design of the column content.</p>
+<h4 id="placeholder">Placeholder</h4>
+<p>Customize the cell content rendering with the <code>bc-template</code> attribute. Use placeholders (e.g. <code>{{FieldName}}</code>) to access the content of column fields and define a custom template. This mechanism is well known from the C# String Interpolation.</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/datatable_06.png" width="929" alt="Datatable Column Placeholder Template"></p>
+<pre><code class="markup">&lt;datatable bc-ajax-url=&quot;/api/Demo/&quot; bc-paging=&quot;true&quot;&gt;
+    &lt;datatable-column bc-field=&quot;recordID&quot; bc-title=&quot;#&quot; bc-width=&quot;50&quot; /&gt;
+    &lt;datatable-column bc-field=&quot;shipCountry&quot; bc-title=&quot;Ship Country&quot; bc-template=&quot;{{shipCountry}}-{{shipCity}}&quot; /&gt;
+    &lt;datatable-column bc-field=&quot;shipCity&quot; bc-title=&quot;Ship City&quot; bc-width=&quot;110&quot; /&gt;
+&lt;/datatable&gt;
+</code></pre>
+
+<h4 id="script">Script</h4>
+<p>It is also possible to modify the content of a column using its own JavaScript. This provides more flexibility than a placeholder. The script is defined within the <code>&lt;datatable-column&gt;</code> tag helper and must be placed in HTML comments (<code>&lt;!--</code> and <code>--&gt;</code>).</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/datatable_07.png" width="929" alt="Datatable Column Script Template"></p>
+<pre><code class="markup">&lt;datatable bc-ajax-url=&quot;/api/Demo/&quot; bc-paging=&quot;true&quot;&gt;
+    &lt;datatable-column bc-field=&quot;recordID&quot; bc-title=&quot;#&quot; bc-width=&quot;50&quot; /&gt;
+    &lt;datatable-column bc-field=&quot;shipCountry&quot; bc-title=&quot;Ship Country&quot; bc-template=&quot;{{shipCountry}}-{{shipCity}}&quot; /&gt;
+    &lt;datatable-column bc-field=&quot;shipCity&quot; bc-title=&quot;Ship City&quot; bc-width=&quot;110&quot; /&gt;
+    &lt;datatable-column bc-alignment=&quot;Right&quot;&gt;
+        &lt;!--
+        function (row) {
+        return &quot;&lt;a class='btn btn-info' href='/Product/&quot; + row.recordID + &quot;'&gt;Edit&lt;/a&gt;&quot;;
+        }
+        --&gt;
+    &lt;/datatable-column&gt;
+&lt;/datatable&gt;
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../modal/" class="btn btn-neutral float-right" title="Modal">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../alert/" class="btn btn-neutral" title="Alert"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2017 - 2019 <a href="https://www.bremus-solutions.de">Bremus Solutions</a>. All Right Reserved.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../alert/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../modal/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

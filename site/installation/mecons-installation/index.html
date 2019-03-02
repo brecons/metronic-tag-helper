@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Bremus Solutions">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Mecons Installation - Mecons Tag Helper</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Mecons Installation";
+    var mkdocs_page_input_path = "installation\\mecons-installation.md";
+    var mkdocs_page_url = "/installation/mecons-installation/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Mecons Tag Helper</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Overview</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Installation</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="/installation/requirements.md">Requirements</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../create-new-project/">Create new Project</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../metronic-integration/">Metronic Integration</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="/installation/mecons-installation/">Mecons Installation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="/installation/disable-rendering/">Disable Tag Helper Rendering</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../localization/">Localization</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Layout</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../layout/grid-system/">Grid System</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../layout/stack/">Stack</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Components</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../components/alert/">Alert</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../components/datatable/">Datatable</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../components/modal/">Modal</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../components/popover/">Popover</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../components/progress/">Progress</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../components/tooltip/">Tooltip</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Content</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../content/anchor/">Anchor</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/badge/">Badge</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/icon/">Icon</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/portlet/">Portlet</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/progress-widget/">Progress Widget</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/stats-widget/">Stats Widget</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/table/">Table</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/tabs/">Tabs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/timeline/">Timeline</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Forms</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../forms/form-layout/">Form Layout</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/form-controls/">Form Controls</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/button/">Button</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/dropdown-button/">Dropdown Button</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/button-group/">Button Group</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/textarea/">Textarea</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/checkbox-list/">Checkbox List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/dropzone/">Dropzone</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/datepicker/">Datepicker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/daterangepicker/">Daterangepicker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/input/">Input</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/timepicker/">Timepicker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/markdown/">Markdown</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/summernote/">Summernote</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/nouislider/">NoUiSlider</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/select/">Select</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/switch/">Switch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/static/">Static</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/touchspin/">Touchspin</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/data-annotation/">Data Annotation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/validation/">Validation</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../change-log/">Change Log</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Mecons Tag Helper</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Mecons Installation</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="mecons-installation">Mecons Installation</h1>
+<p>In this article we'll install the Mecons Tag Helpers into a web application with included Metronic Admin Theme.</p>
+<h2 id="install-nuget-packages">Install NuGet Packages</h2>
+<p>Mecons Tag Helpers can easily installed via NuGet. Right click on the project folder and choose <strong><em>Manage NuGet Packages...</em></strong> to open the NuGet Package Manager.</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/mecons-inst_01.png" width="580" alt="Manage NuGet Packages in Visual Studio"></p>
+<p>In NuGet Package Manager search for <code>Mecons</code> package, choose it and click <strong><em>Install</em></strong>. All necessary bin files and dependencies for Mecons will be installed.</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/mecons-inst_02.png" width="914" alt="Mecons in NuGet Package Manager"></p>
+<div class="alert alert-warning" role="alert">
+    <strong>Warning!</strong>
+    Not every Mecons package is compatible with every Metronic version. For further information check the description of the selected package.
+</div>
+
+<h2 id="modify-view-imports">Modify View Imports</h2>
+<p>It is mandatory to modify the <code>/Views/_ViewImports.cshtml</code> and enable the Mecons Tag Helpers for the web application views:</p>
+<pre><code class="markup">@using MyCompany.MyApplication
+@using MyCompany.MyApplication.Models
+@using BSolutions.Mecons.Enumerations
+@using BSolutions.Brecons.Core.Enumerations
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, BSolutions.Mecons
+</code></pre>
+
+<p>Add the namespaces <code>BSolutions.Mecons.Enumerations</code> and the <code>BSolutions.Brecons.Core.Enumerations</code> with the <code>using</code> keyword and the <code>BSolutions.Mecons</code> tag helpers with the <code>addTagHelper</code> keyword.</p>
+<h2 id="add-mecons-license">Add Mecons License</h2>
+<p>In the last step, the license file and the license key are to be included in the project.</p>
+<h3 id="license-file">License File</h3>
+<p>Create a directory named <code>Mecons</code> within the project root. Copy the license file (e.g. <code>mecons-x-x-x.lic</code>) into this new directory:</p>
+<ul>
+<li><code>MyCompany.MyApplication</code></li>
+<li><code>/wwwroot</code></li>
+<li><code>/Controllers</code></li>
+<li><code>/Mecons</code><ul>
+<li><code>mecons-x-x-x.lic</code></li>
+</ul>
+</li>
+<li><code>/Models</code></li>
+<li><code>/Views</code></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please make sure that the license file were copied to output directory on build. Right click on the license file and choose <em>Properties</em>. Select <code>Copy always</code> in the <em>Copy to Output Directory</em> menu.
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/mecons-inst_03.png" width="603" alt="Change Properties of Mecons License File"></p>
+</div>
+<h3 id="license-key">License Key</h3>
+<p>The Mecons License Key can be set in the <code>Startup.cs</code> within the <code>ConfigureServices</code> method:</p>
+<pre><code class="csharp">using BSolutions.Mecons
+
+...
+
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddMvc();
+
+    services.AddSingleton&lt;IHttpContextAccessor, HttpContextAccessor&gt;();
+
+    // Mecons License
+    MeconsInfo.SetLicense(&quot;XXXXX-XXXXX-XXXXX-XXXXX-XXXXX&quot;);
+}
+</code></pre>
+
+<p>Thats all! Now you can build your project and use the Mecons Tag Helpers.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2017 - 2019 <a href="https://www.bremus-solutions.de">Bremus Solutions</a>. All Right Reserved.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

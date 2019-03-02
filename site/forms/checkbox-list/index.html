@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Bremus Solutions">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Checkbox List - Mecons Tag Helper</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Checkbox List";
+    var mkdocs_page_input_path = "forms\\checkbox-list.md";
+    var mkdocs_page_url = "/forms/checkbox-list/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Mecons Tag Helper</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Overview</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Installation</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="/installation/requirements.md">Requirements</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../installation/create-new-project/">Create new Project</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../installation/metronic-integration/">Metronic Integration</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="/installation/mecons-installation/">Mecons Installation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="/installation/disable-rendering/">Disable Tag Helper Rendering</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../localization/">Localization</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Layout</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../layout/grid-system/">Grid System</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../layout/stack/">Stack</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Components</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../components/alert/">Alert</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../components/datatable/">Datatable</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../components/modal/">Modal</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../components/popover/">Popover</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../components/progress/">Progress</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../components/tooltip/">Tooltip</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Content</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../content/anchor/">Anchor</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/badge/">Badge</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/icon/">Icon</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/portlet/">Portlet</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/progress-widget/">Progress Widget</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/stats-widget/">Stats Widget</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/table/">Table</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/tabs/">Tabs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/timeline/">Timeline</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Forms</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../form-layout/">Form Layout</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../form-controls/">Form Controls</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../button/">Button</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../dropdown-button/">Dropdown Button</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../button-group/">Button Group</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../textarea/">Textarea</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Checkbox List</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#checkbox-list">Checkbox List</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#configuration">Configuration</a></li>
+        
+            <li><a class="toctree-l4" href="#data-binding">Data Binding</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../dropzone/">Dropzone</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../datepicker/">Datepicker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../daterangepicker/">Daterangepicker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../input/">Input</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../timepicker/">Timepicker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../markdown/">Markdown</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../summernote/">Summernote</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../nouislider/">NoUiSlider</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../select/">Select</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../switch/">Switch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../static/">Static</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../touchspin/">Touchspin</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../data-annotation/">Data Annotation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../validation/">Validation</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../change-log/">Change Log</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Mecons Tag Helper</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Forms &raquo;</li>
+        
+      
+    
+    <li>Checkbox List</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="checkbox-list">Checkbox List</h1>
+<p>The <code>&lt;checkbox-list&gt;</code> tag helper is a wrapper for checkbox input elements. For a correct rendering it is necessary to embedding all checkboxes into a checkbox list.</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/checkboxlist_01.png" width="174" alt="Mecons Checkbox List"></p>
+<pre><code class="markup">&lt;checkbox-list bc-label=&quot;Default Checkboxes&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; bc-label=&quot;Default&quot; /&gt;
+    &lt;input type=&quot;checkbox&quot; bc-label=&quot;Disabled&quot; disabled /&gt;
+    &lt;input type=&quot;checkbox&quot; bc-label=&quot;Checked&quot; checked /&gt;
+&lt;/checkbox-list&gt;
+</code></pre>
+
+<h2 id="configuration">Configuration</h2>
+<h3 id="inline">Inline</h3>
+<p>Checkboxes can rendered on the same horizontal row by adding the <code>bc-inline</code> attribute to the list wrapper.</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/checkboxlist_02.png" width="328" alt="Inline Checkbox List"></p>
+<pre><code class="markup">&lt;checkbox-list bc-inline=&quot;true&quot;&gt;
+    ...
+&lt;/checkbox-list&gt;
+</code></pre>
+
+<h3 id="label">Label</h3>
+<p>To set an label for the list of checkboxes use the <code>bc-label</code> attribute.</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/checkboxlist_03.png" width="171" alt="Checkbox List Label"></p>
+<pre><code class="markup">&lt;checkbox-list bc-label=&quot;Default Checkboxes&quot;&gt;
+    ...
+&lt;/checkbox-list&gt;
+</code></pre>
+
+<h3 id="help">Help</h3>
+<p>To set a help text for a list of checkboxes use the <code>bc-help</code> attribute.</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/checkboxlist_04.png" width="334" alt="Checkbox List Help"></p>
+<pre><code class="markup">&lt;checkbox-list bc-label=&quot;Inline Checkboxes&quot; bc-help=&quot;Some help text goes here&quot; bc-inline=&quot;true&quot;&gt;
+    ...
+&lt;/checkbox-list&gt;
+</code></pre>
+
+<h3 id="items">Items</h3>
+<p>To bind a list of items to a Checkbox List use the <code>bc-items</code> attribute. This attribute accepts an object of <code>List&lt;SelectListItem&gt;</code>.</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/checkboxlist_05.png" width="161" alt="Checkbox List Items"></p>
+<h4 id="view">View</h4>
+<pre><code class="markup">@model BSolutions.Mecons.Test.Models.DataBindingViewModel
+
+&lt;checkbox-list bc-label=&quot;Equipment&quot; bc-items=&quot;Model.Equipments&quot;&gt;&lt;/checkbox-list&gt;
+</code></pre>
+
+<h4 id="view-model">View Model</h4>
+<pre><code class="csharp">public class DataBindingViewModel
+{
+    public List&lt;SelectListItem&gt; Equipments { get; set; } = new List&lt;SelectListItem&gt;();
+
+    public DataBindingViewModel()
+    {
+        this.Equipments.Add(new SelectListItem { Value = &quot;0&quot;, Text = &quot;Laptop&quot; });
+        this.Equipments.Add(new SelectListItem { Value = &quot;1&quot;, Text = &quot;Smartphone&quot; });
+        this.Equipments.Add(new SelectListItem { Value = &quot;2&quot;, Text = &quot;PC&quot; });
+    }
+}
+</code></pre>
+
+<h2 id="data-binding">Data Binding</h2>
+<p>Model binding in ASP.NET Core MVC maps data from HTTP requests to action method parameters. With <code>asp-for</code> attribute of the Checkbox List it is possible to bind checked options to a model parameter.</p>
+<h3 id="view_1">View</h3>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/checkboxlist_06.png" width="161" alt=""></p>
+<pre><code class="markup">@model BSolutions.Mecons.Test.Models.DataBindingViewModel
+
+&lt;checkbox-list asp-for=&quot;Equipment&quot; bc-items=&quot;Model.Equipments&quot;&gt;&lt;/checkbox-list&gt;
+</code></pre>
+
+<h3 id="view-model_1">View Model</h3>
+<pre><code class="csharp">public class DataBindingViewModel
+{
+    // Selected Equipment
+    [Display(Name = &quot;Equipment&quot;)]
+    public List&lt;string&gt; Equipment { get; set; }
+
+    // Available Equipment
+    public List&lt;SelectListItem&gt; Equipments { get; set; } = new List&lt;SelectListItem&gt;();
+}
+</code></pre>
+
+<h3 id="controller">Controller</h3>
+<pre><code class="csharp">public IActionResult DataBinding()
+{
+    var model = new DataBindingViewModel();
+    model.Equipments.Add(new SelectListItem { Value = &quot;0&quot;, Text = &quot;Laptop&quot; });
+    model.Equipments.Add(new SelectListItem { Value = &quot;1&quot;, Text = &quot;Smartphone&quot; });
+    model.Equipments.Add(new SelectListItem { Value = &quot;2&quot;, Text = &quot;PC&quot; });
+
+    return View(model);
+}
+
+[HttpPost]
+public IActionResult DataBinding(DataBindingViewModel model)
+{
+    foreach(var equipment in model.Equipment)
+    {
+        // Do something with selected equipment
+    }
+}
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../dropzone/" class="btn btn-neutral float-right" title="Dropzone">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../textarea/" class="btn btn-neutral" title="Textarea"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2017 - 2019 <a href="https://www.bremus-solutions.de">Bremus Solutions</a>. All Right Reserved.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../textarea/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../dropzone/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

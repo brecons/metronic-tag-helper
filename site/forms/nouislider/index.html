@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Bremus Solutions">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>NoUiSlider - Mecons Tag Helper</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "NoUiSlider";
+    var mkdocs_page_input_path = "forms\\nouislider.md";
+    var mkdocs_page_url = "/forms/nouislider/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Mecons Tag Helper</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Overview</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Installation</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="/installation/requirements.md">Requirements</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../installation/create-new-project/">Create new Project</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../installation/metronic-integration/">Metronic Integration</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="/installation/mecons-installation/">Mecons Installation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="/installation/disable-rendering/">Disable Tag Helper Rendering</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../localization/">Localization</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Layout</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../layout/grid-system/">Grid System</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../layout/stack/">Stack</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Components</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../components/alert/">Alert</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../components/datatable/">Datatable</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../components/modal/">Modal</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../components/popover/">Popover</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../components/progress/">Progress</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../components/tooltip/">Tooltip</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Content</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../content/anchor/">Anchor</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/badge/">Badge</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/icon/">Icon</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/portlet/">Portlet</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/progress-widget/">Progress Widget</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/stats-widget/">Stats Widget</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/table/">Table</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/tabs/">Tabs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/timeline/">Timeline</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Forms</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../form-layout/">Form Layout</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../form-controls/">Form Controls</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../button/">Button</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../dropdown-button/">Dropdown Button</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../button-group/">Button Group</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../textarea/">Textarea</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../checkbox-list/">Checkbox List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../dropzone/">Dropzone</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../datepicker/">Datepicker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../daterangepicker/">Daterangepicker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../input/">Input</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../timepicker/">Timepicker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../markdown/">Markdown</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../summernote/">Summernote</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">NoUiSlider</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#nouislider">noUiSlider</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#configuration">Configuration</a></li>
+        
+            <li><a class="toctree-l4" href="#scale-pips">Scale / Pips</a></li>
+        
+            <li><a class="toctree-l4" href="#data-binding">Data Binding</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../select/">Select</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../switch/">Switch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../static/">Static</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../touchspin/">Touchspin</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../data-annotation/">Data Annotation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../validation/">Validation</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../change-log/">Change Log</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Mecons Tag Helper</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Forms &raquo;</li>
+        
+      
+    
+    <li>NoUiSlider</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="nouislider">noUiSlider</h1>
+<p>noUiSlider is a range slider without bloat. It offers a ton off features, and it is as small, lightweight and minimal as possible, which is great for mobile use on the many supported devices, including iPhone, iPad, Android devices &amp; Windows (Phone) 8 desktops, tablets and all-in-ones. It works on desktops too, of course!</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/nouislider_01.png" width="294" alt="Mecons noUiSlider"></p>
+<pre><code class="markup">&lt;nouislider bc-slider-1=&quot;20&quot; /&gt;
+</code></pre>
+
+<h2 id="configuration">Configuration</h2>
+<h3 id="sliders-mandatory">Sliders <span class="badge info">Mandatory</span></h3>
+<p>The <code>bc-slider-*</code> attribute defines an handle and its start position. The <code>bc-slider-*</code> attribute is a dictionary attribute and can be assigned multiple times (in this case the <code>*</code> must be replaced by a unique identifier, e.g. <code>bc-slider-1</code>).</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/nouislider_02.png" width="430" alt="noUiSlider Slider Definition"></p>
+<pre><code class="markup">&lt;nouislider bc-slider-1=&quot;20&quot; /&gt;
+&lt;nouislider bc-slider-1=&quot;30.5&quot; bc-slider-2=&quot;80&quot; /&gt;
+</code></pre>
+
+<h3 id="connectors">Connectors</h3>
+<p>A connector is the space between two handles or between a handle and the start respectively the end point of a slider. These spaces can be filled with one color. Use the <code>bc-connectors</code> attribute to define these spaces as a connector or not. The connectors will be defined with a comma-separated list of Boolean values.</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/nouislider_03.png" width="431" alt="noUiSlider Connectors"></p>
+<pre><code class="markup">&lt;nouislider bc-slider-1=&quot;20&quot; bc-slider-2=&quot;80&quot; bc-connectors=&quot;false,true,false&quot; /&gt;
+&lt;nouislider bc-slider-1=&quot;20&quot; bc-connectors=&quot;true,false&quot; /&gt;
+</code></pre>
+
+<h3 id="color">Color</h3>
+<p>With the noUiSlider Tag Helper it is possible to colorize the handles and the connectors of a slider. Set a color for all handles with the <code>bc-color-sliders</code> attribute.</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/nouislider_04.png" width="435" alt="noUiSlider Slider Color"></p>
+<pre><code class="markup">&lt;nouislider bc-slider-1=&quot;20&quot; bc-slider-2=&quot;80&quot; bc-color-sliders=&quot;Brand&quot; /&gt;
+</code></pre>
+
+<p>To set a color for the connectors use the <code>bc-color-connectors</code> attribute.</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/nouislider_05.png" width="440" alt="noUiSlider Connector Color"></p>
+<pre><code class="markup">&lt;nouislider bc-slider-1=&quot;20&quot; bc-slider-2=&quot;80&quot; bc-connectors=&quot;false,true,false&quot; bc-color-sliders=&quot;Danger&quot; bc-color-connectors=&quot;Brand&quot; /&gt;
+</code></pre>
+
+<h3 id="step">Step</h3>
+<p>By default, the slider slides fluently. In order to make the handles jump between intervals, you can set the <code>bc-step</code> attribute. The interval is specified as an integer.</p>
+<h3 id="minimum">Minimum</h3>
+<p>Set the minimum value of the slider with the <code>bc-min</code> attribute. By default, the minimum is set to <code>0</code>.</p>
+<h3 id="maximum">Maximum</h3>
+<p>Set the maximum value of the slider with the <code>bc-max</code> attribute. By default, the maximum is set to <code>100</code>.</p>
+<h3 id="margin">Margin</h3>
+<p>When using two handles, the minimum distance between the handles can be set using the <code>bc-margin</code> attribute. The margin value is relative to the value set in <code>bc-min</code> and <code>bc-max</code>. This option is only available on linear sliders.</p>
+<h3 id="limit">Limit</h3>
+<p>The <code>bc-limit</code> attribute is the oposite of the <code>bc-margin</code> attribute, limiting the maximum distance between two handles. As with the <code>bc-margin</code> attribute, the limit option can only be used on linear sliders.</p>
+<h3 id="orientation">Orientation</h3>
+<p>The orientation of the slider can be set by the <code>bc-orientation</code> attribute. Possible values are <code>Horizontal</code> (default) or <code>Vertical</code>. Vertical sliders don't assume a default height, so you'll need to set one. You can use any unit you want, including <code>%</code> or <code>px</code>.</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/nouislider_06.png" width="45" alt="noUiSlider Orientation"></p>
+<pre><code class="markup">&lt;nouislider bc-slider-1=&quot;20&quot; bc-orientation=&quot;Vertical&quot; style=&quot;height: 100px;&quot; /&gt;
+</code></pre>
+
+<h3 id="direction">Direction</h3>
+<p>By default the sliders are top-to-bottom and left-to-right, but you can change this using the <code>bc-direction</code> attribute, which decides where the upper side of the slider is. Possible directions are <code>Ltr</code> (default) or <code>Rtl</code>.</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/nouislider_07.png" width="429" alt="noUiSlider Direction"></p>
+<pre><code class="markup">&lt;nouislider bc-slider-1=&quot;20&quot; bc-connectors=&quot;true,false&quot; /&gt;
+&lt;nouislider bc-slider-1=&quot;20&quot; bc-connectors=&quot;true,false&quot; bc-direction=&quot;Rtl&quot; /&gt;
+</code></pre>
+
+<h2 id="scale-pips">Scale / Pips</h2>
+<p>To improve the overview, a noUiSlider can be extended with a scale and pips. There are several ways to define scales / pips.</p>
+<h3 id="modes">Modes</h3>
+<p>A scale for the noUiSlider can be defined in several modes. The mode of the scale is be defined with the <code>bc-pips-mode</code> attribute. Possible modes are <code>Range</code>, <code>Steps</code>, <code>Positions</code>, <code>Count</code> and <code>Values</code>.</p>
+<h4 id="range">Range</h4>
+<p>The <code>Range</code> mode uses the slider range to determine where the pips should be. A pip is generated for every percentage specified.</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/nouislider_08.png" width="437" alt="noUiSlider with Range scale"></p>
+<pre><code class="markup">&lt;nouislider bc-slider-1=&quot;0&quot; bc-pips-mode=&quot;Range&quot; /&gt;
+</code></pre>
+
+<h4 id="steps">Steps</h4>
+<p>In <code>Steps</code> mode, a pip is generated for every step of the slider defined with the <code>bc-step</code> attribute. In addition, each pip of a step still gets a label with the respective value.</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/nouislider_09.png" width="438" alt="noUiSlider with Steps scale"></p>
+<pre><code class="markup">&lt;nouislider bc-slider-1=&quot;0&quot; bc-pips-mode=&quot;Steps&quot; bc-step=&quot;5&quot; /&gt;
+&lt;nouislider bc-slider-1=&quot;0&quot; bc-pips-mode=&quot;Steps&quot; bc-step=&quot;10&quot; /&gt;
+</code></pre>
+
+<h4 id="positions">Positions</h4>
+<p>In <code>Positions</code> mode, pips are generated at percentage-based positions on the slider.</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/nouislider_10.png" width="438" alt="noUiSlider with Positions scale"></p>
+<pre><code class="markup">&lt;nouislider bc-slider-1=&quot;0&quot; bc-pips-mode=&quot;Positions&quot; bc-pips-values=&quot;0, 25, 50, 75, 100&quot; /&gt;
+&lt;nouislider bc-slider-1=&quot;0&quot; bc-pips-mode=&quot;Positions&quot; bc-pips-values=&quot;0, 10, 20, 30, 40, 50, 100&quot; /&gt;
+</code></pre>
+
+<h4 id="count">Count</h4>
+<p>The <code>Count</code> mode can be used to generate a fixed number of pips.</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/nouislider_11.png" width="425" alt="noUiSlider with Count scale"></p>
+<pre><code class="markup">&lt;nouislider bc-slider-1=&quot;0&quot; bc-pips-mode=&quot;Count&quot; bc-pips-values=&quot;5&quot; /&gt;
+&lt;nouislider bc-slider-1=&quot;0&quot; bc-pips-mode=&quot;Count&quot; bc-pips-values=&quot;11&quot; /&gt;
+</code></pre>
+
+<h4 id="values">Values</h4>
+<p>The <code>Values</code> mode is similar to <code>Positions</code>, but it accepts values instead of percentages.</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/nouislider_12.png" width="433" alt="noUiSlider with Values scale"></p>
+<pre><code class="markup">&lt;nouislider bc-slider-1=&quot;0&quot; bc-pips-mode=&quot;Values&quot; bc-pips-values=&quot;0, 10, 20, 50, 100&quot; /&gt;
+&lt;nouislider bc-slider-1=&quot;0&quot; bc-pips-mode=&quot;Values&quot; bc-pips-values=&quot;0, 15, 30, 45, 100&quot; /&gt;
+</code></pre>
+
+<h3 id="density">Density</h3>
+<p>The density value controls how many pips are placed on one percent of the slider range. With the default value of <code>1</code>, there is one pip per percent. For a value of <code>2</code>, a pip is placed for every 2 percent. A value below one will place more than one pip per percentage.</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/nouislider_13.png" width="457" alt="noUiSlider with density scale"></p>
+<pre><code class="markup">&lt;nouislider bc-slider-1=&quot;0&quot; bc-pips-mode=&quot;Range&quot; /&gt;
+&lt;nouislider bc-slider-1=&quot;0&quot; bc-pips-mode=&quot;Range&quot; bc-pips-density=&quot;2&quot; /&gt;
+&lt;nouislider bc-slider-1=&quot;0&quot; bc-pips-mode=&quot;Range&quot; bc-pips-density=&quot;4&quot; /&gt;
+</code></pre>
+
+<h3 id="stepped">Stepped</h3>
+<p>By setting the <code>bc-pips-stepped</code> attribute to <code>true</code>, the pip values will be round to the slider stepping.</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/nouislider_14.png" width="463" alt="noUiSlider with stepped scale"></p>
+<pre><code class="markup">&lt;nouislider bc-slider-1=&quot;0&quot; bc-pips-mode=&quot;Positions&quot; bc-step=&quot;2&quot; bc-pips-values=&quot;0, 25, 50, 75, 100&quot; /&gt;
+&lt;nouislider bc-slider-1=&quot;0&quot; bc-pips-mode=&quot;Positions&quot; bc-step=&quot;2&quot; bc-pips-values=&quot;0, 25, 50, 75, 100&quot; bc-pips-stepped=&quot;true&quot; /&gt;
+</code></pre>
+
+<h2 id="data-binding">Data Binding</h2>
+<h3 id="view">View</h3>
+<p>The noUiSlider Tag Helper provides the dictionary attribute <code>asp-for-*</code> to bind a view model property to a slider. The attribute can be assigned multiple times within one Tag Helper. For this, only the <code>*</code> is to be replaced by the name of the slider:</p>
+<pre><code class="markup">&lt;form asp-controller=&quot;Slider&quot; asp-action=&quot;NoUiSlider&quot; method=&quot;post&quot;&gt;
+    &lt;form-group&gt;
+        &lt;nouislider asp-for-1=&quot;Slider1&quot; asp-for-2=&quot;Slider2&quot; /&gt;
+    &lt;/form-group&gt;
+
+    &lt;button type=&quot;submit&quot;&gt;Post Data&lt;/button&gt;
+&lt;/form&gt;
+</code></pre>
+
+<h3 id="view-model">View Model</h3>
+<pre><code class="csharp">public class NoUiSliderViewModel
+{
+    public double Slider1 { get; set; }
+
+    public double Slider2 { get; set; }
+}
+</code></pre>
+
+<h3 id="controller">Controller</h3>
+<pre><code class="csharp">public class SliderController : Controller
+{
+    public IActionResult NoUiSlider()
+    {
+        // Instance a view model with default slider values
+        NoUiSliderViewModel model = new NoUiSliderViewModel { Slider1 = 33.3, Slider2 = 66.6 };
+
+        return View(model);
+    }
+
+    [HttpPost]
+    public IActionResult NoUiSlider(NoUiSliderViewModel model)
+    {
+        // Read value of first Slider
+        var sliderValue1 = model.Slider1;
+
+        // Read value of second Slider
+        var sliderValue2 = model.Slider2;
+
+        return View(model);
+    }
+}
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../select/" class="btn btn-neutral float-right" title="Select">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../summernote/" class="btn btn-neutral" title="Summernote"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2017 - 2019 <a href="https://www.bremus-solutions.de">Bremus Solutions</a>. All Right Reserved.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../summernote/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../select/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

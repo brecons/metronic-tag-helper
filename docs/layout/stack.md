@@ -2,7 +2,7 @@
 
 A Stack allows to build equal height and flexible blocks.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/stack_01.png" width="365" alt="Mecons Stack">
+![Mecons Stack](/images/stack_01.png)
 
 ```markup
 <stack>
@@ -13,13 +13,15 @@ A Stack allows to build equal height and flexible blocks.
 </stack>
 ```
 
-## Stack Configuration `<stack>`
+---
+
+## Configuration
 
 ### Auto Width
 
 If the `bc-auto-width` attribute is set to `true`, each stack item gets the width of whose content.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/stack_02.png" width="411" alt="Stack Auto Width">
+![Stack Auto Width](/images/stack_02.png)
 
 ```markup
 <stack bc-auto-width="true">
@@ -33,7 +35,7 @@ If the `bc-auto-width` attribute is set to `true`, each stack item gets the widt
 
 With the `bc-orientation` attribute the orientation of the stack can be set. Possible orientations are `Horizontal` (default) or `Vertical`.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/stack_03.png" width="350" alt="Stack Orientation">
+![Stack Orientation](/images/stack_03.png)
 
 ```markup
 <stack bc-orientation="Vertical">
@@ -41,13 +43,15 @@ With the `bc-orientation` attribute the orientation of the stack can be set. Pos
 </stack>
 ```
 
-## Item Configuration `<stack-item>`
+---
+
+## Stack Item Configuration
 
 ### Alignment
 
 Set an item content alignment with `bc-alignment` attribute. Possible alignments are `Left` (default), `Center` or `Right`.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/stack_04.png" width="356" alt="Stack Item Horizontal Alignment">
+![Stack Item Horizontal Alignment](/images/stack_04.png)
 
 ```markup
 <stack>
@@ -61,7 +65,7 @@ Set an item content alignment with `bc-alignment` attribute. Possible alignments
 
 Align the content vertically with the `bc-vertical-alignment` attribute. It is possible to align the content `Top`, `Middle` or `Bottom`.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/stack_05.png" width="353" alt="Stack Item Vertical Alignment">
+![Stack Item Vertical Alignment](/images/stack_05.png)
 
 ```markup
 <stack>

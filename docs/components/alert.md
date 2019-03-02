@@ -2,7 +2,7 @@
 
 Provide contextual feedback messages for typical user actions with a handful of available and flexible Alert messages.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/alert_01.png" width="407" alt="Mecons Alert">
+![Mecons Alert](/images/alert_01.png)
 
 ```markup
 <alert bc-title="Primary!">
@@ -18,7 +18,7 @@ Provide contextual feedback messages for typical user actions with a handful of 
 
 For proper styling of an alert use the `bc-color` attribute.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/alert_02.png" width="405" alt="Alert Color">
+![Alert Color](/images/alert_02.png)
 
 ```markup
 <alert bc-title="Success!" bc-color="Success">
@@ -39,7 +39,7 @@ For proper styling of an alert use the `bc-color` attribute.
 
 Use the `bc-dismissible` attribute to dismiss any alert inline.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/alert_03.png" width="400" alt="Dismissible Alert">
+![Dismissible Alert](/images/alert_03.png)
 
 ```markup
 <alert bc-title="Info!" bc-color="Info" bc-dismissible="true">
@@ -61,7 +61,7 @@ Links in any alert gets automatically a matching font color for a ideal illustra
 
 Use the `bc-title` attribute to add a title for the alert in addition to the content.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/alert_04.png" width="401" alt="Alert Title">
+![Alert Title](/images/alert_04.png)
 
 ```markup
 <alert bc-title="Brand!" bc-color="Brand">

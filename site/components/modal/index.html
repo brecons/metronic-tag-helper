@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Bremus Solutions">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Modal - Mecons Tag Helper</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Modal";
+    var mkdocs_page_input_path = "components\\modal.md";
+    var mkdocs_page_url = "/components/modal/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Mecons Tag Helper</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Overview</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Installation</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="/installation/requirements.md">Requirements</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../installation/create-new-project/">Create new Project</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../installation/metronic-integration/">Metronic Integration</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="/installation/mecons-installation/">Mecons Installation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="/installation/disable-rendering/">Disable Tag Helper Rendering</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../localization/">Localization</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Layout</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../layout/grid-system/">Grid System</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../layout/stack/">Stack</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Components</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../alert/">Alert</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../datatable/">Datatable</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Modal</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#modal">Modal</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#components">Components</a></li>
+        
+            <li><a class="toctree-l4" href="#modal-configuration-ltmodalgt">Modal Configuration &lt;modal&gt;</a></li>
+        
+            <li><a class="toctree-l4" href="#header-configuration-ltmodal-headergt">Header Configuration &lt;modal-header&gt;</a></li>
+        
+            <li><a class="toctree-l4" href="#body-configuration-ltmodal-bodygt">Body Configuration &lt;modal-body&gt;</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../popover/">Popover</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../progress/">Progress</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../tooltip/">Tooltip</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Content</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../content/anchor/">Anchor</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/badge/">Badge</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/icon/">Icon</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/portlet/">Portlet</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/progress-widget/">Progress Widget</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/stats-widget/">Stats Widget</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/table/">Table</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/tabs/">Tabs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../content/timeline/">Timeline</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Forms</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../forms/form-layout/">Form Layout</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/form-controls/">Form Controls</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/button/">Button</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/dropdown-button/">Dropdown Button</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/button-group/">Button Group</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/textarea/">Textarea</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/checkbox-list/">Checkbox List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/dropzone/">Dropzone</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/datepicker/">Datepicker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/daterangepicker/">Daterangepicker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/input/">Input</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/timepicker/">Timepicker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/markdown/">Markdown</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/summernote/">Summernote</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/nouislider/">NoUiSlider</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/select/">Select</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/switch/">Switch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/static/">Static</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/touchspin/">Touchspin</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/data-annotation/">Data Annotation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/validation/">Validation</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../change-log/">Change Log</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Mecons Tag Helper</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Components &raquo;</li>
+        
+      
+    
+    <li>Modal</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="modal">Modal</h1>
+<p>Use a Modal to add dialogs to your site for lightboxes, user notifications, or completely custom content. These quite complex component is capsuled within a Mecons Tag Helper and is very easy to use!</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/modal_01.png" width="513" alt="Mecons Modal"></p>
+<pre><code class="markup">&lt;modal bc-title=&quot;Modal title&quot; bc-toggle-text=&quot;Launch modal&quot;&gt;
+    &lt;modal-body&gt;
+        Modal body text goes here.
+    &lt;/modal-body&gt;
+    &lt;modal-footer&gt;
+        &lt;button type=&quot;button&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+        &lt;button type=&quot;button&quot;&gt;Save changes&lt;/button&gt;
+    &lt;/modal-footer&gt;
+&lt;/modal&gt;
+</code></pre>
+
+<h2 id="components">Components</h2>
+<p>Components are tag helpers that are available within a <code>&lt;modal&gt;</code>.</p>
+<h3 id="header-ltmodal-headergt">Header <code>&lt;modal-header&gt;</code></h3>
+<p>A modal dialog header can optionally added with a <code>&lt;modal-header&gt;</code> tag helper within the <code>&lt;modal&gt;</code> element.</p>
+<h3 id="body-ltmodal-bodygt">Body <code>&lt;modal-body&gt;</code></h3>
+<p>The <code>&lt;modal-body&gt;</code> tag helper is the core of an <code>&lt;modal&gt;</code> and within you can define the content of the modal dialog. These tag helper is mandatory for a correct modal rendering.</p>
+<h3 id="footer-ltmodal-footergt">Footer <code>&lt;modal-footer&gt;</code></h3>
+<p>A modal dialog footer can optionally added with a <code>&lt;modal-footer&gt;</code> tag helper within the <code>&lt;modal&gt;</code> element.</p>
+<h2 id="modal-configuration-ltmodalgt">Modal Configuration <code>&lt;modal&gt;</code></h2>
+<h3 id="toggle-text">Toggle Text</h3>
+<p>The <code>&lt;modal&gt;</code> automatically renders a toggle button for the modal dialog. The prerequisite for this is that the <code>bc-toggle-text</code> attribute has been set. This attribute defines the name for the toggle button.</p>
+<p>Leave the attribute empty or do not set it at all, then only the modal dialog without a button will be rendered.</p>
+<h3 id="toggle-color">Toggle Color</h3>
+<p>The <code>&lt;modal&gt;</code> automatically renders a toggle button for the modal dialog. With the <code>bc-toggle-color</code> attribute it is possible to define a color for the toggle button.</p>
+<h3 id="title">Title</h3>
+<p>There are two ways to define a title for a modal dialog. The easiest way is to set a title with the <code>bc-title</code> attribute. The second way is to specify an header tag (e.g. <code>&lt;h2&gt;</code>) within the <code>&lt;modal-header&gt;</code>.</p>
+<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/modal_02.png" width="517" alt="Modal Title"></p>
+<pre><code class="markup">&lt;modal bc-title=&quot;Modal title&quot; bc-toggle-text=&quot;Launch modal&quot;&gt;
+    ...
+&lt;/modal&gt;
+
+&lt;modal bc-toggle-text=&quot;Launch modal&quot;&gt;
+    &lt;modal-header&gt;
+        &lt;h2&gt;Modal title&lt;/h2&gt;
+    &lt;modal-header&gt;
+&lt;/modal&gt;
+</code></pre>
+
+<h3 id="size">Size</h3>
+<p>Modals have two optional sizes, available via <code>bc-size</code> attribute. Allocatable are the sizes <code>Small</code>, <code>Default</code> and <code>Large</code>.</p>
+<h3 id="position">Position</h3>
+<p>Modals can be display both at the top of a page and in the middle. Use the <code>bc-position</code> attribute to specify the modal position. Possible positions are <code>Top</code> (default) and <code>Center</code>.</p>
+<h2 id="header-configuration-ltmodal-headergt">Header Configuration <code>&lt;modal-header&gt;</code></h2>
+<h3 id="disable-close-button">Disable Close Button</h3>
+<p>To hide the modal dialog close button set the <code>bc-disable-close-icon</code> attribute.</p>
+<h2 id="body-configuration-ltmodal-bodygt">Body Configuration <code>&lt;modal-body&gt;</code></h2>
+<h3 id="height">Height</h3>
+<p>Set a maximum height for the <code>&lt;modal-body&gt;</code> with the <code>bc-height</code> attribute. If the content overflows the maximum body height a scrollbar will shown. Allowed values for this attribute are integers. The unit for this value are pixels (px).</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../popover/" class="btn btn-neutral float-right" title="Popover">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../datatable/" class="btn btn-neutral" title="Datatable"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2017 - 2019 <a href="https://www.bremus-solutions.de">Bremus Solutions</a>. All Right Reserved.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../datatable/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../popover/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>
