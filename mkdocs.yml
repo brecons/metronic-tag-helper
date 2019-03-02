@@ -4,7 +4,7 @@ site_description: An enterprise Tag Helper Library for Metronic - the most compl
 site_author: Bremus Solutions
 repo_name: https://github.com/brecons/metronic-tag-helper.git
 nav:
-    - Overview: 'index.md'
+    - 'Overview': 'index.md'
     - Installation:
         - 'Requirements': 'installation/requirements.md'
         - 'Create new Project': 'installation/create-new-project.md'

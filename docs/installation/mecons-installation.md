@@ -48,11 +48,10 @@ Create a directory named `Mecons` within the project root. Copy the license file
   * `/Models`
   * `/Views`
 
-<div class="alert alert-info" role="alert">
-    <strong>Important!</strong>
+!!! Note
+
     Please make sure that the license file were copied to output directory on build. Right click on the license file and choose <em>Properties</em>. Select <code>Copy always</code> in the <em>Copy to Output Directory</em> menu.
     <img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/mecons-inst_03.png" width="603" alt="Change Properties of Mecons License File">
-</div>
 
 ### License Key
 
