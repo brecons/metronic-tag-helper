@@ -1,16 +1,58 @@
-site_name: Mecons
+site_name: Mecons Tag Helper
 site_url: https://www.brecons.net
 site_description: An enterprise Tag Helper Library for Metronic - the most complete and trusted admin theme.
 site_author: Bremus Solutions
 repo_name: https://github.com/brecons/metronic-tag-helper.git
 nav:
-    - Overview: 'index.md'
+    - 'Overview': 'index.md'
     - Installation:
         - 'Requirements': 'installation/requirements.md'
         - 'Create new Project': 'installation/create-new-project.md'
+        - 'Metronic Integration': 'installation/metronic-integration.md'
+        - 'Mecons Installation': 'installation/mecons-installation.md'
+        - 'Disable Tag Helper Rendering': 'installation/disable-rendering.md'
     - Localization: 'localization.md'
     - Layout:
         - 'Grid System': 'layout/grid-system.md'
+        - 'Stack': 'layout/stack.md'
+    - Components:
+        - 'Alert': 'components/alert.md'
+        - 'Datatable': 'components/datatable.md'
+        - 'Modal': 'components/modal.md'
+        - 'Popover': 'components/popover.md'
+        - 'Progress': 'components/progress.md'
+        - 'Tooltip': 'components/tooltip.md'
     - Content:
-        - 'Alert': 'content/alert.md'
+        - 'Anchor': 'content/anchor.md'
+        - 'Badge': 'content/badge.md'
+        - 'Icon': 'content/icon.md'
+        - 'Portlet': 'content/portlet.md'
+        - 'Progress Widget': 'content/progress-widget.md'
+        - 'Stats Widget': 'content/stats-widget.md'
+        - 'Table': 'content/table.md'
+        - 'Tabs': 'content/tabs.md'
+        - 'Timeline': 'content/timeline.md'
+    - Forms:
+        - 'Form Layout': 'forms/form-layout.md'
+        - 'Form Controls': 'forms/form-controls.md'
+        - 'Button': 'forms/button.md'
+        - 'Dropdown Button': 'forms/dropdown-button.md'
+        - 'Button Group': 'forms/button-group.md'
+        - 'Textarea': 'forms/textarea.md'
+        - 'Checkbox List': 'forms/checkbox-list.md'
+        - 'Dropzone': 'forms/dropzone.md'
+        - 'Datepicker': 'forms/datepicker.md'
+        - 'Daterangepicker': 'forms/daterangepicker.md'
+        - 'Input': 'forms/input.md'
+        - 'Timepicker': 'forms/timepicker.md'
+        - 'Markdown': 'forms/markdown.md'
+        - 'Summernote': 'forms/summernote.md'
+        - 'NoUiSlider': 'forms/nouislider.md'
+        - 'Select': 'forms/select.md'
+        - 'Switch': 'forms/switch.md'
+        - 'Static': 'forms/static.md'
+        - 'Touchspin': 'forms/touchspin.md'
+        - 'Data Annotation': 'forms/data-annotation.md'
+        - 'Validation': 'forms/validation.md'
+    - Change Log: 'change-log.md'
 theme: readthedocs

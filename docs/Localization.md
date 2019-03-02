@@ -6,37 +6,12 @@ The Mecons Tag Helper supports multiple languages and are localized. This applie
 
 Currently the following languages are supported:
 
-<table class="table table-bordered table-striped">
-    <thead>
-        <tr>
-            <th>Language</th>
-            <th>State</th>
-            <th>Available since</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>English</td>
-            <td><span class="label label-success">Supported</span></td>
-            <td><span class="label label-info">Version 2.0.0</span></td>
-        </tr>
-        <tr>
-            <td>German</td>
-            <td><span class="label label-success">Supported</span></td>
-            <td><span class="label label-info">Version 2.0.0</span></td>
-        </tr>
-        <tr>
-            <td>French</td>
-            <td><span class="label label-secondary">Supported</span></td>
-            <td><span class="label label-info">Version 2.2.1</span></td>
-        </tr>
-        <tr>
-            <td>Italian</td>
-            <td><span class="label label-success">Supported</span></td>
-            <td><span class="label label-info">Version 2.2.1</span></td>
-        </tr>
-    </tbody>
-</table>
+| Language | State | Available since |
+--- | --- | ---
+| English | Supported | Version 2.0.0
+| German | Supported | Version 2.0.0
+| French | Supported | Version 2.2.1
+| Italian | Supported | Version 2.2.1
 
 ## Usage of Localization
 

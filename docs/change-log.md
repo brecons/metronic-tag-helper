@@ -2,25 +2,27 @@
 
 In this page, you can find a record of all the changes made to Mecons such as bug fixes, new features, etc.
 
-## Version 2.2.1 <small class="release-date">Jan. 25, 2019</small>
+---
+
+## Version 2.2.1
+
+Release Date: Jan. 25, 2019
 
 This version supports **Metronic v5.5.5** and contains new tag helpers and some bugfixes.
 
-<ul class="changelog">
-    <li class="ch-added">Add an French language file and full support of culture code <code>fr</code>.</li>
-    <li class="ch-added">Add an Italian language file and full support of culture code <code>it</code>.</li>
-    <li class="ch-changed">Form Controls: Wrong <code>for</code> attribute generated in label tags.</li>
-    <li class="ch-changed">Modal: The <code>bc-toggle-text</code> attribute is not longer mandatory. This makes it possible to render a modal dialog without a button.</li>
-    <li class="ch-changed">Datatable: Tag Helper now provides a JavaScript instance that allows client-side customization of the datatable.</li>
-    <li class="ch-fixed">An error occurred while licensing Mecons when hosting the application in local IIS.</li>
-    <li class="ch-fixed">The Datatable don't parse the form data during ajax calls correctly.</li>
-</ul>
+* (added) Add an French language file and full support of culture code `fr`.
+* (added) Add an Italian language file and full support of culture code `it`.
+* (changed) Form Controls: Wrong `for` attribute generated in label tags.
+* (changed) Modal: The `bc-toggle-text` attribute is not longer mandatory. This makes it possible to render a modal dialog without a button.
+* (changed) Datatable: Tag Helper now provides a JavaScript instance that allows client-side customization of the datatable.
+* (fixed) An error occurred while licensing Mecons when hosting the application in local IIS.
+* (fixed) The Datatable don't parse the form data during ajax calls correctly.
 
-<a href="https://www.nuget.org/packages/BSolutions.Mecons/2.2.1" class="btn btn-info">
-    <i class="fa fa-link"></i> Source and Download
-</a>
+[Source and Download](https://www.nuget.org/packages/BSolutions.Mecons/2.2.1)
 
-## Version 2.2.0 <small class="release-date">Dec. 06, 2018</small>
+## Version 2.2.0
+
+Release Date: Dec. 06, 2018
 
 This version supports **Metronic v5.5.5** and contains new tag helpers and some bugfixes. Also the version of Mecons is compatible with `netcoreapp2.2`.
 
@@ -50,7 +52,9 @@ This version supports **Metronic v5.5.5** and contains new tag helpers and some 
     <i class="fa fa-link"></i> Source and Download
 </a>
 
-## Version 2.1.0 <small class="release-date">Sep. 15, 2018</small>
+## Version 2.1.0
+
+Release Date: Sep. 15, 2018
 
 This version supports **Metronic v5.5.4** and contains new tag helpers and some bugfixes.
 
@@ -70,7 +74,9 @@ This version supports **Metronic v5.5.4** and contains new tag helpers and some 
     <i class="fa fa-link"></i> Source and Download
 </a>
 
-## Version 2.0.1 <small class="release-date">Feb. 27, 2018</small>
+## Version 2.0.1
+
+Release Date: Feb. 27, 2018
 
 This version supports **Metronic v5.1** and contains some breaking changes and major bugfixes.
 
@@ -90,7 +96,9 @@ This version supports **Metronic v5.1** and contains some breaking changes and m
     <i class="fa fa-link"></i> Source and Download
 </a>
 
-## Version 2.0.0 <small class="release-date">Dec. 06, 2017</small>
+## Version 2.0.0
+
+Release Date: Dec. 06, 2017
 
 This version supports **Metronic v5.0.7.1** and is the initial release of the Mecons Tag Helper Library.
 
