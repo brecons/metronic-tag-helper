@@ -126,12 +126,22 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://www.brecons.net/forms/label-and-help/</loc>
+     <lastmod>2019-03-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://www.brecons.net/forms/textarea/</loc>
      <lastmod>2019-03-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://www.brecons.net/forms/checkbox-list/</loc>
+     <lastmod>2019-03-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://www.brecons.net/forms/radio-list/</loc>
      <lastmod>2019-03-04</lastmod>
      <changefreq>daily</changefreq>
     </url>

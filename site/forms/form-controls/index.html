@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../css/mkdocs.css" rel="stylesheet">
   
   <script>
     // Current page data
@@ -190,11 +191,19 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../label-and-help/">Label and Help</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../textarea/">Textarea</a>
                 </li>
                 <li class="">
                     
     <a class="" href="../checkbox-list/">Checkbox List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../radio-list/">Radio List</a>
                 </li>
                 <li class="">
                     
@@ -298,43 +307,7 @@
               
                 <h1 id="controls">Controls</h1>
 <p>The Mecons Controls are a collection of default HTML form controls and extended components with appealing styles.</p>
-<ul class="categorized-view">
-    <li>
-        <h5>HTML Controls</h5>
-        <a href="/Documentation/Mecons?view=Controls_Input">Text (Input)</a>
-        <a href="/Documentation/Mecons?view=Controls_Textarea">Textarea</a>
-        <a href="/Documentation/Mecons?view=Controls_CheckboxList">Checkbox List</a>
-        <a href="/Documentation/Mecons?view=Controls_RadioList">Radio List</a>
-        <a href="/Documentation/Mecons?view=Controls_Switch">Switch</a>
-        <a href="/Documentation/Mecons?view=Controls_Touchspin">Touchspin</a>
-        <a href="/Documentation/Mecons?view=Controls_Select">Dropdown (Select)</a>
-        <a href="/Documentation/Mecons?view=Controls_Static">Static</a>
-        <a href="/Documentation/Mecons?view=Controls_LabelAndHelp">Label &amp; Help</a>
-    </li>
-    <li>
-        <h5>Buttons</h5>
-        <a href="/Documentation/Mecons?view=Controls_Button">Button</a>
-        <a href="/Documentation/Mecons?view=Controls_ButtonGroup">Button Group</a>
-        <a href="/Documentation/Mecons?view=Controls_DropdownButton">Dropdown Button</a>
-    </li>
-    <li>
-        <h5>Editors</h5>
-        <a href="/Documentation/Mecons?view=Controls_Summernote">Summernote</a>
-        <a href="/Documentation/Mecons?view=Controls_Markdown">Markdown</a>
-    </li>
-    <li>
-        <h5>Date &amp; Time</h5>
-        <a href="/Documentation/Mecons?view=Controls_Datepicker">Datepicker</a>
-        <a href="/Documentation/Mecons?view=Controls_Daterangepicker">Daterangepicker</a>
-        <a href="/Documentation/Mecons?view=Controls_Timepicker">Timepicker</a>
-    </li>
-    <li>
-        <h5>Miscellaneous</h5>
-        <a href="/Documentation/Mecons?view=Controls_Dropzone">Dropzone</a>
-        <a href="/Documentation/Mecons?view=Controls_NoUiSlider">noUiSlider</a>
-    </li>
-</ul>
-
+<hr />
 <h2 id="general-configuration">General Configuration</h2>
 <p>The following configuration attributes are available for all form controls respectively their tag helpers.</p>
 <h3 id="label">Label</h3>
@@ -393,7 +366,10 @@
 <p>All Mecons Form Controls supports the standardized data binding approach of ASP.NET Core. That means that all Mecons Tag Helpers in a form context provides a <code>asp-for</code> attribute.</p>
 <h3 id="validation">Validation</h3>
 <p>If a property is bound to the control (via <code>asp-for</code> attribute) and the <code>bc-validation</code> attribute is set to <code>true</code>, a validation message element will be displayed on invalid state. These element can be used from the validation mechanism of ASP.NET MVC.</p>
-<p><strong><em>Please note:</em></strong> It is also possible to activate the validation messages for each form control by an form level attribute. For more info check the <a href="https://www.brecons.net/Documentation/Mecons?view=Validation">Validation</a> page.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is also possible to activate the validation messages for each form control by an form level attribute. For more info check the <a href="https://www.brecons.net/Documentation/Mecons?view=Validation">Validation</a> page.    It is also possible to activate the validation messages for each form control by an form level attribute. For more info check the <a href="https://www.brecons.net/Documentation/Mecons?view=Validation">Validation</a> page.</p>
+</div>
               
             </div>
           </div>

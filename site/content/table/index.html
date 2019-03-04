@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../css/mkdocs.css" rel="stylesheet">
   
   <script>
     // Current page data
@@ -146,9 +147,9 @@
     
         <ul>
         
-            <li><a class="toctree-l4" href="#table-configuration-lttablegt">Table Configuration &lt;table&gt;</a></li>
+            <li><a class="toctree-l4" href="#configuration">Configuration</a></li>
         
-            <li><a class="toctree-l4" href="#row-configuration-lttrgt">Row Configuration &lt;tr&gt;</a></li>
+            <li><a class="toctree-l4" href="#row-configuration">Row Configuration</a></li>
         
         </ul>
     
@@ -192,11 +193,19 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../../forms/label-and-help/">Label and Help</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../../forms/textarea/">Textarea</a>
                 </li>
                 <li class="">
                     
     <a class="" href="../../forms/checkbox-list/">Checkbox List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/radio-list/">Radio List</a>
                 </li>
                 <li class="">
                     
@@ -300,7 +309,7 @@
               
                 <h1 id="table">Table</h1>
 <p>Opt-in and styling of Tables with the easy-to-use Mecons Tag Helpers.</p>
-<p><img src="/images/table_01.png" width="413" alt="Mecons Table"></p>
+<p><img src="/images/table_01.png" width="413" alt="Mecons Table" /></p>
 <pre><code class="markup">&lt;table&gt;
     &lt;thead&gt;
         &lt;tr&gt;
@@ -333,10 +342,11 @@
 &lt;/table&gt;
 </code></pre>
 
-<h2 id="table-configuration-lttablegt">Table Configuration <code>&lt;table&gt;</code></h2>
+<hr />
+<h2 id="configuration">Configuration</h2>
 <h3 id="theme">Theme</h3>
 <p>To change the theme of a table - with white, light or dark background - use the <code>bc-theme</code> attribute. Possible themes are <code>Default</code> (default), <code>Light</code> and <code>Dark</code>.</p>
-<p><img src="/images/table_02.png" width="404" alt="Table Theme"></p>
+<p><img src="/images/table_02.png" width="404" alt="Table Theme" /></p>
 <pre><code class="markup">&lt;table bc-theme=&quot;Dark&quot;&gt;
     ...
 &lt;/table&gt;
@@ -344,7 +354,7 @@
 
 <h3 id="striped">Striped</h3>
 <p>Use the <code>bc-striped</code> attribute to add zebra-striping to any table row.</p>
-<p><img src="/images/table_03.png" width="410" alt="Striped Table"></p>
+<p><img src="/images/table_03.png" width="410" alt="Striped Table" /></p>
 <pre><code class="markup">&lt;table bc-striped=&quot;true&quot;&gt;
     ...
 &lt;/table&gt;
@@ -352,7 +362,7 @@
 
 <h3 id="small">Small</h3>
 <p>Add the <code>bc-small</code> attribute to make tables more compact by cutting cell padding in half.</p>
-<p><img src="/images/table_04.png" width="407" alt="Small Table"></p>
+<p><img src="/images/table_04.png" width="407" alt="Small Table" /></p>
 <pre><code class="markup">&lt;table bc-small=&quot;true&quot;&gt;
     ...
 &lt;/table&gt;
@@ -360,7 +370,7 @@
 
 <h3 id="border">Border</h3>
 <p>Add the <code>bc-border</code> attribute to specify the borders on all sides of the table and cells. Possible border styles are <code>Regular</code>(default) for only horizontal borders, <code>Bordered</code> for horizontal and vertical borders and <code>Borderless</code> for no borders.</p>
-<p><img src="/images/table_05.png" width="1068" alt="Borders for Table"></p>
+<p><img src="/images/table_05.png" width="1068" alt="Borders for Table" /></p>
 <pre><code class="markup">&lt;table&gt;
     ...
 &lt;/table&gt;
@@ -386,10 +396,11 @@
 &lt;/table&gt;
 </code></pre>
 
-<h3 id="table-head-configuration-lttheadgt">Table Head Configuration <code>&lt;thead&gt;</code></h3>
+<hr />
+<h3 id="head-configuration">Head Configuration</h3>
 <h3 id="theme_1">Theme</h3>
 <p>Similar to themed tables, use the <code>bc-theme</code> attribute to make <code>&lt;thead&gt;</code> appear <code>Default</code> (default), <code>Dark</code> or <code>Light</code>.</p>
-<p><img src="/images/table_06.png" width="846" alt="Table Head Theme"></p>
+<p><img src="/images/table_06.png" width="846" alt="Table Head Theme" /></p>
 <pre><code class="markup">&lt;table&gt;
     &lt;thead bc-theme=&quot;Dark&quot;&gt;
         ...
@@ -409,10 +420,11 @@
 &lt;/table&gt;
 </code></pre>
 
-<h2 id="row-configuration-lttrgt">Row Configuration <code>&lt;tr&gt;</code></h2>
+<hr />
+<h2 id="row-configuration">Row Configuration</h2>
 <h3 id="background">Background</h3>
 <p>Use the <code>bc-background</code> attribute to color table rows.</p>
-<p><img src="/images/table_07.png" width="409" alt="Table Row Background"></p>
+<p><img src="/images/table_07.png" width="409" alt="Table Row Background" /></p>
 <pre><code class="markup">&lt;table&gt;
     &lt;thead&gt;
         ...

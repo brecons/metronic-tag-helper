@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../css/mkdocs.css" rel="stylesheet">
   
   <script>
     // Current page data
@@ -136,9 +137,9 @@
         
             <li><a class="toctree-l4" href="#components">Components</a></li>
         
-            <li><a class="toctree-l4" href="#portlet-configuration-ltportletgt">Portlet Configuration &lt;portlet&gt;</a></li>
+            <li><a class="toctree-l4" href="#configuration">Configuration</a></li>
         
-            <li><a class="toctree-l4" href="#header-configuration-ltportlet-headergt">Header Configuration &lt;portlet-header&gt;</a></li>
+            <li><a class="toctree-l4" href="#header-configuration">Header Configuration</a></li>
         
         </ul>
     
@@ -194,11 +195,19 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../../forms/label-and-help/">Label and Help</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../../forms/textarea/">Textarea</a>
                 </li>
                 <li class="">
                     
     <a class="" href="../../forms/checkbox-list/">Checkbox List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/radio-list/">Radio List</a>
                 </li>
                 <li class="">
                     
@@ -302,7 +311,7 @@
               
                 <h1 id="portlet">Portlet</h1>
 <p>Portlets are complex containers for content, actions and small navigations.</p>
-<p><img src="/images/portlet_01.png" width="500" alt="Mecons Portlet"></p>
+<p><img src="/images/portlet_01.png" width="500" alt="Mecons Portlet" /></p>
 <pre><code class="markup">&lt;portlet&gt;
     &lt;portlet-header bc-title=&quot;Basic Portlet&quot; bc-subtitle=&quot;portlet sub title&quot;&gt;&lt;/portlet-header&gt;
     &lt;portlet-body&gt;
@@ -311,8 +320,9 @@
 &lt;/portlet&gt;
 </code></pre>
 
+<hr />
 <h2 id="components">Components</h2>
-<p><img src="/images/portlet_02.png" width="757" alt="Portlet Components"></p>
+<p><img src="/images/portlet_02.png" width="757" alt="Portlet Components" /></p>
 <pre><code class="markup">&lt;portlet&gt;
     &lt;portlet-header bc-title=&quot;Portlet Header&quot; bc-subtitle=&quot;Portlet Subheader&quot;&gt;
         &lt;portlet-nav&gt;
@@ -330,24 +340,25 @@
 &lt;/portlet&gt;
 </code></pre>
 
-<h3 id="header-ltportlet-headergt">Header <code>&lt;portlet-header&gt;</code></h3>
+<h3 id="header">Header</h3>
 <p>A header for the portlet can added with the <code>&lt;portlet-header&gt;</code> tag helper. A header can contain a simple title with additional subtitle, an icon or a navigation.</p>
-<h3 id="body-ltportlet-bodygt">Body <code>&lt;portlet-body&gt;</code></h3>
+<h3 id="body">Body</h3>
 <p>The body tag helper is the main container for portlets' content and can be added with <code>&lt;portlet-body&gt;</code>.</p>
-<h3 id="footer-ltportlet-footergt">Footer <code>&lt;portlet-footer&gt;</code></h3>
+<h3 id="footer">Footer</h3>
 <p>Some portlets need a footer to show detailed informations about the content. A footer can be added to the portlet with the <code>&lt;portlet-footer&gt;</code> tag helper.</p>
-<h3 id="navigation-ltportlet-navgt">Navigation <code>&lt;portlet-nav&gt;</code></h3>
+<h3 id="navigation">Navigation</h3>
 <p>A portlet navigation can be added with the <code>&lt;portlet-nav&gt;</code> tag helper as a part of the header. A navigation, in turn, can contain many control elements (e.g. <code>portlet-link</code>).</p>
-<h3 id="navigation-link-ltportlet-linkgt">Navigation Link <code>&lt;portlet-link&gt;</code></h3>
+<h3 id="navigation-link">Navigation Link</h3>
 <p>A portlet navigation can be added with the <code>&lt;portlet-nav&gt;</code> tag helper as a part of the header. A navigation, in turn, can contain many control elements (e.g. <code>portlet-link</code>).</p>
-<h2 id="portlet-configuration-ltportletgt">Portlet Configuration <code>&lt;portlet&gt;</code></h2>
+<hr />
+<h2 id="configuration">Configuration</h2>
 <h3 id="round">Round</h3>
 <p>Define round corners for the portlet by setting the <code>bc-round</code> attribute to <code>true</code>.</p>
 <h3 id="shadow">Shadow</h3>
 <p>Disable the shadow for the portlet by setting the <code>bc-shadow</code> attribute to <code>false</code>. By default, a portlet has a shadow and the attribute is set to <code>true</code>.</p>
 <h3 id="border">Border</h3>
 <p>Outline the portlet with a border by setting the <code>bc-border</code> attribute. Possible border styles are <code>None</code> (default), <code>Full</code> or <code>Semi</code>.</p>
-<p><img src="/images/portlet_03.png" width="1471" alt="Portlet Border"></p>
+<p><img src="/images/portlet_03.png" width="1471" alt="Portlet Border" /></p>
 <pre><code class="markup">&lt;!-- Portlet with no border and shadow --&gt;
 &lt;portlet bc-shadow=&quot;false&quot;&gt; ... &lt;/portlet&gt;
 
@@ -363,7 +374,7 @@
 <h3 id="background">Background</h3>
 <p>Set a background color for the portlet with the <code>bc-background</code> attribute. By default the portlet has <code>None</code> background color.</p>
 <p>In addition use the <code>bc-background-style</code> attribute to set the background color only for the header (<code>HeadOnly</code>) or for the complete portlet (<code>Full</code>).</p>
-<p><img src="/images/portlet_04.png" width="984" alt="Portlet Background"></p>
+<p><img src="/images/portlet_04.png" width="984" alt="Portlet Background" /></p>
 <pre><code class="markup">&lt;!-- Portlet with full background --&gt;
 &lt;portlet bc-theme=&quot;Dark&quot; bc-background=&quot;Brand&quot;&gt; ... &lt;/portlet&gt;
 
@@ -371,14 +382,15 @@
 &lt;portlet bc-background=&quot;Brand&quot; bc-background-style=&quot;HeadOnly&quot;&gt; ... &lt;/portlet&gt;
 </code></pre>
 
-<h2 id="header-configuration-ltportlet-headergt">Header Configuration <code>&lt;portlet-header&gt;</code></h2>
+<hr />
+<h2 id="header-configuration">Header Configuration</h2>
 <h3 id="titles">Titles</h3>
 <p>Use the <code>bc-title</code> attribute to set a header text for the portlet. In addition it is possible to set a subtitle for the portlet with the <code>bc-subtitle</code> attribute.</p>
 <h3 id="icon">Icon</h3>
 <p>With the <code>bc-icon</code> attribute it is possible to define a icon for the portlet which is displayed in the header.</p>
 <h3 id="color">Color</h3>
 <p>Use the <code>bc-color</code> attribute to define a font color for the title and icon of the portlet header. By default, the color is <code>Dark</code>.</p>
-<p><img src="/images/portlet_05.png" width="490" alt="Portlet Header Color"></p>
+<p><img src="/images/portlet_05.png" width="490" alt="Portlet Header Color" /></p>
 <pre><code class="markup">&lt;portlet&gt;
     &lt;portlet-header bc-icon=&quot;FA_Apple&quot; bc-color=&quot;Success&quot; bc-title=&quot;Colored Header&quot; bc-subtitle=&quot;Normal styled subtitle&quot;&gt;&lt;/portlet-header&gt;
     &lt;portlet-body&gt; ... &lt;/portlet-body&gt;

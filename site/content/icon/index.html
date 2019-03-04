@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../css/mkdocs.css" rel="stylesheet">
   
   <script>
     // Current page data
@@ -130,7 +131,7 @@
     
         <ul>
         
-            <li><a class="toctree-l4" href="#configuration-lticongt">Configuration &lt;icon&gt;</a></li>
+            <li><a class="toctree-l4" href="#configuration">Configuration</a></li>
         
         </ul>
     
@@ -190,11 +191,19 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../../forms/label-and-help/">Label and Help</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../../forms/textarea/">Textarea</a>
                 </li>
                 <li class="">
                     
     <a class="" href="../../forms/checkbox-list/">Checkbox List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/radio-list/">Radio List</a>
                 </li>
                 <li class="">
                     
@@ -298,7 +307,7 @@
               
                 <h1 id="icon">Icon</h1>
 <p>Metronic supports the icon libraries of Flaticon, Fontawesome, Lineawesome and Socicons. To handle these icons in a easy way use the Mecons Tag Helper for icons.</p>
-<p><img src="/images/icon_01.png" width="150" alt="Mecons Icon"></p>
+<p><img src="/images/icon_01.png" width="150" alt="Mecons Icon" /></p>
 <pre><code class="markup">&lt;h5&gt;Fontawesome&lt;/h5&gt;
 &lt;icon bc-type=&quot;FA_Users&quot; /&gt;
 &lt;icon bc-type=&quot;FA_Bus&quot; /&gt;
@@ -320,12 +329,13 @@
 &lt;icon bc-type=&quot;SI_Digg&quot; /&gt;
 </code></pre>
 
-<h2 id="configuration-lticongt">Configuration <code>&lt;icon&gt;</code></h2>
-<h3 id="type-mandatory">Type <span class="badge info">Mandatory</span></h3>
+<hr />
+<h2 id="configuration">Configuration</h2>
+<h3 id="type-mandatory">Type (Mandatory)</h3>
 <p>Specify an icon with the <code>bc-type</code> attribute.</p>
 <h3 id="color">Color</h3>
 <p>Set a icon color with the <code>bc-color</code> attribute.</p>
-<p><img src="/images/icon_02.png" width="126" alt="Icon Color"></p>
+<p><img src="/images/icon_02.png" width="126" alt="Icon Color" /></p>
 <pre><code class="markup">&lt;icon bc-color=&quot;Primary&quot; bc-type=&quot;FI_Internet&quot; /&gt;
 &lt;icon bc-color=&quot;Danger&quot; bc-type=&quot;FI_Download&quot; /&gt;
 &lt;icon bc-color=&quot;Success&quot; bc-type=&quot;FI_Light&quot; /&gt;

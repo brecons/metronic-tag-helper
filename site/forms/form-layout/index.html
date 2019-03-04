@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../css/mkdocs.css" rel="stylesheet">
   
   <script>
     // Current page data
@@ -167,9 +168,9 @@
         
             <li><a class="toctree-l4" href="#form-structure">Form Structure</a></li>
         
-            <li><a class="toctree-l4" href="#form-configuration-ltformgt">Form Configuration &lt;form&gt;</a></li>
+            <li><a class="toctree-l4" href="#form-configuration">Form Configuration</a></li>
         
-            <li><a class="toctree-l4" href="#form-group-configuration-ltform-groupgt">Form Group Configuration &lt;form-group&gt;</a></li>
+            <li><a class="toctree-l4" href="#form-group-configuration">Form Group Configuration</a></li>
         
             <li><a class="toctree-l4" href="#vertical-form">Vertical Form</a></li>
         
@@ -198,11 +199,19 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../label-and-help/">Label and Help</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../textarea/">Textarea</a>
                 </li>
                 <li class="">
                     
     <a class="" href="../checkbox-list/">Checkbox List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../radio-list/">Radio List</a>
                 </li>
                 <li class="">
                     
@@ -306,6 +315,7 @@
               
                 <h1 id="form-layout">Form Layout</h1>
 <p>Use Mecons to render a form in a horizontal or vertical layout.</p>
+<hr />
 <h2 id="form-structure">Form Structure</h2>
 <p>The form structure in Mecons is the same as in Bootstrap. The main container is a <code>&lt;form&gt;</code> tag which includes the form controls. Each form control should be surrounded with an <code>&lt;form-group&gt;</code> tag helper. A <code>&lt;form-group&gt;</code> can also contains a <code>&lt;label&gt;</code> or a <code>&lt;help&gt;</code>.</p>
 <pre><code class="markup">&lt;form&gt;
@@ -319,18 +329,23 @@
 &lt;/form&gt;
 </code></pre>
 
-<h2 id="form-configuration-ltformgt">Form Configuration <code>&lt;form&gt;</code></h2>
+<hr />
+<h2 id="form-configuration">Form Configuration</h2>
 <h3 id="horizontal">Horizontal</h3>
 <p>Set the <code>bc-horizontal</code> attribute to true if you want a horizontal form layout.</p>
-<p><strong><em>Please note:</em></strong> If you choose a horizontal form layout it is necessary to define at least one label width for your favorite <a href="https://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints">Responsive Breakpoint</a>. For further informations check the following chapter "Label Width".</p>
-<h3 id="label-width-mandatory-on-horizontal-layout">Label Width <span class="badge info">Mandatory on Horizontal Layout</span></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you choose a horizontal form layout it is necessary to define at least one label width for your favorite <a href="https://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints">Responsive Breakpoint</a>. For further informations check the following chapter "Label Width".</p>
+</div>
+<h3 id="label-width-mandatory-on-horizontal-layout">Label Width (Mandatory on Horizontal Layout)</h3>
 <p>Set at least one label width if you render your form horizontal. It's possible to set a label width for each <a href="https://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints">Responsive Breakpoint</a>. Choose the <code>bc-label-width-{breakpoint}</code> attribute to set a label width for a breakpoint. If you define only a label width for a large breakpoint (e.g. <code>bc-label-width-lg</code> or <code>bc-label-width-xl</code>), the labels get a full width on smaller breakpoints and the conclusion is a vertical form.</p>
 <h3 id="label-display">Label Display</h3>
 <p>To hide control labels on all devices execept screen readers, set the <code>bc-labels-sr-only</code> to <code>true</code>.</p>
-<h2 id="form-group-configuration-ltform-groupgt">Form Group Configuration <code>&lt;form-group&gt;</code></h2>
+<hr />
+<h2 id="form-group-configuration">Form Group Configuration</h2>
 <h3 id="state">State</h3>
 <p>Use the <code>bc-state</code> attribute to set a validation state for the control within the form group. Available states are <code>Success</code>, <code>Warning</code> or <code>Danger</code>.</p>
-<p><img src="/images/form-layout_01.png" width="426" alt="Form Group State"></p>
+<p><img src="/images/form-layout_01.png" width="426" alt="Form Group State" /></p>
 <pre><code class="markup">&lt;form-group bc-state=&quot;Success&quot;&gt;
     &lt;input type=&quot;text&quot; bc-label=&quot;Input with success&quot; /&gt;
 &lt;/form-group&gt;
@@ -342,9 +357,10 @@
 &lt;/form-group&gt;
 </code></pre>
 
+<hr />
 <h2 id="vertical-form">Vertical Form</h2>
 <p>In a vertical form each control and its corresponding label and help text will placed in a separate row.</p>
-<p><img src="/images/form-layout_02.png" width="434" alt="Vertical Form Layout"></p>
+<p><img src="/images/form-layout_02.png" width="434" alt="Vertical Form Layout" /></p>
 <pre><code class="markup">&lt;form&gt;
     &lt;form-group&gt;
         &lt;input type=&quot;text&quot; bc-label=&quot;User name&quot; bc-help=&quot;Usually your e-mail address&quot; /&gt;
@@ -356,9 +372,10 @@
 &lt;/form&gt;
 </code></pre>
 
+<hr />
 <h2 id="horizontal-form">Horizontal Form</h2>
 <p>In a horizontal form each control and its corresponding label placed in the same row. The help text will placed under the control.</p>
-<p><img src="/images/form-layout_03.png" width="429" alt="Horizontal Form Layout"></p>
+<p><img src="/images/form-layout_03.png" width="429" alt="Horizontal Form Layout" /></p>
 <pre><code class="markup">&lt;form bc-horizontal=&quot;true&quot; bc-label-width-md=&quot;4&quot;&gt;
     &lt;form-group&gt;
         &lt;input type=&quot;text&quot; bc-label=&quot;User name&quot; bc-help=&quot;Usually your e-mail address&quot; /&gt;

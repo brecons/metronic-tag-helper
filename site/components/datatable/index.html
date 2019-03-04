@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../css/mkdocs.css" rel="stylesheet">
   
   <script>
     // Current page data
@@ -196,11 +197,19 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../../forms/label-and-help/">Label and Help</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../../forms/textarea/">Textarea</a>
                 </li>
                 <li class="">
                     
     <a class="" href="../../forms/checkbox-list/">Checkbox List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/radio-list/">Radio List</a>
                 </li>
                 <li class="">
                     
@@ -304,18 +313,18 @@
               
                 <h1 id="datatable">Datatable</h1>
 <p>The Datatable is a highly flexible tool which extends the HTML table with advanced interaction controls.</p>
-<p><img alt="Mecons Datatable" src="/images/datatable_01.png" /></p>
+<p><img src="/images/datatable_01.png" width="922" alt="Mecons Datatable" /></p>
 <hr />
 <h2 id="configuration">Configuration</h2>
 <h3 id="sorting">Sorting</h3>
 <p>To enable column sorting for the Datatable, set the <code>bc-sorting</code> attribute to <code>true</code>. By default, all columns of the Datatable are sortable if this attribute is set. To disable sorting for specific columns check Sorting in the Column Configuration.</p>
-<p><img alt="Datatable Sorting" src="/images/datatable_02.png" /></p>
+<p><img src="/images/datatable_02.png" width="914" alt="Datatable Sorting" /></p>
 <pre><code class="markup">&lt;datatable bc-sorting=&quot;true&quot;&gt; ... &lt;/datatable&gt;
 </code></pre>
 
 <h3 id="paging">Paging</h3>
 <p>Datatables can split the rows into individual pages, which is an efficient method of showing a large number of records in a small space. To enable paging set the <code>bc-paging</code> attribute to <code>true</code>.</p>
-<p><img alt="Datatable Paging" src="/images/datatable_03.png" /></p>
+<p><img src="/images/datatable_03.png" width="924" alt="Datatable Paging" /></p>
 <pre><code class="markup">&lt;datatable bc-paging=&quot;true&quot;&gt; ... &lt;/datatable&gt;
 </code></pre>
 
@@ -323,7 +332,7 @@
 <p>Define a number of rows to display on a single page with <code>bc-page-size</code> attribute when using pagination. This attribute only has an effect if the <code>bc-paging</code> attribute is set to <code>true</code>. By default, the page size is set to <code>10</code>.</p>
 <h3 id="height">Height</h3>
 <p>By default, the height of the table depends on its content. A fixed height can be set with the <code>bc-height</code> attribute. If the content is now higher than the defined height, a scroll bar is displayed. The height is expressed as an integer and in pixels (px).</p>
-<p><img alt="Datatable Height" src="/images/datatable_04.png" /></p>
+<p><img src="/images/datatable_04.png" width="919" alt="Datatable Height" /></p>
 <pre><code class="markup">&lt;datatable bc-height=&quot;200&quot;&gt; ... &lt;/datatable&gt;
 </code></pre>
 
@@ -333,7 +342,7 @@
 <p>Set the <code>bc-footer</code> attribute to <code>true</code> to show a table footer at the bottom of the Datatable.</p>
 <h3 id="searching">Searching</h3>
 <p>This option allows the search abilities of Datatables to be enabled or disabled. To enable searching it is necessary to specify a search input field with the <code>bc-search-input</code> attribute. The value specified here is the <code>id</code> of the input field.</p>
-<p><img alt="Datatable Searching" src="/images/datatable_05.png" /></p>
+<p><img src="/images/datatable_05.png" width="929" alt="Datatable Searching" /></p>
 <pre><code class="markup">&lt;row&gt;
     &lt;column xs-size=&quot;4&quot;&gt;
         &lt;input id=&quot;generalSearch&quot; type=&quot;text&quot; class=&quot;form-control m-input m-input--solid&quot; placeholder=&quot;Search...&quot;&gt;
@@ -367,7 +376,7 @@
 <p>There are two ways to influence the appearance of a column. The placeholder provides an easy way to enrich or modify the content of a cell. An own template script offers the full flexibility for the free design of the column content.</p>
 <h4 id="placeholder">Placeholder</h4>
 <p>Customize the cell content rendering with the <code>bc-template</code> attribute. Use placeholders (e.g. <code>{{FieldName}}</code>) to access the content of column fields and define a custom template. This mechanism is well known from the C# String Interpolation.</p>
-<p><img alt="Datatable Column Placeholder Template" src="/images/datatable_06.png" /></p>
+<p><img src="/images/datatable_06.png" width="929" alt="Datatable Column Placeholder Template" /></p>
 <pre><code class="markup">&lt;datatable bc-ajax-url=&quot;/api/Demo/&quot; bc-paging=&quot;true&quot;&gt;
     &lt;datatable-column bc-field=&quot;recordID&quot; bc-title=&quot;#&quot; bc-width=&quot;50&quot; /&gt;
     &lt;datatable-column bc-field=&quot;shipCountry&quot; bc-title=&quot;Ship Country&quot; bc-template=&quot;{{shipCountry}}-{{shipCity}}&quot; /&gt;
@@ -377,7 +386,7 @@
 
 <h4 id="script">Script</h4>
 <p>It is also possible to modify the content of a column using its own JavaScript. This provides more flexibility than a placeholder. The script is defined within the <code>&lt;datatable-column&gt;</code> tag helper and must be placed in HTML comments (<code>&lt;!--</code> and <code>--&gt;</code>).</p>
-<p><img alt="Datatable Column Script Template" src="/images/datatable_07.png" /></p>
+<p><img src="/images/datatable_07.png" width="913" alt="Datatable Column Script Template" /></p>
 <pre><code class="markup">&lt;datatable bc-ajax-url=&quot;/api/Demo/&quot; bc-paging=&quot;true&quot;&gt;
     &lt;datatable-column bc-field=&quot;recordID&quot; bc-title=&quot;#&quot; bc-width=&quot;50&quot; /&gt;
     &lt;datatable-column bc-field=&quot;shipCountry&quot; bc-title=&quot;Ship Country&quot; bc-template=&quot;{{shipCountry}}-{{shipCity}}&quot; /&gt;
@@ -396,7 +405,7 @@
 <h2 id="html-data-source">HTML Data Source</h2>
 <p>The Mecons Datatable component supports initialization from HTML table. It also defines the schema model of the data source. In addition to the visualization, the Datatable provides built-in support for operations over data such as sorting, filtering and paging performed in user browser (frontend).</p>
 <p>To provide a traditional HTML table as Datatable, place your HTML table markup in your view and set your favorite Datatable attributes. No serverside code or processing is needed.</p>
-<p><img alt="Datatable HTML Datasource View" src="/images/datatable_08.png" /></p>
+<p><img src="/images/datatable_08.png" width="927" alt="Datatable HTML Datasource View" /></p>
 <pre><code class="markup">&lt;datatable bc-paging=&quot;true&quot; bc-sorting=&quot;true&quot;&gt;
     &lt;thead&gt;
         &lt;tr&gt;
@@ -482,7 +491,7 @@ public DatatableAjaxResponse&lt;ShipViewModel&gt; Post(IFormCollection data)
 </code></pre>
 
 <p>Within the view place the <code>&lt;datatable&gt;</code> tag helper and define your columns with the <code>&lt;datatable-column&gt;</code> Tag Helper. Important is, that you set the <code>bc-field</code> attribute on each column with the name of the associated data field.</p>
-<p><img alt="Datatable AJAX Datasource View" src="/images/datatable_09.png" /></p>
+<p><img src="/images/datatable_09.png" width="933" alt="Datatable AJAX Datasource View" /></p>
 <pre><code class="markup">&lt;row&gt;
     &lt;column xs-size=&quot;4&quot;&gt;
         &lt;input type=&quot;text&quot; class=&quot;form-control m-input m-input--solid&quot; placeholder=&quot;Search...&quot; id=&quot;generalSearch&quot;&gt;

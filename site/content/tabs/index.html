@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../css/mkdocs.css" rel="stylesheet">
   
   <script>
     // Current page data
@@ -150,9 +151,9 @@
     
         <ul>
         
-            <li><a class="toctree-l4" href="#tabs-configuration-lttabsgt">Tabs Configuration &lt;tabs&gt;</a></li>
+            <li><a class="toctree-l4" href="#configuration">Configuration</a></li>
         
-            <li><a class="toctree-l4" href="#pane-configuration-lttabs-panegt">Pane Configuration &lt;tabs-pane&gt;</a></li>
+            <li><a class="toctree-l4" href="#pane-configuration">Pane Configuration</a></li>
         
         </ul>
     
@@ -192,11 +193,19 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../../forms/label-and-help/">Label and Help</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../../forms/textarea/">Textarea</a>
                 </li>
                 <li class="">
                     
     <a class="" href="../../forms/checkbox-list/">Checkbox List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../forms/radio-list/">Radio List</a>
                 </li>
                 <li class="">
                     
@@ -300,7 +309,7 @@
               
                 <h1 id="tabs">Tabs</h1>
 <p>Tabs are a single content area with multiple planels, each associated with a header in a list.</p>
-<p><img src="/images/tabs_01.png" width="487" alt="Mecons Tabs"></p>
+<p><img src="/images/tabs_01.png" width="487" alt="Mecons Tabs" /></p>
 <pre><code class="markup">&lt;tabs&gt;
     &lt;tabs-pane bc-header=&quot;Home&quot;&gt;
         &lt;p&gt;
@@ -316,10 +325,11 @@
 &lt;/tabs&gt;
 </code></pre>
 
-<h2 id="tabs-configuration-lttabsgt">Tabs Configuration <code>&lt;tabs&gt;</code></h2>
+<hr />
+<h2 id="configuration">Configuration</h2>
 <h3 id="pills">Pills</h3>
 <p>Use the <code>bc-pills</code> attribute to render the tabs as pills.</p>
-<p><img src="/images/tabs_02.png" width="478" alt="Tabs as Pills"></p>
+<p><img src="/images/tabs_02.png" width="478" alt="Tabs as Pills" /></p>
 <pre><code class="markup">&lt;tabs bc-pills=&quot;true&quot;&gt;
     &lt;tabs-pane bc-header=&quot;Home&quot;&gt;
         ...
@@ -333,12 +343,13 @@
 &lt;/tabs&gt;
 </code></pre>
 
-<h2 id="pane-configuration-lttabs-panegt">Pane Configuration <code>&lt;tabs-pane&gt;</code></h2>
-<h3 id="header-mandatory">Header <span class="badge info">Mandatory</span></h3>
+<hr />
+<h2 id="pane-configuration">Pane Configuration</h2>
+<h3 id="header-mandatory">Header (Mandatory)</h3>
 <p>Use the <code>bc-header</code> attribute to define a title for the tab.</p>
 <h3 id="active">Active</h3>
 <p>By default, the first tab is active on page load. If you want to modify that, use the <code>bc-active</code> attribute to activate another tab on startup.</p>
-<p><img src="/images/tabs_03.png" width="491" alt="Active Tab Pane"></p>
+<p><img src="/images/tabs_03.png" width="491" alt="Active Tab Pane" /></p>
 <pre><code class="markup">&lt;tabs&gt;
     &lt;tabs-pane bc-header=&quot;Home&quot;&gt;
         ...

@@ -35,7 +35,7 @@ This version supports **Metronic v5.5.5** and contains new tag helpers and some 
 * Add support for pips / scales in [noUiSlider Tag Helper](forms/nouislider.md).
 * Add a new page for [Tag Helper Localization](localization.md) in the documentation.
 * The [Datepicker Tag Helper] is now fully localized.
-* New licensing procedure without separate config file. Check [Mecons Installation](installation/mecons-installation.md) for more informations.
+* New licensing procedure without separate config file.
 * Change the `bc-title` attribute of [Datatable Tag Helper](components/datatable.md) columns to not longer mandatory.
 * The [Dropzone Tag Helper](forms/dropzone.md) now provides a public instance to which it's easy to bind events.
 * The `bc-sliders` attribute no longer exists for the [noUiSlider Tag Helper](forms/nouislider.md). Instead, the sliders are now defined using the `bc-slider-*` attribute.
