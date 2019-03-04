@@ -2,7 +2,7 @@
 
 A Popover is a component to show additional informations for an element like those found in iOS. With the Mecons Tag Helper it is possible to add those informations to any element on your app.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/popover_01.png" width="312" alt="Mecons Popover">
+![Mecons Popover](/images/popover_01.png)
 
 ```markup
 <button type="button" bc-popover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
@@ -10,9 +10,11 @@ A Popover is a component to show additional informations for an element like tho
 </button>
 ```
 
+---
+
 ## Configuration
 
-### Content <span class="badge info">Mandatory</span> <span class="badge info">Trigger Attribute</span>
+### Content (Mandatory) (Trigger Attribute)
 
 The `bc-popover` attribute is available on each HTML element and specifies the popover content. After these attribute is set for an element further attributes are available to concretize the popover definition.
 
@@ -24,7 +26,7 @@ The `bc-popover` attribute is available on each HTML element and specifies the p
 
 You can set a title for the popover with the `bc-popover-title` attribute.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/popover_02.png" width="315" alt="Popover Title">
+![Popover Title](/images/popover_02.png)
 
 ```markup
 <button type="button" bc-popover="..." bc-popover-title="Popover title">
@@ -52,7 +54,7 @@ With the `bc-popover-placement` can specified how to position a popover. Possibl
 
 Set the `bc-popover-html` attribute to `true` to allow HTML tags within the popover content.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/popover_03.png" width="341" alt="Popover HTML Content">
+![Popover HTML Content](/images/popover_03.png)
 
 ```markup
 <button type="button" bc-popover="And here's some amazing <b>HTML</b> content. It's very <code>engaging</code>. Right?" bc-popover-html="true">

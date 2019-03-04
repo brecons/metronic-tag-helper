@@ -8,7 +8,7 @@
   
   <meta name="author" content="Bremus Solutions">
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Localization - Mecons Tag Helper</title>
+  <title>Installation - Mecons Tag Helper</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Localization";
-    var mkdocs_page_input_path = "localization.md";
-    var mkdocs_page_url = "/localization/";
+    var mkdocs_page_name = "Installation";
+    var mkdocs_page_input_path = "installation.md";
+    var mkdocs_page_url = "/installation/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js" defer></script>
@@ -53,28 +53,34 @@
     <a class="" href="..">Overview</a>
 	    </li>
           
-            <li class="toctree-l1">
-		
-    <a class="" href="../installation/">Installation</a>
-	    </li>
-          
             <li class="toctree-l1 current">
 		
-    <a class="current" href="./">Localization</a>
+    <a class="current" href="./">Installation</a>
     <ul class="subnav">
             
-    <li class="toctree-l2"><a href="#localization">Localization</a></li>
+    <li class="toctree-l2"><a href="#installation">Installation</a></li>
     
         <ul>
         
-            <li><a class="toctree-l3" href="#supported-languages">Supported Languages</a></li>
+            <li><a class="toctree-l3" href="#create-new-web-application">Create new Web Application</a></li>
         
-            <li><a class="toctree-l3" href="#usage-of-localization">Usage of Localization</a></li>
+            <li><a class="toctree-l3" href="#add-service-configuration">Add Service Configuration</a></li>
+        
+            <li><a class="toctree-l3" href="#metronic-integration">Metronic Integration</a></li>
+        
+            <li><a class="toctree-l3" href="#mecons-installation">Mecons Installation</a></li>
+        
+            <li><a class="toctree-l3" href="#mecons-rendering">Mecons Rendering</a></li>
         
         </ul>
     
 
     </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../localization/">Localization</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -284,7 +290,7 @@
     
       
     
-    <li>Localization</li>
+    <li>Installation</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -294,70 +300,82 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="localization">Localization</h1>
-<p>The Mecons Tag Helper supports multiple languages and are localized. This applies on the one hand to all texts and labels generated within a Tag Helper, but also to date and time outputs.</p>
+                <h1 id="installation">Installation</h1>
+<p>On this page you will learn how to install Mecons Tag Helper Library into an ASP.NET Core Web Application together with the Metronic Admin Theme.</p>
 <hr />
-<h2 id="supported-languages">Supported Languages</h2>
-<p>Currently the following languages are supported:</p>
-<table>
-<thead>
-<tr>
-<th>Language</th>
-<th>State</th>
-<th>Available since</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>English</td>
-<td>Supported</td>
-<td>Version 2.0.0</td>
-</tr>
-<tr>
-<td>German</td>
-<td>Supported</td>
-<td>Version 2.0.0</td>
-</tr>
-<tr>
-<td>French</td>
-<td>Supported</td>
-<td>Version 2.2.1</td>
-</tr>
-<tr>
-<td>Italian</td>
-<td>Supported</td>
-<td>Version 2.2.1</td>
-</tr>
-</tbody>
-</table>
+<h2 id="create-new-web-application">Create new Web Application</h2>
+<p>The first step is to create a new project in Visual Studio. Choose the <strong><em>Web</em></strong> rubric and subsequent the <strong><em>ASP.NET Core Web Application</em></strong> template. Adapt the project parameters like <strong><em>Name</em></strong>, <strong><em>Location</em></strong> and <strong><em>Solution name</em></strong> and click <strong><em>OK</em></strong>.</p>
+<p><img alt="New Project in Visual Studio" src="/images/installation_01.png" /></p>
+<p>In the following dialog choose the <strong><em>.NET Core</em></strong> Framework and the <strong><em>ASP.NET Core 2.x</em></strong> version as well as a project template. Optionally change the authentication and click <strong><em>OK</em></strong>.</p>
+<p><img alt="Project Configuration in Visual Studio" src="/images/installation_02.png" /></p>
 <hr />
-<h2 id="usage-of-localization">Usage of Localization</h2>
-<p>To localize the Tag Helpers, Mecons uses the <code>CultureInfo</code> set in the <a href="https://docs.microsoft.com/de-de/dotnet/api/system.globalization.cultureinfo.currentculture?view=netcore-2.1">current thread</a>.</p>
-<p>Use the following code snippet to modify the <code>CultureInfo</code> for the current thread:</p>
-<pre><code class="csharp">// Set current thread language to German
-Thread.CurrentThread.CurrentCulture = new CultureInfo(&quot;de-DE&quot;);
-</code></pre>
+<h2 id="add-service-configuration">Add Service Configuration</h2>
+<p>To ensure that Mecons runs correctly it is necessary to adapt the <code>Startup.cs</code>. Register inside the <code>ConfigureServices</code> method a singleton for the <code>IActionContextAccessor</code> and <code>IHttpContextAccessor</code>. Finally import the namespace <code>Microsoft.AspNetCore.Mvc.Infrastructure</code>.</p>
+<pre><code class="csharp">using Microsoft.AspNetCore.Mvc.Infrastructure
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>For a complete list of all <code>CultureInfo</code> names, visit <a href="https://msdn.microsoft.com/en-us/library/hh441729.aspx">https://msdn.microsoft.com/en-us/library/hh441729.aspx</a>.</p>
-</div>
-<p>The <code>CultureInfo</code> for your ASP.NET Core web application is best set in the <code>Startup.cs</code> within the <code>Configure</code> method:</p>
-<pre><code class="csharp">public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+...
+
+public void ConfigureServices(IServiceCollection services)
 {
-    ...
+    services.AddMvc();
 
-    // Language
-    var cultureInfo = new CultureInfo(&quot;de-DE&quot;);
-    CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
-    CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
+    services.AddSingleton&lt;IHttpContextAccessor, HttpContextAccessor&gt;();
+    services.AddSingleton&lt;IActionContextAccessor, ActionContextAccessor&gt;();
 }
 </code></pre>
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If Mecons can not find a suitable language file for the thread culture, the English language file will be used.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If the services are not registered, an <code>InvalidOperationException</code> may occur.</p>
 </div>
+<hr />
+<h2 id="metronic-integration">Metronic Integration</h2>
+<p>In this section the Metronic Admin Theme will be integrated into an ASP.NET Core Web Application.</p>
+<h3 id="include-metronic-files">Include Metronic Files</h3>
+<p>Copy the <code>assets</code> folder of your choosen Metronic Admin Theme (e.g. <code>/metronic_v5.x/dist/&lt;YOUR FAVORITE THEME&gt;/assets</code>) into the <code>wwwroot</code> folder of your project and rename it to <code>metronic</code>:</p>
+<pre><code>MyCompany.MyApplication
+├── wwwroot/
+    ├── css/
+    ├── js/
+    ├── lib/
+    ├── metronic/
+        ├── app/
+        ├── demo/
+        ├── snippets/
+        ├── vendors/
+├── Controllers/
+├── Models/
+└── Views/
+</code></pre>
+
+<p>Copy the content of your choosen Metronic Admin Theme (e.g. <code>/metronic_v5.x/dist//index.html</code>) into the <code>Views/Shared/_Layout.cshtml</code>. Afterwards press <strong>CTRL + H</strong> to open the Quick Replace Tool and replace <code>assets/</code> with <code>~/metronic/</code>.</p>
+<p>Include the <code>@RenderBody()</code> method at the position where the individual page content will be rendered.</p>
+<p><img alt="Insert RenderBody method into layout page" src="/images/installation_03.png" /></p>
+<p>To ensure that all Mecons Tag Helpers work as expected, it is necessary to move all JavaScript includes from the page bottom into the <code>&lt;head&gt;</code>.</p>
+<p><img alt="Inclusion of JavaScript" src="/images/installation_04.png" /></p>
+<hr />
+<h2 id="mecons-installation">Mecons Installation</h2>
+<p>Open the Package Manager Console in Visual Studio and install the Mecons package:</p>
+<pre><code>PM&gt; Install-Package BSolutions.Mecons -Source C:\Downloads\&lt;UNZIPPED MECONS FOLDER&gt;\
+</code></pre>
+
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Not every Mecons package is compatible with every Metronic version. For further information check the description of the selected package or the change log.</p>
+</div>
+<p>After the package installation open <code>/Views/_ViewImports.cshtml</code> and insert the marked lines:</p>
+<pre><code>@using MyCompany.MyApplication
+@using MyCompany.MyApplication.Models
+@using BSolutions.Mecons.Enumerations
+@using BSolutions.Brecons.Core.Enumerations
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, BSolutions.Mecons
+</code></pre>
+
+<hr />
+<h2 id="mecons-rendering">Mecons Rendering</h2>
+<p>By default, the Mecons Tag Helper Rendering is enabled for each HTML element. To disable the Brecons Tag Helper Rendering for an specific HTML element, set the <code>disable-brecons</code> attribute. The <code>disable-brecons</code> attribute is minimizable and needs no value.</p>
+<p><img alt="Mecons Rendering" src="/images/installation_05.png" /></p>
               
             </div>
           </div>
@@ -365,10 +383,10 @@ Thread.CurrentThread.CurrentCulture = new CultureInfo(&quot;de-DE&quot;);
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../layout/grid-system/" class="btn btn-neutral float-right" title="Grid System">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../localization/" class="btn btn-neutral float-right" title="Localization">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../installation/" class="btn btn-neutral" title="Installation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href=".." class="btn btn-neutral" title="Overview"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -396,10 +414,10 @@ Thread.CurrentThread.CurrentCulture = new CultureInfo(&quot;de-DE&quot;);
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../installation/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../layout/grid-system/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../localization/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

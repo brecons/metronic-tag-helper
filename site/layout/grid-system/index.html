@@ -55,29 +55,7 @@
           
             <li class="toctree-l1">
 		
-    <span class="caption-text">Installation</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="/installation/requirements.md">Requirements</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../installation/create-new-project/">Create new Project</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../installation/metronic-integration/">Metronic Integration</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="/installation/mecons-installation/">Mecons Installation</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="/installation/disable-rendering/">Disable Tag Helper Rendering</a>
-                </li>
-    </ul>
+    <a class="" href="../../installation/">Installation</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -98,9 +76,9 @@
     
         <ul>
         
-            <li><a class="toctree-l4" href="#row-configuration-ltrowgt">Row Configuration &lt;row&gt;</a></li>
+            <li><a class="toctree-l4" href="#row-configuration">Row Configuration</a></li>
         
-            <li><a class="toctree-l4" href="#column-configuration-ltcolumngt">Column Configuration &lt;column&gt;</a></li>
+            <li><a class="toctree-l4" href="#column-configuration">Column Configuration</a></li>
         
         </ul>
     
@@ -323,7 +301,7 @@
                 <h1 id="grid-system">Grid System</h1>
 <p>Use the powerful mobile-first flexbox <a href="https://getbootstrap.com/docs/4.0/layout/grid/">Bootstrap Grid System</a> to build layouts of all shapes and sizes thanks to a twelve column system, five default responsive tiers, Sass variables and mixins, and dozens of predefined classes.</p>
 <p>Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive. All Bootstrap Grid System features are covered from the Mecons Tag Helper!</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/grid-system_01.png" width="743" alt="Mecons Grid System"></p>
+<p><img alt="Mecons Grid System" src="/images/grid-system_01.png" /></p>
 <pre><code class="markup">&lt;row&gt;
     &lt;column&gt;1 of 2&lt;/column&gt;
     &lt;column&gt;2 of 2&lt;/column&gt;
@@ -335,10 +313,11 @@
 &lt;/row&gt;
 </code></pre>
 
-<h2 id="row-configuration-ltrowgt">Row Configuration <code>&lt;row&gt;</code></h2>
+<hr />
+<h2 id="row-configuration">Row Configuration</h2>
 <h3 id="vertical-alignment">Vertical Alignment</h3>
 <p>To align all columns in a vertical direction set the <code>vertical-alignment</code> attribute. Possible values for the alignment are <code>Top</code>, <code>Middle</code> and <code>Bottom</code>.</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/grid-system_02.png" width="735" alt="Row Vertical Alignment"></p>
+<p><img alt="Row Vertical Alignment" src="/images/grid-system_02.png" /></p>
 <pre><code class="markup">&lt;row vertical-alignment=&quot;Top&quot; style=&quot;height: 10rem;&quot;&gt;
     &lt;column&gt;One of three columns&lt;/column&gt;
     &lt;column&gt;One of three columns&lt;/column&gt;
@@ -358,7 +337,7 @@
 
 <h3 id="horizontal-alignment">Horizontal Alignment</h3>
 <p>To align all columns in the horizontal direction set the <code>alignment</code> attribute. Possible values for the classic horizontal alignment are <code>Left</code>, <code>Center</code> and <code>Right</code>. Choose the value <code>Around</code> for the same width whitespace before, between and after the aligned columns. The value <code>Between</code> renders a full width whitespace between the columns.</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/grid-system_03.png" width="743" alt="Row Horizontal Alignment"></p>
+<p><img alt="Row Horizontal Alignment" src="/images/grid-system_03.png" /></p>
 <pre><code class="markup">&lt;row alignment=&quot;Left&quot;&gt;
     &lt;column xs-size=&quot;4&quot;&gt;One of two columns&lt;/column&gt;
     &lt;column xs-size=&quot;4&quot;&gt;One of two columns&lt;/column&gt;
@@ -381,10 +360,11 @@
 &lt;/row&gt;
 </code></pre>
 
-<h2 id="column-configuration-ltcolumngt">Column Configuration <code>&lt;column&gt;</code></h2>
+<hr />
+<h2 id="column-configuration">Column Configuration</h2>
 <h3 id="size">Size</h3>
 <p>Set the column width for a specified resolution with the appropriate attribute (e.g. <code>xs-size</code>, <code>sm-size</code>, <code>md-size</code>, <code>lg-size</code> or <code>xl-size</code>). If you don't set any size attribute each column renders with equal width and is auto-layouted.</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/grid-system_04.png" width="764" alt="Column Sizing"></p>
+<p><img alt="Column Sizing" src="/images/grid-system_04.png" /></p>
 <pre><code class="markup">&lt;row&gt;
     &lt;column xs-size=&quot;12&quot; md-size=&quot;8&quot;&gt;.col-12 .col-md-8&lt;/column&gt;
     &lt;column xs-size=&quot;6&quot; md-size=&quot;4&quot;&gt;.col-6 .col-md-4&lt;/column&gt;
@@ -406,7 +386,7 @@
 
 <h3 id="render">Render</h3>
 <p>To size columns based on the natural width of their content, use the appropriate attribute (e.g. <code>xs-render</code>, <code>sm-render</code>, <code>md-render</code>, <code>lg-render</code> or <code>xl-render</code>).</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/grid-system_05.png" width="745" alt="Column Rendering"></p>
+<p><img alt="Column Rendering" src="/images/grid-system_05.png" /></p>
 <pre><code class="markup">&lt;row alignment=&quot;Center&quot;&gt;
     &lt;column&gt;1 of 3&lt;/column&gt;
     &lt;column md-render=&quot;Dynamic&quot;&gt;Variable width content&lt;/column&gt;
@@ -421,7 +401,7 @@
 
 <h3 id="order">Order</h3>
 <p>Use the order attribute for controlling the visual order of your content. These attributes are responsive, so you can set the order by a specific resolution (e.g. <code>xs-order</code>, <code>sm-order</code>, <code>md-order</code>, <code>lg-order</code> or <code>xl-order</code>). Includes support for 1 through 12 across all five grid tiers.</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/grid-system_06.png" width="737" alt="Column Ordering"></p>
+<p><img alt="Column Ordering" src="/images/grid-system_06.png" /></p>
 <pre><code class="markup">&lt;row&gt;
     &lt;column&gt;First, but unordered&lt;/column&gt;
     &lt;column xs-order=&quot;12&quot;&gt;Second, but last&lt;/column&gt;
@@ -431,7 +411,7 @@
 
 <h3 id="offset">Offset</h3>
 <p>Set the column offset for a specified resolution with the appropriate attribute (e.g. <code>xs-offset</code>, <code>sm-offset</code>, <code>md-offset</code>, <code>lg-offset</code> or <code>xl-offset</code>).</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/grid-system_07.png" width="766" alt="Column Offsetting"></p>
+<p><img alt="Column Offsetting" src="/images/grid-system_07.png" /></p>
 <pre><code class="markup">&lt;row&gt;
     &lt;column md-size=&quot;4&quot;&gt;.col-md-4&lt;/column&gt;
     &lt;column md-size=&quot;4&quot; md-offset=&quot;4&quot;&gt;.col-md-4 .offset-md-4&lt;/column&gt;
@@ -447,7 +427,7 @@
 
 <h3 id="vertical-alignment_1">Vertical Alignment</h3>
 <p>To align a single column in the vertical direction within a row set the <code>vertical-alignment</code> attribute.</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/grid-system_08.png" width="736" alt="Column Vertical Alignment"></p>
+<p><img alt="Column Vertical Alignment" src="/images/grid-system_08.png" /></p>
 <pre><code class="markup">&lt;row style=&quot;height: 10rem;&quot;&gt;
     &lt;column vertical-alignment=&quot;Top&quot;&gt;One of three columns&lt;/column&gt;
     &lt;column vertical-alignment=&quot;Middle&quot;&gt;One of three columns&lt;/column&gt;

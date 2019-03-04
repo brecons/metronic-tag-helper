@@ -2,31 +2,33 @@
 
 The Mecons Progress Widget is used to display KPIs (Key Performance Indicator). Not only the KPI can be displayed in the widget, but also the degree of fulfillment can be visualized via a progress.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/progress-widget_01.png" width="954" alt="Mecons Progress Widget">
+![Mecons Progress Widget](/images/progress-widget_01.png)
 
 ```markup
 <widget-progress bc-title="Total Profit" bc-desc="All Customs Value" bc-value="$18M" bc-progress="78" bc-progress-desc="Change" bc-color="Primary" />
 ```
 
-## Configuration `<widget-progress>`
+---
 
-### Title <span class="badge info">Mandatory</span>
+## Configuration
+
+### Title (Mandatory)
 
 With the `bc-title` attribute the title of the widget can be defined. This attribute is a mandatory attribute and must be defined.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/progress-widget_02.png" width="312" alt="Progress Widget Title">
+![Progress Widget Title](/images/progress-widget_02.png)
 
-### Value <span class="badge info">Mandatory</span>
+### Value (Mandatory)
 
 The `bc-value` attribute defines the KPI. This is a free text (not a number etc.) that can be defined as desired. This attribute is a mandatory attribute and must be defined.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/progress-widget_03.png" width="312" alt="Progress Widget Value">
+![Progress Widget Value](/images/progress-widget_03.png)
 
 ### Description
 
 A description for the KPI can be added with the `bc-desc` attribute.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/progress-widget_04.png" width="313" alt="Progress Widget Description">
+![Progress Widget Description](/images/progress-widget_04.png)
 
 ### Progress
 
@@ -34,7 +36,7 @@ To show how many percent of the KPI have already been reached, a progress can be
 
 In addition, a further description of this progress can be displayed with the `bc-progress-desc` attribute.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/progress-widget_05.png" width="313" alt="Progress Widget Progress">
+![Progress Widget Progress](/images/progress-widget_05.png)
 
 ### Color
 

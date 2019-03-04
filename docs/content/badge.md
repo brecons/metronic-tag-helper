@@ -2,19 +2,21 @@
 
 Badges are small count and labeling components.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/badge_01.png" width="229" alt="Mecons Badge">
+![Mecons Badge](/images/badge_01.png)
 
 ```markup
 <h2>My Messages <badge bc-color="Info">12</badge></h2>
 ```
 
-## Configuration `<badge>`
+---
+
+## Configuration
 
 ### Color
 
 For proper styling of a badge use the `bc-color` attribute.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/badge_02.png" width="243" alt="Colored Badges">
+![Colored Badges](/images/badge_02.png)
 
 ```markup
 <badge>3</badge>
@@ -33,7 +35,7 @@ For proper styling of a badge use the `bc-color` attribute.
 
 Use the `bc-style` attribute to set a style for the badge. Possible styles are `Default`, `Dot` or `Round`.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/badge_03.png" width="676" alt="Badge Styles">
+![Badge Styles](/images/badge_03.png)
 
 ```markup
 <h5>Dot Badges</h5>
@@ -51,7 +53,7 @@ Use the `bc-style` attribute to set a style for the badge. Possible styles are `
 
 Use the `bc-wide` attribute to enlarge the paddings of the badge.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/badge_04.png" width="673" alt="Wide Badges">
+![Wide Badges](/images/badge_04.png)
 
 ```markup
 <badge bc-wide="true" bc-color="Primary">New</badge>

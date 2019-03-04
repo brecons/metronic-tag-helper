@@ -2,13 +2,15 @@
 
 The progress is a information bar to show a progress. Use the Mecons Tag Helper to build those components with all known features.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/progress_01.png" width="396" alt="Mecons Progress">
+![Mecons Progress](/images/progress_01.png)
 
 ```markup
 <progress bc-value="75" />
 ```
 
-## Configuration `<progress />`
+---
+
+## Configuration
 
 ### Value
 
@@ -18,7 +20,7 @@ Use the `bc-value` attribute to set a value for the progress.
 
 Add a label to your progress bar and set the `bc-label` attribute to `true`.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/progress_02.png" width="398" alt="Progress Label">
+![Progress Label](/images/progress_02.png)
 
 ```markup
 <progress bc-value="75" bc-label="true" />
@@ -28,7 +30,7 @@ Add a label to your progress bar and set the `bc-label` attribute to `true`.
 
 Set a size for the progress with the `bc-size` attribute. Possible sizes are `Default`, `Small` or `Large`.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/progress_03.png" width="399" alt="Progress Size">
+![Progress Size](/images/progress_03.png)
 
 ```markup
 <progress bc-value="25" bc-color="Primary" bc-size="Small" />
@@ -40,7 +42,7 @@ Set a size for the progress with the `bc-size` attribute. Possible sizes are `De
 
 It's possible to adapt the height of a progress bar with the `bc-height` attribute. Allowed values for this attribute are integers. The unit for this value are pixels (px).
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/progress_04.png" width="398" alt="Progress Height">
+![Progress Height](/images/progress_04.png)
 
 ```markup
 <progress bc-value="25" bc-color="Primary" bc-height="1" />
@@ -53,7 +55,7 @@ It's possible to adapt the height of a progress bar with the `bc-height` attribu
 
 Use the `bc-color` attribute to set a color for the progress bar.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/progress_05.png" width="409" alt="Progress Color">
+![Progress Color](/images/progress_05.png)
 
 ```markup
 <progress bc-value="50" bc-color="Success" />
@@ -66,7 +68,7 @@ Use the `bc-color` attribute to set a color for the progress bar.
 
 Add the `bc-striped` attribute and set it to `true` to apply a stripe gradient over the progress bar's background color.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/progress_06.png" width="413" alt="Striped Progress">
+![Striped Progress](/images/progress_06.png)
 
 ```markup
 <progress bc-value="25" bc-color="Success" bc-striped="true"  />

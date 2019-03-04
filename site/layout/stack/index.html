@@ -55,29 +55,7 @@
           
             <li class="toctree-l1">
 		
-    <span class="caption-text">Installation</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="/installation/requirements.md">Requirements</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../installation/create-new-project/">Create new Project</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../installation/metronic-integration/">Metronic Integration</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="/installation/mecons-installation/">Mecons Installation</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="/installation/disable-rendering/">Disable Tag Helper Rendering</a>
-                </li>
-    </ul>
+    <a class="" href="../../installation/">Installation</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -102,9 +80,9 @@
     
         <ul>
         
-            <li><a class="toctree-l4" href="#stack-configuration-ltstackgt">Stack Configuration &lt;stack&gt;</a></li>
+            <li><a class="toctree-l4" href="#configuration">Configuration</a></li>
         
-            <li><a class="toctree-l4" href="#item-configuration-ltstack-itemgt">Item Configuration &lt;stack-item&gt;</a></li>
+            <li><a class="toctree-l4" href="#stack-item-configuration">Stack Item Configuration</a></li>
         
         </ul>
     
@@ -322,7 +300,7 @@
               
                 <h1 id="stack">Stack</h1>
 <p>A Stack allows to build equal height and flexible blocks.</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/stack_01.png" width="365" alt="Mecons Stack"></p>
+<p><img alt="Mecons Stack" src="/images/stack_01.png" /></p>
 <pre><code class="markup">&lt;stack&gt;
     &lt;stack-item&gt;Item 1&lt;/stack-item&gt;
     &lt;stack-item&gt;Item 2&lt;/stack-item&gt;
@@ -331,10 +309,11 @@
 &lt;/stack&gt;
 </code></pre>
 
-<h2 id="stack-configuration-ltstackgt">Stack Configuration <code>&lt;stack&gt;</code></h2>
+<hr />
+<h2 id="configuration">Configuration</h2>
 <h3 id="auto-width">Auto Width</h3>
 <p>If the <code>bc-auto-width</code> attribute is set to <code>true</code>, each stack item gets the width of whose content.</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/stack_02.png" width="411" alt="Stack Auto Width"></p>
+<p><img alt="Stack Auto Width" src="/images/stack_02.png" /></p>
 <pre><code class="markup">&lt;stack bc-auto-width=&quot;true&quot;&gt;
     &lt;stack-item&gt;Free content&lt;/stack-item&gt;
     &lt;stack-item&gt;Free content&lt;/stack-item&gt;
@@ -344,16 +323,17 @@
 
 <h3 id="orientation">Orientation</h3>
 <p>With the <code>bc-orientation</code> attribute the orientation of the stack can be set. Possible orientations are <code>Horizontal</code> (default) or <code>Vertical</code>.</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/stack_03.png" width="350" alt="Stack Orientation"></p>
+<p><img alt="Stack Orientation" src="/images/stack_03.png" /></p>
 <pre><code class="markup">&lt;stack bc-orientation=&quot;Vertical&quot;&gt;
     ...
 &lt;/stack&gt;
 </code></pre>
 
-<h2 id="item-configuration-ltstack-itemgt">Item Configuration <code>&lt;stack-item&gt;</code></h2>
+<hr />
+<h2 id="stack-item-configuration">Stack Item Configuration</h2>
 <h3 id="alignment">Alignment</h3>
 <p>Set an item content alignment with <code>bc-alignment</code> attribute. Possible alignments are <code>Left</code> (default), <code>Center</code> or <code>Right</code>.</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/stack_04.png" width="356" alt="Stack Item Horizontal Alignment"></p>
+<p><img alt="Stack Item Horizontal Alignment" src="/images/stack_04.png" /></p>
 <pre><code class="markup">&lt;stack&gt;
     &lt;stack-item bc-alignment=&quot;Left&quot;&gt;Left alignment&lt;/stack-item&gt;
     &lt;stack-item bc-alignment=&quot;Center&quot;&gt;Center alignment&lt;/stack-item&gt;
@@ -363,7 +343,7 @@
 
 <h3 id="vertical-alignment">Vertical Alignment</h3>
 <p>Align the content vertically with the <code>bc-vertical-alignment</code> attribute. It is possible to align the content <code>Top</code>, <code>Middle</code> or <code>Bottom</code>.</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/stack_05.png" width="353" alt="Stack Item Vertical Alignment"></p>
+<p><img alt="Stack Item Vertical Alignment" src="/images/stack_05.png" /></p>
 <pre><code class="markup">&lt;stack&gt;
     &lt;stack-item bc-vertical-alignment=&quot;Top&quot;&gt;Top alignment&lt;/stack-item&gt;
     &lt;stack-item bc-vertical-alignment=&quot;Middle&quot;&gt;Middle alignment&lt;/stack-item&gt;

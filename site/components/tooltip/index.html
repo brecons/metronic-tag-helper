@@ -55,29 +55,7 @@
           
             <li class="toctree-l1">
 		
-    <span class="caption-text">Installation</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="/installation/requirements.md">Requirements</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../installation/create-new-project/">Create new Project</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../installation/metronic-integration/">Metronic Integration</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="/installation/mecons-installation/">Mecons Installation</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="/installation/disable-rendering/">Disable Tag Helper Rendering</a>
-                </li>
-    </ul>
+    <a class="" href="../../installation/">Installation</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -320,19 +298,20 @@
               
                 <h1 id="tooltip">Tooltip</h1>
 <p>Tooltips are components to add further informations to an element.</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/tooltip_01.png" width="192" alt="Mecons Tooltip"></p>
+<p><img alt="Mecons Tooltip" src="/images/tooltip_01.png" /></p>
 <pre><code class="markup">&lt;button type=&quot;button&quot; bc-tooltip=&quot;Tooltip on top&quot;&gt;Tooltip on top&lt;/button&gt;
 </code></pre>
 
+<hr />
 <h2 id="configuration">Configuration</h2>
-<h3 id="text-mandatory-trigger-attribute">Text <span class="badge info">Mandatory</span> <span class="badge info">Trigger Attribute</span></h3>
+<h3 id="text-mandatory-trigger-attribute">Text (Mandatory) (Trigger Attribute)</h3>
 <p>The <code>bc-tooltip</code> attribute is available on each HTML element and specifies the tooltip text. After these attribute is set for an element further attributes are available to concretize the tooltip definition.</p>
 <pre><code class="markup">&lt;button type=&quot;button&quot; bc-tooltip=&quot;Text and content&quot;&gt;Button with Tooltip&lt;/button&gt;
 </code></pre>
 
 <h3 id="html">HTML</h3>
 <p>Not only text can be displayed within a tooltip, also HTML enriched content is allowed. To allow and render HTML tags within a tooltip use the <code>bc-tooltip-html</code> attribute.</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/tooltip_02.png" width="209" alt="Tooltip HTML Content"></p>
+<p><img alt="Tooltip HTML Contentp" src="/images/tooltip_02.png" /></p>
 <pre><code class="markup">&lt;button type=&quot;button&quot; bc-tooltip=&quot;&lt;em&gt;Tooltip&lt;/em&gt; &lt;u&gt;with&lt;/u&gt; &lt;b&gt;HTML&lt;/b&gt;&quot;
     bc-tooltip-html=&quot;true&quot;&gt;Tooltip with HTML&lt;/button&gt;
 </code></pre>

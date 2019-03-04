@@ -2,7 +2,7 @@
 
 Portlets are complex containers for content, actions and small navigations.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/portlet_01.png" width="500" alt="Mecons Portlet">
+![Mecons Portlet](/images/portlet_01.png)
 
 ```markup
 <portlet>
@@ -13,9 +13,11 @@ Portlets are complex containers for content, actions and small navigations.
 </portlet>
 ```
 
+---
+
 ## Components
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/portlet_02.png" width="757" alt="Portlet Components">
+![Portlet Components](/images/portlet_02.png)
 
 ```markup
 <portlet>
@@ -35,27 +37,29 @@ Portlets are complex containers for content, actions and small navigations.
 </portlet>
 ```
 
-### Header `<portlet-header>`
+### Header
 
 A header for the portlet can added with the `<portlet-header>` tag helper. A header can contain a simple title with additional subtitle, an icon or a navigation.
 
-### Body `<portlet-body>`
+### Body
 
 The body tag helper is the main container for portlets' content and can be added with `<portlet-body>`.
 
-### Footer `<portlet-footer>`
+### Footer
 
 Some portlets need a footer to show detailed informations about the content. A footer can be added to the portlet with the `<portlet-footer>` tag helper.
 
-### Navigation `<portlet-nav>`
+### Navigation
 
 A portlet navigation can be added with the `<portlet-nav>` tag helper as a part of the header. A navigation, in turn, can contain many control elements (e.g. `portlet-link`).
 
-### Navigation Link `<portlet-link>`
+### Navigation Link
 
 A portlet navigation can be added with the `<portlet-nav>` tag helper as a part of the header. A navigation, in turn, can contain many control elements (e.g. `portlet-link`).
 
-## Portlet Configuration `<portlet>`
+---
+
+## Configuration
 
 ### Round
 
@@ -69,7 +73,7 @@ Disable the shadow for the portlet by setting the `bc-shadow` attribute to `fals
 
 Outline the portlet with a border by setting the `bc-border` attribute. Possible border styles are `None` (default), `Full` or `Semi`.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/portlet_03.png" width="1471" alt="Portlet Border">
+![Portlet Border](/images/portlet_03.png)
 
 ```markup
 <!-- Portlet with no border and shadow -->
@@ -92,7 +96,7 @@ Set a background color for the portlet with the `bc-background` attribute. By de
 
 In addition use the `bc-background-style` attribute to set the background color only for the header (`HeadOnly`) or for the complete portlet (`Full`).
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/portlet_04.png" width="984" alt="Portlet Background">
+![Portlet Background](/images/portlet_04.png)
 
 ```markup
 <!-- Portlet with full background -->
@@ -102,7 +106,9 @@ In addition use the `bc-background-style` attribute to set the background color 
 <portlet bc-background="Brand" bc-background-style="HeadOnly"> ... </portlet>
 ```
 
-## Header Configuration `<portlet-header>`
+---
+
+## Header Configuration
 
 ### Titles
 
@@ -116,7 +122,7 @@ With the `bc-icon` attribute it is possible to define a icon for the portlet whi
 
 Use the `bc-color` attribute to define a font color for the title and icon of the portlet header. By default, the color is `Dark`.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/portlet_05.png" width="490" alt="Portlet Header Color">
+![Portlet Header Color](/images/portlet_05.png)
 
 ```markup
 <portlet>
