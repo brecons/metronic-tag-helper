@@ -16,6 +16,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://www.brecons.net/change-log/</loc>
+     <lastmod>2019-03-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://www.brecons.net/layout/grid-system/</loc>
      <lastmod>2019-03-04</lastmod>
      <changefreq>daily</changefreq>
@@ -111,27 +116,27 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://www.brecons.net/forms/button/</loc>
-     <lastmod>2019-03-04</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://www.brecons.net/forms/dropdown-button/</loc>
-     <lastmod>2019-03-04</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://www.brecons.net/forms/button-group/</loc>
-     <lastmod>2019-03-04</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
      <loc>https://www.brecons.net/forms/label-and-help/</loc>
      <lastmod>2019-03-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://www.brecons.net/forms/input/</loc>
+     <lastmod>2019-03-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://www.brecons.net/forms/textarea/</loc>
+     <lastmod>2019-03-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://www.brecons.net/forms/select/</loc>
+     <lastmod>2019-03-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://www.brecons.net/forms/static/</loc>
      <lastmod>2019-03-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -146,57 +151,7 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://www.brecons.net/forms/dropzone/</loc>
-     <lastmod>2019-03-04</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://www.brecons.net/forms/datepicker/</loc>
-     <lastmod>2019-03-04</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://www.brecons.net/forms/daterangepicker/</loc>
-     <lastmod>2019-03-04</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://www.brecons.net/forms/input/</loc>
-     <lastmod>2019-03-04</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://www.brecons.net/forms/timepicker/</loc>
-     <lastmod>2019-03-04</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://www.brecons.net/forms/markdown/</loc>
-     <lastmod>2019-03-04</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://www.brecons.net/forms/summernote/</loc>
-     <lastmod>2019-03-04</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://www.brecons.net/forms/nouislider/</loc>
-     <lastmod>2019-03-04</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://www.brecons.net/forms/select/</loc>
-     <lastmod>2019-03-04</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
      <loc>https://www.brecons.net/forms/switch/</loc>
-     <lastmod>2019-03-04</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://www.brecons.net/forms/static/</loc>
      <lastmod>2019-03-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -216,7 +171,52 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://www.brecons.net/change-log/</loc>
+     <loc>https://www.brecons.net/forms/button/</loc>
+     <lastmod>2019-03-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://www.brecons.net/forms/dropdown-button/</loc>
+     <lastmod>2019-03-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://www.brecons.net/forms/button-group/</loc>
+     <lastmod>2019-03-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://www.brecons.net/forms/datepicker/</loc>
+     <lastmod>2019-03-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://www.brecons.net/forms/daterangepicker/</loc>
+     <lastmod>2019-03-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://www.brecons.net/forms/timepicker/</loc>
+     <lastmod>2019-03-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://www.brecons.net/forms/markdown/</loc>
+     <lastmod>2019-03-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://www.brecons.net/forms/summernote/</loc>
+     <lastmod>2019-03-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://www.brecons.net/forms/dropzone/</loc>
+     <lastmod>2019-03-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://www.brecons.net/forms/nouislider/</loc>
      <lastmod>2019-03-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
