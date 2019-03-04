@@ -2,7 +2,7 @@
 
 The `<radio-list>` tag helper is a wrapper for radio input elements. For a correct rendering it is necessary to embedding all radios into a radio list.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/radiolist_01.png" width="178" alt="Mecons Radio List">
+<img src="/images/radiolist_01.png" width="178" alt="Mecons Radio List">
 
 ```markup
 <radio-list bc-label="Default Radiobuttons">
@@ -18,7 +18,7 @@ The `<radio-list>` tag helper is a wrapper for radio input elements. For a corre
 
 Radios can rendered on the same horizontal row by adding the `bc-inline` attribute to the list wrapper.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/radiolist_02.png" width="328" alt="Inline Radio List">
+<img src="/images/radiolist_02.png" width="328" alt="Inline Radio List">
 
 ```markup
 <radio-list bc-inline="true">
@@ -30,7 +30,7 @@ Radios can rendered on the same horizontal row by adding the `bc-inline` attribu
 
 To set a label for a list of radios use the `bc-label` attribute.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/radiolist_03.png" width="185" alt="Radio List Label">
+<img src="/images/radiolist_03.png" width="185" alt="Radio List Label">
 
 ```markup
 <radio-list bc-label="Default Radios">
@@ -42,7 +42,7 @@ To set a label for a list of radios use the `bc-label` attribute.
 
 To set a help text for a list of radios use the `bc-help` attribute.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/radiolist_04.png" width="343" alt="Radio List Help">
+<img src="/images/radiolist_04.png" width="343" alt="Radio List Help">
 
 ```markup
 <radio-list bc-label="Inline Radios" bc-help="Some help text goes here" bc-inline="true">
@@ -54,7 +54,7 @@ To set a help text for a list of radios use the `bc-help` attribute.
 
 To bind a list of items to a Radio List use the `bc-items` attribute. This attribute accepts an object of `List<SelectListItem>`.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/radiolist_05.png" width="369" alt="Radio List Items">
+<img src="/images/radiolist_05.png" width="369" alt="Radio List Items">
 
 #### View
 
@@ -83,7 +83,7 @@ public class DataBindingViewModel
 
 It is also possible to bind the values of an enumeration to a Radio List. Use the `Html.GetEnumSelectList<TEnum>()` method of the HtmlHelper class to return a select list for the given enum type.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/radiolist_06.png" width="204" alt="">
+<img src="/images/radiolist_06.png" width="204" alt="">
 
 #### View
 
@@ -112,7 +112,7 @@ Model binding in ASP.NET Core MVC maps data from HTTP requests to action method 
 
 ### View
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/radiolist_07.png" width="304" alt="">
+<img src="/images/radiolist_07.png" width="304" alt="">
 
 ```markup
 @model BSolutions.Mecons.Test.Models.DataBindingViewModel

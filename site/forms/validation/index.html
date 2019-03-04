@@ -370,7 +370,7 @@ public IActionResult Register(RegisterViewModel model)
 </code></pre>
 
 <h3 id="view">View</h3>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/validation_01.png" width="438" alt=""></p>
+<p><img src="/images/validation_01.png" width="438" alt=""></p>
 <pre><code class="markup">&lt;form asp-action=&quot;Register&quot; method=&quot;post&quot; bc-validation=&quot;true&quot;&gt;
     &lt;form-group&gt;
         &lt;input type=&quot;text&quot; asp-for=&quot;Name&quot; /&gt;
@@ -392,7 +392,7 @@ public IActionResult Register(RegisterViewModel model)
 <h3 id="validation_1">Validation</h3>
 <p>By default, the <a href="https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/validation">ASP.NET Core Validation</a> is enabled for all Mecons forms. That means that each control within the form renders a validation message on model error. To disable the validation for all controls within the form set the <code>bc-validation</code> attribute to <code>false</code>.</p>
 <p>Furthermore it is possible to disable the validation on control level by setting the <code>bc-validation</code> to <code>false</code> for a specific control.</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/validation_02.png" width="431" alt=""></p>
+<p><img src="/images/validation_02.png" width="431" alt=""></p>
 <pre><code class="markup">&lt;form asp-action=&quot;Register&quot; bc-validation=&quot;true&quot;&gt;
     ...
 &lt;/form&gt;

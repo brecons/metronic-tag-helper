@@ -302,33 +302,33 @@
               
                 <h1 id="nouislider">noUiSlider</h1>
 <p>noUiSlider is a range slider without bloat. It offers a ton off features, and it is as small, lightweight and minimal as possible, which is great for mobile use on the many supported devices, including iPhone, iPad, Android devices &amp; Windows (Phone) 8 desktops, tablets and all-in-ones. It works on desktops too, of course!</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/nouislider_01.png" width="294" alt="Mecons noUiSlider"></p>
+<p><img src="/images/nouislider_01.png" width="294" alt="Mecons noUiSlider"></p>
 <pre><code class="markup">&lt;nouislider bc-slider-1=&quot;20&quot; /&gt;
 </code></pre>
 
 <h2 id="configuration">Configuration</h2>
 <h3 id="sliders-mandatory">Sliders <span class="badge info">Mandatory</span></h3>
 <p>The <code>bc-slider-*</code> attribute defines an handle and its start position. The <code>bc-slider-*</code> attribute is a dictionary attribute and can be assigned multiple times (in this case the <code>*</code> must be replaced by a unique identifier, e.g. <code>bc-slider-1</code>).</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/nouislider_02.png" width="430" alt="noUiSlider Slider Definition"></p>
+<p><img src="/images/nouislider_02.png" width="430" alt="noUiSlider Slider Definition"></p>
 <pre><code class="markup">&lt;nouislider bc-slider-1=&quot;20&quot; /&gt;
 &lt;nouislider bc-slider-1=&quot;30.5&quot; bc-slider-2=&quot;80&quot; /&gt;
 </code></pre>
 
 <h3 id="connectors">Connectors</h3>
 <p>A connector is the space between two handles or between a handle and the start respectively the end point of a slider. These spaces can be filled with one color. Use the <code>bc-connectors</code> attribute to define these spaces as a connector or not. The connectors will be defined with a comma-separated list of Boolean values.</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/nouislider_03.png" width="431" alt="noUiSlider Connectors"></p>
+<p><img src="/images/nouislider_03.png" width="431" alt="noUiSlider Connectors"></p>
 <pre><code class="markup">&lt;nouislider bc-slider-1=&quot;20&quot; bc-slider-2=&quot;80&quot; bc-connectors=&quot;false,true,false&quot; /&gt;
 &lt;nouislider bc-slider-1=&quot;20&quot; bc-connectors=&quot;true,false&quot; /&gt;
 </code></pre>
 
 <h3 id="color">Color</h3>
 <p>With the noUiSlider Tag Helper it is possible to colorize the handles and the connectors of a slider. Set a color for all handles with the <code>bc-color-sliders</code> attribute.</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/nouislider_04.png" width="435" alt="noUiSlider Slider Color"></p>
+<p><img src="/images/nouislider_04.png" width="435" alt="noUiSlider Slider Color"></p>
 <pre><code class="markup">&lt;nouislider bc-slider-1=&quot;20&quot; bc-slider-2=&quot;80&quot; bc-color-sliders=&quot;Brand&quot; /&gt;
 </code></pre>
 
 <p>To set a color for the connectors use the <code>bc-color-connectors</code> attribute.</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/nouislider_05.png" width="440" alt="noUiSlider Connector Color"></p>
+<p><img src="/images/nouislider_05.png" width="440" alt="noUiSlider Connector Color"></p>
 <pre><code class="markup">&lt;nouislider bc-slider-1=&quot;20&quot; bc-slider-2=&quot;80&quot; bc-connectors=&quot;false,true,false&quot; bc-color-sliders=&quot;Danger&quot; bc-color-connectors=&quot;Brand&quot; /&gt;
 </code></pre>
 
@@ -344,13 +344,13 @@
 <p>The <code>bc-limit</code> attribute is the oposite of the <code>bc-margin</code> attribute, limiting the maximum distance between two handles. As with the <code>bc-margin</code> attribute, the limit option can only be used on linear sliders.</p>
 <h3 id="orientation">Orientation</h3>
 <p>The orientation of the slider can be set by the <code>bc-orientation</code> attribute. Possible values are <code>Horizontal</code> (default) or <code>Vertical</code>. Vertical sliders don't assume a default height, so you'll need to set one. You can use any unit you want, including <code>%</code> or <code>px</code>.</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/nouislider_06.png" width="45" alt="noUiSlider Orientation"></p>
+<p><img src="/images/nouislider_06.png" width="45" alt="noUiSlider Orientation"></p>
 <pre><code class="markup">&lt;nouislider bc-slider-1=&quot;20&quot; bc-orientation=&quot;Vertical&quot; style=&quot;height: 100px;&quot; /&gt;
 </code></pre>
 
 <h3 id="direction">Direction</h3>
 <p>By default the sliders are top-to-bottom and left-to-right, but you can change this using the <code>bc-direction</code> attribute, which decides where the upper side of the slider is. Possible directions are <code>Ltr</code> (default) or <code>Rtl</code>.</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/nouislider_07.png" width="429" alt="noUiSlider Direction"></p>
+<p><img src="/images/nouislider_07.png" width="429" alt="noUiSlider Direction"></p>
 <pre><code class="markup">&lt;nouislider bc-slider-1=&quot;20&quot; bc-connectors=&quot;true,false&quot; /&gt;
 &lt;nouislider bc-slider-1=&quot;20&quot; bc-connectors=&quot;true,false&quot; bc-direction=&quot;Rtl&quot; /&gt;
 </code></pre>
@@ -361,41 +361,41 @@
 <p>A scale for the noUiSlider can be defined in several modes. The mode of the scale is be defined with the <code>bc-pips-mode</code> attribute. Possible modes are <code>Range</code>, <code>Steps</code>, <code>Positions</code>, <code>Count</code> and <code>Values</code>.</p>
 <h4 id="range">Range</h4>
 <p>The <code>Range</code> mode uses the slider range to determine where the pips should be. A pip is generated for every percentage specified.</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/nouislider_08.png" width="437" alt="noUiSlider with Range scale"></p>
+<p><img src="/images/nouislider_08.png" width="437" alt="noUiSlider with Range scale"></p>
 <pre><code class="markup">&lt;nouislider bc-slider-1=&quot;0&quot; bc-pips-mode=&quot;Range&quot; /&gt;
 </code></pre>
 
 <h4 id="steps">Steps</h4>
 <p>In <code>Steps</code> mode, a pip is generated for every step of the slider defined with the <code>bc-step</code> attribute. In addition, each pip of a step still gets a label with the respective value.</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/nouislider_09.png" width="438" alt="noUiSlider with Steps scale"></p>
+<p><img src="/images/nouislider_09.png" width="438" alt="noUiSlider with Steps scale"></p>
 <pre><code class="markup">&lt;nouislider bc-slider-1=&quot;0&quot; bc-pips-mode=&quot;Steps&quot; bc-step=&quot;5&quot; /&gt;
 &lt;nouislider bc-slider-1=&quot;0&quot; bc-pips-mode=&quot;Steps&quot; bc-step=&quot;10&quot; /&gt;
 </code></pre>
 
 <h4 id="positions">Positions</h4>
 <p>In <code>Positions</code> mode, pips are generated at percentage-based positions on the slider.</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/nouislider_10.png" width="438" alt="noUiSlider with Positions scale"></p>
+<p><img src="/images/nouislider_10.png" width="438" alt="noUiSlider with Positions scale"></p>
 <pre><code class="markup">&lt;nouislider bc-slider-1=&quot;0&quot; bc-pips-mode=&quot;Positions&quot; bc-pips-values=&quot;0, 25, 50, 75, 100&quot; /&gt;
 &lt;nouislider bc-slider-1=&quot;0&quot; bc-pips-mode=&quot;Positions&quot; bc-pips-values=&quot;0, 10, 20, 30, 40, 50, 100&quot; /&gt;
 </code></pre>
 
 <h4 id="count">Count</h4>
 <p>The <code>Count</code> mode can be used to generate a fixed number of pips.</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/nouislider_11.png" width="425" alt="noUiSlider with Count scale"></p>
+<p><img src="/images/nouislider_11.png" width="425" alt="noUiSlider with Count scale"></p>
 <pre><code class="markup">&lt;nouislider bc-slider-1=&quot;0&quot; bc-pips-mode=&quot;Count&quot; bc-pips-values=&quot;5&quot; /&gt;
 &lt;nouislider bc-slider-1=&quot;0&quot; bc-pips-mode=&quot;Count&quot; bc-pips-values=&quot;11&quot; /&gt;
 </code></pre>
 
 <h4 id="values">Values</h4>
 <p>The <code>Values</code> mode is similar to <code>Positions</code>, but it accepts values instead of percentages.</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/nouislider_12.png" width="433" alt="noUiSlider with Values scale"></p>
+<p><img src="/images/nouislider_12.png" width="433" alt="noUiSlider with Values scale"></p>
 <pre><code class="markup">&lt;nouislider bc-slider-1=&quot;0&quot; bc-pips-mode=&quot;Values&quot; bc-pips-values=&quot;0, 10, 20, 50, 100&quot; /&gt;
 &lt;nouislider bc-slider-1=&quot;0&quot; bc-pips-mode=&quot;Values&quot; bc-pips-values=&quot;0, 15, 30, 45, 100&quot; /&gt;
 </code></pre>
 
 <h3 id="density">Density</h3>
 <p>The density value controls how many pips are placed on one percent of the slider range. With the default value of <code>1</code>, there is one pip per percent. For a value of <code>2</code>, a pip is placed for every 2 percent. A value below one will place more than one pip per percentage.</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/nouislider_13.png" width="457" alt="noUiSlider with density scale"></p>
+<p><img src="/images/nouislider_13.png" width="457" alt="noUiSlider with density scale"></p>
 <pre><code class="markup">&lt;nouislider bc-slider-1=&quot;0&quot; bc-pips-mode=&quot;Range&quot; /&gt;
 &lt;nouislider bc-slider-1=&quot;0&quot; bc-pips-mode=&quot;Range&quot; bc-pips-density=&quot;2&quot; /&gt;
 &lt;nouislider bc-slider-1=&quot;0&quot; bc-pips-mode=&quot;Range&quot; bc-pips-density=&quot;4&quot; /&gt;
@@ -403,7 +403,7 @@
 
 <h3 id="stepped">Stepped</h3>
 <p>By setting the <code>bc-pips-stepped</code> attribute to <code>true</code>, the pip values will be round to the slider stepping.</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/nouislider_14.png" width="463" alt="noUiSlider with stepped scale"></p>
+<p><img src="/images/nouislider_14.png" width="463" alt="noUiSlider with stepped scale"></p>
 <pre><code class="markup">&lt;nouislider bc-slider-1=&quot;0&quot; bc-pips-mode=&quot;Positions&quot; bc-step=&quot;2&quot; bc-pips-values=&quot;0, 25, 50, 75, 100&quot; /&gt;
 &lt;nouislider bc-slider-1=&quot;0&quot; bc-pips-mode=&quot;Positions&quot; bc-step=&quot;2&quot; bc-pips-values=&quot;0, 25, 50, 75, 100&quot; bc-pips-stepped=&quot;true&quot; /&gt;
 </code></pre>

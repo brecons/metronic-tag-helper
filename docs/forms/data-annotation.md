@@ -16,7 +16,7 @@ Display Attributes are used to specify how data from a member of a view model is
 
 If you have a custom localization logic in your application it might be useful to have a custom display attribute to realize the translations. In this case create a custom display attribute and inherit from the `BSolutions.Brecons.Core.Attributes.BreconsDisplayAttribute`. Afterwards override the `DisplayName` and the `Description` property to insert custom translation logic.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/data-annotation_01.png" width="426" alt="Brecons Display Attribute">
+<img src="/images/data-annotation_01.png" width="426" alt="Brecons Display Attribute">
 
 #### View
 
@@ -69,7 +69,7 @@ public class CustomDisplayAttribute : BreconsDisplayAttribute
 
 Furthermore, the classic `DisplayAttribute` is also available to set the value of the label and help. This attribute is also fully supported by the Mecons tag helpers.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/data-annotation_02.png" width="426" alt="Classic Display Attribute">
+<img src="/images/data-annotation_02.png" width="426" alt="Classic Display Attribute">
 
 #### View
 

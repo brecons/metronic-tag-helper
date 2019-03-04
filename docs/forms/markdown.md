@@ -2,7 +2,7 @@
 
 The Markdown Tag Helper is an editor for Markdown language.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/markdown_01.png" width="915" alt="Mecons Markdown">
+<img src="/images/markdown_01.png" width="915" alt="Mecons Markdown">
 
 ```markup
 <markdown bc-height="200" />

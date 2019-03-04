@@ -300,7 +300,7 @@
               
                 <h1 id="checkbox-list">Checkbox List</h1>
 <p>The <code>&lt;checkbox-list&gt;</code> tag helper is a wrapper for checkbox input elements. For a correct rendering it is necessary to embedding all checkboxes into a checkbox list.</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/checkboxlist_01.png" width="174" alt="Mecons Checkbox List"></p>
+<p><img src="/images/checkboxlist_01.png" width="174" alt="Mecons Checkbox List"></p>
 <pre><code class="markup">&lt;checkbox-list bc-label=&quot;Default Checkboxes&quot;&gt;
     &lt;input type=&quot;checkbox&quot; bc-label=&quot;Default&quot; /&gt;
     &lt;input type=&quot;checkbox&quot; bc-label=&quot;Disabled&quot; disabled /&gt;
@@ -311,7 +311,7 @@
 <h2 id="configuration">Configuration</h2>
 <h3 id="inline">Inline</h3>
 <p>Checkboxes can rendered on the same horizontal row by adding the <code>bc-inline</code> attribute to the list wrapper.</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/checkboxlist_02.png" width="328" alt="Inline Checkbox List"></p>
+<p><img src="/images/checkboxlist_02.png" width="328" alt="Inline Checkbox List"></p>
 <pre><code class="markup">&lt;checkbox-list bc-inline=&quot;true&quot;&gt;
     ...
 &lt;/checkbox-list&gt;
@@ -319,7 +319,7 @@
 
 <h3 id="label">Label</h3>
 <p>To set an label for the list of checkboxes use the <code>bc-label</code> attribute.</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/checkboxlist_03.png" width="171" alt="Checkbox List Label"></p>
+<p><img src="/images/checkboxlist_03.png" width="171" alt="Checkbox List Label"></p>
 <pre><code class="markup">&lt;checkbox-list bc-label=&quot;Default Checkboxes&quot;&gt;
     ...
 &lt;/checkbox-list&gt;
@@ -327,7 +327,7 @@
 
 <h3 id="help">Help</h3>
 <p>To set a help text for a list of checkboxes use the <code>bc-help</code> attribute.</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/checkboxlist_04.png" width="334" alt="Checkbox List Help"></p>
+<p><img src="/images/checkboxlist_04.png" width="334" alt="Checkbox List Help"></p>
 <pre><code class="markup">&lt;checkbox-list bc-label=&quot;Inline Checkboxes&quot; bc-help=&quot;Some help text goes here&quot; bc-inline=&quot;true&quot;&gt;
     ...
 &lt;/checkbox-list&gt;
@@ -335,7 +335,7 @@
 
 <h3 id="items">Items</h3>
 <p>To bind a list of items to a Checkbox List use the <code>bc-items</code> attribute. This attribute accepts an object of <code>List&lt;SelectListItem&gt;</code>.</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/checkboxlist_05.png" width="161" alt="Checkbox List Items"></p>
+<p><img src="/images/checkboxlist_05.png" width="161" alt="Checkbox List Items"></p>
 <h4 id="view">View</h4>
 <pre><code class="markup">@model BSolutions.Mecons.Test.Models.DataBindingViewModel
 
@@ -359,7 +359,7 @@
 <h2 id="data-binding">Data Binding</h2>
 <p>Model binding in ASP.NET Core MVC maps data from HTTP requests to action method parameters. With <code>asp-for</code> attribute of the Checkbox List it is possible to bind checked options to a model parameter.</p>
 <h3 id="view_1">View</h3>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/checkboxlist_06.png" width="161" alt=""></p>
+<p><img src="/images/checkboxlist_06.png" width="161" alt=""></p>
 <pre><code class="markup">@model BSolutions.Mecons.Test.Models.DataBindingViewModel
 
 &lt;checkbox-list asp-for=&quot;Equipment&quot; bc-items=&quot;Model.Equipments&quot;&gt;&lt;/checkbox-list&gt;

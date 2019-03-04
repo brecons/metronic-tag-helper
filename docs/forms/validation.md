@@ -86,7 +86,7 @@ public IActionResult Register(RegisterViewModel model)
 
 ### View
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/validation_01.png" width="438" alt="">
+<img src="/images/validation_01.png" width="438" alt="">
 
 ```markup
 <form asp-action="Register" method="post" bc-validation="true">
@@ -114,7 +114,7 @@ By default, the [ASP.NET Core Validation](https://docs.microsoft.com/en-us/aspne
 
 Furthermore it is possible to disable the validation on control level by setting the `bc-validation` to `false` for a specific control.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/validation_02.png" width="431" alt="">
+<img src="/images/validation_02.png" width="431" alt="">
 
 ```markup
 <form asp-action="Register" bc-validation="true">

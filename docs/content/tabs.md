@@ -2,7 +2,7 @@
 
 Tabs are a single content area with multiple planels, each associated with a header in a list.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/tabs_01.png" width="487" alt="Mecons Tabs">
+<img src="/images/tabs_01.png" width="487" alt="Mecons Tabs" />
 
 ```markup
 <tabs>
@@ -20,13 +20,15 @@ Tabs are a single content area with multiple planels, each associated with a hea
 </tabs>
 ```
 
-## Tabs Configuration `<tabs>`
+---
+
+## Configuration
 
 ### Pills
 
 Use the `bc-pills` attribute to render the tabs as pills.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/tabs_02.png" width="478" alt="Tabs as Pills">
+<img src="/images/tabs_02.png" width="478" alt="Tabs as Pills" />
 
 ```markup
 <tabs bc-pills="true">
@@ -42,9 +44,11 @@ Use the `bc-pills` attribute to render the tabs as pills.
 </tabs>
 ```
 
-## Pane Configuration `<tabs-pane>`
+---
 
-### Header <span class="badge info">Mandatory</span>
+## Pane Configuration
+
+### Header (Mandatory)
 
 Use the `bc-header` attribute to define a title for the tab.
 
@@ -52,7 +56,7 @@ Use the `bc-header` attribute to define a title for the tab.
 
 By default, the first tab is active on page load. If you want to modify that, use the `bc-active` attribute to activate another tab on startup.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/tabs_03.png" width="491" alt="Active Tab Pane">
+<img src="/images/tabs_03.png" width="491" alt="Active Tab Pane" />
 
 ```markup
 <tabs>

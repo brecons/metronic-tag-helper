@@ -282,7 +282,7 @@
               
                 <h1 id="radio-list">Radio List</h1>
 <p>The <code>&lt;radio-list&gt;</code> tag helper is a wrapper for radio input elements. For a correct rendering it is necessary to embedding all radios into a radio list.</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/radiolist_01.png" width="178" alt="Mecons Radio List"></p>
+<p><img src="/images/radiolist_01.png" width="178" alt="Mecons Radio List"></p>
 <pre><code class="markup">&lt;radio-list bc-label=&quot;Default Radiobuttons&quot;&gt;
     &lt;input type=&quot;radio&quot; name=&quot;radio1&quot; bc-label=&quot;Default&quot; /&gt;
     &lt;input type=&quot;radio&quot; name=&quot;radio1&quot; bc-label=&quot;Disabled&quot; disabled /&gt;
@@ -293,7 +293,7 @@
 <h2 id="configuration">Configuration</h2>
 <h3 id="inline">Inline</h3>
 <p>Radios can rendered on the same horizontal row by adding the <code>bc-inline</code> attribute to the list wrapper.</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/radiolist_02.png" width="328" alt="Inline Radio List"></p>
+<p><img src="/images/radiolist_02.png" width="328" alt="Inline Radio List"></p>
 <pre><code class="markup">&lt;radio-list bc-inline=&quot;true&quot;&gt;
     ...
 &lt;/radio-list&gt;
@@ -301,7 +301,7 @@
 
 <h3 id="label">Label</h3>
 <p>To set a label for a list of radios use the <code>bc-label</code> attribute.</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/radiolist_03.png" width="185" alt="Radio List Label"></p>
+<p><img src="/images/radiolist_03.png" width="185" alt="Radio List Label"></p>
 <pre><code class="markup">&lt;radio-list bc-label=&quot;Default Radios&quot;&gt;
     ...
 &lt;/radio-list&gt;
@@ -309,7 +309,7 @@
 
 <h3 id="help">Help</h3>
 <p>To set a help text for a list of radios use the <code>bc-help</code> attribute.</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/radiolist_04.png" width="343" alt="Radio List Help"></p>
+<p><img src="/images/radiolist_04.png" width="343" alt="Radio List Help"></p>
 <pre><code class="markup">&lt;radio-list bc-label=&quot;Inline Radios&quot; bc-help=&quot;Some help text goes here&quot; bc-inline=&quot;true&quot;&gt;
     ...
 &lt;/radio-list&gt;
@@ -317,7 +317,7 @@
 
 <h3 id="items">Items</h3>
 <p>To bind a list of items to a Radio List use the <code>bc-items</code> attribute. This attribute accepts an object of <code>List&lt;SelectListItem&gt;</code>.</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/radiolist_05.png" width="369" alt="Radio List Items"></p>
+<p><img src="/images/radiolist_05.png" width="369" alt="Radio List Items"></p>
 <h4 id="view">View</h4>
 <pre><code class="markup">@model BSolutions.Mecons.Test.Models.DataBindingViewModel
 
@@ -340,7 +340,7 @@
 </code></pre>
 
 <p>It is also possible to bind the values of an enumeration to a Radio List. Use the <code>Html.GetEnumSelectList&lt;TEnum&gt;()</code> method of the HtmlHelper class to return a select list for the given enum type.</p>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/radiolist_06.png" width="204" alt=""></p>
+<p><img src="/images/radiolist_06.png" width="204" alt=""></p>
 <h4 id="view_1">View</h4>
 <pre><code class="markup">@model BSolutions.Mecons.Test.Models.DataBindingViewModel
 
@@ -361,7 +361,7 @@
 <h2 id="data-binding">Data Binding</h2>
 <p>Model binding in ASP.NET Core MVC maps data from HTTP requests to action method parameters. With <code>asp-for</code> attribute of the Radio List it is possible to bind selected option to a model parameter.</p>
 <h3 id="view_2">View</h3>
-<p><img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/radiolist_07.png" width="304" alt=""></p>
+<p><img src="/images/radiolist_07.png" width="304" alt=""></p>
 <pre><code class="markup">@model BSolutions.Mecons.Test.Models.DataBindingViewModel
 
 &lt;form-group&gt;

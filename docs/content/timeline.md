@@ -2,7 +2,7 @@
 
 A Timeline is a structured representation of events and their chronologically occurance.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/timeline_01.png" width="445" alt="Mecons Timeline">
+<img src="/images/timeline_01.png" width="445" alt="Mecons Timeline" />
 
 ```markup
 <timeline>
@@ -19,9 +19,11 @@ A Timeline is a structured representation of events and their chronologically oc
 </timeline>
 ```
 
-## Item Configuration `<timeline-item>`
+---
 
-### Time <span class="badge info">Mandatory</span>
+## Item Configuration
+
+### Time (Mandatory)
 
 Set a timestamp for the timeline item with the `bc-time` attribute.
 
@@ -29,7 +31,7 @@ Set a timestamp for the timeline item with the `bc-time` attribute.
 
 A color for the timeline item can be set with the `bc-color` attribute.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/timeline_02.png" width="438" alt="Timeline Item Color">
+<img src="/images/timeline_02.png" width="438" alt="Timeline Item Color" />
 
 ```markup
 <timeline>
@@ -43,7 +45,7 @@ A color for the timeline item can be set with the `bc-color` attribute.
 
 Set an icon for the timeline item with the `bc-icon` attribute.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/timeline_03.png" width="436" alt="Timeline Item Icon">
+<img src="/images/timeline_03.png" width="436" alt="Timeline Item Icon" />
 
 ```markup
 <timeline>

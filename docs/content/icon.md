@@ -2,7 +2,7 @@
 
 Metronic supports the icon libraries of Flaticon, Fontawesome, Lineawesome and Socicons. To handle these icons in a easy way use the Mecons Tag Helper for icons.
 
-![Mecons Icon](/images/icon_01.png)
+<img src="/images/icon_01.png" width="150" alt="Mecons Icon" />
 
 ```markup
 <h5>Fontawesome</h5>
@@ -38,7 +38,7 @@ Specify an icon with the `bc-type` attribute.
 
 Set a icon color with the `bc-color` attribute.
 
-![Icon Color](/images/icon_02.png)
+<img src="/images/icon_02.png" width="126" alt="Icon Color" />
 
 ```markup
 <icon bc-color="Primary" bc-type="FI_Internet" />

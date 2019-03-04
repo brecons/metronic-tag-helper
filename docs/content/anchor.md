@@ -2,7 +2,7 @@
 
 The anchor element or rather the `<a>` tag defines a hyperlink, which is used to link from one page to another.
 
-![Mecons Anchor](/images/anchor_01.png)
+<img src="/images/anchor_01.png" width="79" alt="Mecons Anchor" />
 
 ```markup
 <a href="#" bc-link="true">Basic Link</a>
@@ -20,7 +20,7 @@ The `bc-link` attribute is available on each HTML `<a>` tag and activate the Met
 
 Transform all characters of the anchor to uppercase by setting the `bc-uppercase` attribute to `true`.
 
-![Uppercase Anchor](/images/anchor_02.png)
+<img src="/images/anchor_02.png" width="121" alt="Uppercase Anchor" />
 
 ```markup
 <a href="#" bc-link="true" bc-uppercase="true">Uppercase Link</a>
@@ -30,7 +30,7 @@ Transform all characters of the anchor to uppercase by setting the `bc-uppercase
 
 The `bc-weight` attribute sets how thick or thin characters in anchor should be displayed. Available weights are `Bold`, `Bolder` or `Boldest`.
 
-![Weighted Anchor](/images/anchor_03.png)
+<img src="/images/anchor_03.png" width="93" alt="Weighted Anchor" />
 
 ```markup
 <a href="#" bc-link="true" bc-weight="Bold">Bold Link</a>
@@ -42,7 +42,7 @@ The `bc-weight` attribute sets how thick or thin characters in anchor should be 
 
 Use the `bc-color` attribute to define a color for the anchor.
 
-![Colored Anchor](/images/anchor_04.png)
+<img src="/images/anchor_04.png" width="125" alt="Colored Anchor" />
 
 ```markup
 <a href="#" bc-link="true" bc-color="Success">Success State</a>

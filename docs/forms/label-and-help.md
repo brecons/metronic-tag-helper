@@ -6,7 +6,7 @@ With a label or a help text it is possible to desribe a control in more detail.
 
 A label shows a name for a control and can be defined with the `<label>` tag within a `<form-group>`.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/labelandhelp_01.png" width="444" alt="Mecons Control Label">
+<img src="/images/labelandhelp_01.png" width="444" alt="Mecons Control Label">
 
 ```markup
 <form-group>
@@ -19,7 +19,7 @@ A label shows a name for a control and can be defined with the `<label>` tag wit
 
 A block-level help text for form controls can be created with the `<help>` tag helper within the `<form-group>`.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/metronic-tag-helper/master/docs/images/labelandhelp_02.png" width="441" alt="Mecons Control Help">
+<img src="/images/labelandhelp_02.png" width="441" alt="Mecons Control Help">
 
 ```markup
 <form-group>
