@@ -1,6 +1,6 @@
 # Mecons Tag Helper
 
-The Mecons Tag Helper Library comes with 30+ components, controls and UI widgets. Mecons provides a full [Keenthemes Metronic](http://keenthemes.com/metronic/) integration. Mecons is distributed as an enterprise library which can easily installed via NuGet.
+The Mecons Tag Helper Library comes with 30+ components, controls and UI widgets. Mecons provides a full [Keenthemes Metronic Admin Theme](http://keenthemes.com/metronic/) integration. Mecons is distributed as an enterprise library which can easily installed via NuGet.
 
 ---
 
@@ -20,8 +20,8 @@ Target Framework | Version | Target Framework Moniker (TFM)
 In order to use Mecons Tag Helper Library properly, you must meet certain requirements:
 
 * [Visual Studio 2017](https://visualstudio.microsoft.com/de/downloads/) with the installed workloads *ASP.NET and web development* and *.NET Core cross-platform development*.
-* [Metronic Admin Theme](https://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469)
-* [Mecons Tag Helper Library](https://codecanyon.net/)
+* A licence and the source files of the [Metronic Admin Theme](https://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469)
+* A license and the NuGet package of the [Mecons Tag Helper Library](https://codecanyon.net/)
 
 ---
 
@@ -35,12 +35,17 @@ For those in a hurry, here's a quickstart guide that allows you, as an advanced 
 
 (3) Open Visual Studio 2017 and create a new **ASP.NET Core Web Application**.
 
-(4) Add the marked lines to `ConfigureServices` method in `Startup.cs`:
+(4) Add the following service registrations to the `ConfigureServices` method in `Startup.cs`:
 
-```csharp
+```csharp hl_lines="1 9 10"
+using Microsoft.AspNetCore.Mvc.Infrastructure
+
+...
+
 public void ConfigureServices(IServiceCollection services)
 {
     services.AddMvc();
+
     services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
     services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
 }
@@ -56,11 +61,13 @@ public void ConfigureServices(IServiceCollection services)
 
 (9) Install Mecons NuGet Package with Package Manager Console:
 
-    PM> Install-Package BSolutions.Mecons -Source C:\Downloads\<UNZIPPED MECONS FOLDER>\
-
-(10) Add the marked lines to /Views/_ViewImports.cshtml:
-
 ```
+PM> Install-Package BSolutions.Mecons -Source C:\Downloads\<UNZIPPED MECONS FOLDER>\
+```
+
+(10) Add the following lines to `/Views/_ViewImports.cshtml`:
+
+``` csharp hl_lines="3 4 6"
 @using MyCompany.MyApplication
 @using MyCompany.MyApplication.Models
 @using BSolutions.Mecons.Enumerations

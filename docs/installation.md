@@ -8,11 +8,11 @@ On this page you will learn how to install Mecons Tag Helper Library into an ASP
 
 The first step is to create a new project in Visual Studio. Choose the ***Web*** rubric and subsequent the ***ASP.NET Core Web Application*** template. Adapt the project parameters like ***Name***, ***Location*** and ***Solution name*** and click ***OK***.
 
-![New Project in Visual Studio](/images/installation_01.png)
+<img src="/images/installation_01.png" width="944" alt="New Project in Visual Studio" />
 
 In the following dialog choose the ***.NET Core*** Framework and the ***ASP.NET Core 2.x*** version as well as a project template. Optionally change the authentication and click ***OK***.
 
-![Project Configuration in Visual Studio](/images/installation_02.png)
+<img src="/images/installation_02.png" width="789" alt="Project Configuration in Visual Studio" />
 
 ---
 
@@ -20,7 +20,7 @@ In the following dialog choose the ***.NET Core*** Framework and the ***ASP.NET 
 
 To ensure that Mecons runs correctly it is necessary to adapt the `Startup.cs`. Register inside the `ConfigureServices` method a singleton for the `IActionContextAccessor` and `IHttpContextAccessor`. Finally import the namespace `Microsoft.AspNetCore.Mvc.Infrastructure`.
 
-```csharp
+```csharp hl_lines="1 9 10"
 using Microsoft.AspNetCore.Mvc.Infrastructure
 
 ...
@@ -35,7 +35,7 @@ public void ConfigureServices(IServiceCollection services)
 ```
 
 !!!Warning
-    If the services are not registered, an `InvalidOperationException` may occur.
+    If the services are not registered, an `InvalidOperationException` may occur on application runtime.
 
 ---
 
@@ -47,7 +47,7 @@ In this section the Metronic Admin Theme will be integrated into an ASP.NET Core
 
 Copy the `assets` folder of your choosen Metronic Admin Theme (e.g. `/metronic_v5.x/dist/<YOUR FAVORITE THEME>/assets`) into the `wwwroot` folder of your project and rename it to `metronic`:
 
-```
+``` hl_lines="6 7 8 9 10"
 MyCompany.MyApplication
 ├── wwwroot/
     ├── css/
@@ -67,11 +67,11 @@ Copy the content of your choosen Metronic Admin Theme (e.g. `/metronic_v5.x/dist
 
 Include the `@RenderBody()` method at the position where the individual page content will be rendered.
 
-![Insert RenderBody method into layout page](/images/installation_03.png)
+<img src="/images/installation_03.png" width="1197" alt="Insert RenderBody method into layout page" />
 
 To ensure that all Mecons Tag Helpers work as expected, it is necessary to move all JavaScript includes from the page bottom into the `<head>`.
 
-![Inclusion of JavaScript](/images/installation_04.png)
+<img src="/images/installation_04.png" width="1063" alt="Inclusion of JavaScript" />
 
 ---
 
@@ -88,7 +88,7 @@ PM> Install-Package BSolutions.Mecons -Source C:\Downloads\<UNZIPPED MECONS FOLD
 
 After the package installation open `/Views/_ViewImports.cshtml` and insert the marked lines:
 
-```
+``` csharp hl_lines="3 4 6"
 @using MyCompany.MyApplication
 @using MyCompany.MyApplication.Models
 @using BSolutions.Mecons.Enumerations
@@ -101,6 +101,14 @@ After the package installation open `/Views/_ViewImports.cshtml` and insert the 
 
 ## Mecons Rendering
 
-By default, the Mecons Tag Helper Rendering is enabled for each HTML element. To disable the Brecons Tag Helper Rendering for an specific HTML element, set the `disable-brecons` attribute. The `disable-brecons` attribute is minimizable and needs no value.
+By default, the Mecons Tag Helper Rendering is enabled for each HTML element. To disable the Brecons Tag Helper Rendering for a specific HTML element, set the `disable-brecons` attribute. The `disable-brecons` attribute is minimizable and needs no value.
 
-![Mecons Rendering](/images/installation_05.png)
+<img src="/images/installation_05.png" width="173" alt="Mecons Rendering" />
+
+```markup hl_lines="5"
+<!-- Brecons Rendering -->
+<button type="button">Brecons Button</button>
+
+<!-- Default HTML Rendering -->
+<button type="button" disable-brecons>HTML Button</button>
+```

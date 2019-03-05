@@ -2,6 +2,8 @@
 
 With a label or a help text it is possible to desribe a control in more detail.
 
+---
+
 ## Label
 
 A label shows a name for a control and can be defined with the `<label>` tag within a `<form-group>`.
@@ -15,6 +17,12 @@ A label shows a name for a control and can be defined with the `<label>` tag wit
 </form-group>
 ```
 
+### Screenreader
+
+Set the `bc-sronly` attribute to hide the label on all devices except screen readers.
+
+---
+
 ## Help
 
 A block-level help text for form controls can be created with the `<help>` tag helper within the `<form-group>`.
@@ -27,9 +35,3 @@ A block-level help text for form controls can be created with the `<help>` tag h
 	<help>A block-level help text</help>
 </form-group>
 ```
-
-## Label Configuration `<label>`
-
-### Screenreader
-
-Set the `bc-sronly` attribute to hide the label on all devices except screen readers.

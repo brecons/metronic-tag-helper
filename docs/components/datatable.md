@@ -265,7 +265,8 @@ Within the view place the `<datatable>` tag helper and define your columns with 
 ```markup
 <row>
     <column xs-size="4">
-        <input type="text" class="form-control m-input m-input--solid" placeholder="Search..." id="generalSearch">
+        <input type="text" class="form-control m-input m-input--solid"
+            placeholder="Search..." id="generalSearch">
     </column>
 </row>
 <row>

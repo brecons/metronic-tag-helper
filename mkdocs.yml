@@ -9,6 +9,8 @@ extra_css:
   - css/mkdocs.css
 markdown_extensions:
   - admonition
+  - codehilite:
+        linenums: false
 
 nav:
     - Overview: 'index.md'
