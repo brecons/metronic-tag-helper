@@ -8,7 +8,7 @@
   
   <meta name="author" content="Bremus Solutions">
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Input - Mecons Tag Helper</title>
+  <title>Text - Mecons Tag Helper</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -18,7 +18,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Input";
+    var mkdocs_page_name = "Text";
     var mkdocs_page_input_path = "forms\\input.md";
     var mkdocs_page_url = "/forms/input/";
   </script>
@@ -176,10 +176,10 @@
                 </li>
                 <li class=" current">
                     
-    <a class="current" href="./">Input</a>
+    <a class="current" href="./">Text</a>
     <ul class="subnav">
             
-    <li class="toctree-l3"><a href="#text-input">Text (Input)</a></li>
+    <li class="toctree-l3"><a href="#text-single-line-input">Text (Single-line Input)</a></li>
     
         <ul>
         
@@ -196,7 +196,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../select/">Select</a>
+    <a class="" href="../select/">Dropdown</a>
                 </li>
                 <li class="">
                     
@@ -323,7 +323,7 @@
         
       
     
-    <li>Input</li>
+    <li>Text</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -333,39 +333,43 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="text-input">Text (Input)</h1>
+                <h1 id="text-single-line-input">Text (Single-line Input)</h1>
 <p>The text input will be specified with a <code>&lt;input type="text" /&gt;</code> tag and provides a single-line text input field.</p>
 <p><img src="/images/input_01.png" width="429" alt="Mecons Input Control"></p>
-<pre><code class="markup">&lt;input type=&quot;text&quot; bc-label=&quot;Text Control&quot; /&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span>&lt;input type=&quot;text&quot; bc-label=&quot;Text Control&quot; /&gt;
+</pre></div>
 
+
+<hr />
 <h2 id="configuration">Configuration</h2>
 <h3 id="addons">Addons</h3>
 <p>Place an text add-on on each side of an text input with the <code>bc-pre-text</code> or <code>bc-post-text</code> attribute.</p>
 <p><img src="/images/input_02.png" width="415" alt="Input Control Addons"></p>
-<pre><code class="markup">&lt;form-group&gt;
-    &lt;input type=&quot;text&quot; placeholder=&quot;Left Addon&quot; bc-pre-text=&quot;@&quot; /&gt;
-&lt;/form-group&gt;
-&lt;form-group&gt;
-    &lt;input type=&quot;text&quot; placeholder=&quot;Right Addon&quot; bc-post-text=&quot;@example.com&quot; /&gt;
-&lt;/form-group&gt;
-&lt;form-group&gt;
-    &lt;input type=&quot;text&quot; placeholder=&quot;Left &amp; Right Addon&quot; bc-pre-text=&quot;#&quot; bc-post-text=&quot;px&quot; /&gt;
-&lt;/form-group&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="n">form</span><span class="o">-</span><span class="n">group</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">input</span> <span class="n">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="n">placeholder</span><span class="o">=</span><span class="s">&quot;Left Addon&quot;</span> <span class="n">bc</span><span class="o">-</span><span class="n">pre</span><span class="o">-</span><span class="n">text</span><span class="o">=</span><span class="s">&quot;@&quot;</span> <span class="o">/&gt;</span>
+<span class="o">&lt;/</span><span class="n">form</span><span class="o">-</span><span class="n">group</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">form</span><span class="o">-</span><span class="n">group</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">input</span> <span class="n">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="n">placeholder</span><span class="o">=</span><span class="s">&quot;Right Addon&quot;</span> <span class="n">bc</span><span class="o">-</span><span class="n">post</span><span class="o">-</span><span class="n">text</span><span class="o">=</span><span class="s">&quot;@example.com&quot;</span> <span class="o">/&gt;</span>
+<span class="o">&lt;/</span><span class="n">form</span><span class="o">-</span><span class="n">group</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">form</span><span class="o">-</span><span class="n">group</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">input</span> <span class="n">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="n">placeholder</span><span class="o">=</span><span class="s">&quot;Left &amp; Right Addon&quot;</span> <span class="n">bc</span><span class="o">-</span><span class="n">pre</span><span class="o">-</span><span class="n">text</span><span class="o">=</span><span class="s">&quot;#&quot;</span> <span class="n">bc</span><span class="o">-</span><span class="n">post</span><span class="o">-</span><span class="n">text</span><span class="o">=</span><span class="s">&quot;px&quot;</span> <span class="o">/&gt;</span>
+<span class="o">&lt;/</span><span class="n">form</span><span class="o">-</span><span class="n">group</span><span class="o">&gt;</span>
+</pre></div>
+
 
 <p>To add an icon on left or right side of an input control, use the <code>bc-pre-icon</code> or <code>bc-post-icon</code> attribute.</p>
 <p><img src="/images/input_03.png" width="409" alt="Input Control Icons"></p>
-<pre><code class="markup">&lt;form-group&gt;
-    &lt;input type=&quot;text&quot; placeholder=&quot;Left Addon&quot; bc-pre-icon=&quot;LA_ExclamationTriangle&quot; /&gt;
-&lt;/form-group&gt;
-&lt;form-group&gt;
-    &lt;input type=&quot;text&quot; placeholder=&quot;Right Addon&quot; bc-post-icon=&quot;LA_Group&quot; /&gt;
-&lt;/form-group&gt;
-&lt;form-group&gt;
-    &lt;input type=&quot;text&quot; placeholder=&quot;Left &amp; Right Addon&quot; bc-pre-icon=&quot;FI_Refresh&quot; bc-post-icon=&quot;FI_Music1&quot; /&gt;
-&lt;/form-group&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;form-group&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Left Addon&quot;</span> <span class="na">bc-pre-icon=</span><span class="s">&quot;LA_ExclamationTriangle&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/form-group&gt;</span>
+<span class="nt">&lt;form-group&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Right Addon&quot;</span> <span class="na">bc-post-icon=</span><span class="s">&quot;LA_Group&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/form-group&gt;</span>
+<span class="nt">&lt;form-group&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Left &amp; Right Addon&quot;</span> <span class="na">bc-pre-icon=</span><span class="s">&quot;FI_Refresh&quot;</span> <span class="na">bc-post-icon=</span><span class="s">&quot;FI_Music1&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/form-group&gt;</span>
+</pre></div>
+
 
 <p><strong><em>Please note:</em></strong> These attributes only working on input controls of type <code>text</code>, <code>password</code>, <code>email</code> or <code>number</code>.</p>
               

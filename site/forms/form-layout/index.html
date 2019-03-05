@@ -196,7 +196,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../input/">Input</a>
+    <a class="" href="../input/">Text</a>
                 </li>
                 <li class="">
                     
@@ -204,7 +204,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../select/">Select</a>
+    <a class="" href="../select/">Dropdown</a>
                 </li>
                 <li class="">
                     
@@ -346,16 +346,17 @@
 <hr />
 <h2 id="form-structure">Form Structure</h2>
 <p>The form structure in Mecons is the same as in Bootstrap. The main container is a <code>&lt;form&gt;</code> tag which includes the form controls. Each form control should be surrounded with an <code>&lt;form-group&gt;</code> tag helper. A <code>&lt;form-group&gt;</code> can also contains a <code>&lt;label&gt;</code> or a <code>&lt;help&gt;</code>.</p>
-<pre><code class="markup">&lt;form&gt;
-    &lt;form-group&gt;
-        &lt;!-- Form Control --&gt;
-    &lt;/form-group&gt;
-    &lt;form-group&gt;
-        &lt;!-- Form Control --&gt;
-    &lt;/form-group&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;form&gt;</span>
+    <span class="nt">&lt;form-group&gt;</span>
+        <span class="c">&lt;!-- Form Control --&gt;</span>
+    <span class="nt">&lt;/form-group&gt;</span>
+    <span class="nt">&lt;form-group&gt;</span>
+        <span class="c">&lt;!-- Form Control --&gt;</span>
+    <span class="nt">&lt;/form-group&gt;</span>
     ...
-&lt;/form&gt;
-</code></pre>
+<span class="nt">&lt;/form&gt;</span>
+</pre></div>
+
 
 <hr />
 <h2 id="form-configuration">Form Configuration</h2>
@@ -374,46 +375,48 @@
 <h3 id="state">State</h3>
 <p>Use the <code>bc-state</code> attribute to set a validation state for the control within the form group. Available states are <code>Success</code>, <code>Warning</code> or <code>Danger</code>.</p>
 <p><img src="/images/form-layout_01.png" width="426" alt="Form Group State" /></p>
-<pre><code class="markup">&lt;form-group bc-state=&quot;Success&quot;&gt;
-    &lt;input type=&quot;text&quot; bc-label=&quot;Input with success&quot; /&gt;
-&lt;/form-group&gt;
-&lt;form-group bc-state=&quot;Warning&quot;&gt;
-    &lt;input type=&quot;text&quot; bc-label=&quot;Input with warning&quot; /&gt;
-&lt;/form-group&gt;
-&lt;form-group bc-state=&quot;Danger&quot;&gt;
-    &lt;input type=&quot;text&quot; bc-label=&quot;Input with danger&quot; /&gt;
-&lt;/form-group&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;form-group</span> <span class="na">bc-state=</span><span class="s">&quot;Success&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">bc-label=</span><span class="s">&quot;Input with success&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/form-group&gt;</span>
+<span class="nt">&lt;form-group</span> <span class="na">bc-state=</span><span class="s">&quot;Warning&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">bc-label=</span><span class="s">&quot;Input with warning&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/form-group&gt;</span>
+<span class="nt">&lt;form-group</span> <span class="na">bc-state=</span><span class="s">&quot;Danger&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">bc-label=</span><span class="s">&quot;Input with danger&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/form-group&gt;</span>
+</pre></div>
+
 
 <hr />
 <h2 id="vertical-form">Vertical Form</h2>
 <p>In a vertical form each control and its corresponding label and help text will placed in a separate row.</p>
 <p><img src="/images/form-layout_02.png" width="434" alt="Vertical Form Layout" /></p>
-<pre><code class="markup">&lt;form&gt;
-    &lt;form-group&gt;
-        &lt;input type=&quot;text&quot; bc-label=&quot;User name&quot; bc-help=&quot;Usually your e-mail address&quot; /&gt;
-    &lt;/form-group&gt;
-    &lt;form-group&gt;
-        &lt;input type=&quot;password&quot; bc-label=&quot;Password&quot; /&gt;
-    &lt;/form-group&gt;
-    &lt;button type=&quot;submit&quot;&gt;Log in&lt;/button&gt;
-&lt;/form&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;form&gt;</span>
+    <span class="nt">&lt;form-group&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">bc-label=</span><span class="s">&quot;User name&quot;</span> <span class="na">bc-help=</span><span class="s">&quot;Usually your e-mail address&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/form-group&gt;</span>
+    <span class="nt">&lt;form-group&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;password&quot;</span> <span class="na">bc-label=</span><span class="s">&quot;Password&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/form-group&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span><span class="nt">&gt;</span>Log in<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</pre></div>
+
 
 <hr />
 <h2 id="horizontal-form">Horizontal Form</h2>
 <p>In a horizontal form each control and its corresponding label placed in the same row. The help text will placed under the control.</p>
 <p><img src="/images/form-layout_03.png" width="429" alt="Horizontal Form Layout" /></p>
-<pre><code class="markup">&lt;form bc-horizontal=&quot;true&quot; bc-label-width-md=&quot;4&quot;&gt;
-    &lt;form-group&gt;
-        &lt;input type=&quot;text&quot; bc-label=&quot;User name&quot; bc-help=&quot;Usually your e-mail address&quot; /&gt;
-    &lt;/form-group&gt;
-    &lt;form-group&gt;
-        &lt;input type=&quot;password&quot; bc-label=&quot;Password&quot; /&gt;
-    &lt;/form-group&gt;
-    &lt;button type=&quot;submit&quot;&gt;Log in&lt;/button&gt;
-&lt;/form&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;form</span> <span class="na">bc-horizontal=</span><span class="s">&quot;true&quot;</span> <span class="na">bc-label-width-md=</span><span class="s">&quot;4&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;form-group&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">bc-label=</span><span class="s">&quot;User name&quot;</span> <span class="na">bc-help=</span><span class="s">&quot;Usually your e-mail address&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/form-group&gt;</span>
+    <span class="nt">&lt;form-group&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;password&quot;</span> <span class="na">bc-label=</span><span class="s">&quot;Password&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/form-group&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span><span class="nt">&gt;</span>Log in<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</pre></div>
               
             </div>
           </div>

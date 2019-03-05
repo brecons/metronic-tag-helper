@@ -188,7 +188,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../../forms/input/">Input</a>
+    <a class="" href="../../forms/input/">Text</a>
                 </li>
                 <li class="">
                     
@@ -196,7 +196,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../../forms/select/">Select</a>
+    <a class="" href="../../forms/select/">Dropdown</a>
                 </li>
                 <li class="">
                     
@@ -336,47 +336,50 @@
                 <h1 id="badge">Badge</h1>
 <p>Badges are small count and labeling components.</p>
 <p><img src="/images/badge_01.png" width="229" alt="Mecons Badge" /></p>
-<pre><code class="markup">&lt;h2&gt;My Messages &lt;badge bc-color=&quot;Info&quot;&gt;12&lt;/badge&gt;&lt;/h2&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;h2&gt;</span>My Messages <span class="nt">&lt;badge</span> <span class="na">bc-color=</span><span class="s">&quot;Info&quot;</span><span class="nt">&gt;</span>12<span class="nt">&lt;/badge&gt;&lt;/h2&gt;</span>
+</pre></div>
+
 
 <hr />
 <h2 id="configuration">Configuration</h2>
 <h3 id="color">Color</h3>
 <p>For proper styling of a badge use the <code>bc-color</code> attribute.</p>
 <p><img src="/images/badge_02.png" width="243" alt="Colored Badges" /></p>
-<pre><code class="markup">&lt;badge&gt;3&lt;/badge&gt;
-&lt;badge bc-color=&quot;Secondary&quot;&gt;4&lt;/badge&gt;
-&lt;badge bc-color=&quot;Success&quot;&gt;7&lt;/badge&gt;
-&lt;badge bc-color=&quot;Info&quot;&gt;3&lt;/badge&gt;
-&lt;badge bc-color=&quot;Danger&quot;&gt;8&lt;/badge&gt;
-&lt;badge bc-color=&quot;Warning&quot;&gt;7&lt;/badge&gt;
-&lt;badge bc-color=&quot;Brand&quot;&gt;14&lt;/badge&gt;
-&lt;badge bc-color=&quot;Accent&quot;&gt;9&lt;/badge&gt;
-&lt;badge bc-color=&quot;Metal&quot;&gt;11&lt;/badge&gt;
-&lt;badge bc-color=&quot;Focus&quot;&gt;15&lt;/badge&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;badge&gt;</span>3<span class="nt">&lt;/badge&gt;</span>
+<span class="nt">&lt;badge</span> <span class="na">bc-color=</span><span class="s">&quot;Secondary&quot;</span><span class="nt">&gt;</span>4<span class="nt">&lt;/badge&gt;</span>
+<span class="nt">&lt;badge</span> <span class="na">bc-color=</span><span class="s">&quot;Success&quot;</span><span class="nt">&gt;</span>7<span class="nt">&lt;/badge&gt;</span>
+<span class="nt">&lt;badge</span> <span class="na">bc-color=</span><span class="s">&quot;Info&quot;</span><span class="nt">&gt;</span>3<span class="nt">&lt;/badge&gt;</span>
+<span class="nt">&lt;badge</span> <span class="na">bc-color=</span><span class="s">&quot;Danger&quot;</span><span class="nt">&gt;</span>8<span class="nt">&lt;/badge&gt;</span>
+<span class="nt">&lt;badge</span> <span class="na">bc-color=</span><span class="s">&quot;Warning&quot;</span><span class="nt">&gt;</span>7<span class="nt">&lt;/badge&gt;</span>
+<span class="nt">&lt;badge</span> <span class="na">bc-color=</span><span class="s">&quot;Brand&quot;</span><span class="nt">&gt;</span>14<span class="nt">&lt;/badge&gt;</span>
+<span class="nt">&lt;badge</span> <span class="na">bc-color=</span><span class="s">&quot;Accent&quot;</span><span class="nt">&gt;</span>9<span class="nt">&lt;/badge&gt;</span>
+<span class="nt">&lt;badge</span> <span class="na">bc-color=</span><span class="s">&quot;Metal&quot;</span><span class="nt">&gt;</span>11<span class="nt">&lt;/badge&gt;</span>
+<span class="nt">&lt;badge</span> <span class="na">bc-color=</span><span class="s">&quot;Focus&quot;</span><span class="nt">&gt;</span>15<span class="nt">&lt;/badge&gt;</span>
+</pre></div>
+
 
 <h3 id="style">Style</h3>
 <p>Use the <code>bc-style</code> attribute to set a style for the badge. Possible styles are <code>Default</code>, <code>Dot</code> or <code>Round</code>.</p>
 <p><img src="/images/badge_03.png" width="676" alt="Badge Styles" /></p>
-<pre><code class="markup">&lt;h5&gt;Dot Badges&lt;/h5&gt;
-&lt;badge bc-style=&quot;Dot&quot; bc-color=&quot;Primary&quot;&gt;&lt;/badge&gt;
-&lt;badge bc-style=&quot;Dot&quot; bc-color=&quot;Secondary&quot;&gt;&lt;/badge&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;h5&gt;</span>Dot Badges<span class="nt">&lt;/h5&gt;</span>
+<span class="nt">&lt;badge</span> <span class="na">bc-style=</span><span class="s">&quot;Dot&quot;</span> <span class="na">bc-color=</span><span class="s">&quot;Primary&quot;</span><span class="nt">&gt;&lt;/badge&gt;</span>
+<span class="nt">&lt;badge</span> <span class="na">bc-style=</span><span class="s">&quot;Dot&quot;</span> <span class="na">bc-color=</span><span class="s">&quot;Secondary&quot;</span><span class="nt">&gt;&lt;/badge&gt;</span>
 ...
 
-&lt;h5&gt;Rounded Badges&lt;/h5&gt;
-&lt;badge bc-wide=&quot;true&quot; bc-style=&quot;Round&quot; bc-color=&quot;Primary&quot;&gt;New&lt;/badge&gt;
-&lt;badge bc-wide=&quot;true&quot; bc-style=&quot;Round&quot; bc-color=&quot;Secondary&quot;&gt;Pending&lt;/badge&gt;
+<span class="nt">&lt;h5&gt;</span>Rounded Badges<span class="nt">&lt;/h5&gt;</span>
+<span class="nt">&lt;badge</span> <span class="na">bc-wide=</span><span class="s">&quot;true&quot;</span> <span class="na">bc-style=</span><span class="s">&quot;Round&quot;</span> <span class="na">bc-color=</span><span class="s">&quot;Primary&quot;</span><span class="nt">&gt;</span>New<span class="nt">&lt;/badge&gt;</span>
+<span class="nt">&lt;badge</span> <span class="na">bc-wide=</span><span class="s">&quot;true&quot;</span> <span class="na">bc-style=</span><span class="s">&quot;Round&quot;</span> <span class="na">bc-color=</span><span class="s">&quot;Secondary&quot;</span><span class="nt">&gt;</span>Pending<span class="nt">&lt;/badge&gt;</span>
 ...
-</code></pre>
+</pre></div>
+
 
 <h3 id="wide">Wide</h3>
 <p>Use the <code>bc-wide</code> attribute to enlarge the paddings of the badge.</p>
 <p><img src="/images/badge_04.png" width="673" alt="Wide Badges" /></p>
-<pre><code class="markup">&lt;badge bc-wide=&quot;true&quot; bc-color=&quot;Primary&quot;&gt;New&lt;/badge&gt;
-&lt;badge bc-wide=&quot;true&quot; bc-color=&quot;Secondary&quot;&gt;Pending&lt;/badge&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;badge</span> <span class="na">bc-wide=</span><span class="s">&quot;true&quot;</span> <span class="na">bc-color=</span><span class="s">&quot;Primary&quot;</span><span class="nt">&gt;</span>New<span class="nt">&lt;/badge&gt;</span>
+<span class="nt">&lt;badge</span> <span class="na">bc-wide=</span><span class="s">&quot;true&quot;</span> <span class="na">bc-color=</span><span class="s">&quot;Secondary&quot;</span><span class="nt">&gt;</span>Pending<span class="nt">&lt;/badge&gt;</span>
 ...
-</code></pre>
+</pre></div>
               
             </div>
           </div>

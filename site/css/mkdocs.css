@@ -13,3 +13,14 @@ div[role=main] img {
     font-weight: bold;
     font-size: 85%;
 }
+
+/********** CODE HIGHTLIGHT **********/
+.codehilite {
+    margin: 10px 0 20px 0;
+    border: solid #ccc 1px;
+    border-radius: 3px;
+    background-color: #efefef;
+    padding: 10px 20px;
+    font-size: 0.8em;
+    overflow: auto;
+}

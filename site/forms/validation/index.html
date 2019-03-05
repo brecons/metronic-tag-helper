@@ -176,7 +176,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../input/">Input</a>
+    <a class="" href="../input/">Text</a>
                 </li>
                 <li class="">
                     
@@ -184,7 +184,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../select/">Select</a>
+    <a class="" href="../select/">Dropdown</a>
                 </li>
                 <li class="">
                     
@@ -223,7 +223,7 @@
         
             <li><a class="toctree-l4" href="#data-binding-validation">Data Binding Validation</a></li>
         
-            <li><a class="toctree-l4" href="#form-configuration-ltformgt">Form Configuration &lt;form&gt;</a></li>
+            <li><a class="toctree-l4" href="#form-configuration">Form Configuration</a></li>
         
         </ul>
     
@@ -339,6 +339,7 @@
               
                 <h1 id="validation">Validation</h1>
 <p>Provide valuable, actionable feedback with Mecons Validation to your users with HTML5 form validation. Use the Mecons Tag Helpers in combination with the default ASP.NET Core Validation mechanism to validate your forms easy and simple.</p>
+<hr />
 <h2 id="requirements">Requirements</h2>
 <p>To enable the client-side validation in ASP.NET MVC Core in combination with Mecons, you have to load the <a href="https://yarnpkg.com/en/package/jquery-validation-unobtrusive">jquery-validation-unobtrusive</a> package from <a href="https://yarnpkg.com">Yarn</a>.</p>
 <div class="alert alert-info">
@@ -346,94 +347,104 @@
 </div>
 
 <p>The easiest way to load the <code>jquery-validation-unobtrusive</code> package is to open a command prompt, switch to the <code>wwwroot</code> folder of your project and execute the following command:</p>
-<pre><code>yarn add jquery-validation-unobtrusive
-</code></pre>
+<div class="codehilite"><pre><span></span>$ yarn add jquery-validation-unobtrusive
+</pre></div>
+
 
 <p>After embedding the <code>jquery-validation-unobtrusive</code> package into your solution, add a reference within the <code>/Shared/_Layout.cshtml</code> page after the Metronic scripts:</p>
-<pre><code class="markup">&lt;script src=&quot;~/node_modules/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js&quot;&gt;&lt;/script&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&quot;~/node_modules/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</pre></div>
 
+
+<hr />
 <h2 id="data-binding-validation">Data Binding Validation</h2>
 <p>All Mecons form controls supports the default <a href="https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/validation">ASP.NET Core Validation</a>. It's possible to validate the form on client-side with <a href="https://jqueryvalidation.org/">jQuery Validation</a> or after a postback on server-side.</p>
 <p>For a <strong>client-side</strong> validation use data annotations in your view model and bind the properties to the form controls within your view. Mecons now renders the validation errors automatically in Metronic compatible styles.</p>
 <p>A <strong>server-side</strong> validation will execute in the controller logic after a postback. Use the <code>ModelState</code> to check if the form data is valid or to add further validation errors.</p>
-<p><strong><em>Please note:</em></strong> It is indispensable to check the <a href="https://www.brecons.net/Documentation/Mecons/Validation#form-configuration">Form Configuration</a> attributes before using Mecons Validation.</p>
-<h3 id="view-model">View Model</h3>
-<pre><code class="csharp">public class RegisterViewModel
-{
-    [Display(Name = &quot;User Name&quot;)]
-    [Required]
-    public string Name { get; set; }
-
-    [Display(Name = &quot;Password&quot;)]
-    [Required]
-    public string Password { get; set; }
-
-    [Display(Name = &quot;Confirm Password&quot;)]
-    [Compare(&quot;Password&quot;)]
-    public string PasswordConfirmation { get; set; }
-
-    [Display(Name = &quot;Country&quot;)]
-    public int Country { get; set; }
-
-    public List&lt;SelectListItem&gt; Countries { get; set; } = new List&lt;SelectListItem&gt;();
-
-    public RegisterViewModel()
-    {
-        this.Countries.Add(new SelectListItem { Value = &quot;0&quot;, Text = &quot;Choose a country ...&quot; });
-        this.Countries.Add(new SelectListItem { Value = &quot;1&quot;, Text = &quot;Germany&quot; });
-        // Further countries ...
-    }
-}
-</code></pre>
-
-<h3 id="controller">Controller</h3>
-<pre><code class="csharp">public IActionResult Register()
-{
-    return View(new RegisterViewModel());
-}
-
-[HttpPost]
-public IActionResult Register(RegisterViewModel model)
-{
-    // Server-side validation
-    if(model.Country &lt;= 0) ModelState.AddModelError(&quot;Country&quot;, &quot;No country was selected.&quot;);
-
-    // On validation errors go back to view
-    if (!ModelState.IsValid) return View(model);
-
-    return RedirectToAction(&quot;Success&quot;);
-}
-</code></pre>
-
-<h3 id="view">View</h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is indispensable to check the <a href="https://www.brecons.net/Documentation/Mecons/Validation#form-configuration">Form Configuration</a> attributes before using Mecons Validation.</p>
+</div>
 <p><img src="/images/validation_01.png" width="438" alt=""></p>
-<pre><code class="markup">&lt;form asp-action=&quot;Register&quot; method=&quot;post&quot; bc-validation=&quot;true&quot;&gt;
-    &lt;form-group&gt;
-        &lt;input type=&quot;text&quot; asp-for=&quot;Name&quot; /&gt;
-    &lt;/form-group&gt;
-    &lt;form-group&gt;
-        &lt;input type=&quot;password&quot; asp-for=&quot;Password&quot; /&gt;
-    &lt;/form-group&gt;
-    &lt;form-group&gt;
-        &lt;input type=&quot;password&quot; asp-for=&quot;PasswordConfirmation&quot; /&gt;
-    &lt;/form-group&gt;
-    &lt;form-group&gt;
-        &lt;select asp-for=&quot;Country&quot; asp-items=&quot;Model.Countries&quot;&gt;&lt;/select&gt;
-    &lt;/form-group&gt;
-    &lt;button type=&quot;submit&quot;&gt; Submit &lt;/button&gt;
-&lt;/form&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="c">&lt;!-- VIEW --&gt;</span>
+<span class="nt">&lt;form</span> <span class="na">asp-action=</span><span class="s">&quot;Register&quot;</span> <span class="na">method=</span><span class="s">&quot;post&quot;</span> <span class="na">bc-validation=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;form-group&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">asp-for=</span><span class="s">&quot;Name&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/form-group&gt;</span>
+    <span class="nt">&lt;form-group&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;password&quot;</span> <span class="na">asp-for=</span><span class="s">&quot;Password&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/form-group&gt;</span>
+    <span class="nt">&lt;form-group&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;password&quot;</span> <span class="na">asp-for=</span><span class="s">&quot;PasswordConfirmation&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/form-group&gt;</span>
+    <span class="nt">&lt;form-group&gt;</span>
+        <span class="nt">&lt;select</span> <span class="na">asp-for=</span><span class="s">&quot;Country&quot;</span> <span class="na">asp-items=</span><span class="s">&quot;Model.Countries&quot;</span><span class="nt">&gt;&lt;/select&gt;</span>
+    <span class="nt">&lt;/form-group&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span><span class="nt">&gt;</span> Submit <span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</pre></div>
 
-<h2 id="form-configuration-ltformgt">Form Configuration <code>&lt;form&gt;</code></h2>
+
+<div class="codehilite"><pre><span></span><span class="c1">// VIEW MODEL</span>
+<span class="k">public</span> <span class="k">class</span> <span class="nc">RegisterViewModel</span>
+<span class="p">{</span>
+<span class="na">    [Display(Name = &quot;User Name&quot;)]</span>
+<span class="na">    [Required]</span>
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">Name</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+
+<span class="na">    [Display(Name = &quot;Password&quot;)]</span>
+<span class="na">    [Required]</span>
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">Password</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+
+<span class="na">    [Display(Name = &quot;Confirm Password&quot;)]</span>
+<span class="na">    [Compare(&quot;Password&quot;)]</span>
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">PasswordConfirmation</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+
+<span class="na">    [Display(Name = &quot;Country&quot;)]</span>
+    <span class="k">public</span> <span class="kt">int</span> <span class="n">Country</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="k">public</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">SelectListItem</span><span class="p">&gt;</span> <span class="n">Countries</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span> <span class="p">=</span> <span class="k">new</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">SelectListItem</span><span class="p">&gt;();</span>
+
+    <span class="k">public</span> <span class="nf">RegisterViewModel</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="n">Countries</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="k">new</span> <span class="n">SelectListItem</span> <span class="p">{</span> <span class="n">Value</span> <span class="p">=</span> <span class="s">&quot;0&quot;</span><span class="p">,</span> <span class="n">Text</span> <span class="p">=</span> <span class="s">&quot;Choose a country ...&quot;</span> <span class="p">});</span>
+        <span class="k">this</span><span class="p">.</span><span class="n">Countries</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="k">new</span> <span class="n">SelectListItem</span> <span class="p">{</span> <span class="n">Value</span> <span class="p">=</span> <span class="s">&quot;1&quot;</span><span class="p">,</span> <span class="n">Text</span> <span class="p">=</span> <span class="s">&quot;Germany&quot;</span> <span class="p">});</span>
+        <span class="c1">// Further countries ...</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="c1">// CONTROLLER</span>
+<span class="k">public</span> <span class="n">IActionResult</span> <span class="nf">Register</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="k">return</span> <span class="nf">View</span><span class="p">(</span><span class="k">new</span> <span class="n">RegisterViewModel</span><span class="p">());</span>
+<span class="p">}</span>
+
+<span class="na">[HttpPost]</span>
+<span class="k">public</span> <span class="n">IActionResult</span> <span class="nf">Register</span><span class="p">(</span><span class="n">RegisterViewModel</span> <span class="n">model</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="c1">// Server-side validation</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">model</span><span class="p">.</span><span class="n">Country</span> <span class="p">&lt;=</span> <span class="m">0</span><span class="p">)</span> <span class="n">ModelState</span><span class="p">.</span><span class="n">AddModelError</span><span class="p">(</span><span class="s">&quot;Country&quot;</span><span class="p">,</span> <span class="s">&quot;No country was selected.&quot;</span><span class="p">);</span>
+
+    <span class="c1">// On validation errors go back to view</span>
+    <span class="k">if</span> <span class="p">(!</span><span class="n">ModelState</span><span class="p">.</span><span class="n">IsValid</span><span class="p">)</span> <span class="k">return</span> <span class="n">View</span><span class="p">(</span><span class="n">model</span><span class="p">);</span>
+
+    <span class="k">return</span> <span class="nf">RedirectToAction</span><span class="p">(</span><span class="s">&quot;Success&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<hr />
+<h2 id="form-configuration">Form Configuration</h2>
 <h3 id="validation_1">Validation</h3>
 <p>By default, the <a href="https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/validation">ASP.NET Core Validation</a> is enabled for all Mecons forms. That means that each control within the form renders a validation message on model error. To disable the validation for all controls within the form set the <code>bc-validation</code> attribute to <code>false</code>.</p>
 <p>Furthermore it is possible to disable the validation on control level by setting the <code>bc-validation</code> to <code>false</code> for a specific control.</p>
 <p><img src="/images/validation_02.png" width="431" alt=""></p>
-<pre><code class="markup">&lt;form asp-action=&quot;Register&quot; bc-validation=&quot;true&quot;&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;form</span> <span class="na">asp-action=</span><span class="s">&quot;Register&quot;</span> <span class="na">bc-validation=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
     ...
-&lt;/form&gt;
-</code></pre>
+<span class="nt">&lt;/form&gt;</span>
+</pre></div>
               
             </div>
           </div>

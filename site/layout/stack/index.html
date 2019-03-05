@@ -190,7 +190,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../../forms/input/">Input</a>
+    <a class="" href="../../forms/input/">Text</a>
                 </li>
                 <li class="">
                     
@@ -198,7 +198,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../../forms/select/">Select</a>
+    <a class="" href="../../forms/select/">Dropdown</a>
                 </li>
                 <li class="">
                     
@@ -337,56 +337,60 @@
               
                 <h1 id="stack">Stack</h1>
 <p>A Stack allows to build equal height and flexible blocks.</p>
-<p><img alt="Mecons Stack" src="/images/stack_01.png" /></p>
-<pre><code class="markup">&lt;stack&gt;
-    &lt;stack-item&gt;Item 1&lt;/stack-item&gt;
-    &lt;stack-item&gt;Item 2&lt;/stack-item&gt;
-    &lt;stack-item&gt;Item 3&lt;/stack-item&gt;
-    &lt;stack-item&gt;Item 4&lt;/stack-item&gt;
-&lt;/stack&gt;
-</code></pre>
+<p><img src="/images/stack_01.png" width="365" alt="Mecons Stack" /></p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;stack&gt;</span>
+    <span class="nt">&lt;stack-item&gt;</span>Item 1<span class="nt">&lt;/stack-item&gt;</span>
+    <span class="nt">&lt;stack-item&gt;</span>Item 2<span class="nt">&lt;/stack-item&gt;</span>
+    <span class="nt">&lt;stack-item&gt;</span>Item 3<span class="nt">&lt;/stack-item&gt;</span>
+    <span class="nt">&lt;stack-item&gt;</span>Item 4<span class="nt">&lt;/stack-item&gt;</span>
+<span class="nt">&lt;/stack&gt;</span>
+</pre></div>
+
 
 <hr />
 <h2 id="configuration">Configuration</h2>
 <h3 id="auto-width">Auto Width</h3>
 <p>If the <code>bc-auto-width</code> attribute is set to <code>true</code>, each stack item gets the width of whose content.</p>
-<p><img alt="Stack Auto Width" src="/images/stack_02.png" /></p>
-<pre><code class="markup">&lt;stack bc-auto-width=&quot;true&quot;&gt;
-    &lt;stack-item&gt;Free content&lt;/stack-item&gt;
-    &lt;stack-item&gt;Free content&lt;/stack-item&gt;
-    &lt;stack-item&gt;Longer free content&lt;/stack-item&gt;
-&lt;/stack&gt;
-</code></pre>
+<p><img src="/images/stack_02.png" width="411" alt="Stack Auto Width" /></p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;stack</span> <span class="na">bc-auto-width=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;stack-item&gt;</span>Free content<span class="nt">&lt;/stack-item&gt;</span>
+    <span class="nt">&lt;stack-item&gt;</span>Free content<span class="nt">&lt;/stack-item&gt;</span>
+    <span class="nt">&lt;stack-item&gt;</span>Longer free content<span class="nt">&lt;/stack-item&gt;</span>
+<span class="nt">&lt;/stack&gt;</span>
+</pre></div>
+
 
 <h3 id="orientation">Orientation</h3>
 <p>With the <code>bc-orientation</code> attribute the orientation of the stack can be set. Possible orientations are <code>Horizontal</code> (default) or <code>Vertical</code>.</p>
-<p><img alt="Stack Orientation" src="/images/stack_03.png" /></p>
-<pre><code class="markup">&lt;stack bc-orientation=&quot;Vertical&quot;&gt;
+<p><img src="/images/stack_03.png" width="350" alt="Stack Orientation" /></p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;stack</span> <span class="na">bc-orientation=</span><span class="s">&quot;Vertical&quot;</span><span class="nt">&gt;</span>
     ...
-&lt;/stack&gt;
-</code></pre>
+<span class="nt">&lt;/stack&gt;</span>
+</pre></div>
+
 
 <hr />
 <h2 id="stack-item-configuration">Stack Item Configuration</h2>
 <h3 id="alignment">Alignment</h3>
 <p>Set an item content alignment with <code>bc-alignment</code> attribute. Possible alignments are <code>Left</code> (default), <code>Center</code> or <code>Right</code>.</p>
-<p><img alt="Stack Item Horizontal Alignment" src="/images/stack_04.png" /></p>
-<pre><code class="markup">&lt;stack&gt;
-    &lt;stack-item bc-alignment=&quot;Left&quot;&gt;Left alignment&lt;/stack-item&gt;
-    &lt;stack-item bc-alignment=&quot;Center&quot;&gt;Center alignment&lt;/stack-item&gt;
-    &lt;stack-item bc-alignment=&quot;Right&quot;&gt;Right alignment&lt;/stack-item&gt;
-&lt;/stack&gt;
-</code></pre>
+<p><img src="/images/stack_04.png" width="356" alt="Stack Item Horizontal Alignment" /></p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;stack&gt;</span>
+    <span class="nt">&lt;stack-item</span> <span class="na">bc-alignment=</span><span class="s">&quot;Left&quot;</span><span class="nt">&gt;</span>Left alignment<span class="nt">&lt;/stack-item&gt;</span>
+    <span class="nt">&lt;stack-item</span> <span class="na">bc-alignment=</span><span class="s">&quot;Center&quot;</span><span class="nt">&gt;</span>Center alignment<span class="nt">&lt;/stack-item&gt;</span>
+    <span class="nt">&lt;stack-item</span> <span class="na">bc-alignment=</span><span class="s">&quot;Right&quot;</span><span class="nt">&gt;</span>Right alignment<span class="nt">&lt;/stack-item&gt;</span>
+<span class="nt">&lt;/stack&gt;</span>
+</pre></div>
+
 
 <h3 id="vertical-alignment">Vertical Alignment</h3>
 <p>Align the content vertically with the <code>bc-vertical-alignment</code> attribute. It is possible to align the content <code>Top</code>, <code>Middle</code> or <code>Bottom</code>.</p>
-<p><img alt="Stack Item Vertical Alignment" src="/images/stack_05.png" /></p>
-<pre><code class="markup">&lt;stack&gt;
-    &lt;stack-item bc-vertical-alignment=&quot;Top&quot;&gt;Top alignment&lt;/stack-item&gt;
-    &lt;stack-item bc-vertical-alignment=&quot;Middle&quot;&gt;Middle alignment&lt;/stack-item&gt;
-    &lt;stack-item bc-vertical-alignment=&quot;Bottom&quot;&gt;Bottom alignment&lt;/stack-item&gt;
-&lt;/stack&gt;
-</code></pre>
+<p><img src="/images/stack_05.png" width="353" alt="Stack Item Vertical Alignment" /></p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;stack&gt;</span>
+    <span class="nt">&lt;stack-item</span> <span class="na">bc-vertical-alignment=</span><span class="s">&quot;Top&quot;</span><span class="nt">&gt;</span>Top alignment<span class="nt">&lt;/stack-item&gt;</span>
+    <span class="nt">&lt;stack-item</span> <span class="na">bc-vertical-alignment=</span><span class="s">&quot;Middle&quot;</span><span class="nt">&gt;</span>Middle alignment<span class="nt">&lt;/stack-item&gt;</span>
+    <span class="nt">&lt;stack-item</span> <span class="na">bc-vertical-alignment=</span><span class="s">&quot;Bottom&quot;</span><span class="nt">&gt;</span>Bottom alignment<span class="nt">&lt;/stack-item&gt;</span>
+<span class="nt">&lt;/stack&gt;</span>
+</pre></div>
               
             </div>
           </div>

@@ -188,7 +188,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../../forms/input/">Input</a>
+    <a class="" href="../../forms/input/">Text</a>
                 </li>
                 <li class="">
                     
@@ -196,7 +196,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../../forms/select/">Select</a>
+    <a class="" href="../../forms/select/">Dropdown</a>
                 </li>
                 <li class="">
                     
@@ -336,52 +336,56 @@
                 <h1 id="alert">Alert</h1>
 <p>Provide contextual feedback messages for typical user actions with a handful of available and flexible Alert messages.</p>
 <p><img src="/images/alert_01.png" width="407" alt="Mecons Alert" /></p>
-<pre><code class="markup">&lt;alert bc-title=&quot;Primary!&quot;&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;alert</span> <span class="na">bc-title=</span><span class="s">&quot;Primary!&quot;</span><span class="nt">&gt;</span>
     Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-&lt;/alert&gt;
-</code></pre>
+<span class="nt">&lt;/alert&gt;</span>
+</pre></div>
+
 
 <hr />
 <h2 id="configuration">Configuration</h2>
 <h3 id="color">Color</h3>
 <p>For proper styling of an alert use the <code>bc-color</code> attribute.</p>
 <p><img src="/images/alert_02.png" width="405" alt="Alert Color" /></p>
-<pre><code class="markup">&lt;alert bc-title=&quot;Success!&quot; bc-color=&quot;Success&quot;&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;alert</span> <span class="na">bc-title=</span><span class="s">&quot;Success!&quot;</span> <span class="na">bc-color=</span><span class="s">&quot;Success&quot;</span><span class="nt">&gt;</span>
     Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-&lt;/alert&gt;
-&lt;alert bc-title=&quot;Info!&quot; bc-color=&quot;Info&quot;&gt;
+<span class="nt">&lt;/alert&gt;</span>
+<span class="nt">&lt;alert</span> <span class="na">bc-title=</span><span class="s">&quot;Info!&quot;</span> <span class="na">bc-color=</span><span class="s">&quot;Info&quot;</span><span class="nt">&gt;</span>
     Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-&lt;/alert&gt;
-&lt;alert bc-title=&quot;Warning!&quot; bc-color=&quot;Warning&quot;&gt;
+<span class="nt">&lt;/alert&gt;</span>
+<span class="nt">&lt;alert</span> <span class="na">bc-title=</span><span class="s">&quot;Warning!&quot;</span> <span class="na">bc-color=</span><span class="s">&quot;Warning&quot;</span><span class="nt">&gt;</span>
     Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-&lt;/alert&gt;
-&lt;alert bc-title=&quot;Danger!&quot; bc-color=&quot;Danger&quot;&gt;
+<span class="nt">&lt;/alert&gt;</span>
+<span class="nt">&lt;alert</span> <span class="na">bc-title=</span><span class="s">&quot;Danger!&quot;</span> <span class="na">bc-color=</span><span class="s">&quot;Danger&quot;</span><span class="nt">&gt;</span>
     Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-&lt;/alert&gt;
-</code></pre>
+<span class="nt">&lt;/alert&gt;</span>
+</pre></div>
+
 
 <h3 id="dismissible">Dismissible</h3>
 <p>Use the <code>bc-dismissible</code> attribute to dismiss any alert inline.</p>
 <p><img src="/images/alert_03.png" width="400" alt="Dismissible Alert" /></p>
-<pre><code class="markup">&lt;alert bc-title=&quot;Info!&quot; bc-color=&quot;Info&quot; bc-dismissible=&quot;true&quot;&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;alert</span> <span class="na">bc-title=</span><span class="s">&quot;Info!&quot;</span> <span class="na">bc-color=</span><span class="s">&quot;Info&quot;</span> <span class="na">bc-dismissible=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
     Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-&lt;/alert&gt;
-</code></pre>
+<span class="nt">&lt;/alert&gt;</span>
+</pre></div>
+
 
 <h3 id="link-styling">Link Styling</h3>
 <p>Links in any alert gets automatically a matching font color for a ideal illustration. To deactivate the automatical styling use the <code>bc-disable-link-styling</code> attribute and set it to <code>true</code>.</p>
-<pre><code class="markup">&lt;alert bc-title=&quot;Brand!&quot; bc-color=&quot;Brand&quot; bc-disable-link-styling=&quot;true&quot;&gt;
-    Lorem ipsum dolor sit amet, &lt;a href=&quot;#&quot;&gt;consetetur&lt;/a&gt; sadipscing elitr
-&lt;/alert&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;alert</span> <span class="na">bc-title=</span><span class="s">&quot;Brand!&quot;</span> <span class="na">bc-color=</span><span class="s">&quot;Brand&quot;</span> <span class="na">bc-disable-link-styling=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
+    Lorem ipsum dolor sit amet, <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>consetetur<span class="nt">&lt;/a&gt;</span> sadipscing elitr
+<span class="nt">&lt;/alert&gt;</span>
+</pre></div>
+
 
 <h3 id="title">Title</h3>
 <p>Use the <code>bc-title</code> attribute to add a title for the alert in addition to the content.</p>
 <p><img src="/images/alert_04.png" width="401" alt="Alert Title" /></p>
-<pre><code class="markup">&lt;alert bc-title=&quot;Brand!&quot; bc-color=&quot;Brand&quot;&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;alert</span> <span class="na">bc-title=</span><span class="s">&quot;Brand!&quot;</span> <span class="na">bc-color=</span><span class="s">&quot;Brand&quot;</span><span class="nt">&gt;</span>
     Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-&lt;/alert&gt;
-</code></pre>
+<span class="nt">&lt;/alert&gt;</span>
+</pre></div>
               
             </div>
           </div>

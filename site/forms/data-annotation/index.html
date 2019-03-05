@@ -176,7 +176,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../input/">Input</a>
+    <a class="" href="../input/">Text</a>
                 </li>
                 <li class="">
                     
@@ -184,7 +184,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../select/">Select</a>
+    <a class="" href="../select/">Dropdown</a>
                 </li>
                 <li class="">
                     
@@ -336,6 +336,7 @@
                 <h1 id="data-annotation">Data Annotation</h1>
 <p>For Mecons, extended data annotation is available, which will explain in this article.</p>
 <p>Data Annotation in .NET Core Framework means add extra meaning to the data by adding attribute tags. The advantage of using Data Annotation feature is that by applying Data Attributes we can manage the data definition in a single place and do not need re-write the same rules in multiple places.</p>
+<hr />
 <h2 id="display-attributes">Display Attributes</h2>
 <p>Display Attributes are used to specify how data from a member of a view model is displayed in the UI. Mecons provides some custom Display Attributes or rather extends extisting attributes:</p>
 <ul>
@@ -346,64 +347,68 @@
 <h3 id="brecons-display-attribute">Brecons Display Attribute</h3>
 <p>If you have a custom localization logic in your application it might be useful to have a custom display attribute to realize the translations. In this case create a custom display attribute and inherit from the <code>BSolutions.Brecons.Core.Attributes.BreconsDisplayAttribute</code>. Afterwards override the <code>DisplayName</code> and the <code>Description</code> property to insert custom translation logic.</p>
 <p><img src="/images/data-annotation_01.png" width="426" alt="Brecons Display Attribute"></p>
-<h4 id="view">View</h4>
-<pre><code class="markup">@model BSolutions.Mecons.Test.Models.DataBindingViewModel
-&lt;form-group&gt;
-    &lt;input type=&quot;text&quot; asp-for=&quot;Product&quot; /&gt;
-&lt;/form-group&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="c">&lt;!-- VIEW --&gt;</span>
+@model BSolutions.Mecons.Test.Models.DataBindingViewModel
+<span class="nt">&lt;form-group&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">asp-for=</span><span class="s">&quot;Product&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/form-group&gt;</span>
+</pre></div>
 
-<h4 id="model">Model</h4>
-<pre><code class="csharp">public class DataBindingViewModel
-{
-    [CustomDisplay(Name = &quot;Product.Name&quot;, Description = &quot;Product.Description&quot;)]
-    public string Product { get; set; } = &quot;Mecons Tag Helper Library&quot;;
-}
-</code></pre>
 
-<h4 id="custom-display-attribute">Custom Display Attribute</h4>
-<pre><code class="csharp">public class CustomDisplayAttribute : BreconsDisplayAttribute
-{
-    // Your localization source provider
-    private readonly ILocalizationSource _localizationSource = new LocalizationSource();
+<div class="codehilite"><pre><span></span><span class="c1">// MODEL</span>
+<span class="k">public</span> <span class="k">class</span> <span class="nc">DataBindingViewModel</span>
+<span class="p">{</span>
+<span class="na">    [CustomDisplay(Name = &quot;Product.Name&quot;, Description = &quot;Product.Description&quot;)]</span>
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">Product</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span> <span class="p">=</span> <span class="s">&quot;Mecons Tag Helper Library&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
 
-    public override string DisplayName
-    {
-        get
-        {
-            // Get translation for display name
-            return this._localizationSource.Get(this._displayName);
-        }
-    }
 
-    public override string DisplayName
-    {
-        get
-        {
-            // Get translation for description
-            return this._localizationSource.Get(this._description);
-        }
-    }
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="c1">// CUSTOM DISPLAY ATTRIBUTE</span>
+<span class="k">public</span> <span class="k">class</span> <span class="nc">CustomDisplayAttribute</span> <span class="p">:</span> <span class="n">BreconsDisplayAttribute</span>
+<span class="p">{</span>
+    <span class="c1">// Your localization source provider</span>
+    <span class="k">private</span> <span class="k">readonly</span> <span class="n">ILocalizationSource</span> <span class="n">_localizationSource</span> <span class="p">=</span> <span class="k">new</span> <span class="n">LocalizationSource</span><span class="p">();</span>
+
+    <span class="k">public</span> <span class="k">override</span> <span class="kt">string</span> <span class="n">DisplayName</span>
+    <span class="p">{</span>
+        <span class="k">get</span>
+        <span class="p">{</span>
+            <span class="c1">// Get translation for display name</span>
+            <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="n">_localizationSource</span><span class="p">.</span><span class="n">Get</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="n">_displayName</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">override</span> <span class="kt">string</span> <span class="n">DisplayName</span>
+    <span class="p">{</span>
+        <span class="k">get</span>
+        <span class="p">{</span>
+            <span class="c1">// Get translation for description</span>
+            <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="n">_localizationSource</span><span class="p">.</span><span class="n">Get</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="n">_description</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
 
 <h3 id="display-attribute">Display Attribute</h3>
 <p>Furthermore, the classic <code>DisplayAttribute</code> is also available to set the value of the label and help. This attribute is also fully supported by the Mecons tag helpers.</p>
 <p><img src="/images/data-annotation_02.png" width="426" alt="Classic Display Attribute"></p>
-<h4 id="view_1">View</h4>
-<pre><code class="markup">@model BSolutions.Mecons.Test.Models.DataBindingViewModel
-&lt;form-group&gt;
-    &lt;input type=&quot;text&quot; asp-for=&quot;Product&quot; /&gt;
-&lt;/form-group&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="c">&lt;!-- VIEW --&gt;</span>
+@model BSolutions.Mecons.Test.Models.DataBindingViewModel
+<span class="nt">&lt;form-group&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">asp-for=</span><span class="s">&quot;Product&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/form-group&gt;</span>
+</pre></div>
 
-<h4 id="model_1">Model</h4>
-<pre><code class="csharp">public class DataBindingViewModel
-{
-    [Display(Name = &quot;Product Name&quot;, Description = &quot;The name of the product&quot;)]
-    public string Product { get; set; } = &quot;Mecons Tag Helper Library&quot;;
-}
-</code></pre>
+
+<div class="codehilite"><pre><span></span><span class="c1">// MODEL</span>
+<span class="k">public</span> <span class="k">class</span> <span class="nc">DataBindingViewModel</span>
+<span class="p">{</span>
+<span class="na">    [Display(Name = &quot;Product Name&quot;, Description = &quot;The name of the product&quot;)]</span>
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">Product</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span> <span class="p">=</span> <span class="s">&quot;Mecons Tag Helper Library&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
               
             </div>
           </div>

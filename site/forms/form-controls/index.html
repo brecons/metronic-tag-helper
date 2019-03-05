@@ -188,7 +188,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../input/">Input</a>
+    <a class="" href="../input/">Text</a>
                 </li>
                 <li class="">
                     
@@ -196,7 +196,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../select/">Select</a>
+    <a class="" href="../select/">Dropdown</a>
                 </li>
                 <li class="">
                     
@@ -341,54 +341,58 @@
 <h3 id="label">Label</h3>
 <p>Define a label for form controls by adding the <code>bc-label</code> attribute or use the <code>&lt;label&gt;</code> tag helper within the <code>&lt;form-group&gt;</code>.</p>
 <p><img src="/images/controls_01.png" width="444" alt="Form Control Label"></p>
-<pre><code class="markup">&lt;!-- Label via form control attribute --&gt;
-&lt;form-group&gt;
-    &lt;input type=&quot;text&quot; bc-label=&quot;Text Control Label&quot; /&gt;
-&lt;/form-group&gt;
+<div class="codehilite"><pre><span></span><span class="c">&lt;!-- Label via form control attribute --&gt;</span>
+<span class="nt">&lt;form-group&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">bc-label=</span><span class="s">&quot;Text Control Label&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/form-group&gt;</span>
 
-&lt;!-- Label via label tag helper --&gt;
-&lt;form-group&gt;
-    &lt;label&gt;Text Control Label&lt;/label&gt;
-    &lt;input type=&quot;text&quot; /&gt;
-&lt;/form-group&gt;
-</code></pre>
+<span class="c">&lt;!-- Label via label tag helper --&gt;</span>
+<span class="nt">&lt;form-group&gt;</span>
+    <span class="nt">&lt;label&gt;</span>Text Control Label<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/form-group&gt;</span>
+</pre></div>
+
 
 <h3 id="help">Help</h3>
 <p>A block-level help text for form controls can be created by using the <code>bc-help</code> attribute or use the <code>&lt;help&gt;</code> tag helper within the <code>&lt;form-group&gt;</code>.</p>
 <p><img src="/images/controls_02.png" width="441" alt="Form Control Help"></p>
-<pre><code class="markup">&lt;!-- Block-level help via form control attribute --&gt;
-&lt;form-group&gt;
-    &lt;input type=&quot;text&quot; bc-label=&quot;Text Control Label&quot; bc-help=&quot;A block-level help text&quot; /&gt;
-&lt;/form-group&gt;
+<div class="codehilite"><pre><span></span><span class="c">&lt;!-- Block-level help via form control attribute --&gt;</span>
+<span class="nt">&lt;form-group&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">bc-label=</span><span class="s">&quot;Text Control Label&quot;</span> <span class="na">bc-help=</span><span class="s">&quot;A block-level help text&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/form-group&gt;</span>
 
-&lt;!-- Block-level help via help tag helper --&gt;
-&lt;form-group&gt;
-    &lt;input type=&quot;text&quot; bc-label=&quot;Text Control Label&quot; /&gt;
-    &lt;help&gt;A block-level help text&lt;/help&gt;
-&lt;/form-group&gt;
-</code></pre>
+<span class="c">&lt;!-- Block-level help via help tag helper --&gt;</span>
+<span class="nt">&lt;form-group&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">bc-label=</span><span class="s">&quot;Text Control Label&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;help&gt;</span>A block-level help text<span class="nt">&lt;/help&gt;</span>
+<span class="nt">&lt;/form-group&gt;</span>
+</pre></div>
+
 
 <h3 id="size">Size</h3>
 <p>Set the height of a form control by adding the <code>bc-size</code> attribute. Available sizes are <code>Default</code>, <code>Large</code> or <code>Small</code>.</p>
 <p><img src="/images/controls_03.png" width="418" alt="Form Control Size"></p>
-<pre><code class="markup">&lt;form-group&gt;
-    &lt;input type=&quot;text&quot; bc-label=&quot;Large input&quot; placeholder=&quot;Large input&quot; bc-size=&quot;Large&quot; /&gt;
-&lt;/form-group&gt;
-&lt;form-group&gt;
-    &lt;input type=&quot;text&quot; bc-label=&quot;Default input&quot; placeholder=&quot;Default input&quot; /&gt;
-&lt;/form-group&gt;
-&lt;form-group&gt;
-    &lt;input type=&quot;text&quot; bc-label=&quot;Small input&quot; placeholder=&quot;Small input&quot; bc-size=&quot;Small&quot; /&gt;
-&lt;/form-group&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;form-group&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">bc-label=</span><span class="s">&quot;Large input&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Large input&quot;</span> <span class="na">bc-size=</span><span class="s">&quot;Large&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/form-group&gt;</span>
+<span class="nt">&lt;form-group&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">bc-label=</span><span class="s">&quot;Default input&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Default input&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/form-group&gt;</span>
+<span class="nt">&lt;form-group&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">bc-label=</span><span class="s">&quot;Small input&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Small input&quot;</span> <span class="na">bc-size=</span><span class="s">&quot;Small&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/form-group&gt;</span>
+</pre></div>
+
 
 <h3 id="required">Required</h3>
 <p>Mark a control as required with the <code>bc-required</code> attribute. This adds the HTML <code>required</code> attribute to the control markup und mark the control label as required with a star (*).</p>
 <p><img src="/images/controls_04.png" width="432" alt="Required Form Control"></p>
-<pre><code class="markup">&lt;form-group&gt;
-    &lt;input bc-label=&quot;E-mail address&quot; bc-required=&quot;true&quot; type=&quot;text&quot; /&gt;
-&lt;/form-group&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;form-group&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">bc-label=</span><span class="s">&quot;E-mail address&quot;</span> <span class="na">bc-required=</span><span class="s">&quot;true&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/form-group&gt;</span>
+</pre></div>
+
 
 <h3 id="data-binding">Data Binding</h3>
 <p>All Mecons Form Controls supports the standardized data binding approach of ASP.NET Core. That means that all Mecons Tag Helpers in a form context provides a <code>asp-for</code> attribute.</p>

@@ -192,7 +192,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="forms/input/">Input</a>
+    <a class="" href="forms/input/">Text</a>
                 </li>
                 <li class="">
                     
@@ -200,7 +200,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="forms/select/">Select</a>
+    <a class="" href="forms/select/">Dropdown</a>
                 </li>
                 <li class="">
                     
@@ -334,7 +334,7 @@
             <div class="section">
               
                 <h1 id="mecons-tag-helper">Mecons Tag Helper</h1>
-<p>The Mecons Tag Helper Library comes with 30+ components, controls and UI widgets. Mecons provides a full <a href="http://keenthemes.com/metronic/">Keenthemes Metronic</a> integration. Mecons is distributed as an enterprise library which can easily installed via NuGet.</p>
+<p>The Mecons Tag Helper Library comes with 30+ components, controls and UI widgets. Mecons provides a full <a href="http://keenthemes.com/metronic/">Keenthemes Metronic Admin Theme</a> integration. Mecons is distributed as an enterprise library which can easily installed via NuGet.</p>
 <hr />
 <h2 id="supported-platforms">Supported Platforms</h2>
 <p>The Mecons Tag Helper Library is only available for ASP.NET Core Web Applications. The following target frameworks are supported:</p>
@@ -364,8 +364,8 @@
 <p>In order to use Mecons Tag Helper Library properly, you must meet certain requirements:</p>
 <ul>
 <li><a href="https://visualstudio.microsoft.com/de/downloads/">Visual Studio 2017</a> with the installed workloads <em>ASP.NET and web development</em> and <em>.NET Core cross-platform development</em>.</li>
-<li><a href="https://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469">Metronic Admin Theme</a></li>
-<li><a href="https://codecanyon.net/">Mecons Tag Helper Library</a></li>
+<li>A licence and the source files of the <a href="https://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469">Metronic Admin Theme</a></li>
+<li>A license and the NuGet package of the <a href="https://codecanyon.net/">Mecons Tag Helper Library</a></li>
 </ul>
 <hr />
 <h2 id="quickstart">Quickstart</h2>
@@ -373,30 +373,38 @@
 <p>(1) Download the latest version of <strong>Mecons Tag Helper Library</strong> from <a href="file:///C:/Git/mecons-tag-helper/Envato%20Package/docs/index.html">CodeCanyon</a>.</p>
 <p>(2) Download the latest version of <strong>Metronic Admin Theme</strong> from <a href="https://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes">ThemeForest</a>.</p>
 <p>(3) Open Visual Studio 2017 and create a new <strong>ASP.NET Core Web Application</strong>.</p>
-<p>(4) Add the marked lines to <code>ConfigureServices</code> method in <code>Startup.cs</code>:</p>
-<pre><code class="csharp">public void ConfigureServices(IServiceCollection services)
-{
-    services.AddMvc();
-    services.AddSingleton&lt;IHttpContextAccessor, HttpContextAccessor&gt;();
-    services.AddSingleton&lt;IActionContextAccessor, ActionContextAccessor&gt;();
-}
-</code></pre>
+<p>(4) Add the following service registrations to the <code>ConfigureServices</code> method in <code>Startup.cs</code>:</p>
+<div class="codehilite"><pre><span></span><span class="hll"><span class="k">using</span> <span class="nn">Microsoft.AspNetCore.Mvc.Infrastructure</span>
+</span>
+<span class="p">...</span>
+
+<span class="k">public</span> <span class="k">void</span> <span class="nf">ConfigureServices</span><span class="p">(</span><span class="n">IServiceCollection</span> <span class="n">services</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">services</span><span class="p">.</span><span class="n">AddMvc</span><span class="p">();</span>
+
+<span class="hll">    <span class="n">services</span><span class="p">.</span><span class="n">AddSingleton</span><span class="p">&lt;</span><span class="n">IHttpContextAccessor</span><span class="p">,</span> <span class="n">HttpContextAccessor</span><span class="p">&gt;();</span>
+</span><span class="hll">    <span class="n">services</span><span class="p">.</span><span class="n">AddSingleton</span><span class="p">&lt;</span><span class="n">IActionContextAccessor</span><span class="p">,</span> <span class="n">ActionContextAccessor</span><span class="p">&gt;();</span>
+</span><span class="p">}</span>
+</pre></div>
+
 
 <p>(5) Copy the <code>assets</code> folder of your choosen Metronic Theme into <code>wwwroot</code> of the project.</p>
 <p>(6) Copy the whole Metronic Theme markup of <code>index.html</code> into your layout page <code>/Views/Shared/_Layout.cshtml</code> and correct all css, image and javascript paths (e.g. into <code>~/assets/</code>).</p>
 <p>(7) Place <code>@RenderBody()</code> method into layout page.</p>
 <p>(8) Move all javascripts into the <code>&lt;head&gt;</code> of the layout page.</p>
 <p>(9) Install Mecons NuGet Package with Package Manager Console:</p>
-<pre><code>PM&gt; Install-Package BSolutions.Mecons -Source C:\Downloads\&lt;UNZIPPED MECONS FOLDER&gt;\
-</code></pre>
-<p>(10) Add the marked lines to /Views/_ViewImports.cshtml:</p>
-<pre><code>@using MyCompany.MyApplication
-@using MyCompany.MyApplication.Models
-@using BSolutions.Mecons.Enumerations
-@using BSolutions.Brecons.Core.Enumerations
-@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-@addTagHelper *, BSolutions.Mecons
-</code></pre>
+<div class="codehilite"><pre><span></span>PM&gt; Install-Package BSolutions.Mecons -Source C:\Downloads\&lt;UNZIPPED MECONS FOLDER&gt;\
+</pre></div>
+
+
+<p>(10) Add the following lines to <code>/Views/_ViewImports.cshtml</code>:</p>
+<div class="codehilite"><pre><span></span><span class="n">@using</span> <span class="n">MyCompany</span><span class="p">.</span><span class="n">MyApplication</span>
+<span class="n">@using</span> <span class="n">MyCompany</span><span class="p">.</span><span class="n">MyApplication</span><span class="p">.</span><span class="n">Models</span>
+<span class="hll"><span class="n">@using</span> <span class="n">BSolutions</span><span class="p">.</span><span class="n">Mecons</span><span class="p">.</span><span class="n">Enumerations</span>
+</span><span class="hll"><span class="n">@using</span> <span class="n">BSolutions</span><span class="p">.</span><span class="n">Brecons</span><span class="p">.</span><span class="n">Core</span><span class="p">.</span><span class="n">Enumerations</span>
+</span><span class="n">@addTagHelper</span> <span class="p">*,</span> <span class="n">Microsoft</span><span class="p">.</span><span class="n">AspNetCore</span><span class="p">.</span><span class="n">Mvc</span><span class="p">.</span><span class="n">TagHelpers</span>
+<span class="hll"><span class="n">@addTagHelper</span> <span class="p">*,</span> <span class="n">BSolutions</span><span class="p">.</span><span class="n">Mecons</span>
+</span></pre></div>
               
             </div>
           </div>
@@ -447,5 +455,5 @@
 
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2019-03-04 17:18:45
+Build Date UTC : 2019-03-05 19:48:53
 -->

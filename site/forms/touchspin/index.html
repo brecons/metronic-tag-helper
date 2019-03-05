@@ -176,7 +176,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../input/">Input</a>
+    <a class="" href="../input/">Text</a>
                 </li>
                 <li class="">
                     
@@ -184,7 +184,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../select/">Select</a>
+    <a class="" href="../select/">Dropdown</a>
                 </li>
                 <li class="">
                     
@@ -211,7 +211,7 @@
     
         <ul>
         
-            <li><a class="toctree-l4" href="#configuration-lttouchspin-gt">Configuration &lt;touchspin /&gt;</a></li>
+            <li><a class="toctree-l4" href="#configuration">Configuration</a></li>
         
         </ul>
     
@@ -336,10 +336,12 @@
                 <h1 id="touchspin">Touchspin</h1>
 <p>A Touchspin is a mobile and touch friendly spinner component for numeric inputs. It supports the mousewheel and the up/down keys.</p>
 <p><img src="/images/touchspin_01.png" width="348" alt="Mecons Touchspin"></p>
-<pre><code class="markup">&lt;touchspin bc-label=&quot;Minimum Setup&quot; /&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span>&lt;touchspin bc-label=&quot;Minimum Setup&quot; /&gt;
+</pre></div>
 
-<h2 id="configuration-lttouchspin-gt">Configuration <code>&lt;touchspin /&gt;</code></h2>
+
+<hr />
+<h2 id="configuration">Configuration</h2>
 <h3 id="minimum">Minimum</h3>
 <p>Define the minimum value of the touchspin with the <code>bc-min</code> attribute. By default the minimum value is <code>0</code>.</p>
 <h3 id="maximum">Maximum</h3>
@@ -349,38 +351,42 @@
 <h3 id="decimals">Decimals</h3>
 <p>Set the number of decimal points with the <code>bc-decimals</code> attribute. By default the number of decimals are <code>0</code>.</p>
 <p><img src="/images/touchspin_02.png" width="342" alt="Touchspin with Decimals"></p>
-<pre><code class="markup">&lt;touchspin bc-label=&quot;Decimals&quot; bc-decimals=&quot;2&quot; /&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span>&lt;touchspin bc-label=&quot;Decimals&quot; bc-decimals=&quot;2&quot; /&gt;
+</pre></div>
+
 
 <h3 id="prefix">Prefix</h3>
 <p>Define a text or character before the input of the touchspin by using the <code>bc-prefix</code> attribute.</p>
 <p><img src="/images/touchspin_03.png" width="349" alt="Touchspin with Prefix"></p>
-<pre><code class="markup">&lt;touchspin bc-label=&quot;Prefix&quot; bc-postfix=&quot;$&quot; /&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span>&lt;touchspin bc-label=&quot;Prefix&quot; bc-postfix=&quot;$&quot; /&gt;
+</pre></div>
+
 
 <h3 id="postfix">Postfix</h3>
 <p>Define a text or character after the input of the touchspin by using the <code>bc-postfix</code> attribute.</p>
 <p><img src="/images/touchspin_04.png" width="355" alt="Touchspin with Postfix"></p>
-<pre><code class="markup">&lt;touchspin bc-label=&quot;Postfix&quot; bc-max=&quot;10000&quot; bc-decimals=&quot;2&quot; bc-step=&quot;0.5&quot; bc-postfix=&quot;EUR&quot; /&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span>&lt;touchspin bc-label=&quot;Postfix&quot; bc-max=&quot;10000&quot; bc-decimals=&quot;2&quot; bc-step=&quot;0.5&quot; bc-postfix=&quot;EUR&quot; /&gt;
+</pre></div>
+
 
 <h3 id="colored-buttons">Colored Buttons</h3>
 <p>Define the color of the down button with the <code>bc-color-down</code> attribute. Use the <code>bc-color-up</code>attribute to define a color for up button. By default, the color for both buttons are <code>Secondary</code>.</p>
 <p><img src="/images/touchspin_05.png" width="362" alt="Touchspin with colored Buttons"></p>
-<pre><code class="markup">&lt;touchspin bc-label=&quot;Colored Touchspin&quot; bc-color-down=&quot;Danger&quot; bc-color-up=&quot;Success&quot; /&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span>&lt;touchspin bc-label=&quot;Colored Touchspin&quot; bc-color-down=&quot;Danger&quot; bc-color-up=&quot;Success&quot; /&gt;
+</pre></div>
+
 
 <h3 id="up-button-color">Up Button Color</h3>
 <p>Define the color of the up button with the <code>up-color</code> attribute.</p>
 <h3 id="orientation">Orientation</h3>
 <p>The <code>bc-orientation</code> attribute can affect the orientation of the touchpin buttons. Possible values are a <code>Horizontal</code> (default) or a <code>Vertical</code> orientation.</p>
 <p><img src="/images/touchspin_04.png" width="359" alt="Touchspin with different Orientation"></p>
-<pre><code class="markup">&lt;!-- Vertical Layout --&gt;
+<div class="codehilite"><pre><span></span>&lt;!-- Vertical Layout --&gt;
 &lt;touchspin bc-label=&quot;Vertical&quot; bc-orientation=&quot;Vertical&quot; /&gt;
 
 &lt;!-- Horizontal Layout --&gt;
 &lt;touchspin bc-label=&quot;Horizontal&quot; bc-orientation=&quot;Horizontal&quot; /&gt;
-</code></pre>
+</pre></div>
               
             </div>
           </div>

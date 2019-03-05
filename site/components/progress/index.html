@@ -188,7 +188,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../../forms/input/">Input</a>
+    <a class="" href="../../forms/input/">Text</a>
                 </li>
                 <li class="">
                     
@@ -196,7 +196,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../../forms/select/">Select</a>
+    <a class="" href="../../forms/select/">Dropdown</a>
                 </li>
                 <li class="">
                     
@@ -336,8 +336,9 @@
                 <h1 id="progress">Progress</h1>
 <p>The progress is a information bar to show a progress. Use the Mecons Tag Helper to build those components with all known features.</p>
 <p><img src="/images/progress_01.png" width="396" alt="Mecons Progress" /></p>
-<pre><code class="markup">&lt;progress bc-value=&quot;75&quot; /&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span>&lt;progress bc-value=&quot;75&quot; /&gt;
+</pre></div>
+
 
 <hr />
 <h2 id="configuration">Configuration</h2>
@@ -346,43 +347,48 @@
 <h3 id="label">Label</h3>
 <p>Add a label to your progress bar and set the <code>bc-label</code> attribute to <code>true</code>.</p>
 <p><img src="/images/progress_02.png" width="398" alt="Progress Label" /></p>
-<pre><code class="markup">&lt;progress bc-value=&quot;75&quot; bc-label=&quot;true&quot; /&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span>&lt;progress bc-value=&quot;75&quot; bc-label=&quot;true&quot; /&gt;
+</pre></div>
+
 
 <h3 id="size">Size</h3>
 <p>Set a size for the progress with the <code>bc-size</code> attribute. Possible sizes are <code>Default</code>, <code>Small</code> or <code>Large</code>.</p>
 <p><img src="/images/progress_03.png" width="399" alt="Progress Size" /></p>
-<pre><code class="markup">&lt;progress bc-value=&quot;25&quot; bc-color=&quot;Primary&quot; bc-size=&quot;Small&quot; /&gt;
+<div class="codehilite"><pre><span></span>&lt;progress bc-value=&quot;25&quot; bc-color=&quot;Primary&quot; bc-size=&quot;Small&quot; /&gt;
 &lt;progress bc-value=&quot;50&quot; bc-color=&quot;Accent&quot; /&gt;
 &lt;progress bc-value=&quot;75&quot; bc-color=&quot;Warning&quot; bc-size=&quot;Large&quot; /&gt;
-</code></pre>
+</pre></div>
+
 
 <h3 id="height">Height</h3>
 <p>It's possible to adapt the height of a progress bar with the <code>bc-height</code> attribute. Allowed values for this attribute are integers. The unit for this value are pixels (px).</p>
 <p><img src="/images/progress_04.png" width="398" alt="Progress Height" /></p>
-<pre><code class="markup">&lt;progress bc-value=&quot;25&quot; bc-color=&quot;Primary&quot; bc-height=&quot;1&quot; /&gt;
+<div class="codehilite"><pre><span></span>&lt;progress bc-value=&quot;25&quot; bc-color=&quot;Primary&quot; bc-height=&quot;1&quot; /&gt;
 &lt;progress bc-value=&quot;50&quot; bc-color=&quot;Accent&quot; bc-height=&quot;10&quot; /&gt;
 &lt;progress bc-value=&quot;75&quot; bc-color=&quot;Warning&quot; bc-height=&quot;20&quot; /&gt;
 &lt;progress bc-value=&quot;100&quot; bc-color=&quot;Danger&quot; bc-height=&quot;40&quot; /&gt;
-</code></pre>
+</pre></div>
+
 
 <h3 id="color">Color</h3>
 <p>Use the <code>bc-color</code> attribute to set a color for the progress bar.</p>
 <p><img src="/images/progress_05.png" width="409" alt="Progress Color" /></p>
-<pre><code class="markup">&lt;progress bc-value=&quot;50&quot; bc-color=&quot;Success&quot; /&gt;
+<div class="codehilite"><pre><span></span>&lt;progress bc-value=&quot;50&quot; bc-color=&quot;Success&quot; /&gt;
 &lt;progress bc-value=&quot;75&quot; bc-color=&quot;Info&quot; /&gt;
 &lt;progress bc-value=&quot;100&quot; bc-color=&quot;Warning&quot; /&gt;
 &lt;progress bc-value=&quot;25&quot; bc-color=&quot;Danger&quot; /&gt;
-</code></pre>
+</pre></div>
+
 
 <h3 id="striped">Striped</h3>
 <p>Add the <code>bc-striped</code> attribute and set it to <code>true</code> to apply a stripe gradient over the progress bar's background color.</p>
 <p><img src="/images/progress_06.png" width="413" alt="Striped Progress" /></p>
-<pre><code class="markup">&lt;progress bc-value=&quot;25&quot; bc-color=&quot;Success&quot; bc-striped=&quot;true&quot;  /&gt;
+<div class="codehilite"><pre><span></span>&lt;progress bc-value=&quot;25&quot; bc-color=&quot;Success&quot; bc-striped=&quot;true&quot;  /&gt;
 &lt;progress bc-value=&quot;50&quot; bc-color=&quot;Info&quot; bc-striped=&quot;true&quot; /&gt;
 &lt;progress bc-value=&quot;75&quot; bc-color=&quot;Warning&quot; bc-striped=&quot;true&quot;  /&gt;
 &lt;progress bc-value=&quot;100&quot; bc-color=&quot;Danger&quot; bc-striped=&quot;true&quot;  /&gt;
-</code></pre>
+</pre></div>
+
 
 <h3 id="animated">Animated</h3>
 <p>The striped gradient can also be animated by setting the <code>bc-animated</code> attribute to <code>true</code>.</p>

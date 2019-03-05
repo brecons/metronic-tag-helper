@@ -176,7 +176,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../input/">Input</a>
+    <a class="" href="../input/">Text</a>
                 </li>
                 <li class="">
                     
@@ -184,7 +184,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../select/">Select</a>
+    <a class="" href="../select/">Dropdown</a>
                 </li>
                 <li class="">
                     
@@ -338,134 +338,146 @@
                 <h1 id="radio-list">Radio List</h1>
 <p>The <code>&lt;radio-list&gt;</code> tag helper is a wrapper for radio input elements. For a correct rendering it is necessary to embedding all radios into a radio list.</p>
 <p><img src="/images/radiolist_01.png" width="178" alt="Mecons Radio List"></p>
-<pre><code class="markup">&lt;radio-list bc-label=&quot;Default Radiobuttons&quot;&gt;
-    &lt;input type=&quot;radio&quot; name=&quot;radio1&quot; bc-label=&quot;Default&quot; /&gt;
-    &lt;input type=&quot;radio&quot; name=&quot;radio1&quot; bc-label=&quot;Disabled&quot; disabled /&gt;
-    &lt;input type=&quot;radio&quot; name=&quot;radio1&quot; bc-label=&quot;Checked&quot; checked /&gt;
-&lt;/radio-list&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;radio-list</span> <span class="na">bc-label=</span><span class="s">&quot;Default Radiobuttons&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">name=</span><span class="s">&quot;radio1&quot;</span> <span class="na">bc-label=</span><span class="s">&quot;Default&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">name=</span><span class="s">&quot;radio1&quot;</span> <span class="na">bc-label=</span><span class="s">&quot;Disabled&quot;</span> <span class="err">disabled</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">name=</span><span class="s">&quot;radio1&quot;</span> <span class="na">bc-label=</span><span class="s">&quot;Checked&quot;</span> <span class="err">checked</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/radio-list&gt;</span>
+</pre></div>
 
+
+<hr />
 <h2 id="configuration">Configuration</h2>
 <h3 id="inline">Inline</h3>
 <p>Radios can rendered on the same horizontal row by adding the <code>bc-inline</code> attribute to the list wrapper.</p>
 <p><img src="/images/radiolist_02.png" width="328" alt="Inline Radio List"></p>
-<pre><code class="markup">&lt;radio-list bc-inline=&quot;true&quot;&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;radio-list</span> <span class="na">bc-inline=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
     ...
-&lt;/radio-list&gt;
-</code></pre>
+<span class="nt">&lt;/radio-list&gt;</span>
+</pre></div>
+
 
 <h3 id="label">Label</h3>
 <p>To set a label for a list of radios use the <code>bc-label</code> attribute.</p>
 <p><img src="/images/radiolist_03.png" width="185" alt="Radio List Label"></p>
-<pre><code class="markup">&lt;radio-list bc-label=&quot;Default Radios&quot;&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;radio-list</span> <span class="na">bc-label=</span><span class="s">&quot;Default Radios&quot;</span><span class="nt">&gt;</span>
     ...
-&lt;/radio-list&gt;
-</code></pre>
+<span class="nt">&lt;/radio-list&gt;</span>
+</pre></div>
+
 
 <h3 id="help">Help</h3>
 <p>To set a help text for a list of radios use the <code>bc-help</code> attribute.</p>
 <p><img src="/images/radiolist_04.png" width="343" alt="Radio List Help"></p>
-<pre><code class="markup">&lt;radio-list bc-label=&quot;Inline Radios&quot; bc-help=&quot;Some help text goes here&quot; bc-inline=&quot;true&quot;&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;radio-list</span> <span class="na">bc-label=</span><span class="s">&quot;Inline Radios&quot;</span> <span class="na">bc-help=</span><span class="s">&quot;Some help text goes here&quot;</span> <span class="na">bc-inline=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
     ...
-&lt;/radio-list&gt;
-</code></pre>
+<span class="nt">&lt;/radio-list&gt;</span>
+</pre></div>
+
 
 <h3 id="items">Items</h3>
 <p>To bind a list of items to a Radio List use the <code>bc-items</code> attribute. This attribute accepts an object of <code>List&lt;SelectListItem&gt;</code>.</p>
 <p><img src="/images/radiolist_05.png" width="369" alt="Radio List Items"></p>
-<h4 id="view">View</h4>
-<pre><code class="markup">@model BSolutions.Mecons.Test.Models.DataBindingViewModel
+<div class="codehilite"><pre><span></span><span class="c">&lt;!-- VIEW --&gt;</span>
+@model BSolutions.Mecons.Test.Models.DataBindingViewModel
 
-&lt;radio-list bc-label=&quot;Character&quot; bc-items=&quot;Model.Characters&quot; bc-inline=&quot;true&quot;&gt;&lt;/radio-list&gt;
-</code></pre>
+<span class="nt">&lt;radio-list</span> <span class="na">bc-label=</span><span class="s">&quot;Character&quot;</span> <span class="na">bc-items=</span><span class="s">&quot;Model.Characters&quot;</span> <span class="na">bc-inline=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;&lt;/radio-list&gt;</span>
+</pre></div>
 
-<h4 id="view-model">View Model</h4>
-<pre><code class="csharp">public class DataBindingViewModel
-{
-    public List&lt;SelectListItem&gt; Characters { get; set; } = new List&lt;SelectListItem&gt;();
 
-    public DataBindingViewModel()
-    {
-        this.Characters.Add(new SelectListItem { Value = &quot;0&quot;, Text = &quot;Calm&quot; });
-        this.Characters.Add(new SelectListItem { Value = &quot;1&quot;, Text = &quot;Bright&quot; });
-        this.Characters.Add(new SelectListItem { Value = &quot;2&quot;, Text = &quot;Lively&quot; });
-        this.Characters.Add(new SelectListItem { Value = &quot;3&quot;, Text = &quot;Crazy&quot; });
-    }
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="c1">// VIEW MODEL</span>
+<span class="k">public</span> <span class="k">class</span> <span class="nc">DataBindingViewModel</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">SelectListItem</span><span class="p">&gt;</span> <span class="n">Characters</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span> <span class="p">=</span> <span class="k">new</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">SelectListItem</span><span class="p">&gt;();</span>
+
+    <span class="k">public</span> <span class="nf">DataBindingViewModel</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="n">Characters</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="k">new</span> <span class="n">SelectListItem</span> <span class="p">{</span> <span class="n">Value</span> <span class="p">=</span> <span class="s">&quot;0&quot;</span><span class="p">,</span> <span class="n">Text</span> <span class="p">=</span> <span class="s">&quot;Calm&quot;</span> <span class="p">});</span>
+        <span class="k">this</span><span class="p">.</span><span class="n">Characters</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="k">new</span> <span class="n">SelectListItem</span> <span class="p">{</span> <span class="n">Value</span> <span class="p">=</span> <span class="s">&quot;1&quot;</span><span class="p">,</span> <span class="n">Text</span> <span class="p">=</span> <span class="s">&quot;Bright&quot;</span> <span class="p">});</span>
+        <span class="k">this</span><span class="p">.</span><span class="n">Characters</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="k">new</span> <span class="n">SelectListItem</span> <span class="p">{</span> <span class="n">Value</span> <span class="p">=</span> <span class="s">&quot;2&quot;</span><span class="p">,</span> <span class="n">Text</span> <span class="p">=</span> <span class="s">&quot;Lively&quot;</span> <span class="p">});</span>
+        <span class="k">this</span><span class="p">.</span><span class="n">Characters</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="k">new</span> <span class="n">SelectListItem</span> <span class="p">{</span> <span class="n">Value</span> <span class="p">=</span> <span class="s">&quot;3&quot;</span><span class="p">,</span> <span class="n">Text</span> <span class="p">=</span> <span class="s">&quot;Crazy&quot;</span> <span class="p">});</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
 
 <p>It is also possible to bind the values of an enumeration to a Radio List. Use the <code>Html.GetEnumSelectList&lt;TEnum&gt;()</code> method of the HtmlHelper class to return a select list for the given enum type.</p>
 <p><img src="/images/radiolist_06.png" width="204" alt=""></p>
-<h4 id="view_1">View</h4>
-<pre><code class="markup">@model BSolutions.Mecons.Test.Models.DataBindingViewModel
+<div class="codehilite"><pre><span></span><span class="c">&lt;!-- VIEW --&gt;</span>
+@model BSolutions.Mecons.Test.Models.DataBindingViewModel
 
-&lt;radio-list bc-label=&quot;Gender&quot; bc-inline=&quot;true&quot; bc-items=&quot;Html.GetEnumSelectList&lt;Gender&gt;()&quot;&gt;&lt;/radio-list&gt;
-</code></pre>
+<span class="nt">&lt;radio-list</span> <span class="na">bc-label=</span><span class="s">&quot;Gender&quot;</span> <span class="na">bc-inline=</span><span class="s">&quot;true&quot;</span> <span class="na">bc-items=</span><span class="s">&quot;Html.GetEnumSelectList&lt;Gender&gt;()&quot;</span><span class="nt">&gt;&lt;/radio-list&gt;</span>
+</pre></div>
 
-<h4 id="enumeration">Enumeration</h4>
-<pre><code class="csharp">public enum Gender
-{
-    [Display(Name = &quot;Male&quot;)]
-    Male,
 
-    [Display(Name = &quot;Female&quot;)]
-    Female
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="c1">// ENUMERATION</span>
+<span class="k">public</span> <span class="k">enum</span> <span class="n">Gender</span>
+<span class="p">{</span>
+<span class="na">    [Display(Name = &quot;Male&quot;)]</span>
+    <span class="n">Male</span><span class="p">,</span>
 
+<span class="na">    [Display(Name = &quot;Female&quot;)]</span>
+    <span class="n">Female</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<hr />
 <h2 id="data-binding">Data Binding</h2>
 <p>Model binding in ASP.NET Core MVC maps data from HTTP requests to action method parameters. With <code>asp-for</code> attribute of the Radio List it is possible to bind selected option to a model parameter.</p>
-<h3 id="view_2">View</h3>
 <p><img src="/images/radiolist_07.png" width="304" alt=""></p>
-<pre><code class="markup">@model BSolutions.Mecons.Test.Models.DataBindingViewModel
+<div class="codehilite"><pre><span></span><span class="c">&lt;!-- VIEW --&gt;</span>
+@model BSolutions.Mecons.Test.Models.DataBindingViewModel
 
-&lt;form-group&gt;
-&lt;radio-list asp-for=&quot;Gender&quot; bc-items=&quot;Html.GetEnumSelectList&lt;Gender&gt;()&quot;&gt;&lt;/radio-list&gt;
-&lt;/form-group&gt;
-&lt;form-group&gt;
-    &lt;radio-list asp-for=&quot;Character&quot; bc-items=&quot;Model.Characters&quot;&gt;&lt;/radio-list&gt;
-&lt;/form-group&gt;
-</code></pre>
+<span class="nt">&lt;form-group&gt;</span>
+<span class="nt">&lt;radio-list</span> <span class="na">asp-for=</span><span class="s">&quot;Gender&quot;</span> <span class="na">bc-items=</span><span class="s">&quot;Html.GetEnumSelectList&lt;Gender&gt;()&quot;</span><span class="nt">&gt;&lt;/radio-list&gt;</span>
+<span class="nt">&lt;/form-group&gt;</span>
+<span class="nt">&lt;form-group&gt;</span>
+    <span class="nt">&lt;radio-list</span> <span class="na">asp-for=</span><span class="s">&quot;Character&quot;</span> <span class="na">bc-items=</span><span class="s">&quot;Model.Characters&quot;</span><span class="nt">&gt;&lt;/radio-list&gt;</span>
+<span class="nt">&lt;/form-group&gt;</span>
+</pre></div>
 
-<h3 id="view-model_1">View Model</h3>
-<pre><code class="csharp">public class DataBindingViewModel
-{
-    [Display(Name = &quot;Gender&quot;)]
-    public Gender Gender { get; set; }
 
-    [Display(Name = &quot;Character&quot;)]
-    public string Character { get; set; }
+<div class="codehilite"><pre><span></span><span class="c1">// VIEW MODEL</span>
+<span class="k">public</span> <span class="k">class</span> <span class="nc">DataBindingViewModel</span>
+<span class="p">{</span>
+<span class="na">    [Display(Name = &quot;Gender&quot;)]</span>
+    <span class="k">public</span> <span class="n">Gender</span> <span class="n">Gender</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
 
-    public List&lt;SelectListItem&gt; Characters { get; set; } = new List&lt;SelectListItem&gt;();
-}
+<span class="na">    [Display(Name = &quot;Character&quot;)]</span>
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">Character</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
 
-public enum Gender
-{
-    Male,
-    Female
-}
-</code></pre>
+    <span class="k">public</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">SelectListItem</span><span class="p">&gt;</span> <span class="n">Characters</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span> <span class="p">=</span> <span class="k">new</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">SelectListItem</span><span class="p">&gt;();</span>
+<span class="p">}</span>
 
-<h3 id="controller">Controller</h3>
-<pre><code class="csharp">public IActionResult DataBinding()
-{
-    var model = new DataBindingViewModel();
-    model.Characters.Add(new SelectListItem { Value = &quot;0&quot;, Text = &quot;Calm&quot; });
-    model.Characters.Add(new SelectListItem { Value = &quot;1&quot;, Text = &quot;Bright&quot; });
-    model.Characters.Add(new SelectListItem { Value = &quot;2&quot;, Text = &quot;Lively&quot; });
-    model.Characters.Add(new SelectListItem { Value = &quot;3&quot;, Text = &quot;Crazy&quot; });
+<span class="k">public</span> <span class="k">enum</span> <span class="n">Gender</span>
+<span class="p">{</span>
+    <span class="n">Male</span><span class="p">,</span>
+    <span class="n">Female</span>
+<span class="p">}</span>
+</pre></div>
 
-    return View(model);
-}
 
-[HttpPost]
-public IActionResult DataBinding(DataBindingViewModel model)
-{
-    // Get selected Gender with model.Gender
+<div class="codehilite"><pre><span></span><span class="c1">// CONTROLLER</span>
+<span class="k">public</span> <span class="n">IActionResult</span> <span class="nf">DataBinding</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="kt">var</span> <span class="n">model</span> <span class="p">=</span> <span class="k">new</span> <span class="n">DataBindingViewModel</span><span class="p">();</span>
+    <span class="n">model</span><span class="p">.</span><span class="n">Characters</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="k">new</span> <span class="n">SelectListItem</span> <span class="p">{</span> <span class="n">Value</span> <span class="p">=</span> <span class="s">&quot;0&quot;</span><span class="p">,</span> <span class="n">Text</span> <span class="p">=</span> <span class="s">&quot;Calm&quot;</span> <span class="p">});</span>
+    <span class="n">model</span><span class="p">.</span><span class="n">Characters</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="k">new</span> <span class="n">SelectListItem</span> <span class="p">{</span> <span class="n">Value</span> <span class="p">=</span> <span class="s">&quot;1&quot;</span><span class="p">,</span> <span class="n">Text</span> <span class="p">=</span> <span class="s">&quot;Bright&quot;</span> <span class="p">});</span>
+    <span class="n">model</span><span class="p">.</span><span class="n">Characters</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="k">new</span> <span class="n">SelectListItem</span> <span class="p">{</span> <span class="n">Value</span> <span class="p">=</span> <span class="s">&quot;2&quot;</span><span class="p">,</span> <span class="n">Text</span> <span class="p">=</span> <span class="s">&quot;Lively&quot;</span> <span class="p">});</span>
+    <span class="n">model</span><span class="p">.</span><span class="n">Characters</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="k">new</span> <span class="n">SelectListItem</span> <span class="p">{</span> <span class="n">Value</span> <span class="p">=</span> <span class="s">&quot;3&quot;</span><span class="p">,</span> <span class="n">Text</span> <span class="p">=</span> <span class="s">&quot;Crazy&quot;</span> <span class="p">});</span>
 
-    // Get selected Character with model.Character
-}
-</code></pre>
+    <span class="k">return</span> <span class="nf">View</span><span class="p">(</span><span class="n">model</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="na">[HttpPost]</span>
+<span class="k">public</span> <span class="n">IActionResult</span> <span class="nf">DataBinding</span><span class="p">(</span><span class="n">DataBindingViewModel</span> <span class="n">model</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="c1">// Get selected Gender with model.Gender</span>
+
+    <span class="c1">// Get selected Character with model.Character</span>
+<span class="p">}</span>
+</pre></div>
               
             </div>
           </div>

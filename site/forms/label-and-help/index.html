@@ -183,8 +183,6 @@
         
             <li><a class="toctree-l4" href="#help">Help</a></li>
         
-            <li><a class="toctree-l4" href="#label-configuration-ltlabelgt">Label Configuration &lt;label&gt;</a></li>
-        
         </ul>
     
 
@@ -192,7 +190,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../input/">Input</a>
+    <a class="" href="../input/">Text</a>
                 </li>
                 <li class="">
                     
@@ -200,7 +198,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../select/">Select</a>
+    <a class="" href="../select/">Dropdown</a>
                 </li>
                 <li class="">
                     
@@ -339,27 +337,28 @@
               
                 <h1 id="label-help">Label &amp; Help</h1>
 <p>With a label or a help text it is possible to desribe a control in more detail.</p>
+<hr />
 <h2 id="label">Label</h2>
 <p>A label shows a name for a control and can be defined with the <code>&lt;label&gt;</code> tag within a <code>&lt;form-group&gt;</code>.</p>
 <p><img src="/images/labelandhelp_01.png" width="444" alt="Mecons Control Label"></p>
-<pre><code class="markup">&lt;form-group&gt;
-    &lt;label for=&quot;input1&quot;&gt;Text Control Label&lt;/label&gt;
-    &lt;input id=&quot;input1&quot; type=&quot;text&quot; /&gt;
-&lt;/form-group&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;form-group&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;input1&quot;</span><span class="nt">&gt;</span>Text Control Label<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;input1&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/form-group&gt;</span>
+</pre></div>
 
+
+<h3 id="screenreader">Screenreader</h3>
+<p>Set the <code>bc-sronly</code> attribute to hide the label on all devices except screen readers.</p>
+<hr />
 <h2 id="help">Help</h2>
 <p>A block-level help text for form controls can be created with the <code>&lt;help&gt;</code> tag helper within the <code>&lt;form-group&gt;</code>.</p>
 <p><img src="/images/labelandhelp_02.png" width="441" alt="Mecons Control Help"></p>
-<pre><code class="markup">&lt;form-group&gt;
-    &lt;input type=&quot;text&quot; bc-label=&quot;Text Control Label&quot; /&gt;
-    &lt;help&gt;A block-level help text&lt;/help&gt;
-&lt;/form-group&gt;
-</code></pre>
-
-<h2 id="label-configuration-ltlabelgt">Label Configuration <code>&lt;label&gt;</code></h2>
-<h3 id="screenreader">Screenreader</h3>
-<p>Set the <code>bc-sronly</code> attribute to hide the label on all devices except screen readers.</p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;form-group&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">bc-label=</span><span class="s">&quot;Text Control Label&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;help&gt;</span>A block-level help text<span class="nt">&lt;/help&gt;</span>
+<span class="nt">&lt;/form-group&gt;</span>
+</pre></div>
               
             </div>
           </div>
@@ -367,7 +366,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../input/" class="btn btn-neutral float-right" title="Input">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../input/" class="btn btn-neutral float-right" title="Text">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../form-controls/" class="btn btn-neutral" title="Form Controls"><span class="icon icon-circle-arrow-left"></span> Previous</a>

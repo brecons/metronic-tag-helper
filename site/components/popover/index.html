@@ -188,7 +188,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../../forms/input/">Input</a>
+    <a class="" href="../../forms/input/">Text</a>
                 </li>
                 <li class="">
                     
@@ -196,7 +196,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../../forms/select/">Select</a>
+    <a class="" href="../../forms/select/">Dropdown</a>
                 </li>
                 <li class="">
                     
@@ -336,42 +336,46 @@
                 <h1 id="popover">Popover</h1>
 <p>A Popover is a component to show additional informations for an element like those found in iOS. With the Mecons Tag Helper it is possible to add those informations to any element on your app.</p>
 <p><img src="/images/popover_01.png" width="312" alt="Mecons Popover" /></p>
-<pre><code class="markup">&lt;button type=&quot;button&quot; bc-popover=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">bc-popover=</span><span class="s">&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot;</span><span class="nt">&gt;</span>
     Popover on top
-&lt;/button&gt;
-</code></pre>
+<span class="nt">&lt;/button&gt;</span>
+</pre></div>
+
 
 <hr />
 <h2 id="configuration">Configuration</h2>
 <h3 id="content-mandatory-trigger-attribute">Content (Mandatory) (Trigger Attribute)</h3>
 <p>The <code>bc-popover</code> attribute is available on each HTML element and specifies the popover content. After these attribute is set for an element further attributes are available to concretize the popover definition.</p>
-<pre><code class="markup">&lt;button type=&quot;button&quot; bc-popover=&quot;Text and content&quot;&gt;Button with Popover&lt;/button&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">bc-popover=</span><span class="s">&quot;Text and content&quot;</span><span class="nt">&gt;</span>Button with Popover<span class="nt">&lt;/button&gt;</span>
+</pre></div>
+
 
 <h3 id="title">Title</h3>
 <p>You can set a title for the popover with the <code>bc-popover-title</code> attribute.</p>
 <p><img src="/images/popover_02.png" width="315" alt="Popover Title" /></p>
-<pre><code class="markup">&lt;button type=&quot;button&quot; bc-popover=&quot;...&quot; bc-popover-title=&quot;Popover title&quot;&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">bc-popover=</span><span class="s">&quot;...&quot;</span> <span class="na">bc-popover-title=</span><span class="s">&quot;Popover title&quot;</span><span class="nt">&gt;</span>
     Popover on top
-&lt;/button&gt;
-</code></pre>
+<span class="nt">&lt;/button&gt;</span>
+</pre></div>
+
 
 <h3 id="dismissible">Dismissible</h3>
 <p>Use the <code>bc-popover-dismissible</code> attribute and set a focus trigger to dismiss popovers on the next click that user makes.</p>
 <h3 id="delay">Delay</h3>
 <p>Define a delay for showing and hiding the popover with <code>bc-popover-delay</code> attribute. The value of these attribute are milliseconds.</p>
-<pre><code class="markup">&lt;button type=&quot;button&quot; bc-popover=&quot;Text and content&quot; bc-popover-delay=&quot;1000&quot;&gt;Button with Popover&lt;/button&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">bc-popover=</span><span class="s">&quot;Text and content&quot;</span> <span class="na">bc-popover-delay=</span><span class="s">&quot;1000&quot;</span><span class="nt">&gt;</span>Button with Popover<span class="nt">&lt;/button&gt;</span>
+</pre></div>
+
 
 <h3 id="placement">Placement</h3>
 <p>With the <code>bc-popover-placement</code> can specified how to position a popover. Possible values are <code>Top</code> (default), <code>Bottom</code>, <code>Left</code> or <code>Right</code>.</p>
 <h3 id="html">HTML</h3>
 <p>Set the <code>bc-popover-html</code> attribute to <code>true</code> to allow HTML tags within the popover content.</p>
 <p><img src="/images/popover_03.png" width="341" alt="Popover HTML Content" /></p>
-<pre><code class="markup">&lt;button type=&quot;button&quot; bc-popover=&quot;And here's some amazing &lt;b&gt;HTML&lt;/b&gt; content. It's very &lt;code&gt;engaging&lt;/code&gt;. Right?&quot; bc-popover-html=&quot;true&quot;&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">bc-popover=</span><span class="s">&quot;And here&#39;s some amazing &lt;b&gt;HTML&lt;/b&gt; content. It&#39;s very &lt;code&gt;engaging&lt;/code&gt;. Right?&quot;</span> <span class="na">bc-popover-html=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
     Popover with HTML
-&lt;/button&gt;
-</code></pre>
+<span class="nt">&lt;/button&gt;</span>
+</pre></div>
               
             </div>
           </div>

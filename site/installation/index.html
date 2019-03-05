@@ -196,7 +196,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../forms/input/">Input</a>
+    <a class="" href="../forms/input/">Text</a>
                 </li>
                 <li class="">
                     
@@ -204,7 +204,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../forms/select/">Select</a>
+    <a class="" href="../forms/select/">Dropdown</a>
                 </li>
                 <li class="">
                     
@@ -342,77 +342,87 @@
 <hr />
 <h2 id="create-new-web-application">Create new Web Application</h2>
 <p>The first step is to create a new project in Visual Studio. Choose the <strong><em>Web</em></strong> rubric and subsequent the <strong><em>ASP.NET Core Web Application</em></strong> template. Adapt the project parameters like <strong><em>Name</em></strong>, <strong><em>Location</em></strong> and <strong><em>Solution name</em></strong> and click <strong><em>OK</em></strong>.</p>
-<p><img alt="New Project in Visual Studio" src="/images/installation_01.png" /></p>
+<p><img src="/images/installation_01.png" width="944" alt="New Project in Visual Studio" /></p>
 <p>In the following dialog choose the <strong><em>.NET Core</em></strong> Framework and the <strong><em>ASP.NET Core 2.x</em></strong> version as well as a project template. Optionally change the authentication and click <strong><em>OK</em></strong>.</p>
-<p><img alt="Project Configuration in Visual Studio" src="/images/installation_02.png" /></p>
+<p><img src="/images/installation_02.png" width="789" alt="Project Configuration in Visual Studio" /></p>
 <hr />
 <h2 id="add-service-configuration">Add Service Configuration</h2>
 <p>To ensure that Mecons runs correctly it is necessary to adapt the <code>Startup.cs</code>. Register inside the <code>ConfigureServices</code> method a singleton for the <code>IActionContextAccessor</code> and <code>IHttpContextAccessor</code>. Finally import the namespace <code>Microsoft.AspNetCore.Mvc.Infrastructure</code>.</p>
-<pre><code class="csharp">using Microsoft.AspNetCore.Mvc.Infrastructure
+<div class="codehilite"><pre><span></span><span class="hll"><span class="k">using</span> <span class="nn">Microsoft.AspNetCore.Mvc.Infrastructure</span>
+</span>
+<span class="p">...</span>
 
-...
+<span class="k">public</span> <span class="k">void</span> <span class="nf">ConfigureServices</span><span class="p">(</span><span class="n">IServiceCollection</span> <span class="n">services</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">services</span><span class="p">.</span><span class="n">AddMvc</span><span class="p">();</span>
 
-public void ConfigureServices(IServiceCollection services)
-{
-    services.AddMvc();
+<span class="hll">    <span class="n">services</span><span class="p">.</span><span class="n">AddSingleton</span><span class="p">&lt;</span><span class="n">IHttpContextAccessor</span><span class="p">,</span> <span class="n">HttpContextAccessor</span><span class="p">&gt;();</span>
+</span><span class="hll">    <span class="n">services</span><span class="p">.</span><span class="n">AddSingleton</span><span class="p">&lt;</span><span class="n">IActionContextAccessor</span><span class="p">,</span> <span class="n">ActionContextAccessor</span><span class="p">&gt;();</span>
+</span><span class="p">}</span>
+</pre></div>
 
-    services.AddSingleton&lt;IHttpContextAccessor, HttpContextAccessor&gt;();
-    services.AddSingleton&lt;IActionContextAccessor, ActionContextAccessor&gt;();
-}
-</code></pre>
 
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>If the services are not registered, an <code>InvalidOperationException</code> may occur.</p>
+<p>If the services are not registered, an <code>InvalidOperationException</code> may occur on application runtime.</p>
 </div>
 <hr />
 <h2 id="metronic-integration">Metronic Integration</h2>
 <p>In this section the Metronic Admin Theme will be integrated into an ASP.NET Core Web Application.</p>
 <h3 id="include-metronic-files">Include Metronic Files</h3>
 <p>Copy the <code>assets</code> folder of your choosen Metronic Admin Theme (e.g. <code>/metronic_v5.x/dist/&lt;YOUR FAVORITE THEME&gt;/assets</code>) into the <code>wwwroot</code> folder of your project and rename it to <code>metronic</code>:</p>
-<pre><code>MyCompany.MyApplication
+<div class="codehilite"><pre><span></span>MyCompany.MyApplication
 ├── wwwroot/
     ├── css/
     ├── js/
     ├── lib/
-    ├── metronic/
-        ├── app/
-        ├── demo/
-        ├── snippets/
-        ├── vendors/
-├── Controllers/
+<span class="hll">    ├── metronic/
+</span><span class="hll">        ├── app/
+</span><span class="hll">        ├── demo/
+</span><span class="hll">        ├── snippets/
+</span><span class="hll">        ├── vendors/
+</span>├── Controllers/
 ├── Models/
 └── Views/
-</code></pre>
+</pre></div>
+
 
 <p>Copy the content of your choosen Metronic Admin Theme (e.g. <code>/metronic_v5.x/dist//index.html</code>) into the <code>Views/Shared/_Layout.cshtml</code>. Afterwards press <strong>CTRL + H</strong> to open the Quick Replace Tool and replace <code>assets/</code> with <code>~/metronic/</code>.</p>
 <p>Include the <code>@RenderBody()</code> method at the position where the individual page content will be rendered.</p>
-<p><img alt="Insert RenderBody method into layout page" src="/images/installation_03.png" /></p>
+<p><img src="/images/installation_03.png" width="1197" alt="Insert RenderBody method into layout page" /></p>
 <p>To ensure that all Mecons Tag Helpers work as expected, it is necessary to move all JavaScript includes from the page bottom into the <code>&lt;head&gt;</code>.</p>
-<p><img alt="Inclusion of JavaScript" src="/images/installation_04.png" /></p>
+<p><img src="/images/installation_04.png" width="1063" alt="Inclusion of JavaScript" /></p>
 <hr />
 <h2 id="mecons-installation">Mecons Installation</h2>
 <p>Open the Package Manager Console in Visual Studio and install the Mecons package:</p>
-<pre><code>PM&gt; Install-Package BSolutions.Mecons -Source C:\Downloads\&lt;UNZIPPED MECONS FOLDER&gt;\
-</code></pre>
+<div class="codehilite"><pre><span></span>PM&gt; Install-Package BSolutions.Mecons -Source C:\Downloads\&lt;UNZIPPED MECONS FOLDER&gt;\
+</pre></div>
+
 
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Not every Mecons package is compatible with every Metronic version. For further information check the description of the selected package or the change log.</p>
 </div>
 <p>After the package installation open <code>/Views/_ViewImports.cshtml</code> and insert the marked lines:</p>
-<pre><code>@using MyCompany.MyApplication
-@using MyCompany.MyApplication.Models
-@using BSolutions.Mecons.Enumerations
-@using BSolutions.Brecons.Core.Enumerations
-@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-@addTagHelper *, BSolutions.Mecons
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="n">@using</span> <span class="n">MyCompany</span><span class="p">.</span><span class="n">MyApplication</span>
+<span class="n">@using</span> <span class="n">MyCompany</span><span class="p">.</span><span class="n">MyApplication</span><span class="p">.</span><span class="n">Models</span>
+<span class="hll"><span class="n">@using</span> <span class="n">BSolutions</span><span class="p">.</span><span class="n">Mecons</span><span class="p">.</span><span class="n">Enumerations</span>
+</span><span class="hll"><span class="n">@using</span> <span class="n">BSolutions</span><span class="p">.</span><span class="n">Brecons</span><span class="p">.</span><span class="n">Core</span><span class="p">.</span><span class="n">Enumerations</span>
+</span><span class="n">@addTagHelper</span> <span class="p">*,</span> <span class="n">Microsoft</span><span class="p">.</span><span class="n">AspNetCore</span><span class="p">.</span><span class="n">Mvc</span><span class="p">.</span><span class="n">TagHelpers</span>
+<span class="hll"><span class="n">@addTagHelper</span> <span class="p">*,</span> <span class="n">BSolutions</span><span class="p">.</span><span class="n">Mecons</span>
+</span></pre></div>
+
 
 <hr />
 <h2 id="mecons-rendering">Mecons Rendering</h2>
-<p>By default, the Mecons Tag Helper Rendering is enabled for each HTML element. To disable the Brecons Tag Helper Rendering for an specific HTML element, set the <code>disable-brecons</code> attribute. The <code>disable-brecons</code> attribute is minimizable and needs no value.</p>
-<p><img alt="Mecons Rendering" src="/images/installation_05.png" /></p>
+<p>By default, the Mecons Tag Helper Rendering is enabled for each HTML element. To disable the Brecons Tag Helper Rendering for a specific HTML element, set the <code>disable-brecons</code> attribute. The <code>disable-brecons</code> attribute is minimizable and needs no value.</p>
+<p><img src="/images/installation_05.png" width="173" alt="Mecons Rendering" /></p>
+<div class="codehilite"><pre><span></span><span class="c">&lt;!-- Brecons Rendering --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>Brecons Button<span class="nt">&lt;/button&gt;</span>
+
+<span class="c">&lt;!-- Default HTML Rendering --&gt;</span>
+<span class="hll"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="err">disable-brecons</span><span class="nt">&gt;</span>HTML Button<span class="nt">&lt;/button&gt;</span>
+</span></pre></div>
               
             </div>
           </div>

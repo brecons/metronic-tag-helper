@@ -176,7 +176,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../input/">Input</a>
+    <a class="" href="../input/">Text</a>
                 </li>
                 <li class="">
                     
@@ -184,7 +184,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../select/">Select</a>
+    <a class="" href="../select/">Dropdown</a>
                 </li>
                 <li class="">
                     
@@ -253,7 +253,7 @@
     
         <ul>
         
-            <li><a class="toctree-l4" href="#configuration-ltdaterangepickergt">Configuration &lt;daterangepicker&gt;</a></li>
+            <li><a class="toctree-l4" href="#configuration">Configuration</a></li>
         
             <li><a class="toctree-l4" href="#data-binding">Data Binding</a></li>
         
@@ -338,66 +338,75 @@
                 <h1 id="daterangepicker">Daterangepicker</h1>
 <p>The Daterangepicker Tag Helper is a JavaScript component for choosing date ranges, dates and times.</p>
 <p><img src="/images/daterangepicker_01.png" width="1053" alt="Mecons Daterangepicker"></p>
-<pre><code class="markup">&lt;daterangepicker bc-label=&quot;Start Time&quot; /&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span>&lt;daterangepicker bc-label=&quot;Start Time&quot; /&gt;
+</pre></div>
 
-<h2 id="configuration-ltdaterangepickergt">Configuration <code>&lt;daterangepicker&gt;</code></h2>
+
+<hr />
+<h2 id="configuration">Configuration</h2>
 <h3 id="start-and-end-date">Start and End Date</h3>
 <p>Use the <code>bc-start-date</code> attribute to set the beginning date of the initially selected date range. With the <code>bc-end-date</code> attribute set the end date of the initially selected date range.</p>
 <p><img src="/images/daterangepicker_02.png" width="522" alt="Daterangepicker Start and End Date"></p>
-<pre><code class="markup">&lt;daterangepicker bc-label=&quot;Holidays&quot; bc-start-date=&quot;@DateTime.Now&quot; bc-end-date=&quot;@DateTime.Now.AddDays(14)&quot; /&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span>&lt;daterangepicker bc-label=&quot;Holidays&quot; bc-start-date=&quot;@DateTime.Now&quot; bc-end-date=&quot;@DateTime.Now.AddDays(14)&quot; /&gt;
+</pre></div>
+
 
 <h3 id="min-and-max-date">Min and Max Date</h3>
 <p>Set the earliest date a user may select with the <code>bc-min-date</code> attribute. To set the latest date use the <code>bc-max-date</code> attribute.</p>
 <p><img src="/images/daterangepicker_03.png" width="1058" alt="Daterangepicker Min and Max Date"></p>
-<pre><code class="markup">&lt;daterangepicker bc-label=&quot;Booking&quot; bc-min-date=&quot;@DateTime.Now.AddDays(-7)&quot; bc-max-date=&quot;@DateTime.Now.AddDays(7)&quot; /&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span>&lt;daterangepicker bc-label=&quot;Booking&quot; bc-min-date=&quot;@DateTime.Now.AddDays(-7)&quot; bc-max-date=&quot;@DateTime.Now.AddDays(7)&quot; /&gt;
+</pre></div>
+
 
 <h3 id="format">Format</h3>
 <p>The date format can be specified with the <code>bc-format</code> attribute. The format is specified as C# date and time format string.</p>
 <p><img src="/images/daterangepicker_04.png" width="532" alt="Daterangepicker Date Format"></p>
-<pre><code class="markup">&lt;daterangepicker bc-label=&quot;Default Format&quot; /&gt;
+<div class="codehilite"><pre><span></span>&lt;daterangepicker bc-label=&quot;Default Format&quot; /&gt;
 &lt;daterangepicker bc-label=&quot;Specific Format&quot; bc-format=&quot;dd/MM/yyyy&quot; /&gt;
-</code></pre>
+</pre></div>
+
 
 <h3 id="timepicker">Timepicker</h3>
 <p>Set the <code>bc-timepicker</code> attribute to <code>true</code> to add select boxes to choose times in addition to dates.</p>
 <p>In addition use the <code>bc-timepicker-step</code> attribute to set the increment steps of minutes selection list (i.e. <code>30</code> to allow only selection of times ending in 0 or 30). By default, the increment of minutes is <code>30</code>.</p>
 <p><img src="/images/daterangepicker_05.png" width="1055" alt="Daterangepicker with Timepicker"></p>
-<pre><code class="markup">&lt;daterangepicker bc-label=&quot;Date and Time&quot; bc-timepicker=&quot;true&quot; bc-timepicker-step=&quot;15&quot; /&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span>&lt;daterangepicker bc-label=&quot;Date and Time&quot; bc-timepicker=&quot;true&quot; bc-timepicker-step=&quot;15&quot; /&gt;
+</pre></div>
+
 
 <h3 id="icon">Icon</h3>
 <p>Set an icon addon for the daterangepicker with the <code>bc-icon</code> attribute.</p>
 <p><img src="/images/daterangepicker_06.png" width="532" alt="Daterangepicker Icon"></p>
-<pre><code class="markup">&lt;daterangepicker bc-label=&quot;Holidays&quot; bc-icon=&quot;FA_Calendar&quot; /&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span>&lt;daterangepicker bc-label=&quot;Holidays&quot; bc-icon=&quot;FA_Calendar&quot; /&gt;
+</pre></div>
+
 
 <h3 id="button-color">Button Color</h3>
 <p>Use the <code>bc-apply-color</code> and <code>bc-cancel-color</code> attribute to define a color for the corresponding button. By default, the Apply Button color is <code>Primary</code> and the Cancel Button color is <code>Secondary</code>.</p>
 <p><img src="/images/daterangepicker_07.png" width="1057" alt="Daterangepicker Button Color"></p>
-<pre><code class="markup">&lt;daterangepicker bc-label=&quot;Start Time&quot; bc-apply-color=&quot;Success&quot; bc-cancel-color=&quot;Danger&quot; /&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span>&lt;daterangepicker bc-label=&quot;Start Time&quot; bc-apply-color=&quot;Success&quot; bc-cancel-color=&quot;Danger&quot; /&gt;
+</pre></div>
 
+
+<hr />
 <h2 id="data-binding">Data Binding</h2>
 <p>The Daterangepicker Tag Helper provides two properties for the start date and end date data binding. The start date can be bound to the <code>asp-for</code> attribute while the end date is bound to the <code>asp-for2</code> attribute.</p>
-<h3 id="model">Model</h3>
-<pre><code class="csharp">[Display(Name = &quot;Timespan&quot;, Description = &quot;Please enter a timespan here.&quot;)]
-public DateTime StartDate { get; set; } = DateTime.Now.AddDays(-3);
+<p><img src="/images/daterangepicker_08.png" width="429" alt="Daterangepicker Data Binding" /></p>
+<div class="codehilite"><pre><span></span><span class="c">&lt;!-- VIEW --&gt;</span>
+<span class="nt">&lt;form</span> <span class="na">asp-action=</span><span class="s">&quot;CallbackAction&quot;</span> <span class="na">method=</span><span class="s">&quot;post&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;form-group&gt;</span>
+        <span class="nt">&lt;daterangepicker</span> <span class="na">asp-for=</span><span class="s">&quot;StartDate&quot;</span> <span class="na">asp-for2=</span><span class="s">&quot;EndDate&quot;</span> <span class="na">bc-format=</span><span class="s">&quot;dd/MM/yyyy&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/form-group&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</pre></div>
 
-public DateTime EndDate { get; set; } = DateTime.Now.AddDays(3);
-</code></pre>
 
-<h3 id="view">View</h3>
-<pre><code class="markup">&lt;form asp-action=&quot;CallbackAction&quot; method=&quot;post&quot;&gt;
-    &lt;form-group&gt;
-        &lt;daterangepicker asp-for=&quot;StartDate&quot; asp-for2=&quot;EndDate&quot; bc-format=&quot;dd/MM/yyyy&quot; /&gt;
-    &lt;/form-group&gt;
-&lt;/form&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="c1">// MODEL</span>
+<span class="na">[Display(Name = &quot;Timespan&quot;, Description = &quot;Please enter a timespan here.&quot;)]</span>
+<span class="k">public</span> <span class="n">DateTime</span> <span class="n">StartDate</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span> <span class="p">=</span> <span class="n">DateTime</span><span class="p">.</span><span class="n">Now</span><span class="p">.</span><span class="n">AddDays</span><span class="p">(-</span><span class="m">3</span><span class="p">);</span>
 
-<p><img src="/images/daterangepicker_08.png" width="429" alt="Daterangepicker Data Binding"></p>
+<span class="k">public</span> <span class="n">DateTime</span> <span class="n">EndDate</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span> <span class="p">=</span> <span class="n">DateTime</span><span class="p">.</span><span class="n">Now</span><span class="p">.</span><span class="n">AddDays</span><span class="p">(</span><span class="m">3</span><span class="p">);</span>
+</pre></div>
               
             </div>
           </div>

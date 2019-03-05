@@ -188,7 +188,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../../forms/input/">Input</a>
+    <a class="" href="../../forms/input/">Text</a>
                 </li>
                 <li class="">
                     
@@ -196,7 +196,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../../forms/select/">Select</a>
+    <a class="" href="../../forms/select/">Dropdown</a>
                 </li>
                 <li class="">
                     
@@ -336,19 +336,20 @@
                 <h1 id="timeline">Timeline</h1>
 <p>A Timeline is a structured representation of events and their chronologically occurance.</p>
 <p><img src="/images/timeline_01.png" width="445" alt="Mecons Timeline" /></p>
-<pre><code class="markup">&lt;timeline&gt;
-    &lt;timeline-item bc-time=&quot;Just Now&quot;&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;timeline&gt;</span>
+    <span class="nt">&lt;timeline-item</span> <span class="na">bc-time=</span><span class="s">&quot;Just Now&quot;</span><span class="nt">&gt;</span>
         12 new users registered and pending for activation
-    &lt;/timeline-item&gt;
-    &lt;timeline-item bc-time=&quot;14 mins&quot;&gt;
+    <span class="nt">&lt;/timeline-item&gt;</span>
+    <span class="nt">&lt;timeline-item</span> <span class="na">bc-time=</span><span class="s">&quot;14 mins&quot;</span><span class="nt">&gt;</span>
         Scheduled system reboot completed
-        &lt;badge bc-wide=&quot;true&quot;&gt;completed&lt;/badge&gt;
-    &lt;/timeline-item&gt;
-    &lt;timeline-item bc-time=&quot;20 mins&quot;&gt;
+        <span class="nt">&lt;badge</span> <span class="na">bc-wide=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>completed<span class="nt">&lt;/badge&gt;</span>
+    <span class="nt">&lt;/timeline-item&gt;</span>
+    <span class="nt">&lt;timeline-item</span> <span class="na">bc-time=</span><span class="s">&quot;20 mins&quot;</span><span class="nt">&gt;</span>
         New order has been planced and pending for processing
-    &lt;/timeline-item&gt;
-&lt;/timeline&gt;
-</code></pre>
+    <span class="nt">&lt;/timeline-item&gt;</span>
+<span class="nt">&lt;/timeline&gt;</span>
+</pre></div>
+
 
 <hr />
 <h2 id="item-configuration">Item Configuration</h2>
@@ -357,22 +358,23 @@
 <h3 id="color">Color</h3>
 <p>A color for the timeline item can be set with the <code>bc-color</code> attribute.</p>
 <p><img src="/images/timeline_02.png" width="438" alt="Timeline Item Color" /></p>
-<pre><code class="markup">&lt;timeline&gt;
-    &lt;timeline-item bc-color=&quot;Success&quot; bc-time=&quot;Just Now&quot;&gt; ... &lt;/timeline-item&gt;
-    &lt;timeline-item bc-color=&quot;Warning&quot; bc-time=&quot;14 mins&quot;&gt; ... &lt;/timeline-item&gt;
-    &lt;timeline-item bc-color=&quot;Danger&quot; bc-time=&quot;20 mins&quot;&gt; ... &lt;/timeline-item&gt;
-&lt;/timeline&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;timeline&gt;</span>
+    <span class="nt">&lt;timeline-item</span> <span class="na">bc-color=</span><span class="s">&quot;Success&quot;</span> <span class="na">bc-time=</span><span class="s">&quot;Just Now&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/timeline-item&gt;</span>
+    <span class="nt">&lt;timeline-item</span> <span class="na">bc-color=</span><span class="s">&quot;Warning&quot;</span> <span class="na">bc-time=</span><span class="s">&quot;14 mins&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/timeline-item&gt;</span>
+    <span class="nt">&lt;timeline-item</span> <span class="na">bc-color=</span><span class="s">&quot;Danger&quot;</span> <span class="na">bc-time=</span><span class="s">&quot;20 mins&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/timeline-item&gt;</span>
+<span class="nt">&lt;/timeline&gt;</span>
+</pre></div>
+
 
 <h3 id="icon">Icon</h3>
 <p>Set an icon for the timeline item with the <code>bc-icon</code> attribute.</p>
 <p><img src="/images/timeline_03.png" width="436" alt="Timeline Item Icon" /></p>
-<pre><code class="markup">&lt;timeline&gt;
-    &lt;timeline-item bc-time=&quot;Just Now&quot; bc-icon=&quot;FI_Share&quot;&gt; ... &lt;/timeline-item&gt;
-    &lt;timeline-item bc-time=&quot;14 mins&quot; bc-icon=&quot;FI_Users&quot;&gt; ... &lt;/timeline-item&gt;
-    &lt;timeline-item bc-time=&quot;20 mins&quot; bc-icon=&quot;FI_Placeholder&quot;&gt; ... &lt;/timeline-item&gt;
-&lt;/timeline&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;timeline&gt;</span>
+    <span class="nt">&lt;timeline-item</span> <span class="na">bc-time=</span><span class="s">&quot;Just Now&quot;</span> <span class="na">bc-icon=</span><span class="s">&quot;FI_Share&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/timeline-item&gt;</span>
+    <span class="nt">&lt;timeline-item</span> <span class="na">bc-time=</span><span class="s">&quot;14 mins&quot;</span> <span class="na">bc-icon=</span><span class="s">&quot;FI_Users&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/timeline-item&gt;</span>
+    <span class="nt">&lt;timeline-item</span> <span class="na">bc-time=</span><span class="s">&quot;20 mins&quot;</span> <span class="na">bc-icon=</span><span class="s">&quot;FI_Placeholder&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/timeline-item&gt;</span>
+<span class="nt">&lt;/timeline&gt;</span>
+</pre></div>
               
             </div>
           </div>

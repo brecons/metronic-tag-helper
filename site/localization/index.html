@@ -190,7 +190,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../forms/input/">Input</a>
+    <a class="" href="../forms/input/">Text</a>
                 </li>
                 <li class="">
                     
@@ -198,7 +198,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../forms/select/">Select</a>
+    <a class="" href="../forms/select/">Dropdown</a>
                 </li>
                 <li class="">
                     
@@ -371,25 +371,27 @@
 <h2 id="usage-of-localization">Usage of Localization</h2>
 <p>To localize the Tag Helpers, Mecons uses the <code>CultureInfo</code> set in the <a href="https://docs.microsoft.com/de-de/dotnet/api/system.globalization.cultureinfo.currentculture?view=netcore-2.1">current thread</a>.</p>
 <p>Use the following code snippet to modify the <code>CultureInfo</code> for the current thread:</p>
-<pre><code class="csharp">// Set current thread language to German
-Thread.CurrentThread.CurrentCulture = new CultureInfo(&quot;de-DE&quot;);
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="c1">// Set current thread language to German</span>
+<span class="n">Thread</span><span class="p">.</span><span class="n">CurrentThread</span><span class="p">.</span><span class="n">CurrentCulture</span> <span class="p">=</span> <span class="k">new</span> <span class="n">CultureInfo</span><span class="p">(</span><span class="s">&quot;de-DE&quot;</span><span class="p">);</span>
+</pre></div>
+
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>For a complete list of all <code>CultureInfo</code> names, visit <a href="https://msdn.microsoft.com/en-us/library/hh441729.aspx">https://msdn.microsoft.com/en-us/library/hh441729.aspx</a>.</p>
 </div>
 <p>The <code>CultureInfo</code> for your ASP.NET Core web application is best set in the <code>Startup.cs</code> within the <code>Configure</code> method:</p>
-<pre><code class="csharp">public void Configure(IApplicationBuilder app, IHostingEnvironment env)
-{
-    ...
+<div class="codehilite"><pre><span></span><span class="k">public</span> <span class="k">void</span> <span class="nf">Configure</span><span class="p">(</span><span class="n">IApplicationBuilder</span> <span class="n">app</span><span class="p">,</span> <span class="n">IHostingEnvironment</span> <span class="n">env</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="p">...</span>
 
-    // Language
-    var cultureInfo = new CultureInfo(&quot;de-DE&quot;);
-    CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
-    CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
-}
-</code></pre>
+    <span class="c1">// Language</span>
+    <span class="kt">var</span> <span class="n">cultureInfo</span> <span class="p">=</span> <span class="k">new</span> <span class="n">CultureInfo</span><span class="p">(</span><span class="s">&quot;de-DE&quot;</span><span class="p">);</span>
+    <span class="n">CultureInfo</span><span class="p">.</span><span class="n">DefaultThreadCurrentCulture</span> <span class="p">=</span> <span class="n">cultureInfo</span><span class="p">;</span>
+    <span class="n">CultureInfo</span><span class="p">.</span><span class="n">DefaultThreadCurrentUICulture</span> <span class="p">=</span> <span class="n">cultureInfo</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>

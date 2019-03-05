@@ -188,7 +188,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../../forms/input/">Input</a>
+    <a class="" href="../../forms/input/">Text</a>
                 </li>
                 <li class="">
                     
@@ -196,7 +196,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../../forms/select/">Select</a>
+    <a class="" href="../../forms/select/">Dropdown</a>
                 </li>
                 <li class="">
                     
@@ -336,29 +336,33 @@
                 <h1 id="tooltip">Tooltip</h1>
 <p>Tooltips are components to add further informations to an element.</p>
 <p><img src="/images/tooltip_01.png" width="192" alt="Mecons Tooltip" /></p>
-<pre><code class="markup">&lt;button type=&quot;button&quot; bc-tooltip=&quot;Tooltip on top&quot;&gt;Tooltip on top&lt;/button&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">bc-tooltip=</span><span class="s">&quot;Tooltip on top&quot;</span><span class="nt">&gt;</span>Tooltip on top<span class="nt">&lt;/button&gt;</span>
+</pre></div>
+
 
 <hr />
 <h2 id="configuration">Configuration</h2>
 <h3 id="text-mandatory-trigger-attribute">Text (Mandatory) (Trigger Attribute)</h3>
 <p>The <code>bc-tooltip</code> attribute is available on each HTML element and specifies the tooltip text. After these attribute is set for an element further attributes are available to concretize the tooltip definition.</p>
-<pre><code class="markup">&lt;button type=&quot;button&quot; bc-tooltip=&quot;Text and content&quot;&gt;Button with Tooltip&lt;/button&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">bc-tooltip=</span><span class="s">&quot;Text and content&quot;</span><span class="nt">&gt;</span>Button with Tooltip<span class="nt">&lt;/button&gt;</span>
+</pre></div>
+
 
 <h3 id="html">HTML</h3>
 <p>Not only text can be displayed within a tooltip, also HTML enriched content is allowed. To allow and render HTML tags within a tooltip use the <code>bc-tooltip-html</code> attribute.</p>
 <p><img src="/images/tooltip_02.png" width="209" alt="Tooltip HTML Content" /></p>
-<pre><code class="markup">&lt;button type=&quot;button&quot; bc-tooltip=&quot;&lt;em&gt;Tooltip&lt;/em&gt; &lt;u&gt;with&lt;/u&gt; &lt;b&gt;HTML&lt;/b&gt;&quot;
-    bc-tooltip-html=&quot;true&quot;&gt;Tooltip with HTML&lt;/button&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">bc-tooltip=</span><span class="s">&quot;&lt;em&gt;Tooltip&lt;/em&gt; &lt;u&gt;with&lt;/u&gt; &lt;b&gt;HTML&lt;/b&gt;&quot;</span>
+    <span class="na">bc-tooltip-html=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>Tooltip with HTML<span class="nt">&lt;/button&gt;</span>
+</pre></div>
+
 
 <h3 id="animation">Animation</h3>
 <p>By default, a tooltip comes up with an animation (fade effect). If you don't want this effect you can disable it by setting the <code>bc-tooltip-animation</code> attribute to <code>false</code>.</p>
 <h3 id="delay">Delay</h3>
 <p>Define a delay for showing and hiding the tooltip with <code>bc-tooltip-delay</code> attribute. The value of these attribute are milliseconds.</p>
-<pre><code class="markup">&lt;button type=&quot;button&quot; bc-tooltip=&quot;Text and content&quot; bc-tooltip-delay=&quot;1000&quot;&gt;Button with Tooltip&lt;/button&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">bc-tooltip=</span><span class="s">&quot;Text and content&quot;</span> <span class="na">bc-tooltip-delay=</span><span class="s">&quot;1000&quot;</span><span class="nt">&gt;</span>Button with Tooltip<span class="nt">&lt;/button&gt;</span>
+</pre></div>
+
 
 <h3 id="placement">Placement</h3>
 <p>With the <code>bc-tooltip-placement</code> can specified how to position a tooltip. Possible values are <code>Top</code> (default), <code>Bottom</code>, <code>Left</code> or <code>Right</code>.</p>

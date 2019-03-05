@@ -176,7 +176,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../input/">Input</a>
+    <a class="" href="../input/">Text</a>
                 </li>
                 <li class="">
                     
@@ -184,7 +184,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../select/">Select</a>
+    <a class="" href="../select/">Dropdown</a>
                 </li>
                 <li class="">
                     
@@ -249,7 +249,7 @@
     
         <ul>
         
-            <li><a class="toctree-l4" href="#configuration-ltdatepickergt">Configuration &lt;datepicker&gt;</a></li>
+            <li><a class="toctree-l4" href="#configuration">Configuration</a></li>
         
         </ul>
     
@@ -336,46 +336,52 @@
                 <h1 id="datepicker">Datepicker</h1>
 <p>The Datepicker provides a flexible datepicker widget in the Bootstrap style.</p>
 <p><img src="/images/datepicker_01.png" width="445" alt="Mecons Datepicker"></p>
-<pre><code class="markup">&lt;datepicker bc-label=&quot;Birthday&quot; /&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span>&lt;datepicker bc-label=&quot;Birthday&quot; /&gt;
+</pre></div>
 
-<h2 id="configuration-ltdatepickergt">Configuration <code>&lt;datepicker&gt;</code></h2>
+
+<hr />
+<h2 id="configuration">Configuration</h2>
 <h3 id="orientation">Orientation</h3>
 <p>The <code>bc-orientation</code> attribute allows to set a fixed placement of the datepicker popup. By default, the orientation is <code>Auto</code> and the picker will be placed smart.</p>
 <p><img src="/images/datepicker_02.png" width="423" alt="Datepicker Orientation"></p>
-<pre><code class="markup">&lt;datepicker bc-label=&quot;Birthday&quot; bc-orientation=&quot;BottomLeft&quot; /&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span>&lt;datepicker bc-label=&quot;Birthday&quot; bc-orientation=&quot;BottomLeft&quot; /&gt;
+</pre></div>
+
 
 <h3 id="icon">Icon</h3>
 <p>Set an icon addon for the datepicker with the <code>bc-icon</code> attribute.</p>
 <p><img src="/images/datepicker_03.png" width="445" alt="Datepicker Icon Trigger"></p>
-<pre><code class="markup">&lt;datepicker bc-label=&quot;Birthday&quot; bc-icon=&quot;LA_CalendarCheckO&quot; /&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span>&lt;datepicker bc-label=&quot;Birthday&quot; bc-icon=&quot;LA_CalendarCheckO&quot; /&gt;
+</pre></div>
+
 
 <h3 id="auto-close">Auto Close</h3>
 <p>Set the <code>bc-close</code> attribute to <code>true</code> to close the datepicker popup immediately when a date is selected.</p>
 <h3 id="calendar-weeks">Calendar Weeks</h3>
 <p>Set the <code>bc-weeks</code> attribute to <code>true</code> to show week numbers to the left of week rows.</p>
 <p><img src="/images/datepicker_04.png" width="445" alt="Datepicker Calendar Weeks"></p>
-<pre><code class="markup">&lt;datepicker bc-label=&quot;Birthday&quot; bc-weeks=&quot;true&quot; /&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span>&lt;datepicker bc-label=&quot;Birthday&quot; bc-weeks=&quot;true&quot; /&gt;
+</pre></div>
+
 
 <h3 id="date-format">Date Format</h3>
 <p>Set a date format for the datepicker with the <code>bc-format</code> attribute. To specify a custom date format use the default C# <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings">Date and Time Format Strings</a>.</p>
 <p><img src="/images/datepicker_05.png" width="434" alt="Datepicker Date Format"></p>
-<pre><code class="markup">&lt;datepicker bc-label=&quot;Date Format&quot; bc-format=&quot;dd.mm.yyyy&quot; /&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span>&lt;datepicker bc-label=&quot;Date Format&quot; bc-format=&quot;dd.mm.yyyy&quot; /&gt;
+</pre></div>
+
 
 <h3 id="start-and-end-date">Start and End Date</h3>
 <p>Specify the earliest date that may be selected with the <code>bc-start-date</code> attribute. All earlier dates will be disabled.</p>
 <p>Specify the latest date that may be selected with the <code>bc-end-date</code> attribute. All later dates will be disabled.</p>
 <p>The date should be in local timezone and the string must be parsable with the <a href="https://www.w3schools.com/js/js_date_formats.asp">JavaScript Date Formats</a>.</p>
-<pre><code class="markup">&lt;!-- Disable all dates before today --&gt;
+<div class="codehilite"><pre><span></span>&lt;!-- Disable all dates before today --&gt;
 &lt;datepicker bc-label=&quot;Start Date&quot; bc-start-date=&quot;0d&quot; /&gt;
 
 &lt;!-- Disable all dates after today --&gt;
 &lt;datepicker bc-label=&quot;End Date&quot; bc-end-date=&quot;0d&quot; /&gt;
-</code></pre>
+</pre></div>
               
             </div>
           </div>

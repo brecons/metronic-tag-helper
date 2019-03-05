@@ -176,7 +176,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../input/">Input</a>
+    <a class="" href="../input/">Text</a>
                 </li>
                 <li class="">
                     
@@ -184,7 +184,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../select/">Select</a>
+    <a class="" href="../select/">Dropdown</a>
                 </li>
                 <li class="">
                     
@@ -338,27 +338,31 @@
                 <h1 id="dropzone">Dropzone</h1>
 <p>DropzoneJS is an open source library that provides drag’n’drop file uploads with image previews.</p>
 <p><img src="/images/dropzone_01.png" width="299" alt="Mecons Dropzone"></p>
-<pre><code class="markup">&lt;dropzone bc-url=&quot;/Forms/Dropzone&quot; /&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span>&lt;dropzone bc-url=&quot;/Forms/Dropzone&quot; /&gt;
+</pre></div>
 
+
+<hr />
 <h2 id="configuration">Configuration</h2>
-<h3 id="url-mandatory">Url <span class="badge info">Mandatory</span></h3>
+<h3 id="url-mandatory">Url (Mandatory)</h3>
 <p>The <code>bc-url</code> attribute specifies the target to which the dropped files will be uploaded. This attribute is mandatory and without it, the dropzone will not run correctly.</p>
 <h3 id="title">Title</h3>
 <p>With the <code>bc-title</code> attribute it is possible to override the default title of the Dropzone. If the <code>bc-title</code> attribute is not set, a localized default message will be displayed.</p>
 <p><img src="/images/dropzone_02.png" width="648" alt="Dropzone Title"></p>
-<pre><code class="markup">&lt;!-- Default Dropzone Title --&gt;
+<div class="codehilite"><pre><span></span>&lt;!-- Default Dropzone Title --&gt;
 &lt;dropzone bc-url=&quot;/Forms/Dropzone&quot; /&gt;
 
 &lt;!-- Custom Dropzone Title --&gt;
 &lt;dropzone bc-url=&quot;/Forms/Dropzone&quot; bc-title=&quot;This is a custom title of the dropzone.&quot; /&gt;
-</code></pre>
+</pre></div>
+
 
 <h3 id="description">Description</h3>
 <p>Describe the Dropzone in detail with the <code>bc-desc</code> attribute. The description will be displayed below the title.</p>
 <p><img src="/images/dropzone_03.png" width="295" alt="Dropzone Description"></p>
-<pre><code class="markup">&lt;dropzone bc-url=&quot;/Forms/Dropzone&quot; bc-desc=&quot;Only image, pdf and psd files are allowed for upload&quot; /&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span>&lt;dropzone bc-url=&quot;/Forms/Dropzone&quot; bc-desc=&quot;Only image, pdf and psd files are allowed for upload&quot; /&gt;
+</pre></div>
+
 
 <h3 id="maximum-file-size">Maximum File Size</h3>
 <p>The <code>bc-max-file-size</code> attribute defines the maximum file size of an uploaded file. By default the file size haven't any limit. The maximum file size is expressed as an integer and in Megabyte (MB).</p>
@@ -373,36 +377,39 @@
 <h3 id="color">Color</h3>
 <p>Use the <code>bc-color</code> attribute to set a color for the Dropzone.</p>
 <p><img src="/images/dropzone_04.png" width="297" alt="Dropzone Color"></p>
-<pre><code class="markup">&lt;dropzone bc-url=&quot;/Forms/Dropzone&quot; bc-color=&quot;Primary&quot; /&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span>&lt;dropzone bc-url=&quot;/Forms/Dropzone&quot; bc-color=&quot;Primary&quot; /&gt;
+</pre></div>
+
 
 <h3 id="parameter">Parameter</h3>
 <p>The name of the file parameter that gets transferred to the server will specified with the <code>bc-name</code> attribute. By default, the parameter name is <code>file</code>.</p>
+<hr />
 <h2 id="server-side-processing">Server-side Processing</h2>
 <p>How to transfer the files collected in a Dropzone to the server is described in this section.</p>
 <h3 id="view">View</h3>
 <p>First a Dropzone must be defined in a view. The important thing here is either to deliberately define a custom parameter name that will later be used to transfer the files to the server, or to use the default parameter name (<code>file</code>).</p>
-<pre><code class="markup">&lt;!-- Dropzone.cshtml --&gt;
+<div class="codehilite"><pre><span></span>&lt;!-- Dropzone.cshtml --&gt;
 &lt;dropzone bc-url=&quot;/Forms/Dropzone&quot; /&gt;
-</code></pre>
+</pre></div>
+
 
 <h3 id="controller">Controller</h3>
 <p>On server-side it es very easy to receive the uploaded file. Use the <code>IFormFile</code> interface and a parameter with the same name of the parameter defined in the Dropzone (by default <code>file</code>).</p>
-<pre><code class="csharp">// Forms Controller
-public IActionResult Dropzone()
-{
-    return View();
-}
+<div class="codehilite"><pre><span></span><span class="c1">// Forms Controller</span>
+<span class="k">public</span> <span class="n">IActionResult</span> <span class="nf">Dropzone</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="k">return</span> <span class="nf">View</span><span class="p">();</span>
+<span class="p">}</span>
 
-[HttpPost]
-public IActionResult Dropzone(IFormFile file)
-{
-    // Process the transfered file
+<span class="na">[HttpPost]</span>
+<span class="k">public</span> <span class="n">IActionResult</span> <span class="nf">Dropzone</span><span class="p">(</span><span class="n">IFormFile</span> <span class="n">file</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="c1">// Process the transfered file</span>
 
-    // Return a Json result which is readable for the Dropzone
-    return Json(new { success = true, response = &quot;File uploaded.&quot; });
-}
-</code></pre>
+    <span class="c1">// Return a Json result which is readable for the Dropzone</span>
+    <span class="k">return</span> <span class="nf">Json</span><span class="p">(</span><span class="k">new</span> <span class="p">{</span> <span class="n">success</span> <span class="p">=</span> <span class="k">true</span><span class="p">,</span> <span class="n">response</span> <span class="p">=</span> <span class="s">&quot;File uploaded.&quot;</span> <span class="p">});</span>
+<span class="p">}</span>
+</pre></div>
               
             </div>
           </div>

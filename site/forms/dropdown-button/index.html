@@ -176,7 +176,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../input/">Input</a>
+    <a class="" href="../input/">Text</a>
                 </li>
                 <li class="">
                     
@@ -184,7 +184,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../select/">Select</a>
+    <a class="" href="../select/">Dropdown</a>
                 </li>
                 <li class="">
                     
@@ -236,9 +236,9 @@
         
             <li><a class="toctree-l4" href="#components">Components</a></li>
         
-            <li><a class="toctree-l4" href="#dropdown-button-configuration-ltbutton-dropdowngt">Dropdown Button Configuration &lt;button-dropdown&gt;</a></li>
+            <li><a class="toctree-l4" href="#configuration">Configuration</a></li>
         
-            <li><a class="toctree-l4" href="#menu-item-configuration-ltagt">Menu Item Configuration &lt;a&gt;</a></li>
+            <li><a class="toctree-l4" href="#menu-item-configuration">Menu Item Configuration</a></li>
         
         </ul>
     
@@ -340,68 +340,76 @@
                 <h1 id="dropdown-button">Dropdown Button</h1>
 <p>Dropdown Buttons are contextual overlays for displaying lists of links and more.</p>
 <p><img src="/images/dropdown-button_01.png" width="677" alt="Mecons Dropdown Button"></p>
-<pre><code class="markup">&lt;button-dropdown bc-title=&quot;Primary&quot;&gt;
-    &lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;
-    &lt;a href=&quot;#&quot; bc-disabled=&quot;true&quot;&gt;Disabled Action&lt;/a&gt;
-    &lt;a href=&quot;#&quot;&gt;Another Action&lt;/a&gt;
-&lt;/button-dropdown&gt;
-&lt;button-dropdown bc-title=&quot;Secondary&quot; bc-color=&quot;Secondary&quot;&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;button-dropdown</span> <span class="na">bc-title=</span><span class="s">&quot;Primary&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">bc-disabled=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>Disabled Action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Another Action<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/button-dropdown&gt;</span>
+<span class="nt">&lt;button-dropdown</span> <span class="na">bc-title=</span><span class="s">&quot;Secondary&quot;</span> <span class="na">bc-color=</span><span class="s">&quot;Secondary&quot;</span><span class="nt">&gt;</span>
     ...
-&lt;/button-dropdown&gt;
-</code></pre>
+<span class="nt">&lt;/button-dropdown&gt;</span>
+</pre></div>
 
+
+<hr />
 <h2 id="components">Components</h2>
 <p>Components are tag helpers that are available within a <code>&lt;button-dropdown&gt;</code>.</p>
-<h3 id="menu-item-ltagt">Menu Item <code>&lt;a&gt;</code></h3>
+<h3 id="menu-item">Menu Item</h3>
 <p>The <code>&lt;a&gt;</code> tag represents an item within the dropdown menu. These regular HTML link tag is extended by a Mecons tag helper which provides further attributes.</p>
-<h3 id="divider-ltdivider-gt">Divider <code>&lt;divider /&gt;</code></h3>
+<h3 id="divider">Divider</h3>
 <p>The <code>&lt;divider&gt;</code> tag helper helps you to seperate groups of related menu items.</p>
-<h3 id="header-ltheadergt">Header <code>&lt;header&gt;</code></h3>
+<h3 id="header">Header</h3>
 <p>With the <code>&lt;header&gt;</code> tag helper it is possible to add a header to label sections of actions in any dropdown menu.</p>
-<h2 id="dropdown-button-configuration-ltbutton-dropdowngt">Dropdown Button Configuration <code>&lt;button-dropdown&gt;</code></h2>
-<h3 id="title-mandatory">Title <span class="badge info">Mandatory</span></h3>
+<hr />
+<h2 id="configuration">Configuration</h2>
+<h3 id="title-mandatory">Title (Mandatory)</h3>
 <p>The <code>bc-title</code> attribute specifies a title for the button that triggers the dropdown menu.</p>
 <h3 id="dropup">Dropup</h3>
 <p>Set the <code>bc-dropup</code> attribute to trigger the dropdown menu above the button.</p>
 <p><img src="/images/dropdown-button_02.png" width="229" alt="Dropup Button"></p>
-<pre><code class="markup">&lt;button-dropdown bc-title=&quot;Dropup&quot; bc-dropup=&quot;true&quot;&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;button-dropdown</span> <span class="na">bc-title=</span><span class="s">&quot;Dropup&quot;</span> <span class="na">bc-dropup=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
     ...
-&lt;/button-dropdown&gt;
-</code></pre>
+<span class="nt">&lt;/button-dropdown&gt;</span>
+</pre></div>
+
 
 <h3 id="color">Color</h3>
 <p>Use the <code>bc-color</code> attribute to modify the styling of the dropdown button. Possible styles are <code>Primary</code> (default), <code>Secondary</code>, <code>Success</code>, <code>Danger</code>, <code>Warning</code>, <code>Info</code>, <code>Light</code> or <code>Dark</code>.</p>
 <p><img src="/images/dropdown-button_03.png" width="311" alt="Dropdown Button Color"></p>
-<pre><code class="markup">&lt;button-dropdown bc-title=&quot;Dropdown Button with long Title&quot; bc-alignment-right=&quot;true&quot;&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;button-dropdown</span> <span class="na">bc-title=</span><span class="s">&quot;Dropdown Button with long Title&quot;</span> <span class="na">bc-alignment-right=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
     ...
-&lt;/button-dropdown&gt;
-</code></pre>
+<span class="nt">&lt;/button-dropdown&gt;</span>
+</pre></div>
+
 
 <h3 id="size">Size</h3>
 <p>Add the <code>bc-size</code> attribute to define a size for the dropdown button. Possible sizes are <code>Default</code>, <code>Large</code> or <code>Small</code>.</p>
 <p><img src="/images/dropdown-button_04.png" width="559" alt="Dropdown Button Size"></p>
-<pre><code class="markup">&lt;button-dropdown bc-title=&quot;Large Dropdown&quot; bc-size=&quot;Large&quot;&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;button-dropdown</span> <span class="na">bc-title=</span><span class="s">&quot;Large Dropdown&quot;</span> <span class="na">bc-size=</span><span class="s">&quot;Large&quot;</span><span class="nt">&gt;</span>
     ...
-&lt;/button-dropdown&gt;
+<span class="nt">&lt;/button-dropdown&gt;</span>
 
-&lt;button-dropdown bc-title=&quot;Normal Dropdown&quot;&gt;
+<span class="nt">&lt;button-dropdown</span> <span class="na">bc-title=</span><span class="s">&quot;Normal Dropdown&quot;</span><span class="nt">&gt;</span>
     ...
-&lt;/button-dropdown&gt;
+<span class="nt">&lt;/button-dropdown&gt;</span>
 
-&lt;button-dropdown bc-title=&quot;Small Dropdown&quot; bc-size=&quot;Small&quot;&gt;
+<span class="nt">&lt;button-dropdown</span> <span class="na">bc-title=</span><span class="s">&quot;Small Dropdown&quot;</span> <span class="na">bc-size=</span><span class="s">&quot;Small&quot;</span><span class="nt">&gt;</span>
     ...
-&lt;/button-dropdown&gt;
-</code></pre>
+<span class="nt">&lt;/button-dropdown&gt;</span>
+</pre></div>
+
 
 <h3 id="split">Split</h3>
 <p>The <code>bc-split</code> attribute seperates the dropdown menu trigger from the rest of the button. This make it possible to allocate an seperate action to the button.</p>
 <p><img src="/images/dropdown-button_05.png" width="332" alt="Dropdown Split Button"></p>
-<pre><code class="markup">&lt;button-dropdown bc-title=&quot;Dropdown Button&quot; bc-split=&quot;true&quot;&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;button-dropdown</span> <span class="na">bc-title=</span><span class="s">&quot;Dropdown Button&quot;</span> <span class="na">bc-split=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
     ...
-&lt;/button-dropdown&gt;
-</code></pre>
+<span class="nt">&lt;/button-dropdown&gt;</span>
+</pre></div>
 
-<h2 id="menu-item-configuration-ltagt">Menu Item Configuration <code>&lt;a&gt;</code></h2>
+
+<hr />
+<h2 id="menu-item-configuration">Menu Item Configuration</h2>
 <h3 id="disable">Disable</h3>
 <p>Add the <code>bc-disable</code> attribute to disable an menu item in the dropdown.</p>
               

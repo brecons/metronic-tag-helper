@@ -190,7 +190,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../../forms/input/">Input</a>
+    <a class="" href="../../forms/input/">Text</a>
                 </li>
                 <li class="">
                     
@@ -198,7 +198,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../../forms/select/">Select</a>
+    <a class="" href="../../forms/select/">Dropdown</a>
                 </li>
                 <li class="">
                     
@@ -338,139 +338,147 @@
                 <h1 id="table">Table</h1>
 <p>Opt-in and styling of Tables with the easy-to-use Mecons Tag Helpers.</p>
 <p><img src="/images/table_01.png" width="413" alt="Mecons Table" /></p>
-<pre><code class="markup">&lt;table&gt;
-    &lt;thead&gt;
-        &lt;tr&gt;
-            &lt;th&gt;#&lt;/th&gt;
-            &lt;th&gt;First Name&lt;/th&gt;
-            &lt;th&gt;Last Name&lt;/th&gt;
-            &lt;th&gt;Username&lt;/th&gt;
-        &lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-        &lt;tr&gt;
-            &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
-            &lt;td&gt;Jhon&lt;/td&gt;
-            &lt;td&gt;Stone&lt;/td&gt;
-            &lt;td&gt;@jhon&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
-            &lt;td&gt;Lisa&lt;/td&gt;
-            &lt;td&gt;Nilson&lt;/td&gt;
-            &lt;td&gt;@lisa&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
-            &lt;td&gt;Larry&lt;/td&gt;
-            &lt;td&gt;the Bird&lt;/td&gt;
-            &lt;td&gt;@twitter&lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/tbody&gt;
-&lt;/table&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;table&gt;</span>
+    <span class="nt">&lt;thead&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;th&gt;</span>#<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;</span>First Name<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Last Name<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Username<span class="nt">&lt;/th&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/thead&gt;</span>
+    <span class="nt">&lt;tbody&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>1<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Jhon<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Stone<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>@jhon<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>2<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Lisa<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Nilson<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>@lisa<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>3<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Larry<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>the Bird<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>@twitter<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+</pre></div>
+
 
 <hr />
 <h2 id="configuration">Configuration</h2>
 <h3 id="theme">Theme</h3>
 <p>To change the theme of a table - with white, light or dark background - use the <code>bc-theme</code> attribute. Possible themes are <code>Default</code> (default), <code>Light</code> and <code>Dark</code>.</p>
 <p><img src="/images/table_02.png" width="404" alt="Table Theme" /></p>
-<pre><code class="markup">&lt;table bc-theme=&quot;Dark&quot;&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;table</span> <span class="na">bc-theme=</span><span class="s">&quot;Dark&quot;</span><span class="nt">&gt;</span>
     ...
-&lt;/table&gt;
-</code></pre>
+<span class="nt">&lt;/table&gt;</span>
+</pre></div>
+
 
 <h3 id="striped">Striped</h3>
 <p>Use the <code>bc-striped</code> attribute to add zebra-striping to any table row.</p>
 <p><img src="/images/table_03.png" width="410" alt="Striped Table" /></p>
-<pre><code class="markup">&lt;table bc-striped=&quot;true&quot;&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;table</span> <span class="na">bc-striped=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
     ...
-&lt;/table&gt;
-</code></pre>
+<span class="nt">&lt;/table&gt;</span>
+</pre></div>
+
 
 <h3 id="small">Small</h3>
 <p>Add the <code>bc-small</code> attribute to make tables more compact by cutting cell padding in half.</p>
 <p><img src="/images/table_04.png" width="407" alt="Small Table" /></p>
-<pre><code class="markup">&lt;table bc-small=&quot;true&quot;&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;table</span> <span class="na">bc-small=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
     ...
-&lt;/table&gt;
-</code></pre>
+<span class="nt">&lt;/table&gt;</span>
+</pre></div>
+
 
 <h3 id="border">Border</h3>
 <p>Add the <code>bc-border</code> attribute to specify the borders on all sides of the table and cells. Possible border styles are <code>Regular</code>(default) for only horizontal borders, <code>Bordered</code> for horizontal and vertical borders and <code>Borderless</code> for no borders.</p>
 <p><img src="/images/table_05.png" width="1068" alt="Borders for Table" /></p>
-<pre><code class="markup">&lt;table&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;table&gt;</span>
     ...
-&lt;/table&gt;
-&lt;table bc-border=&quot;Bordered&quot;&gt;
+<span class="nt">&lt;/table&gt;</span>
+<span class="nt">&lt;table</span> <span class="na">bc-border=</span><span class="s">&quot;Bordered&quot;</span><span class="nt">&gt;</span>
     ...
-&lt;/table&gt;
-&lt;table bc-border=&quot;Borderless&quot;&gt;
+<span class="nt">&lt;/table&gt;</span>
+<span class="nt">&lt;table</span> <span class="na">bc-border=</span><span class="s">&quot;Borderless&quot;</span><span class="nt">&gt;</span>
     ...
-&lt;/table&gt;
-</code></pre>
+<span class="nt">&lt;/table&gt;</span>
+</pre></div>
+
 
 <h3 id="responsive">Responsive</h3>
 <p>Create responsive tables by adding the <code>bc-responsive</code> attribute to make them scroll horizontally on small devices. When viewing on anything larger than 768px wide, you will not see any difference in these tables.</p>
-<pre><code class="markup">&lt;table bc-responsive=&quot;true&quot;&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;table</span> <span class="na">bc-responsive=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
     ...
-&lt;/table&gt;
-</code></pre>
+<span class="nt">&lt;/table&gt;</span>
+</pre></div>
+
 
 <h3 id="hover">Hover</h3>
 <p>Add the <code>bc-hover</code> attribute to enable a hover state on table rows.</p>
-<pre><code class="markup">&lt;table bc-hover=&quot;true&quot;&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;table</span> <span class="na">bc-hover=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
     ...
-&lt;/table&gt;
-</code></pre>
+<span class="nt">&lt;/table&gt;</span>
+</pre></div>
+
 
 <hr />
 <h3 id="head-configuration">Head Configuration</h3>
 <h3 id="theme_1">Theme</h3>
 <p>Similar to themed tables, use the <code>bc-theme</code> attribute to make <code>&lt;thead&gt;</code> appear <code>Default</code> (default), <code>Dark</code> or <code>Light</code>.</p>
 <p><img src="/images/table_06.png" width="846" alt="Table Head Theme" /></p>
-<pre><code class="markup">&lt;table&gt;
-    &lt;thead bc-theme=&quot;Dark&quot;&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;table&gt;</span>
+    <span class="nt">&lt;thead</span> <span class="na">bc-theme=</span><span class="s">&quot;Dark&quot;</span><span class="nt">&gt;</span>
         ...
-    &lt;/thead&gt;
-    &lt;tbody&gt;
+    <span class="nt">&lt;/thead&gt;</span>
+    <span class="nt">&lt;tbody&gt;</span>
         ...
-    &lt;/tbody&gt;
-&lt;/table&gt;
+    <span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
 
-&lt;table&gt;
-    &lt;thead bc-theme=&quot;Light&quot;&gt;
+<span class="nt">&lt;table&gt;</span>
+    <span class="nt">&lt;thead</span> <span class="na">bc-theme=</span><span class="s">&quot;Light&quot;</span><span class="nt">&gt;</span>
         ...
-    &lt;/thead&gt;
-    &lt;tbody&gt;
+    <span class="nt">&lt;/thead&gt;</span>
+    <span class="nt">&lt;tbody&gt;</span>
         ...
-    &lt;/tbody&gt;
-&lt;/table&gt;
-</code></pre>
+    <span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+</pre></div>
+
 
 <hr />
 <h2 id="row-configuration">Row Configuration</h2>
 <h3 id="background">Background</h3>
 <p>Use the <code>bc-background</code> attribute to color table rows.</p>
 <p><img src="/images/table_07.png" width="409" alt="Table Row Background" /></p>
-<pre><code class="markup">&lt;table&gt;
-    &lt;thead&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;table&gt;</span>
+    <span class="nt">&lt;thead&gt;</span>
         ...
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-        &lt;tr bc-background=&quot;Primary&quot;&gt; ... &lt;/tr&gt;
-        &lt;tr bc-background=&quot;Secondary&quot;&gt; ... &lt;/tr&gt;
-        &lt;tr bc-background=&quot;Success&quot;&gt; ... &lt;/tr&gt;
-        &lt;tr bc-background=&quot;Danger&quot;&gt; ... &lt;/tr&gt;
-        &lt;tr bc-background=&quot;Warning&quot;&gt; ... &lt;/tr&gt;
-        &lt;tr bc-background=&quot;Info&quot;&gt; ... &lt;/tr&gt;
-        &lt;tr bc-background=&quot;Brand&quot;&gt; ... &lt;/tr&gt;
-        &lt;tr bc-background=&quot;Accent&quot;&gt; ... &lt;/tr&gt;
-        &lt;tr bc-background=&quot;Focus&quot;&gt; ... &lt;/tr&gt;
-        &lt;tr bc-background=&quot;Metal&quot;&gt; ... &lt;/tr&gt;
-    &lt;/tbody&gt;
-&lt;/table&gt;
-</code></pre>
+    <span class="nt">&lt;/thead&gt;</span>
+    <span class="nt">&lt;tbody&gt;</span>
+        <span class="nt">&lt;tr</span> <span class="na">bc-background=</span><span class="s">&quot;Primary&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr</span> <span class="na">bc-background=</span><span class="s">&quot;Secondary&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr</span> <span class="na">bc-background=</span><span class="s">&quot;Success&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr</span> <span class="na">bc-background=</span><span class="s">&quot;Danger&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr</span> <span class="na">bc-background=</span><span class="s">&quot;Warning&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr</span> <span class="na">bc-background=</span><span class="s">&quot;Info&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr</span> <span class="na">bc-background=</span><span class="s">&quot;Brand&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr</span> <span class="na">bc-background=</span><span class="s">&quot;Accent&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr</span> <span class="na">bc-background=</span><span class="s">&quot;Focus&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr</span> <span class="na">bc-background=</span><span class="s">&quot;Metal&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+</pre></div>
               
             </div>
           </div>

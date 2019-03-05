@@ -194,7 +194,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../../forms/input/">Input</a>
+    <a class="" href="../../forms/input/">Text</a>
                 </li>
                 <li class="">
                     
@@ -202,7 +202,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../../forms/select/">Select</a>
+    <a class="" href="../../forms/select/">Dropdown</a>
                 </li>
                 <li class="">
                     
@@ -342,16 +342,17 @@
                 <h1 id="modal">Modal</h1>
 <p>Use a Modal to add dialogs to your site for lightboxes, user notifications, or completely custom content. These quite complex component is capsuled within a Mecons Tag Helper and is very easy to use!</p>
 <p><img src="/images/modal_01.png" width="513" alt="Mecons Modal" /></p>
-<pre><code class="markup">&lt;modal bc-title=&quot;Modal title&quot; bc-toggle-text=&quot;Launch modal&quot;&gt;
-    &lt;modal-body&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;modal</span> <span class="na">bc-title=</span><span class="s">&quot;Modal title&quot;</span> <span class="na">bc-toggle-text=</span><span class="s">&quot;Launch modal&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;modal-body&gt;</span>
         Modal body text goes here.
-    &lt;/modal-body&gt;
-    &lt;modal-footer&gt;
-        &lt;button type=&quot;button&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
-        &lt;button type=&quot;button&quot;&gt;Save changes&lt;/button&gt;
-    &lt;/modal-footer&gt;
-&lt;/modal&gt;
-</code></pre>
+    <span class="nt">&lt;/modal-body&gt;</span>
+    <span class="nt">&lt;modal-footer&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">data-dismiss=</span><span class="s">&quot;modal&quot;</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>Save changes<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/modal-footer&gt;</span>
+<span class="nt">&lt;/modal&gt;</span>
+</pre></div>
+
 
 <hr />
 <h2 id="components">Components</h2>
@@ -372,16 +373,17 @@
 <h3 id="title">Title</h3>
 <p>There are two ways to define a title for a modal dialog. The easiest way is to set a title with the <code>bc-title</code> attribute. The second way is to specify an header tag (e.g. <code>&lt;h2&gt;</code>) within the <code>&lt;modal-header&gt;</code>.</p>
 <p><img src="/images/modal_02.png" width="517" alt="Modal Title" /></p>
-<pre><code class="markup">&lt;modal bc-title=&quot;Modal title&quot; bc-toggle-text=&quot;Launch modal&quot;&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;modal</span> <span class="na">bc-title=</span><span class="s">&quot;Modal title&quot;</span> <span class="na">bc-toggle-text=</span><span class="s">&quot;Launch modal&quot;</span><span class="nt">&gt;</span>
     ...
-&lt;/modal&gt;
+<span class="nt">&lt;/modal&gt;</span>
 
-&lt;modal bc-toggle-text=&quot;Launch modal&quot;&gt;
-    &lt;modal-header&gt;
-        &lt;h2&gt;Modal title&lt;/h2&gt;
-    &lt;modal-header&gt;
-&lt;/modal&gt;
-</code></pre>
+<span class="nt">&lt;modal</span> <span class="na">bc-toggle-text=</span><span class="s">&quot;Launch modal&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;modal-header&gt;</span>
+        <span class="nt">&lt;h2&gt;</span>Modal title<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;modal-header&gt;</span>
+<span class="nt">&lt;/modal&gt;</span>
+</pre></div>
+
 
 <h3 id="size">Size</h3>
 <p>Modals have two optional sizes, available via <code>bc-size</code> attribute. Allocatable are the sizes <code>Small</code>, <code>Default</code> and <code>Large</code>.</p>

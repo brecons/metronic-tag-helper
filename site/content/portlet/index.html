@@ -192,7 +192,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../../forms/input/">Input</a>
+    <a class="" href="../../forms/input/">Text</a>
                 </li>
                 <li class="">
                     
@@ -200,7 +200,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../../forms/select/">Select</a>
+    <a class="" href="../../forms/select/">Dropdown</a>
                 </li>
                 <li class="">
                     
@@ -340,33 +340,35 @@
                 <h1 id="portlet">Portlet</h1>
 <p>Portlets are complex containers for content, actions and small navigations.</p>
 <p><img src="/images/portlet_01.png" width="500" alt="Mecons Portlet" /></p>
-<pre><code class="markup">&lt;portlet&gt;
-    &lt;portlet-header bc-title=&quot;Basic Portlet&quot; bc-subtitle=&quot;portlet sub title&quot;&gt;&lt;/portlet-header&gt;
-    &lt;portlet-body&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;portlet&gt;</span>
+    <span class="nt">&lt;portlet-header</span> <span class="na">bc-title=</span><span class="s">&quot;Basic Portlet&quot;</span> <span class="na">bc-subtitle=</span><span class="s">&quot;portlet sub title&quot;</span><span class="nt">&gt;&lt;/portlet-header&gt;</span>
+    <span class="nt">&lt;portlet-body&gt;</span>
         ...
-    &lt;/portlet-body&gt;
-&lt;/portlet&gt;
-</code></pre>
+    <span class="nt">&lt;/portlet-body&gt;</span>
+<span class="nt">&lt;/portlet&gt;</span>
+</pre></div>
+
 
 <hr />
 <h2 id="components">Components</h2>
 <p><img src="/images/portlet_02.png" width="757" alt="Portlet Components" /></p>
-<pre><code class="markup">&lt;portlet&gt;
-    &lt;portlet-header bc-title=&quot;Portlet Header&quot; bc-subtitle=&quot;Portlet Subheader&quot;&gt;
-        &lt;portlet-nav&gt;
-            &lt;portlet-link href=&quot;#&quot; bc-icon=&quot;LA_Close&quot; /&gt;
-            &lt;portlet-link href=&quot;#&quot; bc-icon=&quot;LA_Refresh&quot; /&gt;
-            &lt;portlet-link href=&quot;#&quot; bc-icon=&quot;LA_EllipsisH&quot; /&gt;
-        &lt;/portlet-nav&gt;
-    &lt;/portlet-header&gt;
-    &lt;portlet-body&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;portlet&gt;</span>
+    <span class="nt">&lt;portlet-header</span> <span class="na">bc-title=</span><span class="s">&quot;Portlet Header&quot;</span> <span class="na">bc-subtitle=</span><span class="s">&quot;Portlet Subheader&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;portlet-nav&gt;</span>
+            <span class="nt">&lt;portlet-link</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">bc-icon=</span><span class="s">&quot;LA_Close&quot;</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;portlet-link</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">bc-icon=</span><span class="s">&quot;LA_Refresh&quot;</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;portlet-link</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">bc-icon=</span><span class="s">&quot;LA_EllipsisH&quot;</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/portlet-nav&gt;</span>
+    <span class="nt">&lt;/portlet-header&gt;</span>
+    <span class="nt">&lt;portlet-body&gt;</span>
         ...
-    &lt;/portlet-body&gt;
-    &lt;portlet-footer&gt;
+    <span class="nt">&lt;/portlet-body&gt;</span>
+    <span class="nt">&lt;portlet-footer&gt;</span>
         Portlet Footer
-    &lt;/portlet-footer&gt;
-&lt;/portlet&gt;
-</code></pre>
+    <span class="nt">&lt;/portlet-footer&gt;</span>
+<span class="nt">&lt;/portlet&gt;</span>
+</pre></div>
+
 
 <h3 id="header">Header</h3>
 <p>A header for the portlet can added with the <code>&lt;portlet-header&gt;</code> tag helper. A header can contain a simple title with additional subtitle, an icon or a navigation.</p>
@@ -387,15 +389,16 @@
 <h3 id="border">Border</h3>
 <p>Outline the portlet with a border by setting the <code>bc-border</code> attribute. Possible border styles are <code>None</code> (default), <code>Full</code> or <code>Semi</code>.</p>
 <p><img src="/images/portlet_03.png" width="1471" alt="Portlet Border" /></p>
-<pre><code class="markup">&lt;!-- Portlet with no border and shadow --&gt;
-&lt;portlet bc-shadow=&quot;false&quot;&gt; ... &lt;/portlet&gt;
+<div class="codehilite"><pre><span></span><span class="c">&lt;!-- Portlet with no border and shadow --&gt;</span>
+<span class="nt">&lt;portlet</span> <span class="na">bc-shadow=</span><span class="s">&quot;false&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/portlet&gt;</span>
 
-&lt;!-- Portlet with full border --&gt;
-&lt;portlet bc-shadow=&quot;false&quot; bc-border=&quot;Full&quot;&gt; ... &lt;/portlet&gt;
+<span class="c">&lt;!-- Portlet with full border --&gt;</span>
+<span class="nt">&lt;portlet</span> <span class="na">bc-shadow=</span><span class="s">&quot;false&quot;</span> <span class="na">bc-border=</span><span class="s">&quot;Full&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/portlet&gt;</span>
 
-&lt;!-- Portlet with semi border --&gt;
-&lt;portlet bc-shadow=&quot;false&quot; bc-border=&quot;Semi&quot;&gt; ... &lt;/portlet&gt;
-</code></pre>
+<span class="c">&lt;!-- Portlet with semi border --&gt;</span>
+<span class="nt">&lt;portlet</span> <span class="na">bc-shadow=</span><span class="s">&quot;false&quot;</span> <span class="na">bc-border=</span><span class="s">&quot;Semi&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/portlet&gt;</span>
+</pre></div>
+
 
 <h3 id="theme">Theme</h3>
 <p>Define a theme for the portlet with the <code>bc-theme</code> attribute. Possible themes are <code>Default</code>, <code>Dark</code> and <code>Light</code>.</p>
@@ -403,12 +406,13 @@
 <p>Set a background color for the portlet with the <code>bc-background</code> attribute. By default the portlet has <code>None</code> background color.</p>
 <p>In addition use the <code>bc-background-style</code> attribute to set the background color only for the header (<code>HeadOnly</code>) or for the complete portlet (<code>Full</code>).</p>
 <p><img src="/images/portlet_04.png" width="984" alt="Portlet Background" /></p>
-<pre><code class="markup">&lt;!-- Portlet with full background --&gt;
-&lt;portlet bc-theme=&quot;Dark&quot; bc-background=&quot;Brand&quot;&gt; ... &lt;/portlet&gt;
+<div class="codehilite"><pre><span></span><span class="c">&lt;!-- Portlet with full background --&gt;</span>
+<span class="nt">&lt;portlet</span> <span class="na">bc-theme=</span><span class="s">&quot;Dark&quot;</span> <span class="na">bc-background=</span><span class="s">&quot;Brand&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/portlet&gt;</span>
 
-&lt;!-- Portlet with only header background --&gt;
-&lt;portlet bc-background=&quot;Brand&quot; bc-background-style=&quot;HeadOnly&quot;&gt; ... &lt;/portlet&gt;
-</code></pre>
+<span class="c">&lt;!-- Portlet with only header background --&gt;</span>
+<span class="nt">&lt;portlet</span> <span class="na">bc-background=</span><span class="s">&quot;Brand&quot;</span> <span class="na">bc-background-style=</span><span class="s">&quot;HeadOnly&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/portlet&gt;</span>
+</pre></div>
+
 
 <hr />
 <h2 id="header-configuration">Header Configuration</h2>
@@ -419,11 +423,11 @@
 <h3 id="color">Color</h3>
 <p>Use the <code>bc-color</code> attribute to define a font color for the title and icon of the portlet header. By default, the color is <code>Dark</code>.</p>
 <p><img src="/images/portlet_05.png" width="490" alt="Portlet Header Color" /></p>
-<pre><code class="markup">&lt;portlet&gt;
-    &lt;portlet-header bc-icon=&quot;FA_Apple&quot; bc-color=&quot;Success&quot; bc-title=&quot;Colored Header&quot; bc-subtitle=&quot;Normal styled subtitle&quot;&gt;&lt;/portlet-header&gt;
-    &lt;portlet-body&gt; ... &lt;/portlet-body&gt;
-&lt;/portlet&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;portlet&gt;</span>
+    <span class="nt">&lt;portlet-header</span> <span class="na">bc-icon=</span><span class="s">&quot;FA_Apple&quot;</span> <span class="na">bc-color=</span><span class="s">&quot;Success&quot;</span> <span class="na">bc-title=</span><span class="s">&quot;Colored Header&quot;</span> <span class="na">bc-subtitle=</span><span class="s">&quot;Normal styled subtitle&quot;</span><span class="nt">&gt;&lt;/portlet-header&gt;</span>
+    <span class="nt">&lt;portlet-body&gt;</span> ... <span class="nt">&lt;/portlet-body&gt;</span>
+<span class="nt">&lt;/portlet&gt;</span>
+</pre></div>
               
             </div>
           </div>

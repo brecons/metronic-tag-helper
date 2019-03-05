@@ -176,7 +176,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../input/">Input</a>
+    <a class="" href="../input/">Text</a>
                 </li>
                 <li class="">
                     
@@ -184,7 +184,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../select/">Select</a>
+    <a class="" href="../select/">Dropdown</a>
                 </li>
                 <li class="">
                     
@@ -230,9 +230,9 @@
     
         <ul>
         
-            <li><a class="toctree-l4" href="#button-configuration-ltbuttongt">Button Configuration &lt;button&gt;</a></li>
+            <li><a class="toctree-l4" href="#configuration">Configuration</a></li>
         
-            <li><a class="toctree-l4" href="#link-configuration-ltagt">Link Configuration &lt;a&gt;</a></li>
+            <li><a class="toctree-l4" href="#link-configuration">Link Configuration</a></li>
         
         </ul>
     
@@ -338,51 +338,58 @@
                 <h1 id="button">Button</h1>
 <p>Buttons are elements for actions in forms, dialogs and more. With the Mecons Tag Helper it is very easy to use these Buttons and adjust them to your needs.</p>
 <p><img src="/images/button_01.png" width="620" alt="Mecons Button"></p>
-<pre><code class="markup">&lt;button type=&quot;button&quot;&gt;Primary&lt;/button&gt;
-&lt;button type=&quot;button&quot; bc-color=&quot;Secondary&quot;&gt;Secondary&lt;/button&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">bc-color=</span><span class="s">&quot;Secondary&quot;</span><span class="nt">&gt;</span>Secondary<span class="nt">&lt;/button&gt;</span>
 ...
-</code></pre>
+</pre></div>
 
-<h2 id="button-configuration-ltbuttongt">Button Configuration <code>&lt;button&gt;</code></h2>
+
+<hr />
+<h2 id="configuration">Configuration</h2>
 <h3 id="color">Color</h3>
 <p>Use the <code>bc-color</code> attribute to modify the styling of the button.</p>
 <h3 id="outline">Outline</h3>
 <p>In need of a button, but not the hefty background colors they bring? Set the <code>bc-outline</code> attribute to true to remove all background images and color on any button.</p>
 <p><img src="/images/button_02.png" width="610" alt="Outlined Button"></p>
-<pre><code class="markup">&lt;button type=&quot;button&quot; bc-outline=&quot;true&quot;&gt;Primary&lt;/button&gt;
-&lt;button type=&quot;button&quot; bc-outline=&quot;true&quot; bc-color=&quot;Secondary&quot;&gt;Secondary&lt;/button&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">bc-outline=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">bc-outline=</span><span class="s">&quot;true&quot;</span> <span class="na">bc-color=</span><span class="s">&quot;Secondary&quot;</span><span class="nt">&gt;</span>Secondary<span class="nt">&lt;/button&gt;</span>
 ...
-</code></pre>
+</pre></div>
+
 
 <h3 id="style">Style</h3>
 <p>Render a button in different styles by setting the <code>bc-style</code> attribute. Possible values are <code>Default</code>, <code>Square</code> or <code>Pill</code>.</p>
 <p><img src="/images/button_03.png" width="269" alt="Button Style"></p>
-<pre><code class="markup">&lt;button type=&quot;button&quot;&gt;Default&lt;/button&gt;
-&lt;button type=&quot;button&quot; bc-style=&quot;Square&quot;&gt;Square&lt;/button&gt;
-&lt;button type=&quot;button&quot; bc-style=&quot;Pill&quot;&gt;Pill&lt;/button&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>Default<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">bc-style=</span><span class="s">&quot;Square&quot;</span><span class="nt">&gt;</span>Square<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">bc-style=</span><span class="s">&quot;Pill&quot;</span><span class="nt">&gt;</span>Pill<span class="nt">&lt;/button&gt;</span>
+</pre></div>
+
 
 <h3 id="size">Size</h3>
 <p>Add the <code>bc-size</code> attribute to define a size for the button. Possible sizes are <code>Default</code>, <code>Large</code> or <code>Small</code>.</p>
 <p><img src="/images/button_04.png" width="440" alt="Button Size"></p>
-<pre><code class="markup">&lt;button type=&quot;button&quot; bc-size=&quot;Large&quot; bc-color=&quot;Primary&quot;&gt;Large button&lt;/button&gt;
-&lt;button type=&quot;button&quot; bc-color=&quot;Secondary&quot;&gt;Default button&lt;/button&gt;
-&lt;button type=&quot;button&quot; bc-size=&quot;Small&quot; bc-color=&quot;Success&quot;&gt;Small button&lt;/button&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">bc-size=</span><span class="s">&quot;Large&quot;</span> <span class="na">bc-color=</span><span class="s">&quot;Primary&quot;</span><span class="nt">&gt;</span>Large button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">bc-color=</span><span class="s">&quot;Secondary&quot;</span><span class="nt">&gt;</span>Default button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">bc-size=</span><span class="s">&quot;Small&quot;</span> <span class="na">bc-color=</span><span class="s">&quot;Success&quot;</span><span class="nt">&gt;</span>Small button<span class="nt">&lt;/button&gt;</span>
+</pre></div>
+
 
 <h3 id="wide">Wide</h3>
 <p>Use the <code>bc-wide</code> attribute to enlarge the paddings of the button.</p>
 <p><img src="/images/button_05.png" width="276" alt="Wide Button"></p>
-<pre><code class="markup">&lt;button type=&quot;button&quot; bc-color=&quot;Success&quot; bc-wide=&quot;true&quot;&gt;Success&lt;/button&gt;
-&lt;button type=&quot;button&quot; bc-color=&quot;Danger&quot; bc-wide=&quot;true&quot;&gt;Danger&lt;/button&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">bc-color=</span><span class="s">&quot;Success&quot;</span> <span class="na">bc-wide=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">bc-color=</span><span class="s">&quot;Danger&quot;</span> <span class="na">bc-wide=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/button&gt;</span>
+</pre></div>
+
 
 <h3 id="block">Block</h3>
 <p>Create block level buttons - those that span the full width of a parent - by adding the <code>bc-block</code> attribute.</p>
 <p><img src="/images/button_06.png" width="444" alt="Block Button"></p>
-<pre><code class="markup">&lt;button type=&quot;button&quot; bc-block=&quot;true&quot; bc-color=&quot;Primary&quot;&gt;Primary&lt;/button&gt;
-&lt;button type=&quot;button&quot; bc-block=&quot;true&quot; bc-color=&quot;Success&quot;&gt;Success&lt;/button&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">bc-block=</span><span class="s">&quot;true&quot;</span> <span class="na">bc-color=</span><span class="s">&quot;Primary&quot;</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">bc-block=</span><span class="s">&quot;true&quot;</span> <span class="na">bc-color=</span><span class="s">&quot;Success&quot;</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
+</pre></div>
+
 
 <h3 id="active">Active</h3>
 <p>Buttons will appear pressed (with a darker background, darker border, and inset shadow) when the <code>bc-active</code> attribute is set to <code>true</code>.</p>
@@ -391,21 +398,24 @@
 <h3 id="icon">Icon</h3>
 <p>It is also possible to equip the button with an icon, which is displayed next to the description text. For this purpose, an icon can be defined with the <code>bc-icon</code> attribute.</p>
 <p><img src="/images/button_07.png" width="262" alt="Button with Icon"></p>
-<pre><code class="markup">&lt;button type=&quot;button&quot; bc-color=&quot;Primary&quot; bc-icon=&quot;FA_Archive&quot;&gt;Primary&lt;/button&gt;
-&lt;button type=&quot;button&quot; bc-color=&quot;Secondary&quot; bc-icon=&quot;FA_User&quot;&gt;Secondary&lt;/button&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">bc-color=</span><span class="s">&quot;Primary&quot;</span> <span class="na">bc-icon=</span><span class="s">&quot;FA_Archive&quot;</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">bc-color=</span><span class="s">&quot;Secondary&quot;</span> <span class="na">bc-icon=</span><span class="s">&quot;FA_User&quot;</span><span class="nt">&gt;</span>Secondary<span class="nt">&lt;/button&gt;</span>
+</pre></div>
+
 
 <p>If a button has no description, only the icon is displayed as an icon-only button.</p>
 <p><img src="/images/button_08.png" width="106" alt="Icon-only Button"></p>
-<pre><code class="markup">&lt;button type=&quot;button&quot; bc-color=&quot;Primary&quot; bc-icon=&quot;FA_Archive&quot;&gt;&lt;/button&gt;
-&lt;button type=&quot;button&quot; bc-color=&quot;Secondary&quot; bc-icon=&quot;FA_User&quot;&gt;&lt;/button&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">bc-color=</span><span class="s">&quot;Primary&quot;</span> <span class="na">bc-icon=</span><span class="s">&quot;FA_Archive&quot;</span><span class="nt">&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">bc-color=</span><span class="s">&quot;Secondary&quot;</span> <span class="na">bc-icon=</span><span class="s">&quot;FA_User&quot;</span><span class="nt">&gt;&lt;/button&gt;</span>
+</pre></div>
 
-<h2 id="link-configuration-ltagt">Link Configuration <code>&lt;a&gt;</code></h2>
-<h3 id="button-trigger-attribute">Button <span class="badge info">Trigger Attribute</span></h3>
+
+<hr />
+<h2 id="link-configuration">Link Configuration</h2>
+<h3 id="button-trigger-attribute">Button (Trigger Attribute)</h3>
 <p>You can also use the button attributes with <code>&lt;a&gt;</code> tags and render a link like a button. To do that it is important to set the trigger attribute <code>bc-button</code> for a link.</p>
-<pre><code class="markup">&lt;a bc-button=&quot;true&quot; bc-color=&quot;Primary&quot;&gt;Primary&lt;/a&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;a</span> <span class="na">bc-button=</span><span class="s">&quot;true&quot;</span> <span class="na">bc-color=</span><span class="s">&quot;Primary&quot;</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/a&gt;</span>
+</pre></div>
               
             </div>
           </div>

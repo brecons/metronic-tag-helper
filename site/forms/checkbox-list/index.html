@@ -176,7 +176,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../input/">Input</a>
+    <a class="" href="../input/">Text</a>
                 </li>
                 <li class="">
                     
@@ -184,7 +184,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../select/">Select</a>
+    <a class="" href="../select/">Dropdown</a>
                 </li>
                 <li class="">
                     
@@ -338,102 +338,112 @@
                 <h1 id="checkbox-list">Checkbox List</h1>
 <p>The <code>&lt;checkbox-list&gt;</code> tag helper is a wrapper for checkbox input elements. For a correct rendering it is necessary to embedding all checkboxes into a checkbox list.</p>
 <p><img src="/images/checkboxlist_01.png" width="174" alt="Mecons Checkbox List"></p>
-<pre><code class="markup">&lt;checkbox-list bc-label=&quot;Default Checkboxes&quot;&gt;
-    &lt;input type=&quot;checkbox&quot; bc-label=&quot;Default&quot; /&gt;
-    &lt;input type=&quot;checkbox&quot; bc-label=&quot;Disabled&quot; disabled /&gt;
-    &lt;input type=&quot;checkbox&quot; bc-label=&quot;Checked&quot; checked /&gt;
-&lt;/checkbox-list&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;checkbox-list</span> <span class="na">bc-label=</span><span class="s">&quot;Default Checkboxes&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">bc-label=</span><span class="s">&quot;Default&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">bc-label=</span><span class="s">&quot;Disabled&quot;</span> <span class="err">disabled</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">bc-label=</span><span class="s">&quot;Checked&quot;</span> <span class="err">checked</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/checkbox-list&gt;</span>
+</pre></div>
 
+
+<hr />
 <h2 id="configuration">Configuration</h2>
 <h3 id="inline">Inline</h3>
 <p>Checkboxes can rendered on the same horizontal row by adding the <code>bc-inline</code> attribute to the list wrapper.</p>
 <p><img src="/images/checkboxlist_02.png" width="328" alt="Inline Checkbox List"></p>
-<pre><code class="markup">&lt;checkbox-list bc-inline=&quot;true&quot;&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;checkbox-list</span> <span class="na">bc-inline=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
     ...
-&lt;/checkbox-list&gt;
-</code></pre>
+<span class="nt">&lt;/checkbox-list&gt;</span>
+</pre></div>
+
 
 <h3 id="label">Label</h3>
 <p>To set an label for the list of checkboxes use the <code>bc-label</code> attribute.</p>
 <p><img src="/images/checkboxlist_03.png" width="171" alt="Checkbox List Label"></p>
-<pre><code class="markup">&lt;checkbox-list bc-label=&quot;Default Checkboxes&quot;&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;checkbox-list</span> <span class="na">bc-label=</span><span class="s">&quot;Default Checkboxes&quot;</span><span class="nt">&gt;</span>
     ...
-&lt;/checkbox-list&gt;
-</code></pre>
+<span class="nt">&lt;/checkbox-list&gt;</span>
+</pre></div>
+
 
 <h3 id="help">Help</h3>
 <p>To set a help text for a list of checkboxes use the <code>bc-help</code> attribute.</p>
 <p><img src="/images/checkboxlist_04.png" width="334" alt="Checkbox List Help"></p>
-<pre><code class="markup">&lt;checkbox-list bc-label=&quot;Inline Checkboxes&quot; bc-help=&quot;Some help text goes here&quot; bc-inline=&quot;true&quot;&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;checkbox-list</span> <span class="na">bc-label=</span><span class="s">&quot;Inline Checkboxes&quot;</span> <span class="na">bc-help=</span><span class="s">&quot;Some help text goes here&quot;</span> <span class="na">bc-inline=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
     ...
-&lt;/checkbox-list&gt;
-</code></pre>
+<span class="nt">&lt;/checkbox-list&gt;</span>
+</pre></div>
+
 
 <h3 id="items">Items</h3>
 <p>To bind a list of items to a Checkbox List use the <code>bc-items</code> attribute. This attribute accepts an object of <code>List&lt;SelectListItem&gt;</code>.</p>
 <p><img src="/images/checkboxlist_05.png" width="161" alt="Checkbox List Items"></p>
-<h4 id="view">View</h4>
-<pre><code class="markup">@model BSolutions.Mecons.Test.Models.DataBindingViewModel
+<div class="codehilite"><pre><span></span><span class="c">&lt;!-- VIEW --&gt;</span>
+@model BSolutions.Mecons.Test.Models.DataBindingViewModel
 
-&lt;checkbox-list bc-label=&quot;Equipment&quot; bc-items=&quot;Model.Equipments&quot;&gt;&lt;/checkbox-list&gt;
-</code></pre>
+<span class="nt">&lt;checkbox-list</span> <span class="na">bc-label=</span><span class="s">&quot;Equipment&quot;</span> <span class="na">bc-items=</span><span class="s">&quot;Model.Equipments&quot;</span><span class="nt">&gt;&lt;/checkbox-list&gt;</span>
+</pre></div>
 
-<h4 id="view-model">View Model</h4>
-<pre><code class="csharp">public class DataBindingViewModel
-{
-    public List&lt;SelectListItem&gt; Equipments { get; set; } = new List&lt;SelectListItem&gt;();
 
-    public DataBindingViewModel()
-    {
-        this.Equipments.Add(new SelectListItem { Value = &quot;0&quot;, Text = &quot;Laptop&quot; });
-        this.Equipments.Add(new SelectListItem { Value = &quot;1&quot;, Text = &quot;Smartphone&quot; });
-        this.Equipments.Add(new SelectListItem { Value = &quot;2&quot;, Text = &quot;PC&quot; });
-    }
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="c1">// VIEW MODEL</span>
+<span class="k">public</span> <span class="k">class</span> <span class="nc">DataBindingViewModel</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">SelectListItem</span><span class="p">&gt;</span> <span class="n">Equipments</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span> <span class="p">=</span> <span class="k">new</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">SelectListItem</span><span class="p">&gt;();</span>
 
+    <span class="k">public</span> <span class="nf">DataBindingViewModel</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="n">Equipments</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="k">new</span> <span class="n">SelectListItem</span> <span class="p">{</span> <span class="n">Value</span> <span class="p">=</span> <span class="s">&quot;0&quot;</span><span class="p">,</span> <span class="n">Text</span> <span class="p">=</span> <span class="s">&quot;Laptop&quot;</span> <span class="p">});</span>
+        <span class="k">this</span><span class="p">.</span><span class="n">Equipments</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="k">new</span> <span class="n">SelectListItem</span> <span class="p">{</span> <span class="n">Value</span> <span class="p">=</span> <span class="s">&quot;1&quot;</span><span class="p">,</span> <span class="n">Text</span> <span class="p">=</span> <span class="s">&quot;Smartphone&quot;</span> <span class="p">});</span>
+        <span class="k">this</span><span class="p">.</span><span class="n">Equipments</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="k">new</span> <span class="n">SelectListItem</span> <span class="p">{</span> <span class="n">Value</span> <span class="p">=</span> <span class="s">&quot;2&quot;</span><span class="p">,</span> <span class="n">Text</span> <span class="p">=</span> <span class="s">&quot;PC&quot;</span> <span class="p">});</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<hr />
 <h2 id="data-binding">Data Binding</h2>
 <p>Model binding in ASP.NET Core MVC maps data from HTTP requests to action method parameters. With <code>asp-for</code> attribute of the Checkbox List it is possible to bind checked options to a model parameter.</p>
-<h3 id="view_1">View</h3>
 <p><img src="/images/checkboxlist_06.png" width="161" alt=""></p>
-<pre><code class="markup">@model BSolutions.Mecons.Test.Models.DataBindingViewModel
+<div class="codehilite"><pre><span></span><span class="c">&lt;!-- VIEW --&gt;</span>
+@model BSolutions.Mecons.Test.Models.DataBindingViewModel
 
-&lt;checkbox-list asp-for=&quot;Equipment&quot; bc-items=&quot;Model.Equipments&quot;&gt;&lt;/checkbox-list&gt;
-</code></pre>
+<span class="nt">&lt;checkbox-list</span> <span class="na">asp-for=</span><span class="s">&quot;Equipment&quot;</span> <span class="na">bc-items=</span><span class="s">&quot;Model.Equipments&quot;</span><span class="nt">&gt;&lt;/checkbox-list&gt;</span>
+</pre></div>
 
-<h3 id="view-model_1">View Model</h3>
-<pre><code class="csharp">public class DataBindingViewModel
-{
-    // Selected Equipment
-    [Display(Name = &quot;Equipment&quot;)]
-    public List&lt;string&gt; Equipment { get; set; }
 
-    // Available Equipment
-    public List&lt;SelectListItem&gt; Equipments { get; set; } = new List&lt;SelectListItem&gt;();
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="c1">// VIEW MODEL</span>
+<span class="k">public</span> <span class="k">class</span> <span class="nc">DataBindingViewModel</span>
+<span class="p">{</span>
+    <span class="c1">// Selected Equipment</span>
+<span class="na">    [Display(Name = &quot;Equipment&quot;)]</span>
+    <span class="k">public</span> <span class="n">List</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;</span> <span class="n">Equipment</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
 
-<h3 id="controller">Controller</h3>
-<pre><code class="csharp">public IActionResult DataBinding()
-{
-    var model = new DataBindingViewModel();
-    model.Equipments.Add(new SelectListItem { Value = &quot;0&quot;, Text = &quot;Laptop&quot; });
-    model.Equipments.Add(new SelectListItem { Value = &quot;1&quot;, Text = &quot;Smartphone&quot; });
-    model.Equipments.Add(new SelectListItem { Value = &quot;2&quot;, Text = &quot;PC&quot; });
+    <span class="c1">// Available Equipment</span>
+    <span class="k">public</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">SelectListItem</span><span class="p">&gt;</span> <span class="n">Equipments</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span> <span class="p">=</span> <span class="k">new</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">SelectListItem</span><span class="p">&gt;();</span>
+<span class="p">}</span>
+</pre></div>
 
-    return View(model);
-}
 
-[HttpPost]
-public IActionResult DataBinding(DataBindingViewModel model)
-{
-    foreach(var equipment in model.Equipment)
-    {
-        // Do something with selected equipment
-    }
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="c1">// CONTROLLER</span>
+<span class="k">public</span> <span class="n">IActionResult</span> <span class="nf">DataBinding</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="kt">var</span> <span class="n">model</span> <span class="p">=</span> <span class="k">new</span> <span class="n">DataBindingViewModel</span><span class="p">();</span>
+    <span class="n">model</span><span class="p">.</span><span class="n">Equipments</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="k">new</span> <span class="n">SelectListItem</span> <span class="p">{</span> <span class="n">Value</span> <span class="p">=</span> <span class="s">&quot;0&quot;</span><span class="p">,</span> <span class="n">Text</span> <span class="p">=</span> <span class="s">&quot;Laptop&quot;</span> <span class="p">});</span>
+    <span class="n">model</span><span class="p">.</span><span class="n">Equipments</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="k">new</span> <span class="n">SelectListItem</span> <span class="p">{</span> <span class="n">Value</span> <span class="p">=</span> <span class="s">&quot;1&quot;</span><span class="p">,</span> <span class="n">Text</span> <span class="p">=</span> <span class="s">&quot;Smartphone&quot;</span> <span class="p">});</span>
+    <span class="n">model</span><span class="p">.</span><span class="n">Equipments</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="k">new</span> <span class="n">SelectListItem</span> <span class="p">{</span> <span class="n">Value</span> <span class="p">=</span> <span class="s">&quot;2&quot;</span><span class="p">,</span> <span class="n">Text</span> <span class="p">=</span> <span class="s">&quot;PC&quot;</span> <span class="p">});</span>
+
+    <span class="k">return</span> <span class="nf">View</span><span class="p">(</span><span class="n">model</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="na">[HttpPost]</span>
+<span class="k">public</span> <span class="n">IActionResult</span> <span class="nf">DataBinding</span><span class="p">(</span><span class="n">DataBindingViewModel</span> <span class="n">model</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">foreach</span><span class="p">(</span><span class="kt">var</span> <span class="n">equipment</span> <span class="k">in</span> <span class="n">model</span><span class="p">.</span><span class="n">Equipment</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="c1">// Do something with selected equipment</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
               
             </div>
           </div>

@@ -176,7 +176,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../input/">Input</a>
+    <a class="" href="../input/">Text</a>
                 </li>
                 <li class="">
                     
@@ -184,7 +184,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../select/">Select</a>
+    <a class="" href="../select/">Dropdown</a>
                 </li>
                 <li class="">
                     
@@ -257,7 +257,7 @@
     
         <ul>
         
-            <li><a class="toctree-l4" href="#configuration-lttimepickergt">Configuration &lt;timepicker&gt;</a></li>
+            <li><a class="toctree-l4" href="#configuration">Configuration</a></li>
         
         </ul>
     
@@ -336,17 +336,20 @@
                 <h1 id="timepicker">Timepicker</h1>
 <p>With the Timepicker you can easily select a time for a text input using your mouse or keyboards arrow keys.</p>
 <p><img src="/images/timepicker_01.png" width="433" alt="Mecons Timepicker"></p>
-<pre><code class="markup">&lt;timepicker bc-label=&quot;Start Time&quot; /&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span>&lt;timepicker bc-label=&quot;Start Time&quot; /&gt;
+</pre></div>
 
-<h2 id="configuration-lttimepickergt">Configuration <code>&lt;timepicker&gt;</code></h2>
+
+<hr />
+<h2 id="configuration">Configuration</h2>
 <h3 id="steps">Steps</h3>
 <p>Specify a gradual increase for the minutes or seconds field. To set a step for the minutes field use the <code>bc-minute-step</code> attribute and set it to an integer between <code>1</code> and <code>60</code>. The same is possible for the seconds field. Therefore use the <code>bc-second-step</code> attribute.</p>
 <h3 id="seconds">Seconds</h3>
 <p>To show a field for seconds set the <code>bc-seconds</code> attribute to <code>true</code>.</p>
 <p><img src="/images/timepicker_02.png" width="426" alt="Timepicker with Seconds Field"></p>
-<pre><code class="markup">&lt;timepicker bc-label=&quot;Start Time&quot; bc-seconds=&quot;true&quot; /&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span>&lt;timepicker bc-label=&quot;Start Time&quot; bc-seconds=&quot;true&quot; /&gt;
+</pre></div>
+
 
 <h3 id="meridian">Meridian</h3>
 <p>To show a field for meridian selection set the <code>bc-meridian</code> attribute to <code>true</code>. By default, the meridian field is enabled.</p>
@@ -354,14 +357,16 @@
 <h3 id="input-fields">Input Fields</h3>
 <p>To disable the input fields for hours, minutes, seconds and meridian set the <code>bc-inputs</code> attribute to <code>false</code>.</p>
 <p><img src="/images/timepicker_04.png" width="434" alt="Timepicker without Input Fields"></p>
-<pre><code class="markup">&lt;timepicker bc-label=&quot;Start Time&quot; bc-inputs=&quot;false&quot; /&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span>&lt;timepicker bc-label=&quot;Start Time&quot; bc-inputs=&quot;false&quot; /&gt;
+</pre></div>
+
 
 <h3 id="icon">Icon</h3>
 <p>Set an icon addon for the timepicker with the <code>bc-icon</code> attribute.</p>
 <p><img src="/images/timepicker_05.png" width="434" alt="Timepicker Icon"></p>
-<pre><code class="markup">&lt;timepicker bc-label=&quot;Start Time&quot; bc-icon=&quot;FA_Clock&quot; /&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span>&lt;timepicker bc-label=&quot;Start Time&quot; bc-icon=&quot;FA_Clock&quot; /&gt;
+</pre></div>
+
 
 <h3 id="disable-focus">Disable Focus</h3>
 <p>Setting the <code>bc-disable-focus</code> attribute to <code>true</code> disables the input from focusing. This is useful for touch screen devices that display a keyboard on input focus.</p>
