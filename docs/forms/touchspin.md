@@ -8,7 +8,9 @@ A Touchspin is a mobile and touch friendly spinner component for numeric inputs.
 <touchspin bc-label="Minimum Setup" />
 ```
 
-## Configuration `<touchspin />`
+---
+
+## Configuration
 
 ### Minimum
 

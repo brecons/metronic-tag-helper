@@ -4,6 +4,8 @@ For Mecons, extended data annotation is available, which will explain in this ar
 
 Data Annotation in .NET Core Framework means add extra meaning to the data by adding attribute tags. The advantage of using Data Annotation feature is that by applying Data Attributes we can manage the data definition in a single place and do not need re-write the same rules in multiple places.
 
+---
+
 ## Display Attributes
 
 Display Attributes are used to specify how data from a member of a view model is displayed in the UI. Mecons provides some custom Display Attributes or rather extends extisting attributes:
@@ -18,18 +20,16 @@ If you have a custom localization logic in your application it might be useful t
 
 <img src="/images/data-annotation_01.png" width="426" alt="Brecons Display Attribute">
 
-#### View
-
 ```markup
+<!-- VIEW -->
 @model BSolutions.Mecons.Test.Models.DataBindingViewModel
 <form-group>
     <input type="text" asp-for="Product" />
 </form-group>
 ```
 
-#### Model
-
 ```csharp
+// MODEL
 public class DataBindingViewModel
 {
     [CustomDisplay(Name = "Product.Name", Description = "Product.Description")]
@@ -37,9 +37,8 @@ public class DataBindingViewModel
 }
 ```
 
-#### Custom Display Attribute
-
 ```csharp
+// CUSTOM DISPLAY ATTRIBUTE
 public class CustomDisplayAttribute : BreconsDisplayAttribute
 {
     // Your localization source provider
@@ -71,18 +70,16 @@ Furthermore, the classic `DisplayAttribute` is also available to set the value o
 
 <img src="/images/data-annotation_02.png" width="426" alt="Classic Display Attribute">
 
-#### View
-
 ```markup
+<!-- VIEW -->
 @model BSolutions.Mecons.Test.Models.DataBindingViewModel
 <form-group>
     <input type="text" asp-for="Product" />
 </form-group>
 ```
 
-#### Model
-
 ```csharp
+// MODEL
 public class DataBindingViewModel
 {
     [Display(Name = "Product Name", Description = "The name of the product")]

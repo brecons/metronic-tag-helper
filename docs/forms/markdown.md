@@ -8,7 +8,9 @@ The Markdown Tag Helper is an editor for Markdown language.
 <markdown bc-height="200" />
 ```
 
-## Configuration `<markdown />`
+---
+
+## Configuration
 
 ### Height
 

@@ -1,4 +1,4 @@
-# Textarea
+# Textarea (Multi-line Input)
 
 The textarea will be specified with a `<textarea>` tag and provides a multi-line text input field.
 

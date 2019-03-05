@@ -12,7 +12,9 @@ The Button Group groups a seriesof buttons together on a single line.
 </button-group>
 ```
 
-## Configuration `<button-group>`
+---
+
+## Configuration
 
 ### Vertical
 

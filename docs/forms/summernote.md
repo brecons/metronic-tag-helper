@@ -8,7 +8,9 @@ Summernote is a super simple WYSIWYG editor on Bootstrap. You design your conten
 <summernote bc-height="200" />
 ```
 
-## Configuration `<summernote />`
+---
+
+## Configuration
 
 ### Height
 

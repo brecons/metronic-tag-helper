@@ -12,6 +12,8 @@ The `<radio-list>` tag helper is a wrapper for radio input elements. For a corre
 </radio-list>
 ```
 
+---
+
 ## Configuration
 
 ### Inline
@@ -56,17 +58,15 @@ To bind a list of items to a Radio List use the `bc-items` attribute. This attri
 
 <img src="/images/radiolist_05.png" width="369" alt="Radio List Items">
 
-#### View
-
 ```markup
+<!-- VIEW -->
 @model BSolutions.Mecons.Test.Models.DataBindingViewModel
 
 <radio-list bc-label="Character" bc-items="Model.Characters" bc-inline="true"></radio-list>
 ```
 
-#### View Model
-
 ```csharp
+// VIEW MODEL
 public class DataBindingViewModel
 {
     public List<SelectListItem> Characters { get; set; } = new List<SelectListItem>();
@@ -85,17 +85,15 @@ It is also possible to bind the values of an enumeration to a Radio List. Use th
 
 <img src="/images/radiolist_06.png" width="204" alt="">
 
-#### View
-
 ```markup
+<!-- VIEW -->
 @model BSolutions.Mecons.Test.Models.DataBindingViewModel
 
 <radio-list bc-label="Gender" bc-inline="true" bc-items="Html.GetEnumSelectList<Gender>()"></radio-list>
 ```
 
-#### Enumeration
-
 ```csharp
+// ENUMERATION
 public enum Gender
 {
     [Display(Name = "Male")]
@@ -106,15 +104,16 @@ public enum Gender
 }
 ```
 
+---
+
 ## Data Binding
 
 Model binding in ASP.NET Core MVC maps data from HTTP requests to action method parameters. With `asp-for` attribute of the Radio List it is possible to bind selected option to a model parameter.
 
-### View
-
 <img src="/images/radiolist_07.png" width="304" alt="">
 
 ```markup
+<!-- VIEW -->
 @model BSolutions.Mecons.Test.Models.DataBindingViewModel
 
 <form-group>
@@ -125,9 +124,8 @@ Model binding in ASP.NET Core MVC maps data from HTTP requests to action method 
 </form-group>
 ```
 
-### View Model
-
 ```csharp
+// VIEW MODEL
 public class DataBindingViewModel
 {
     [Display(Name = "Gender")]
@@ -146,9 +144,8 @@ public enum Gender
 }
 ```
 
-### Controller
-
 ```csharp
+// CONTROLLER
 public IActionResult DataBinding()
 {
 	var model = new DataBindingViewModel();

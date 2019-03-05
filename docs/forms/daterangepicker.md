@@ -8,7 +8,9 @@ The Daterangepicker Tag Helper is a JavaScript component for choosing date range
 <daterangepicker bc-label="Start Time" />
 ```
 
-## Configuration `<daterangepicker>`
+---
+
+## Configuration
 
 ### Start and End Date
 
@@ -73,21 +75,16 @@ Use the `bc-apply-color` and `bc-cancel-color` attribute to define a color for t
 <daterangepicker bc-label="Start Time" bc-apply-color="Success" bc-cancel-color="Danger" />
 ```
 
+---
+
 ## Data Binding
 
 The Daterangepicker Tag Helper provides two properties for the start date and end date data binding. The start date can be bound to the `asp-for` attribute while the end date is bound to the `asp-for2` attribute.
 
-### Model
-```csharp
-[Display(Name = "Timespan", Description = "Please enter a timespan here.")]
-public DateTime StartDate { get; set; } = DateTime.Now.AddDays(-3);
-
-public DateTime EndDate { get; set; } = DateTime.Now.AddDays(3);
-```
-
-### View
+<img src="/images/daterangepicker_08.png" width="429" alt="Daterangepicker Data Binding" />
 
 ```markup
+<!-- VIEW -->
 <form asp-action="CallbackAction" method="post">
     <form-group>
         <daterangepicker asp-for="StartDate" asp-for2="EndDate" bc-format="dd/MM/yyyy" />
@@ -95,4 +92,10 @@ public DateTime EndDate { get; set; } = DateTime.Now.AddDays(3);
 </form>
 ```
 
-<img src="/images/daterangepicker_08.png" width="429" alt="Daterangepicker Data Binding">
+```csharp
+// MODEL
+[Display(Name = "Timespan", Description = "Please enter a timespan here.")]
+public DateTime StartDate { get; set; } = DateTime.Now.AddDays(-3);
+
+public DateTime EndDate { get; set; } = DateTime.Now.AddDays(3);
+```

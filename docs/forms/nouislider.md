@@ -8,9 +8,11 @@ noUiSlider is a range slider without bloat. It offers a ton off features, and it
 <nouislider bc-slider-1="20" />
 ```
 
+---
+
 ## Configuration
 
-### Sliders <span class="badge info">Mandatory</span>
+### Sliders (Mandatory)
 
 The `bc-slider-*` attribute defines an handle and its start position. The `bc-slider-*` attribute is a dictionary attribute and can be assigned multiple times (in this case the `*` must be replaced by a unique identifier, e.g. `bc-slider-1`).
 
@@ -90,6 +92,8 @@ By default the sliders are top-to-bottom and left-to-right, but you can change t
 <nouislider bc-slider-1="20" bc-connectors="true,false" />
 <nouislider bc-slider-1="20" bc-connectors="true,false" bc-direction="Rtl" />
 ```
+
+---
 
 ## Scale / Pips
 
@@ -175,6 +179,8 @@ By setting the `bc-pips-stepped` attribute to `true`, the pip values will be rou
 <nouislider bc-slider-1="0" bc-pips-mode="Positions" bc-step="2" bc-pips-values="0, 25, 50, 75, 100" />
 <nouislider bc-slider-1="0" bc-pips-mode="Positions" bc-step="2" bc-pips-values="0, 25, 50, 75, 100" bc-pips-stepped="true" />
 ```
+
+---
 
 ## Data Binding
 

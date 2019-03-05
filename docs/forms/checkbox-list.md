@@ -12,6 +12,8 @@ The `<checkbox-list>` tag helper is a wrapper for checkbox input elements. For a
 </checkbox-list>
 ```
 
+---
+
 ## Configuration
 
 ### Inline
@@ -56,16 +58,15 @@ To bind a list of items to a Checkbox List use the `bc-items` attribute. This at
 
 <img src="/images/checkboxlist_05.png" width="161" alt="Checkbox List Items">
 
-#### View
-
 ```markup
+<!-- VIEW -->
 @model BSolutions.Mecons.Test.Models.DataBindingViewModel
 
 <checkbox-list bc-label="Equipment" bc-items="Model.Equipments"></checkbox-list>
 ```
 
-#### View Model
 ```csharp
+// VIEW MODEL
 public class DataBindingViewModel
 {
     public List<SelectListItem> Equipments { get; set; } = new List<SelectListItem>();
@@ -79,23 +80,23 @@ public class DataBindingViewModel
 }
 ```
 
+---
+
 ## Data Binding
 
 Model binding in ASP.NET Core MVC maps data from HTTP requests to action method parameters. With `asp-for` attribute of the Checkbox List it is possible to bind checked options to a model parameter.
 
-### View
-
 <img src="/images/checkboxlist_06.png" width="161" alt="">
 
 ```markup
+<!-- VIEW -->
 @model BSolutions.Mecons.Test.Models.DataBindingViewModel
 
 <checkbox-list asp-for="Equipment" bc-items="Model.Equipments"></checkbox-list>
 ```
 
-### View Model
-
 ```csharp
+// VIEW MODEL
 public class DataBindingViewModel
 {
     // Selected Equipment
@@ -107,9 +108,8 @@ public class DataBindingViewModel
 }
 ```
 
-### Controller
-
 ```csharp
+// CONTROLLER
 public IActionResult DataBinding()
 {
     var model = new DataBindingViewModel();

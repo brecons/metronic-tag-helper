@@ -8,7 +8,9 @@ A Switch is a simple component used for activating one of two predefined options
 <switch bc-label="Default Switch" />
 ```
 
-## Configuration `<switch />`
+---
+
+## Configuration
 
 ### Icon
 

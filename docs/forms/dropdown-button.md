@@ -15,25 +15,29 @@ Dropdown Buttons are contextual overlays for displaying lists of links and more.
 </button-dropdown>
 ```
 
+---
+
 ## Components
 
 Components are tag helpers that are available within a `<button-dropdown>`.
 
-### Menu Item `<a>`
+### Menu Item
 
 The `<a>` tag represents an item within the dropdown menu. These regular HTML link tag is extended by a Mecons tag helper which provides further attributes.
 
-### Divider `<divider />`
+### Divider
 
 The `<divider>` tag helper helps you to seperate groups of related menu items.
 
-### Header `<header>`
+### Header
 
 With the `<header>` tag helper it is possible to add a header to label sections of actions in any dropdown menu.
 
-## Dropdown Button Configuration `<button-dropdown>`
+---
 
-### Title <span class="badge info">Mandatory</span>
+## Configuration
+
+### Title (Mandatory)
 
 The `bc-title` attribute specifies a title for the button that triggers the dropdown menu.
 
@@ -93,7 +97,9 @@ The `bc-split` attribute seperates the dropdown menu trigger from the rest of th
 </button-dropdown>
 ```
 
-## Menu Item Configuration `<a>`
+---
+
+## Menu Item Configuration
 
 ### Disable
 

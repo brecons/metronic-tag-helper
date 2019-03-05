@@ -1,4 +1,4 @@
-# Text (Input)
+# Text (Single-line Input)
 
 The text input will be specified with a `<input type="text" />` tag and provides a single-line text input field.
 
@@ -7,6 +7,8 @@ The text input will be specified with a `<input type="text" />` tag and provides
 ```markup
 <input type="text" bc-label="Text Control" />
 ```
+
+---
 
 ## Configuration
 

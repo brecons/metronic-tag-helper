@@ -8,9 +8,11 @@ DropzoneJS is an open source library that provides drag’n’drop file uploads 
 <dropzone bc-url="/Forms/Dropzone" />
 ```
 
+---
+
 ## Configuration
 
-### Url <span class="badge info">Mandatory</span>
+### Url (Mandatory)
 
 The `bc-url` attribute specifies the target to which the dropped files will be uploaded. This attribute is mandatory and without it, the dropzone will not run correctly.
 
@@ -71,6 +73,8 @@ Use the `bc-color` attribute to set a color for the Dropzone.
 ### Parameter
 
 The name of the file parameter that gets transferred to the server will specified with the `bc-name` attribute. By default, the parameter name is `file`.
+
+---
 
 ## Server-side Processing
 

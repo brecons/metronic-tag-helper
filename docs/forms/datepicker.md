@@ -8,7 +8,9 @@ The Datepicker provides a flexible datepicker widget in the Bootstrap style.
 <datepicker bc-label="Birthday" />
 ```
 
-## Configuration `<datepicker>`
+---
+
+## Configuration
 
 ### Orientation
 

@@ -10,7 +10,9 @@ Buttons are elements for actions in forms, dialogs and more. With the Mecons Tag
 ...
 ```
 
-## Button Configuration `<button>`
+---
+
+## Configuration
 
 ### Color
 
@@ -102,9 +104,11 @@ If a button has no description, only the icon is displayed as an icon-only butto
 <button type="button" bc-color="Secondary" bc-icon="FA_User"></button>
 ```
 
-## Link Configuration `<a>`
+---
 
-### Button <span class="badge info">Trigger Attribute</span>
+## Link Configuration
+
+### Button (Trigger Attribute)
 
 You can also use the button attributes with `<a>` tags and render a link like a button. To do that it is important to set the trigger attribute `bc-button` for a link.
 

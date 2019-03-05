@@ -2,6 +2,8 @@
 
 Provide valuable, actionable feedback with Mecons Validation to your users with HTML5 form validation. Use the Mecons Tag Helpers in combination with the default ASP.NET Core Validation mechanism to validate your forms easy and simple.
 
+---
+
 ## Requirements
 
 To enable the client-side validation in ASP.NET MVC Core in combination with Mecons, you have to load the [jquery-validation-unobtrusive](https://yarnpkg.com/en/package/jquery-validation-unobtrusive) package from [Yarn](https://yarnpkg.com).
@@ -13,7 +15,7 @@ To enable the client-side validation in ASP.NET MVC Core in combination with Mec
 The easiest way to load the `jquery-validation-unobtrusive` package is to open a command prompt, switch to the `wwwroot` folder of your project and execute the following command:
 
 ```
-yarn add jquery-validation-unobtrusive
+$ yarn add jquery-validation-unobtrusive
 ```
 
 After embedding the `jquery-validation-unobtrusive` package into your solution, add a reference within the `/Shared/_Layout.cshtml` page after the Metronic scripts:
@@ -21,6 +23,8 @@ After embedding the `jquery-validation-unobtrusive` package into your solution, 
 ```markup
 <script src="~/node_modules/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js"></script>
 ```
+
+---
 
 ## Data Binding Validation
 
@@ -30,11 +34,32 @@ For a **client-side** validation use data annotations in your view model and bin
 
 A **server-side** validation will execute in the controller logic after a postback. Use the `ModelState` to check if the form data is valid or to add further validation errors.
 
-***Please note:*** It is indispensable to check the [Form Configuration](https://www.brecons.net/Documentation/Mecons/Validation#form-configuration) attributes before using Mecons Validation.
+!!! Note
+    It is indispensable to check the [Form Configuration](https://www.brecons.net/Documentation/Mecons/Validation#form-configuration) attributes before using Mecons Validation.
 
-### View Model
+<img src="/images/validation_01.png" width="438" alt="">
+
+```markup
+<!-- VIEW -->
+<form asp-action="Register" method="post" bc-validation="true">
+    <form-group>
+        <input type="text" asp-for="Name" />
+    </form-group>
+    <form-group>
+        <input type="password" asp-for="Password" />
+    </form-group>
+    <form-group>
+        <input type="password" asp-for="PasswordConfirmation" />
+    </form-group>
+    <form-group>
+        <select asp-for="Country" asp-items="Model.Countries"></select>
+    </form-group>
+    <button type="submit"> Submit </button>
+</form>
+```
 
 ```csharp
+// VIEW MODEL
 public class RegisterViewModel
 {
     [Display(Name = "User Name")]
@@ -63,9 +88,8 @@ public class RegisterViewModel
 }
 ```
 
-### Controller
-
 ```csharp
+// CONTROLLER
 public IActionResult Register()
 {
     return View(new RegisterViewModel());
@@ -84,29 +108,9 @@ public IActionResult Register(RegisterViewModel model)
 }
 ```
 
-### View
+---
 
-<img src="/images/validation_01.png" width="438" alt="">
-
-```markup
-<form asp-action="Register" method="post" bc-validation="true">
-    <form-group>
-        <input type="text" asp-for="Name" />
-    </form-group>
-    <form-group>
-        <input type="password" asp-for="Password" />
-    </form-group>
-    <form-group>
-        <input type="password" asp-for="PasswordConfirmation" />
-    </form-group>
-    <form-group>
-        <select asp-for="Country" asp-items="Model.Countries"></select>
-    </form-group>
-    <button type="submit"> Submit </button>
-</form>
-```
-
-## Form Configuration `<form>`
+## Form Configuration
 
 ### Validation
 
