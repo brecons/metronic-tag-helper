@@ -2,7 +2,7 @@
 
 The Datepicker provides a flexible datepicker widget in the Bootstrap style.
 
-<img src="/images/datepicker_01.png" width="445" alt="Mecons Datepicker">
+<img src="img/datepicker_01.png" width="445" alt="Mecons Datepicker">
 
 ```markup
 <datepicker bc-label="Birthday" />
@@ -16,7 +16,7 @@ The Datepicker provides a flexible datepicker widget in the Bootstrap style.
 
 The `bc-orientation` attribute allows to set a fixed placement of the datepicker popup. By default, the orientation is `Auto` and the picker will be placed smart.
 
-<img src="/images/datepicker_02.png" width="423" alt="Datepicker Orientation">
+<img src="img/datepicker_02.png" width="423" alt="Datepicker Orientation">
 
 ```markup
 <datepicker bc-label="Birthday" bc-orientation="BottomLeft" />
@@ -26,7 +26,7 @@ The `bc-orientation` attribute allows to set a fixed placement of the datepicker
 
 Set an icon addon for the datepicker with the `bc-icon` attribute.
 
-<img src="/images/datepicker_03.png" width="445" alt="Datepicker Icon Trigger">
+<img src="img/datepicker_03.png" width="445" alt="Datepicker Icon Trigger">
 
 ```markup
 <datepicker bc-label="Birthday" bc-icon="LA_CalendarCheckO" />
@@ -40,7 +40,7 @@ Set the `bc-close` attribute to `true` to close the datepicker popup immediately
 
 Set the `bc-weeks` attribute to `true` to show week numbers to the left of week rows.
 
-<img src="/images/datepicker_04.png" width="445" alt="Datepicker Calendar Weeks">
+<img src="img/datepicker_04.png" width="445" alt="Datepicker Calendar Weeks">
 
 ```markup
 <datepicker bc-label="Birthday" bc-weeks="true" />
@@ -50,7 +50,7 @@ Set the `bc-weeks` attribute to `true` to show week numbers to the left of week 
 
 Set a date format for the datepicker with the `bc-format` attribute. To specify a custom date format use the default C# [Date and Time Format Strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
-<img src="/images/datepicker_05.png" width="434" alt="Datepicker Date Format">
+<img src="img/datepicker_05.png" width="434" alt="Datepicker Date Format">
 
 ```markup
 <datepicker bc-label="Date Format" bc-format="dd.mm.yyyy" />

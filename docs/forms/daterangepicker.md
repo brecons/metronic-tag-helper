@@ -2,7 +2,7 @@
 
 The Daterangepicker Tag Helper is a JavaScript component for choosing date ranges, dates and times.
 
-<img src="/images/daterangepicker_01.png" width="1053" alt="Mecons Daterangepicker">
+<img src="img/daterangepicker_01.png" width="1053" alt="Mecons Daterangepicker">
 
 ```markup
 <daterangepicker bc-label="Start Time" />
@@ -16,7 +16,7 @@ The Daterangepicker Tag Helper is a JavaScript component for choosing date range
 
 Use the `bc-start-date` attribute to set the beginning date of the initially selected date range. With the `bc-end-date` attribute set the end date of the initially selected date range.
 
-<img src="/images/daterangepicker_02.png" width="522" alt="Daterangepicker Start and End Date">
+<img src="img/daterangepicker_02.png" width="522" alt="Daterangepicker Start and End Date">
 
 ```markup
 <daterangepicker bc-label="Holidays" bc-start-date="@DateTime.Now" bc-end-date="@DateTime.Now.AddDays(14)" />
@@ -26,7 +26,7 @@ Use the `bc-start-date` attribute to set the beginning date of the initially sel
 
 Set the earliest date a user may select with the `bc-min-date` attribute. To set the latest date use the `bc-max-date` attribute.
 
-<img src="/images/daterangepicker_03.png" width="1058" alt="Daterangepicker Min and Max Date">
+<img src="img/daterangepicker_03.png" width="1058" alt="Daterangepicker Min and Max Date">
 
 ```markup
 <daterangepicker bc-label="Booking" bc-min-date="@DateTime.Now.AddDays(-7)" bc-max-date="@DateTime.Now.AddDays(7)" />
@@ -36,7 +36,7 @@ Set the earliest date a user may select with the `bc-min-date` attribute. To set
 
 The date format can be specified with the `bc-format` attribute. The format is specified as C# date and time format string.
 
-<img src="/images/daterangepicker_04.png" width="532" alt="Daterangepicker Date Format">
+<img src="img/daterangepicker_04.png" width="532" alt="Daterangepicker Date Format">
 
 ```markup
 <daterangepicker bc-label="Default Format" />
@@ -49,7 +49,7 @@ Set the `bc-timepicker` attribute to `true` to add select boxes to choose times 
 
 In addition use the `bc-timepicker-step` attribute to set the increment steps of minutes selection list (i.e. `30` to allow only selection of times ending in 0 or 30). By default, the increment of minutes is `30`.
 
-<img src="/images/daterangepicker_05.png" width="1055" alt="Daterangepicker with Timepicker">
+<img src="img/daterangepicker_05.png" width="1055" alt="Daterangepicker with Timepicker">
 
 ```markup
 <daterangepicker bc-label="Date and Time" bc-timepicker="true" bc-timepicker-step="15" />
@@ -59,7 +59,7 @@ In addition use the `bc-timepicker-step` attribute to set the increment steps of
 
 Set an icon addon for the daterangepicker with the `bc-icon` attribute.
 
-<img src="/images/daterangepicker_06.png" width="532" alt="Daterangepicker Icon">
+<img src="img/daterangepicker_06.png" width="532" alt="Daterangepicker Icon">
 
 ```markup
 <daterangepicker bc-label="Holidays" bc-icon="FA_Calendar" />
@@ -69,7 +69,7 @@ Set an icon addon for the daterangepicker with the `bc-icon` attribute.
 
 Use the `bc-apply-color` and `bc-cancel-color` attribute to define a color for the corresponding button. By default, the Apply Button color is `Primary` and the Cancel Button color is `Secondary`.
 
-<img src="/images/daterangepicker_07.png" width="1057" alt="Daterangepicker Button Color">
+<img src="img/daterangepicker_07.png" width="1057" alt="Daterangepicker Button Color">
 
 ```markup
 <daterangepicker bc-label="Start Time" bc-apply-color="Success" bc-cancel-color="Danger" />
@@ -81,7 +81,7 @@ Use the `bc-apply-color` and `bc-cancel-color` attribute to define a color for t
 
 The Daterangepicker Tag Helper provides two properties for the start date and end date data binding. The start date can be bound to the `asp-for` attribute while the end date is bound to the `asp-for2` attribute.
 
-<img src="/images/daterangepicker_08.png" width="429" alt="Daterangepicker Data Binding" />
+<img src="img/daterangepicker_08.png" width="429" alt="Daterangepicker Data Binding" />
 
 ```markup
 <!-- VIEW -->

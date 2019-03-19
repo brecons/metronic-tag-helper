@@ -2,7 +2,7 @@
 
 A Timeline is a structured representation of events and their chronologically occurance.
 
-<img src="/images/timeline_01.png" width="445" alt="Mecons Timeline" />
+<img src="img/timeline_01.png" width="445" alt="Mecons Timeline" />
 
 ```markup
 <timeline>
@@ -31,7 +31,7 @@ Set a timestamp for the timeline item with the `bc-time` attribute.
 
 A color for the timeline item can be set with the `bc-color` attribute.
 
-<img src="/images/timeline_02.png" width="438" alt="Timeline Item Color" />
+<img src="img/timeline_02.png" width="438" alt="Timeline Item Color" />
 
 ```markup
 <timeline>
@@ -45,7 +45,7 @@ A color for the timeline item can be set with the `bc-color` attribute.
 
 Set an icon for the timeline item with the `bc-icon` attribute.
 
-<img src="/images/timeline_03.png" width="436" alt="Timeline Item Icon" />
+<img src="img/timeline_03.png" width="436" alt="Timeline Item Icon" />
 
 ```markup
 <timeline>

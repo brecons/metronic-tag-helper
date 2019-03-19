@@ -2,7 +2,7 @@
 
 Summernote is a super simple WYSIWYG editor on Bootstrap. You design your content as it should look like later, Summernote translate this to valid HTML markup.
 
-<img src="/images/summernote_01.png" width="914" alt="Mecons Summernote">
+<img src="img/summernote_01.png" width="914" alt="Mecons Summernote">
 
 ```markup
 <summernote bc-height="200" />

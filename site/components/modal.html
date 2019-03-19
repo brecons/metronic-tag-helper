@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Bremus Solutions">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Modal - Mecons Tag Helper</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../css/mkdocs.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Modal";
+    var mkdocs_page_input_path = "components\\modal.md";
+    var mkdocs_page_url = "/components/modal.html";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Mecons Tag Helper</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../index.html">Overview</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../installation.html">Installation</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../localization.html">Localization</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../change-log.html">Change Log</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Layout</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../layout/grid-system.html">Grid System</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../layout/stack.html">Stack</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Components</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="alert.html">Alert</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="datatable.html">Datatable</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="modal.html">Modal</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#modal">Modal</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#components">Components</a></li>
+        
+            <li><a class="toctree-l4" href="#configuration">Configuration</a></li>
+        
+            <li><a class="toctree-l4" href="#header-configuration">Header Configuration</a></li>
+        
+            <li><a class="toctree-l4" href="#body-configuration">Body Configuration</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="popover.html">Popover</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="progress.html">Progress</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="tooltip.html">Tooltip</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Content</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../content/anchor.html">Anchor</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../content/badge.html">Badge</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../content/icon.html">Icon</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../content/portlet.html">Portlet</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../content/progress-widget.html">Progress Widget</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../content/stats-widget.html">Stats Widget</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../content/table.html">Table</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../content/tabs.html">Tabs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../content/timeline.html">Timeline</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Forms</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../forms/form-layout.html">Form Layout</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/form-controls.html">Form Controls</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/label-and-help.html">Label and Help</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/input.html">Text</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/textarea.html">Textarea</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/select.html">Dropdown</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/static.html">Static</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/checkbox-list.html">Checkbox List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/radio-list.html">Radio List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/switch.html">Switch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/touchspin.html">Touchspin</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/data-annotation.html">Data Annotation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/validation.html">Validation</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Buttons</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../forms/button.html">Button</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/dropdown-button.html">Dropdown Button</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/button-group.html">Button Group</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Date and Time</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../forms/datepicker.html">Datepicker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/daterangepicker.html">Daterangepicker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/timepicker.html">Timepicker</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Editors</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../forms/markdown.html">Markdown</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/summernote.html">Summernote</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Miscellaneous</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../forms/dropzone.html">Dropzone</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/nouislider.html">NoUiSlider</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Mecons Tag Helper</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Components &raquo;</li>
+        
+      
+    
+    <li>Modal</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="modal">Modal</h1>
+<p>Use a Modal to add dialogs to your site for lightboxes, user notifications, or completely custom content. These quite complex component is capsuled within a Mecons Tag Helper and is very easy to use!</p>
+<p><img src="img/modal_01.png" width="513" alt="Mecons Modal" /></p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;modal</span> <span class="na">bc-title=</span><span class="s">&quot;Modal title&quot;</span> <span class="na">bc-toggle-text=</span><span class="s">&quot;Launch modal&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;modal-body&gt;</span>
+        Modal body text goes here.
+    <span class="nt">&lt;/modal-body&gt;</span>
+    <span class="nt">&lt;modal-footer&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">data-dismiss=</span><span class="s">&quot;modal&quot;</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>Save changes<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/modal-footer&gt;</span>
+<span class="nt">&lt;/modal&gt;</span>
+</pre></div>
+
+
+<hr />
+<h2 id="components">Components</h2>
+<p>Components are tag helpers that are available within a <code>&lt;modal&gt;</code>.</p>
+<h3 id="header">Header</h3>
+<p>A modal dialog header can optionally added with a <code>&lt;modal-header&gt;</code> tag helper within the <code>&lt;modal&gt;</code> element.</p>
+<h3 id="body">Body</h3>
+<p>The <code>&lt;modal-body&gt;</code> tag helper is the core of an <code>&lt;modal&gt;</code> and within you can define the content of the modal dialog. These tag helper is mandatory for a correct modal rendering.</p>
+<h3 id="footer">Footer</h3>
+<p>A modal dialog footer can optionally added with a <code>&lt;modal-footer&gt;</code> tag helper within the <code>&lt;modal&gt;</code> element.</p>
+<hr />
+<h2 id="configuration">Configuration</h2>
+<h3 id="toggle-text">Toggle Text</h3>
+<p>The <code>&lt;modal&gt;</code> automatically renders a toggle button for the modal dialog. The prerequisite for this is that the <code>bc-toggle-text</code> attribute has been set. This attribute defines the name for the toggle button.</p>
+<p>Leave the attribute empty or do not set it at all, then only the modal dialog without a button will be rendered.</p>
+<h3 id="toggle-color">Toggle Color</h3>
+<p>The <code>&lt;modal&gt;</code> automatically renders a toggle button for the modal dialog. With the <code>bc-toggle-color</code> attribute it is possible to define a color for the toggle button.</p>
+<h3 id="title">Title</h3>
+<p>There are two ways to define a title for a modal dialog. The easiest way is to set a title with the <code>bc-title</code> attribute. The second way is to specify an header tag (e.g. <code>&lt;h2&gt;</code>) within the <code>&lt;modal-header&gt;</code>.</p>
+<p><img src="img/modal_02.png" width="517" alt="Modal Title" /></p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;modal</span> <span class="na">bc-title=</span><span class="s">&quot;Modal title&quot;</span> <span class="na">bc-toggle-text=</span><span class="s">&quot;Launch modal&quot;</span><span class="nt">&gt;</span>
+    ...
+<span class="nt">&lt;/modal&gt;</span>
+
+<span class="nt">&lt;modal</span> <span class="na">bc-toggle-text=</span><span class="s">&quot;Launch modal&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;modal-header&gt;</span>
+        <span class="nt">&lt;h2&gt;</span>Modal title<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;modal-header&gt;</span>
+<span class="nt">&lt;/modal&gt;</span>
+</pre></div>
+
+
+<h3 id="size">Size</h3>
+<p>Modals have two optional sizes, available via <code>bc-size</code> attribute. Allocatable are the sizes <code>Small</code>, <code>Default</code> and <code>Large</code>.</p>
+<h3 id="position">Position</h3>
+<p>Modals can be display both at the top of a page and in the middle. Use the <code>bc-position</code> attribute to specify the modal position. Possible positions are <code>Top</code> (default) and <code>Center</code>.</p>
+<hr />
+<h2 id="header-configuration">Header Configuration</h2>
+<h3 id="disable-close-button">Disable Close Button</h3>
+<p>To hide the modal dialog close button set the <code>bc-disable-close-icon</code> attribute.</p>
+<hr />
+<h2 id="body-configuration">Body Configuration</h2>
+<h3 id="height">Height</h3>
+<p>Set a maximum height for the <code>&lt;modal-body&gt;</code> with the <code>bc-height</code> attribute. If the content overflows the maximum body height a scrollbar will shown. Allowed values for this attribute are integers. The unit for this value are pixels (px).</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="popover.html" class="btn btn-neutral float-right" title="Popover">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="datatable.html" class="btn btn-neutral" title="Datatable"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2017 - 2019 <a href="https://www.bremus-solutions.de">Bremus Solutions</a>. All Right Reserved.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="datatable.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="popover.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

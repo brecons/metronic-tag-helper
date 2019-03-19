@@ -2,7 +2,7 @@
 
 Tabs are a single content area with multiple planels, each associated with a header in a list.
 
-<img src="/images/tabs_01.png" width="487" alt="Mecons Tabs" />
+<img src="img/tabs_01.png" width="487" alt="Mecons Tabs" />
 
 ```markup
 <tabs>
@@ -28,7 +28,7 @@ Tabs are a single content area with multiple planels, each associated with a hea
 
 Use the `bc-pills` attribute to render the tabs as pills.
 
-<img src="/images/tabs_02.png" width="478" alt="Tabs as Pills" />
+<img src="img/tabs_02.png" width="478" alt="Tabs as Pills" />
 
 ```markup
 <tabs bc-pills="true">
@@ -56,7 +56,7 @@ Use the `bc-header` attribute to define a title for the tab.
 
 By default, the first tab is active on page load. If you want to modify that, use the `bc-active` attribute to activate another tab on startup.
 
-<img src="/images/tabs_03.png" width="491" alt="Active Tab Pane" />
+<img src="img/tabs_03.png" width="491" alt="Active Tab Pane" />
 
 ```markup
 <tabs>

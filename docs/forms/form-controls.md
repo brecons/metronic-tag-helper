@@ -12,7 +12,7 @@ The following configuration attributes are available for all form controls respe
 
 Define a label for form controls by adding the `bc-label` attribute or use the `<label>` tag helper within the `<form-group>`.
 
-<img src="/images/controls_01.png" width="444" alt="Form Control Label">
+<img src="img/controls_01.png" width="444" alt="Form Control Label">
 
 ```markup
 <!-- Label via form control attribute -->
@@ -31,7 +31,7 @@ Define a label for form controls by adding the `bc-label` attribute or use the `
 
 A block-level help text for form controls can be created by using the `bc-help` attribute or use the `<help>` tag helper within the `<form-group>`.
 
-<img src="/images/controls_02.png" width="441" alt="Form Control Help">
+<img src="img/controls_02.png" width="441" alt="Form Control Help">
 
 ```markup
 <!-- Block-level help via form control attribute -->
@@ -50,7 +50,7 @@ A block-level help text for form controls can be created by using the `bc-help` 
 
 Set the height of a form control by adding the `bc-size` attribute. Available sizes are `Default`, `Large` or `Small`.
 
-<img src="/images/controls_03.png" width="418" alt="Form Control Size">
+<img src="img/controls_03.png" width="418" alt="Form Control Size">
 
 ```markup
 <form-group>
@@ -68,7 +68,7 @@ Set the height of a form control by adding the `bc-size` attribute. Available si
 
 Mark a control as required with the `bc-required` attribute. This adds the HTML `required` attribute to the control markup und mark the control label as required with a star (*).
 
-<img src="/images/controls_04.png" width="432" alt="Required Form Control">
+<img src="img/controls_04.png" width="432" alt="Required Form Control">
 
 ```markup
 <form-group>

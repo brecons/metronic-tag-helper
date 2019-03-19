@@ -2,7 +2,7 @@
 
 Opt-in and styling of Tables with the easy-to-use Mecons Tag Helpers.
 
-<img src="/images/table_01.png" width="413" alt="Mecons Table" />
+<img src="img/table_01.png" width="413" alt="Mecons Table" />
 
 ```markup
 <table>
@@ -45,7 +45,7 @@ Opt-in and styling of Tables with the easy-to-use Mecons Tag Helpers.
 
 To change the theme of a table - with white, light or dark background - use the `bc-theme` attribute. Possible themes are `Default` (default), `Light` and `Dark`.
 
-<img src="/images/table_02.png" width="404" alt="Table Theme" />
+<img src="img/table_02.png" width="404" alt="Table Theme" />
 
 ```markup
 <table bc-theme="Dark">
@@ -57,7 +57,7 @@ To change the theme of a table - with white, light or dark background - use the 
 
 Use the `bc-striped` attribute to add zebra-striping to any table row.
 
-<img src="/images/table_03.png" width="410" alt="Striped Table" />
+<img src="img/table_03.png" width="410" alt="Striped Table" />
 
 ```markup
 <table bc-striped="true">
@@ -69,7 +69,7 @@ Use the `bc-striped` attribute to add zebra-striping to any table row.
 
 Add the `bc-small` attribute to make tables more compact by cutting cell padding in half.
 
-<img src="/images/table_04.png" width="407" alt="Small Table" />
+<img src="img/table_04.png" width="407" alt="Small Table" />
 
 ```markup
 <table bc-small="true">
@@ -81,7 +81,7 @@ Add the `bc-small` attribute to make tables more compact by cutting cell padding
 
 Add the `bc-border` attribute to specify the borders on all sides of the table and cells. Possible border styles are `Regular`(default) for only horizontal borders, `Bordered` for horizontal and vertical borders and `Borderless` for no borders.
 
-<img src="/images/table_05.png" width="1068" alt="Borders for Table" />
+<img src="img/table_05.png" width="1068" alt="Borders for Table" />
 
 ```markup
 <table>
@@ -123,7 +123,7 @@ Add the `bc-hover` attribute to enable a hover state on table rows.
 
 Similar to themed tables, use the `bc-theme` attribute to make `<thead>` appear `Default` (default), `Dark` or `Light`.
 
-<img src="/images/table_06.png" width="846" alt="Table Head Theme" />
+<img src="img/table_06.png" width="846" alt="Table Head Theme" />
 
 ```markup
 <table>
@@ -153,7 +153,7 @@ Similar to themed tables, use the `bc-theme` attribute to make `<thead>` appear 
 
 Use the `bc-background` attribute to color table rows.
 
-<img src="/images/table_07.png" width="409" alt="Table Row Background" />
+<img src="img/table_07.png" width="409" alt="Table Row Background" />
 
 ```markup
 <table>

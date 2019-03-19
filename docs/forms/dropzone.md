@@ -2,7 +2,7 @@
 
 DropzoneJS is an open source library that provides drag’n’drop file uploads with image previews.
 
-<img src="/images/dropzone_01.png" width="299" alt="Mecons Dropzone">
+<img src="img/dropzone_01.png" width="299" alt="Mecons Dropzone">
 
 ```markup
 <dropzone bc-url="/Forms/Dropzone" />
@@ -20,7 +20,7 @@ The `bc-url` attribute specifies the target to which the dropped files will be u
 
 With the `bc-title` attribute it is possible to override the default title of the Dropzone. If the `bc-title` attribute is not set, a localized default message will be displayed.
 
-<img src="/images/dropzone_02.png" width="648" alt="Dropzone Title">
+<img src="img/dropzone_02.png" width="648" alt="Dropzone Title">
 
 ```markup
 <!-- Default Dropzone Title -->
@@ -34,7 +34,7 @@ With the `bc-title` attribute it is possible to override the default title of th
 
 Describe the Dropzone in detail with the `bc-desc` attribute. The description will be displayed below the title.
 
-<img src="/images/dropzone_03.png" width="295" alt="Dropzone Description">
+<img src="img/dropzone_03.png" width="295" alt="Dropzone Description">
 
 ```markup
 <dropzone bc-url="/Forms/Dropzone" bc-desc="Only image, pdf and psd files are allowed for upload" />
@@ -64,7 +64,7 @@ By default, the Dropzone element itself is clickable. This means that clicking o
 
 Use the `bc-color` attribute to set a color for the Dropzone.
 
-<img src="/images/dropzone_04.png" width="297" alt="Dropzone Color">
+<img src="img/dropzone_04.png" width="297" alt="Dropzone Color">
 
 ```markup
 <dropzone bc-url="/Forms/Dropzone" bc-color="Primary" />

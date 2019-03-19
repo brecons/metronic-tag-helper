@@ -2,7 +2,7 @@
 
 The Button Group groups a seriesof buttons together on a single line.
 
-<img src="/images/button-group_01.png" width="236" alt="Mecons Button Group">
+<img src="img/button-group_01.png" width="236" alt="Mecons Button Group">
 
 ```markup
 <button-group>
@@ -20,7 +20,7 @@ The Button Group groups a seriesof buttons together on a single line.
 
 Make a set of buttons appear vertically stacked rather than horizontally by adding the `bc-vertical` attribute.
 
-<img src="/images/button-group_02.png" width="108" alt="Vertical Button Group">
+<img src="img/button-group_02.png" width="108" alt="Vertical Button Group">
 
 ```markup
 <button-group bc-vertical="true">

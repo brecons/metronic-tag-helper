@@ -2,7 +2,7 @@
 
 The progress is a information bar to show a progress. Use the Mecons Tag Helper to build those components with all known features.
 
-<img src="/images/progress_01.png" width="396" alt="Mecons Progress" />
+<img src="img/progress_01.png" width="396" alt="Mecons Progress" />
 
 ```markup
 <progress bc-value="75" />
@@ -20,7 +20,7 @@ Use the `bc-value` attribute to set a value for the progress.
 
 Add a label to your progress bar and set the `bc-label` attribute to `true`.
 
-<img src="/images/progress_02.png" width="398" alt="Progress Label" />
+<img src="img/progress_02.png" width="398" alt="Progress Label" />
 
 ```markup
 <progress bc-value="75" bc-label="true" />
@@ -30,7 +30,7 @@ Add a label to your progress bar and set the `bc-label` attribute to `true`.
 
 Set a size for the progress with the `bc-size` attribute. Possible sizes are `Default`, `Small` or `Large`.
 
-<img src="/images/progress_03.png" width="399" alt="Progress Size" />
+<img src="img/progress_03.png" width="399" alt="Progress Size" />
 
 ```markup
 <progress bc-value="25" bc-color="Primary" bc-size="Small" />
@@ -42,7 +42,7 @@ Set a size for the progress with the `bc-size` attribute. Possible sizes are `De
 
 It's possible to adapt the height of a progress bar with the `bc-height` attribute. Allowed values for this attribute are integers. The unit for this value are pixels (px).
 
-<img src="/images/progress_04.png" width="398" alt="Progress Height" />
+<img src="img/progress_04.png" width="398" alt="Progress Height" />
 
 ```markup
 <progress bc-value="25" bc-color="Primary" bc-height="1" />
@@ -55,7 +55,7 @@ It's possible to adapt the height of a progress bar with the `bc-height` attribu
 
 Use the `bc-color` attribute to set a color for the progress bar.
 
-<img src="/images/progress_05.png" width="409" alt="Progress Color" />
+<img src="img/progress_05.png" width="409" alt="Progress Color" />
 
 ```markup
 <progress bc-value="50" bc-color="Success" />
@@ -68,7 +68,7 @@ Use the `bc-color` attribute to set a color for the progress bar.
 
 Add the `bc-striped` attribute and set it to `true` to apply a stripe gradient over the progress bar's background color.
 
-<img src="/images/progress_06.png" width="413" alt="Striped Progress" />
+<img src="img/progress_06.png" width="413" alt="Striped Progress" />
 
 ```markup
 <progress bc-value="25" bc-color="Success" bc-striped="true"  />

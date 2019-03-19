@@ -2,7 +2,7 @@
 
 A Stack allows to build equal height and flexible blocks.
 
-<img src="/images/stack_01.png" width="365" alt="Mecons Stack" />
+<img src="img/stack_01.png" width="365" alt="Mecons Stack" />
 
 ```markup
 <stack>
@@ -21,7 +21,7 @@ A Stack allows to build equal height and flexible blocks.
 
 If the `bc-auto-width` attribute is set to `true`, each stack item gets the width of whose content.
 
-<img src="/images/stack_02.png" width="411" alt="Stack Auto Width" />
+<img src="img/stack_02.png" width="411" alt="Stack Auto Width" />
 
 ```markup
 <stack bc-auto-width="true">
@@ -35,7 +35,7 @@ If the `bc-auto-width` attribute is set to `true`, each stack item gets the widt
 
 With the `bc-orientation` attribute the orientation of the stack can be set. Possible orientations are `Horizontal` (default) or `Vertical`.
 
-<img src="/images/stack_03.png" width="350" alt="Stack Orientation" />
+<img src="img/stack_03.png" width="350" alt="Stack Orientation" />
 
 ```markup
 <stack bc-orientation="Vertical">
@@ -51,7 +51,7 @@ With the `bc-orientation` attribute the orientation of the stack can be set. Pos
 
 Set an item content alignment with `bc-alignment` attribute. Possible alignments are `Left` (default), `Center` or `Right`.
 
-<img src="/images/stack_04.png" width="356" alt="Stack Item Horizontal Alignment" />
+<img src="img/stack_04.png" width="356" alt="Stack Item Horizontal Alignment" />
 
 ```markup
 <stack>
@@ -65,7 +65,7 @@ Set an item content alignment with `bc-alignment` attribute. Possible alignments
 
 Align the content vertically with the `bc-vertical-alignment` attribute. It is possible to align the content `Top`, `Middle` or `Bottom`.
 
-<img src="/images/stack_05.png" width="353" alt="Stack Item Vertical Alignment" />
+<img src="img/stack_05.png" width="353" alt="Stack Item Vertical Alignment" />
 
 ```markup
 <stack>

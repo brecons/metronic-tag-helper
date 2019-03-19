@@ -2,7 +2,7 @@
 
 The text input will be specified with a `<input type="text" />` tag and provides a single-line text input field.
 
-<img src="/images/input_01.png" width="429" alt="Mecons Input Control">
+<img src="img/input_01.png" width="429" alt="Mecons Input Control">
 
 ```markup
 <input type="text" bc-label="Text Control" />
@@ -16,7 +16,7 @@ The text input will be specified with a `<input type="text" />` tag and provides
 
 Place an text add-on on each side of an text input with the `bc-pre-text` or `bc-post-text` attribute.
 
-<img src="/images/input_02.png" width="415" alt="Input Control Addons">
+<img src="img/input_02.png" width="415" alt="Input Control Addons">
 
 ```markup
 <form-group>
@@ -32,7 +32,7 @@ Place an text add-on on each side of an text input with the `bc-pre-text` or `bc
 
 To add an icon on left or right side of an input control, use the `bc-pre-icon` or `bc-post-icon` attribute.
 
-<img src="/images/input_03.png" width="409" alt="Input Control Icons">
+<img src="img/input_03.png" width="409" alt="Input Control Icons">
 
 ```markup
 <form-group>

@@ -2,7 +2,7 @@
 
 A Popover is a component to show additional informations for an element like those found in iOS. With the Mecons Tag Helper it is possible to add those informations to any element on your app.
 
-<img src="/images/popover_01.png" width="312" alt="Mecons Popover" />
+<img src="img/popover_01.png" width="312" alt="Mecons Popover" />
 
 ```markup
 <button type="button" bc-popover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
@@ -26,7 +26,7 @@ The `bc-popover` attribute is available on each HTML element and specifies the p
 
 You can set a title for the popover with the `bc-popover-title` attribute.
 
-<img src="/images/popover_02.png" width="315" alt="Popover Title" />
+<img src="img/popover_02.png" width="315" alt="Popover Title" />
 
 ```markup
 <button type="button" bc-popover="..." bc-popover-title="Popover title">
@@ -54,7 +54,7 @@ With the `bc-popover-placement` can specified how to position a popover. Possibl
 
 Set the `bc-popover-html` attribute to `true` to allow HTML tags within the popover content.
 
-<img src="/images/popover_03.png" width="341" alt="Popover HTML Content" />
+<img src="img/popover_03.png" width="341" alt="Popover HTML Content" />
 
 ```markup
 <button type="button" bc-popover="And here's some amazing <b>HTML</b> content. It's very <code>engaging</code>. Right?" bc-popover-html="true">

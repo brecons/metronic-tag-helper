@@ -8,7 +8,7 @@ With a label or a help text it is possible to desribe a control in more detail.
 
 A label shows a name for a control and can be defined with the `<label>` tag within a `<form-group>`.
 
-<img src="/images/labelandhelp_01.png" width="444" alt="Mecons Control Label">
+<img src="img/labelandhelp_01.png" width="444" alt="Mecons Control Label">
 
 ```markup
 <form-group>
@@ -27,7 +27,7 @@ Set the `bc-sronly` attribute to hide the label on all devices except screen rea
 
 A block-level help text for form controls can be created with the `<help>` tag helper within the `<form-group>`.
 
-<img src="/images/labelandhelp_02.png" width="441" alt="Mecons Control Help">
+<img src="img/labelandhelp_02.png" width="441" alt="Mecons Control Help">
 
 ```markup
 <form-group>

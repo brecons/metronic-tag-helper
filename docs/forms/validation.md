@@ -37,7 +37,7 @@ A **server-side** validation will execute in the controller logic after a postba
 !!! Note
     It is indispensable to check the [Form Configuration](https://www.brecons.net/Documentation/Mecons/Validation#form-configuration) attributes before using Mecons Validation.
 
-<img src="/images/validation_01.png" width="438" alt="">
+<img src="img/validation_01.png" width="438" alt="">
 
 ```markup
 <!-- VIEW -->
@@ -118,7 +118,7 @@ By default, the [ASP.NET Core Validation](https://docs.microsoft.com/en-us/aspne
 
 Furthermore it is possible to disable the validation on control level by setting the `bc-validation` to `false` for a specific control.
 
-<img src="/images/validation_02.png" width="431" alt="">
+<img src="img/validation_02.png" width="431" alt="">
 
 ```markup
 <form asp-action="Register" bc-validation="true">

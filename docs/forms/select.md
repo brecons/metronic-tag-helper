@@ -2,7 +2,7 @@
 
 A dropdown will be specified with a `<select>` tag and provides a dropdown to select a single or multiple values.
 
-<img src="/images/select_01.png" width="427" alt="Mecons Dropdown Control">
+<img src="img/select_01.png" width="427" alt="Mecons Dropdown Control">
 
 ```markup
 <select bc-label="Select Control">

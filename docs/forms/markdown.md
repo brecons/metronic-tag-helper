@@ -2,7 +2,7 @@
 
 The Markdown Tag Helper is an editor for Markdown language.
 
-<img src="/images/markdown_01.png" width="915" alt="Mecons Markdown">
+<img src="img/markdown_01.png" width="915" alt="Mecons Markdown">
 
 ```markup
 <markdown bc-height="200" />

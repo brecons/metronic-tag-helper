@@ -47,7 +47,7 @@ To hide control labels on all devices execept screen readers, set the `bc-labels
 
 Use the `bc-state` attribute to set a validation state for the control within the form group. Available states are `Success`, `Warning` or `Danger`.
 
-<img src="/images/form-layout_01.png" width="426" alt="Form Group State" />
+<img src="img/form-layout_01.png" width="426" alt="Form Group State" />
 
 ```markup
 <form-group bc-state="Success">
@@ -67,7 +67,7 @@ Use the `bc-state` attribute to set a validation state for the control within th
 
 In a vertical form each control and its corresponding label and help text will placed in a separate row.
 
-<img src="/images/form-layout_02.png" width="434" alt="Vertical Form Layout" />
+<img src="img/form-layout_02.png" width="434" alt="Vertical Form Layout" />
 
 ```markup
 <form>
@@ -87,7 +87,7 @@ In a vertical form each control and its corresponding label and help text will p
 
 In a horizontal form each control and its corresponding label placed in the same row. The help text will placed under the control.
 
-<img src="/images/form-layout_03.png" width="429" alt="Horizontal Form Layout" />
+<img src="img/form-layout_03.png" width="429" alt="Horizontal Form Layout" />
 
 ```markup
 <form bc-horizontal="true" bc-label-width-md="4">

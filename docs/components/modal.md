@@ -2,7 +2,7 @@
 
 Use a Modal to add dialogs to your site for lightboxes, user notifications, or completely custom content. These quite complex component is capsuled within a Mecons Tag Helper and is very easy to use!
 
-<img src="/images/modal_01.png" width="513" alt="Mecons Modal" />
+<img src="img/modal_01.png" width="513" alt="Mecons Modal" />
 
 ```markup
 <modal bc-title="Modal title" bc-toggle-text="Launch modal">
@@ -52,7 +52,7 @@ The `<modal>` automatically renders a toggle button for the modal dialog. With t
 
 There are two ways to define a title for a modal dialog. The easiest way is to set a title with the `bc-title` attribute. The second way is to specify an header tag (e.g. `<h2>`) within the `<modal-header>`.
 
-<img src="/images/modal_02.png" width="517" alt="Modal Title" />
+<img src="img/modal_02.png" width="517" alt="Modal Title" />
 
 ```markup
 <modal bc-title="Modal title" bc-toggle-text="Launch modal">

@@ -8,11 +8,11 @@ On this page you will learn how to install Mecons Tag Helper Library into an ASP
 
 The first step is to create a new project in Visual Studio. Choose the ***Web*** rubric and subsequent the ***ASP.NET Core Web Application*** template. Adapt the project parameters like ***Name***, ***Location*** and ***Solution name*** and click ***OK***.
 
-<img src="/images/installation_01.png" width="944" alt="New Project in Visual Studio" />
+<img src="img/installation_01.png" width="944" alt="New Project in Visual Studio" />
 
 In the following dialog choose the ***.NET Core*** Framework and the ***ASP.NET Core 2.x*** version as well as a project template. Optionally change the authentication and click ***OK***.
 
-<img src="/images/installation_02.png" width="789" alt="Project Configuration in Visual Studio" />
+<img src="img/installation_02.png" width="789" alt="Project Configuration in Visual Studio" />
 
 ---
 
@@ -67,11 +67,11 @@ Copy the content of your choosen Metronic Admin Theme (e.g. `/metronic_v5.x/dist
 
 Include the `@RenderBody()` method at the position where the individual page content will be rendered.
 
-<img src="/images/installation_03.png" width="1197" alt="Insert RenderBody method into layout page" />
+<img src="img/installation_03.png" width="1197" alt="Insert RenderBody method into layout page" />
 
 To ensure that all Mecons Tag Helpers work as expected, it is necessary to move all JavaScript includes from the page bottom into the `<head>`.
 
-<img src="/images/installation_04.png" width="1063" alt="Inclusion of JavaScript" />
+<img src="img/installation_04.png" width="1063" alt="Inclusion of JavaScript" />
 
 ---
 
@@ -103,7 +103,7 @@ After the package installation open `/Views/_ViewImports.cshtml` and insert the 
 
 By default, the Mecons Tag Helper Rendering is enabled for each HTML element. To disable the Brecons Tag Helper Rendering for a specific HTML element, set the `disable-brecons` attribute. The `disable-brecons` attribute is minimizable and needs no value.
 
-<img src="/images/installation_05.png" width="173" alt="Mecons Rendering" />
+<img src="img/installation_05.png" width="173" alt="Mecons Rendering" />
 
 ```markup hl_lines="5"
 <!-- Brecons Rendering -->

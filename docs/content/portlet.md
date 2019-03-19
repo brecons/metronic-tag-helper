@@ -2,7 +2,7 @@
 
 Portlets are complex containers for content, actions and small navigations.
 
-<img src="/images/portlet_01.png" width="500" alt="Mecons Portlet" />
+<img src="img/portlet_01.png" width="500" alt="Mecons Portlet" />
 
 ```markup
 <portlet>
@@ -17,7 +17,7 @@ Portlets are complex containers for content, actions and small navigations.
 
 ## Components
 
-<img src="/images/portlet_02.png" width="757" alt="Portlet Components" />
+<img src="img/portlet_02.png" width="757" alt="Portlet Components" />
 
 ```markup
 <portlet>
@@ -73,7 +73,7 @@ Disable the shadow for the portlet by setting the `bc-shadow` attribute to `fals
 
 Outline the portlet with a border by setting the `bc-border` attribute. Possible border styles are `None` (default), `Full` or `Semi`.
 
-<img src="/images/portlet_03.png" width="1471" alt="Portlet Border" />
+<img src="img/portlet_03.png" width="1471" alt="Portlet Border" />
 
 ```markup
 <!-- Portlet with no border and shadow -->
@@ -96,7 +96,7 @@ Set a background color for the portlet with the `bc-background` attribute. By de
 
 In addition use the `bc-background-style` attribute to set the background color only for the header (`HeadOnly`) or for the complete portlet (`Full`).
 
-<img src="/images/portlet_04.png" width="984" alt="Portlet Background" />
+<img src="img/portlet_04.png" width="984" alt="Portlet Background" />
 
 ```markup
 <!-- Portlet with full background -->
@@ -122,7 +122,7 @@ With the `bc-icon` attribute it is possible to define a icon for the portlet whi
 
 Use the `bc-color` attribute to define a font color for the title and icon of the portlet header. By default, the color is `Dark`.
 
-<img src="/images/portlet_05.png" width="490" alt="Portlet Header Color" />
+<img src="img/portlet_05.png" width="490" alt="Portlet Header Color" />
 
 ```markup
 <portlet>

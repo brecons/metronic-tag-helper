@@ -2,7 +2,7 @@
 
 The `<checkbox-list>` tag helper is a wrapper for checkbox input elements. For a correct rendering it is necessary to embedding all checkboxes into a checkbox list.
 
-<img src="/images/checkboxlist_01.png" width="174" alt="Mecons Checkbox List">
+<img src="img/checkboxlist_01.png" width="174" alt="Mecons Checkbox List">
 
 ```markup
 <checkbox-list bc-label="Default Checkboxes">
@@ -20,7 +20,7 @@ The `<checkbox-list>` tag helper is a wrapper for checkbox input elements. For a
 
 Checkboxes can rendered on the same horizontal row by adding the `bc-inline` attribute to the list wrapper.
 
-<img src="/images/checkboxlist_02.png" width="328" alt="Inline Checkbox List">
+<img src="img/checkboxlist_02.png" width="328" alt="Inline Checkbox List">
 
 ```markup
 <checkbox-list bc-inline="true">
@@ -32,7 +32,7 @@ Checkboxes can rendered on the same horizontal row by adding the `bc-inline` att
 
 To set an label for the list of checkboxes use the `bc-label` attribute.
 
-<img src="/images/checkboxlist_03.png" width="171" alt="Checkbox List Label">
+<img src="img/checkboxlist_03.png" width="171" alt="Checkbox List Label">
 
 ```markup
 <checkbox-list bc-label="Default Checkboxes">
@@ -44,7 +44,7 @@ To set an label for the list of checkboxes use the `bc-label` attribute.
 
 To set a help text for a list of checkboxes use the `bc-help` attribute.
 
-<img src="/images/checkboxlist_04.png" width="334" alt="Checkbox List Help">
+<img src="img/checkboxlist_04.png" width="334" alt="Checkbox List Help">
 
 ```markup
 <checkbox-list bc-label="Inline Checkboxes" bc-help="Some help text goes here" bc-inline="true">
@@ -56,7 +56,7 @@ To set a help text for a list of checkboxes use the `bc-help` attribute.
 
 To bind a list of items to a Checkbox List use the `bc-items` attribute. This attribute accepts an object of `List<SelectListItem>`.
 
-<img src="/images/checkboxlist_05.png" width="161" alt="Checkbox List Items">
+<img src="img/checkboxlist_05.png" width="161" alt="Checkbox List Items">
 
 ```markup
 <!-- VIEW -->
@@ -86,7 +86,7 @@ public class DataBindingViewModel
 
 Model binding in ASP.NET Core MVC maps data from HTTP requests to action method parameters. With `asp-for` attribute of the Checkbox List it is possible to bind checked options to a model parameter.
 
-<img src="/images/checkboxlist_06.png" width="161" alt="">
+<img src="img/checkboxlist_06.png" width="161" alt="">
 
 ```markup
 <!-- VIEW -->

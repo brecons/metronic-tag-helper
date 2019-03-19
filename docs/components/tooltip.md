@@ -2,7 +2,7 @@
 
 Tooltips are components to add further informations to an element.
 
-<img src="/images/tooltip_01.png" width="192" alt="Mecons Tooltip" />
+<img src="img/tooltip_01.png" width="192" alt="Mecons Tooltip" />
 
 ```markup
 <button type="button" bc-tooltip="Tooltip on top">Tooltip on top</button>
@@ -24,7 +24,7 @@ The `bc-tooltip` attribute is available on each HTML element and specifies the t
 
 Not only text can be displayed within a tooltip, also HTML enriched content is allowed. To allow and render HTML tags within a tooltip use the `bc-tooltip-html` attribute.
 
-<img src="/images/tooltip_02.png" width="209" alt="Tooltip HTML Content" />
+<img src="img/tooltip_02.png" width="209" alt="Tooltip HTML Content" />
 
 ```markup
 <button type="button" bc-tooltip="<em>Tooltip</em> <u>with</u> <b>HTML</b>"

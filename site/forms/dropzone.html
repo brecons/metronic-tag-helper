@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Bremus Solutions">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Dropzone - Mecons Tag Helper</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../css/mkdocs.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Dropzone";
+    var mkdocs_page_input_path = "forms\\dropzone.md";
+    var mkdocs_page_url = "/forms/dropzone.html";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Mecons Tag Helper</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../index.html">Overview</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../installation.html">Installation</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../localization.html">Localization</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../change-log.html">Change Log</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Layout</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../layout/grid-system.html">Grid System</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../layout/stack.html">Stack</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Components</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../components/alert.html">Alert</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../components/datatable.html">Datatable</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../components/modal.html">Modal</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../components/popover.html">Popover</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../components/progress.html">Progress</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../components/tooltip.html">Tooltip</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Content</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../content/anchor.html">Anchor</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../content/badge.html">Badge</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../content/icon.html">Icon</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../content/portlet.html">Portlet</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../content/progress-widget.html">Progress Widget</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../content/stats-widget.html">Stats Widget</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../content/table.html">Table</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../content/tabs.html">Tabs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../content/timeline.html">Timeline</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Forms</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="form-layout.html">Form Layout</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="form-controls.html">Form Controls</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="label-and-help.html">Label and Help</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="input.html">Text</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="textarea.html">Textarea</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="select.html">Dropdown</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="static.html">Static</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="checkbox-list.html">Checkbox List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="radio-list.html">Radio List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="switch.html">Switch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="touchspin.html">Touchspin</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="data-annotation.html">Data Annotation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="validation.html">Validation</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Buttons</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="button.html">Button</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="dropdown-button.html">Dropdown Button</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="button-group.html">Button Group</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Date and Time</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="datepicker.html">Datepicker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="daterangepicker.html">Daterangepicker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="timepicker.html">Timepicker</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Editors</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="markdown.html">Markdown</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="summernote.html">Summernote</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Miscellaneous</span>
+    <ul class="subnav">
+                <li class=" current">
+                    
+    <a class="current" href="dropzone.html">Dropzone</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#dropzone">Dropzone</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#configuration">Configuration</a></li>
+        
+            <li><a class="toctree-l4" href="#server-side-processing">Server-side Processing</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="nouislider.html">NoUiSlider</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Mecons Tag Helper</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Miscellaneous &raquo;</li>
+        
+      
+    
+    <li>Dropzone</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="dropzone">Dropzone</h1>
+<p>DropzoneJS is an open source library that provides drag’n’drop file uploads with image previews.</p>
+<p><img src="img/dropzone_01.png" width="299" alt="Mecons Dropzone"></p>
+<div class="codehilite"><pre><span></span>&lt;dropzone bc-url=&quot;/Forms/Dropzone&quot; /&gt;
+</pre></div>
+
+
+<hr />
+<h2 id="configuration">Configuration</h2>
+<h3 id="url-mandatory">Url (Mandatory)</h3>
+<p>The <code>bc-url</code> attribute specifies the target to which the dropped files will be uploaded. This attribute is mandatory and without it, the dropzone will not run correctly.</p>
+<h3 id="title">Title</h3>
+<p>With the <code>bc-title</code> attribute it is possible to override the default title of the Dropzone. If the <code>bc-title</code> attribute is not set, a localized default message will be displayed.</p>
+<p><img src="img/dropzone_02.png" width="648" alt="Dropzone Title"></p>
+<div class="codehilite"><pre><span></span>&lt;!-- Default Dropzone Title --&gt;
+&lt;dropzone bc-url=&quot;/Forms/Dropzone&quot; /&gt;
+
+&lt;!-- Custom Dropzone Title --&gt;
+&lt;dropzone bc-url=&quot;/Forms/Dropzone&quot; bc-title=&quot;This is a custom title of the dropzone.&quot; /&gt;
+</pre></div>
+
+
+<h3 id="description">Description</h3>
+<p>Describe the Dropzone in detail with the <code>bc-desc</code> attribute. The description will be displayed below the title.</p>
+<p><img src="img/dropzone_03.png" width="295" alt="Dropzone Description"></p>
+<div class="codehilite"><pre><span></span>&lt;dropzone bc-url=&quot;/Forms/Dropzone&quot; bc-desc=&quot;Only image, pdf and psd files are allowed for upload&quot; /&gt;
+</pre></div>
+
+
+<h3 id="maximum-file-size">Maximum File Size</h3>
+<p>The <code>bc-max-file-size</code> attribute defines the maximum file size of an uploaded file. By default the file size haven't any limit. The maximum file size is expressed as an integer and in Megabyte (MB).</p>
+<h3 id="maximum-files">Maximum Files</h3>
+<p>The <code>bc-max-files</code> attribute can be used to limit the maximum number of files that will be handled by the Dropzone.</p>
+<h3 id="remove-files">Remove Files</h3>
+<p>If the <code>bc-remove-files</code> attribute is set to <code>true</code> this will add a link to every file preview to remove or cancel (if already uploading) the file.</p>
+<h3 id="accepted-files">Accepted Files</h3>
+<p>With the <code>bc-accepted</code> attribute it is possible to allow only certain <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types">MIME Types</a> for the Dropzone. Multiple MIME types are specified as a comma-separated list (e.g. <code>image/*,application/pdf,.psd</code>). If the Dropzone is clickable this option will also be used as accept parameter on the hidden file input as well.</p>
+<h3 id="clickable">Clickable</h3>
+<p>By default, the Dropzone element itself is clickable. This means that clicking on the Dropzone opens a file selection dialog. To disable this functionality set the <code>bc-clickable</code> attribute to <code>false</code>.</p>
+<h3 id="color">Color</h3>
+<p>Use the <code>bc-color</code> attribute to set a color for the Dropzone.</p>
+<p><img src="img/dropzone_04.png" width="297" alt="Dropzone Color"></p>
+<div class="codehilite"><pre><span></span>&lt;dropzone bc-url=&quot;/Forms/Dropzone&quot; bc-color=&quot;Primary&quot; /&gt;
+</pre></div>
+
+
+<h3 id="parameter">Parameter</h3>
+<p>The name of the file parameter that gets transferred to the server will specified with the <code>bc-name</code> attribute. By default, the parameter name is <code>file</code>.</p>
+<hr />
+<h2 id="server-side-processing">Server-side Processing</h2>
+<p>How to transfer the files collected in a Dropzone to the server is described in this section.</p>
+<h3 id="view">View</h3>
+<p>First a Dropzone must be defined in a view. The important thing here is either to deliberately define a custom parameter name that will later be used to transfer the files to the server, or to use the default parameter name (<code>file</code>).</p>
+<div class="codehilite"><pre><span></span>&lt;!-- Dropzone.cshtml --&gt;
+&lt;dropzone bc-url=&quot;/Forms/Dropzone&quot; /&gt;
+</pre></div>
+
+
+<h3 id="controller">Controller</h3>
+<p>On server-side it es very easy to receive the uploaded file. Use the <code>IFormFile</code> interface and a parameter with the same name of the parameter defined in the Dropzone (by default <code>file</code>).</p>
+<div class="codehilite"><pre><span></span><span class="c1">// Forms Controller</span>
+<span class="k">public</span> <span class="n">IActionResult</span> <span class="nf">Dropzone</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="k">return</span> <span class="nf">View</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="na">[HttpPost]</span>
+<span class="k">public</span> <span class="n">IActionResult</span> <span class="nf">Dropzone</span><span class="p">(</span><span class="n">IFormFile</span> <span class="n">file</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="c1">// Process the transfered file</span>
+
+    <span class="c1">// Return a Json result which is readable for the Dropzone</span>
+    <span class="k">return</span> <span class="nf">Json</span><span class="p">(</span><span class="k">new</span> <span class="p">{</span> <span class="n">success</span> <span class="p">=</span> <span class="k">true</span><span class="p">,</span> <span class="n">response</span> <span class="p">=</span> <span class="s">&quot;File uploaded.&quot;</span> <span class="p">});</span>
+<span class="p">}</span>
+</pre></div>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="nouislider.html" class="btn btn-neutral float-right" title="NoUiSlider">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="summernote.html" class="btn btn-neutral" title="Summernote"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2017 - 2019 <a href="https://www.bremus-solutions.de">Bremus Solutions</a>. All Right Reserved.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="summernote.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="nouislider.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

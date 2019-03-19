@@ -2,7 +2,7 @@
 
 Dropdown Buttons are contextual overlays for displaying lists of links and more.
 
-<img src="/images/dropdown-button_01.png" width="677" alt="Mecons Dropdown Button">
+<img src="img/dropdown-button_01.png" width="677" alt="Mecons Dropdown Button">
 
 ```markup
 <button-dropdown bc-title="Primary">
@@ -45,7 +45,7 @@ The `bc-title` attribute specifies a title for the button that triggers the drop
 
 Set the `bc-dropup` attribute to trigger the dropdown menu above the button.
 
-<img src="/images/dropdown-button_02.png" width="229" alt="Dropup Button">
+<img src="img/dropdown-button_02.png" width="229" alt="Dropup Button">
 
 ```markup
 <button-dropdown bc-title="Dropup" bc-dropup="true">
@@ -57,7 +57,7 @@ Set the `bc-dropup` attribute to trigger the dropdown menu above the button.
 
 Use the `bc-color` attribute to modify the styling of the dropdown button. Possible styles are `Primary` (default), `Secondary`, `Success`, `Danger`, `Warning`, `Info`, `Light` or `Dark`.
 
-<img src="/images/dropdown-button_03.png" width="311" alt="Dropdown Button Color">
+<img src="img/dropdown-button_03.png" width="311" alt="Dropdown Button Color">
 
 ```markup
 <button-dropdown bc-title="Dropdown Button with long Title" bc-alignment-right="true">
@@ -69,7 +69,7 @@ Use the `bc-color` attribute to modify the styling of the dropdown button. Possi
 
 Add the `bc-size` attribute to define a size for the dropdown button. Possible sizes are `Default`, `Large` or `Small`.
 
-<img src="/images/dropdown-button_04.png" width="559" alt="Dropdown Button Size">
+<img src="img/dropdown-button_04.png" width="559" alt="Dropdown Button Size">
 
 ```markup
 <button-dropdown bc-title="Large Dropdown" bc-size="Large">
@@ -89,7 +89,7 @@ Add the `bc-size` attribute to define a size for the dropdown button. Possible s
 
 The `bc-split` attribute seperates the dropdown menu trigger from the rest of the button. This make it possible to allocate an seperate action to the button.
 
-<img src="/images/dropdown-button_05.png" width="332" alt="Dropdown Split Button">
+<img src="img/dropdown-button_05.png" width="332" alt="Dropdown Split Button">
 
 ```markup
 <button-dropdown bc-title="Dropdown Button" bc-split="true">

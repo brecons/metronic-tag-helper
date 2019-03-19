@@ -2,7 +2,7 @@
 
 Badges are small count and labeling components.
 
-<img src="/images/badge_01.png" width="229" alt="Mecons Badge" />
+<img src="img/badge_01.png" width="229" alt="Mecons Badge" />
 
 ```markup
 <h2>My Messages <badge bc-color="Info">12</badge></h2>
@@ -16,7 +16,7 @@ Badges are small count and labeling components.
 
 For proper styling of a badge use the `bc-color` attribute.
 
-<img src="/images/badge_02.png" width="243" alt="Colored Badges" />
+<img src="img/badge_02.png" width="243" alt="Colored Badges" />
 
 ```markup
 <badge>3</badge>
@@ -35,7 +35,7 @@ For proper styling of a badge use the `bc-color` attribute.
 
 Use the `bc-style` attribute to set a style for the badge. Possible styles are `Default`, `Dot` or `Round`.
 
-<img src="/images/badge_03.png" width="676" alt="Badge Styles" />
+<img src="img/badge_03.png" width="676" alt="Badge Styles" />
 
 ```markup
 <h5>Dot Badges</h5>
@@ -53,7 +53,7 @@ Use the `bc-style` attribute to set a style for the badge. Possible styles are `
 
 Use the `bc-wide` attribute to enlarge the paddings of the badge.
 
-<img src="/images/badge_04.png" width="673" alt="Wide Badges" />
+<img src="img/badge_04.png" width="673" alt="Wide Badges" />
 
 ```markup
 <badge bc-wide="true" bc-color="Primary">New</badge>

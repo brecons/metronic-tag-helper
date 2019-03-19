@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Bremus Solutions">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Grid System - Mecons Tag Helper</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../css/mkdocs.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Grid System";
+    var mkdocs_page_input_path = "layout\\grid-system.md";
+    var mkdocs_page_url = "/layout/grid-system.html";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Mecons Tag Helper</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../index.html">Overview</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../installation.html">Installation</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../localization.html">Localization</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../change-log.html">Change Log</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Layout</span>
+    <ul class="subnav">
+                <li class=" current">
+                    
+    <a class="current" href="grid-system.html">Grid System</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#grid-system">Grid System</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#row-configuration">Row Configuration</a></li>
+        
+            <li><a class="toctree-l4" href="#column-configuration">Column Configuration</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="stack.html">Stack</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Components</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../components/alert.html">Alert</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../components/datatable.html">Datatable</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../components/modal.html">Modal</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../components/popover.html">Popover</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../components/progress.html">Progress</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../components/tooltip.html">Tooltip</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Content</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../content/anchor.html">Anchor</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../content/badge.html">Badge</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../content/icon.html">Icon</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../content/portlet.html">Portlet</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../content/progress-widget.html">Progress Widget</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../content/stats-widget.html">Stats Widget</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../content/table.html">Table</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../content/tabs.html">Tabs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../content/timeline.html">Timeline</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Forms</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../forms/form-layout.html">Form Layout</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/form-controls.html">Form Controls</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/label-and-help.html">Label and Help</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/input.html">Text</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/textarea.html">Textarea</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/select.html">Dropdown</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/static.html">Static</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/checkbox-list.html">Checkbox List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/radio-list.html">Radio List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/switch.html">Switch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/touchspin.html">Touchspin</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/data-annotation.html">Data Annotation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/validation.html">Validation</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Buttons</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../forms/button.html">Button</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/dropdown-button.html">Dropdown Button</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/button-group.html">Button Group</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Date and Time</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../forms/datepicker.html">Datepicker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/daterangepicker.html">Daterangepicker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/timepicker.html">Timepicker</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Editors</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../forms/markdown.html">Markdown</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/summernote.html">Summernote</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Miscellaneous</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../forms/dropzone.html">Dropzone</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/nouislider.html">NoUiSlider</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Mecons Tag Helper</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Layout &raquo;</li>
+        
+      
+    
+    <li>Grid System</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="grid-system">Grid System</h1>
+<p>Use the powerful mobile-first flexbox <a href="https://getbootstrap.com/docs/4.0/layout/grid/">Bootstrap Grid System</a> to build layouts of all shapes and sizes thanks to a twelve column system, five default responsive tiers, Sass variables and mixins, and dozens of predefined classes.</p>
+<p>Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive. All Bootstrap Grid System features are covered from the Mecons Tag Helper!</p>
+<p><img src="img/grid-system_01.png" width="743" alt="Mecons Grid System" /></p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;row&gt;</span>
+    <span class="nt">&lt;column&gt;</span>1 of 2<span class="nt">&lt;/column&gt;</span>
+    <span class="nt">&lt;column&gt;</span>2 of 2<span class="nt">&lt;/column&gt;</span>
+<span class="nt">&lt;/row&gt;</span>
+<span class="nt">&lt;row&gt;</span>
+    <span class="nt">&lt;column&gt;</span>1 of 3<span class="nt">&lt;/column&gt;</span>
+    <span class="nt">&lt;column&gt;</span>2 of 3<span class="nt">&lt;/column&gt;</span>
+    <span class="nt">&lt;column&gt;</span>3 of 3<span class="nt">&lt;/column&gt;</span>
+<span class="nt">&lt;/row&gt;</span>
+</pre></div>
+
+
+<hr />
+<h2 id="row-configuration">Row Configuration</h2>
+<h3 id="vertical-alignment">Vertical Alignment</h3>
+<p>To align all columns in a vertical direction set the <code>vertical-alignment</code> attribute. Possible values for the alignment are <code>Top</code>, <code>Middle</code> and <code>Bottom</code>.</p>
+<p><img src="img/grid-system_02.png" width="735" alt="Row Vertical Alignment" /></p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;row</span> <span class="na">vertical-alignment=</span><span class="s">&quot;Top&quot;</span> <span class="na">style=</span><span class="s">&quot;height: 10rem;&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;column&gt;</span>One of three columns<span class="nt">&lt;/column&gt;</span>
+    <span class="nt">&lt;column&gt;</span>One of three columns<span class="nt">&lt;/column&gt;</span>
+    <span class="nt">&lt;column&gt;</span>One of three columns<span class="nt">&lt;/column&gt;</span>
+<span class="nt">&lt;/row&gt;</span>
+<span class="nt">&lt;row</span> <span class="na">vertical-alignment=</span><span class="s">&quot;Middle&quot;</span> <span class="na">style=</span><span class="s">&quot;height: 10rem;&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;column&gt;</span>One of three columns<span class="nt">&lt;/column&gt;</span>
+    <span class="nt">&lt;column&gt;</span>One of three columns<span class="nt">&lt;/column&gt;</span>
+    <span class="nt">&lt;column&gt;</span>One of three columns<span class="nt">&lt;/column&gt;</span>
+<span class="nt">&lt;/row&gt;</span>
+<span class="nt">&lt;row</span> <span class="na">vertical-alignment=</span><span class="s">&quot;Bottom&quot;</span> <span class="na">style=</span><span class="s">&quot;height: 10rem;&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;column&gt;</span>One of three columns<span class="nt">&lt;/column&gt;</span> 
+    <span class="nt">&lt;column&gt;</span>One of three columns<span class="nt">&lt;/column&gt;</span>
+    <span class="nt">&lt;column&gt;</span>One of three columns<span class="nt">&lt;/column&gt;</span>
+<span class="nt">&lt;/row&gt;</span>
+</pre></div>
+
+
+<h3 id="horizontal-alignment">Horizontal Alignment</h3>
+<p>To align all columns in the horizontal direction set the <code>alignment</code> attribute. Possible values for the classic horizontal alignment are <code>Left</code>, <code>Center</code> and <code>Right</code>. Choose the value <code>Around</code> for the same width whitespace before, between and after the aligned columns. The value <code>Between</code> renders a full width whitespace between the columns.</p>
+<p><img src="img/grid-system_03.png" width="743" alt="Row Horizontal Alignment" /></p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;row</span> <span class="na">alignment=</span><span class="s">&quot;Left&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;column</span> <span class="na">xs-size=</span><span class="s">&quot;4&quot;</span><span class="nt">&gt;</span>One of two columns<span class="nt">&lt;/column&gt;</span>
+    <span class="nt">&lt;column</span> <span class="na">xs-size=</span><span class="s">&quot;4&quot;</span><span class="nt">&gt;</span>One of two columns<span class="nt">&lt;/column&gt;</span>
+<span class="nt">&lt;/row&gt;</span>
+<span class="nt">&lt;row</span> <span class="na">alignment=</span><span class="s">&quot;Center&quot;</span> <span class="na">style=</span><span class="s">&quot;margin-top: 1rem;&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;column</span> <span class="na">xs-size=</span><span class="s">&quot;4&quot;</span><span class="nt">&gt;</span>One of two columns<span class="nt">&lt;/column&gt;</span>
+    <span class="nt">&lt;column</span> <span class="na">xs-size=</span><span class="s">&quot;4&quot;</span><span class="nt">&gt;</span>One of two columns<span class="nt">&lt;/column&gt;</span>
+<span class="nt">&lt;/row&gt;</span>
+<span class="nt">&lt;row</span> <span class="na">alignment=</span><span class="s">&quot;Right&quot;</span> <span class="na">style=</span><span class="s">&quot;margin-top: 1rem;&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;column</span> <span class="na">xs-size=</span><span class="s">&quot;4&quot;</span><span class="nt">&gt;</span>One of two columns<span class="nt">&lt;/column&gt;</span>
+    <span class="nt">&lt;column</span> <span class="na">xs-size=</span><span class="s">&quot;4&quot;</span><span class="nt">&gt;</span>One of two columns<span class="nt">&lt;/column&gt;</span>
+<span class="nt">&lt;/row&gt;</span>
+<span class="nt">&lt;row</span> <span class="na">alignment=</span><span class="s">&quot;Around&quot;</span> <span class="na">style=</span><span class="s">&quot;margin-top: 1rem;&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;column</span> <span class="na">xs-size=</span><span class="s">&quot;4&quot;</span><span class="nt">&gt;</span>One of two columns<span class="nt">&lt;/column&gt;</span>
+    <span class="nt">&lt;column</span> <span class="na">xs-size=</span><span class="s">&quot;4&quot;</span><span class="nt">&gt;</span>One of two columns<span class="nt">&lt;/column&gt;</span>
+<span class="nt">&lt;/row&gt;</span>
+<span class="nt">&lt;row</span> <span class="na">alignment=</span><span class="s">&quot;Between&quot;</span> <span class="na">style=</span><span class="s">&quot;margin-top: 1rem;&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;column</span> <span class="na">xs-size=</span><span class="s">&quot;4&quot;</span><span class="nt">&gt;</span>One of two columns<span class="nt">&lt;/column&gt;</span>
+    <span class="nt">&lt;column</span> <span class="na">xs-size=</span><span class="s">&quot;4&quot;</span><span class="nt">&gt;</span>One of two columns<span class="nt">&lt;/column&gt;</span>
+<span class="nt">&lt;/row&gt;</span>
+</pre></div>
+
+
+<hr />
+<h2 id="column-configuration">Column Configuration</h2>
+<h3 id="size">Size</h3>
+<p>Set the column width for a specified resolution with the appropriate attribute (e.g. <code>xs-size</code>, <code>sm-size</code>, <code>md-size</code>, <code>lg-size</code> or <code>xl-size</code>). If you don't set any size attribute each column renders with equal width and is auto-layouted.</p>
+<p><img src="img/grid-system_04.png" width="764" alt="Column Sizing" /></p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;row&gt;</span>
+    <span class="nt">&lt;column</span> <span class="na">xs-size=</span><span class="s">&quot;12&quot;</span> <span class="na">md-size=</span><span class="s">&quot;8&quot;</span><span class="nt">&gt;</span>.col-12 .col-md-8<span class="nt">&lt;/column&gt;</span>
+    <span class="nt">&lt;column</span> <span class="na">xs-size=</span><span class="s">&quot;6&quot;</span> <span class="na">md-size=</span><span class="s">&quot;4&quot;</span><span class="nt">&gt;</span>.col-6 .col-md-4<span class="nt">&lt;/column&gt;</span>
+<span class="nt">&lt;/row&gt;</span>
+
+<span class="c">&lt;!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop --&gt;</span>
+<span class="nt">&lt;row&gt;</span>
+    <span class="nt">&lt;column</span> <span class="na">xs-size=</span><span class="s">&quot;6&quot;</span> <span class="na">md-size=</span><span class="s">&quot;4&quot;</span><span class="nt">&gt;</span>.col-6 .col-md-4<span class="nt">&lt;/column&gt;</span>
+    <span class="nt">&lt;column</span> <span class="na">xs-size=</span><span class="s">&quot;6&quot;</span> <span class="na">md-size=</span><span class="s">&quot;4&quot;</span><span class="nt">&gt;</span>.col-6 .col-md-4<span class="nt">&lt;/column&gt;</span>
+    <span class="nt">&lt;column</span> <span class="na">xs-size=</span><span class="s">&quot;6&quot;</span> <span class="na">md-size=</span><span class="s">&quot;4&quot;</span><span class="nt">&gt;</span>.col-6 .col-md-4<span class="nt">&lt;/column&gt;</span>
+<span class="nt">&lt;/row&gt;</span>
+
+<span class="c">&lt;!-- Columns are always 50% wide, on mobile and desktop --&gt;</span>
+<span class="nt">&lt;row&gt;</span>
+    <span class="nt">&lt;column&gt;</span>.col-6<span class="nt">&lt;/column&gt;</span>
+    <span class="nt">&lt;column&gt;</span>.col-6<span class="nt">&lt;/column&gt;</span>
+<span class="nt">&lt;/row&gt;</span>
+</pre></div>
+
+
+<h3 id="render">Render</h3>
+<p>To size columns based on the natural width of their content, use the appropriate attribute (e.g. <code>xs-render</code>, <code>sm-render</code>, <code>md-render</code>, <code>lg-render</code> or <code>xl-render</code>).</p>
+<p><img src="img/grid-system_05.png" width="745" alt="Column Rendering" /></p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;row</span> <span class="na">alignment=</span><span class="s">&quot;Center&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;column&gt;</span>1 of 3<span class="nt">&lt;/column&gt;</span>
+    <span class="nt">&lt;column</span> <span class="na">md-render=</span><span class="s">&quot;Dynamic&quot;</span><span class="nt">&gt;</span>Variable width content<span class="nt">&lt;/column&gt;</span>
+    <span class="nt">&lt;column&gt;</span>2 of 3<span class="nt">&lt;/column&gt;</span>
+<span class="nt">&lt;/row&gt;</span>
+<span class="nt">&lt;row&gt;</span>
+    <span class="nt">&lt;column&gt;</span>1 of 3<span class="nt">&lt;/column&gt;</span>
+    <span class="nt">&lt;column</span> <span class="na">xl-render=</span><span class="s">&quot;Dynamic&quot;</span><span class="nt">&gt;</span>
+        Variable width content Variable width content
+        Variable width content Variable width content
+        <span class="nt">&lt;/column&gt;</span>
+    <span class="nt">&lt;column&gt;</span>3 of 3<span class="nt">&lt;/column&gt;</span>
+<span class="nt">&lt;/row&gt;</span>
+</pre></div>
+
+
+<h3 id="order">Order</h3>
+<p>Use the order attribute for controlling the visual order of your content. These attributes are responsive, so you can set the order by a specific resolution (e.g. <code>xs-order</code>, <code>sm-order</code>, <code>md-order</code>, <code>lg-order</code> or <code>xl-order</code>). Includes support for 1 through 12 across all five grid tiers.</p>
+<p><img src="img/grid-system_06.png" width="737" alt="Column Ordering" /></p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;row&gt;</span>
+    <span class="nt">&lt;column&gt;</span>First, but unordered<span class="nt">&lt;/column&gt;</span>
+    <span class="nt">&lt;column</span> <span class="na">xs-order=</span><span class="s">&quot;12&quot;</span><span class="nt">&gt;</span>Second, but last<span class="nt">&lt;/column&gt;</span>
+    <span class="nt">&lt;column</span> <span class="na">xs-order=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>Third, but first<span class="nt">&lt;/column&gt;</span>
+<span class="nt">&lt;/row&gt;</span>
+</pre></div>
+
+
+<h3 id="offset">Offset</h3>
+<p>Set the column offset for a specified resolution with the appropriate attribute (e.g. <code>xs-offset</code>, <code>sm-offset</code>, <code>md-offset</code>, <code>lg-offset</code> or <code>xl-offset</code>).</p>
+<p><img src="img/grid-system_07.png" width="766" alt="Column Offsetting" /></p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;row&gt;</span>
+    <span class="nt">&lt;column</span> <span class="na">md-size=</span><span class="s">&quot;4&quot;</span><span class="nt">&gt;</span>.col-md-4<span class="nt">&lt;/column&gt;</span>
+    <span class="nt">&lt;column</span> <span class="na">md-size=</span><span class="s">&quot;4&quot;</span> <span class="na">md-offset=</span><span class="s">&quot;4&quot;</span><span class="nt">&gt;</span>.col-md-4 .offset-md-4<span class="nt">&lt;/column&gt;</span>
+<span class="nt">&lt;/row&gt;</span>
+<span class="nt">&lt;row&gt;</span>
+    <span class="nt">&lt;column</span> <span class="na">md-size=</span><span class="s">&quot;3&quot;</span> <span class="na">md-offset=</span><span class="s">&quot;3&quot;</span><span class="nt">&gt;</span>.col-md-3 .offset-md-3<span class="nt">&lt;/column&gt;</span>
+    <span class="nt">&lt;column</span> <span class="na">md-size=</span><span class="s">&quot;3&quot;</span> <span class="na">md-offset=</span><span class="s">&quot;3&quot;</span><span class="nt">&gt;</span>.col-md-3 .offset-md-3<span class="nt">&lt;/column&gt;</span>
+<span class="nt">&lt;/row&gt;</span>
+<span class="nt">&lt;row&gt;</span>
+    <span class="nt">&lt;column</span> <span class="na">md-size=</span><span class="s">&quot;6&quot;</span> <span class="na">md-offset=</span><span class="s">&quot;3&quot;</span><span class="nt">&gt;</span>.col-md-6 .offset-md-3<span class="nt">&lt;/column&gt;</span>
+<span class="nt">&lt;/row&gt;</span>
+</pre></div>
+
+
+<h3 id="vertical-alignment_1">Vertical Alignment</h3>
+<p>To align a single column in the vertical direction within a row set the <code>vertical-alignment</code> attribute.</p>
+<p><img src="img/grid-system_08.png" width="736" alt="Column Vertical Alignment" /></p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;row</span> <span class="na">style=</span><span class="s">&quot;height: 10rem;&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;column</span> <span class="na">vertical-alignment=</span><span class="s">&quot;Top&quot;</span><span class="nt">&gt;</span>One of three columns<span class="nt">&lt;/column&gt;</span>
+    <span class="nt">&lt;column</span> <span class="na">vertical-alignment=</span><span class="s">&quot;Middle&quot;</span><span class="nt">&gt;</span>One of three columns<span class="nt">&lt;/column&gt;</span>
+    <span class="nt">&lt;column</span> <span class="na">vertical-alignment=</span><span class="s">&quot;Bottom&quot;</span><span class="nt">&gt;</span>One of three columns<span class="nt">&lt;/column&gt;</span>
+<span class="nt">&lt;/row&gt;</span>
+</pre></div>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="stack.html" class="btn btn-neutral float-right" title="Stack">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../change-log.html" class="btn btn-neutral" title="Change Log"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2017 - 2019 <a href="https://www.bremus-solutions.de">Bremus Solutions</a>. All Right Reserved.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../change-log.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="stack.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

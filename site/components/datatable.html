@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Bremus Solutions">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Datatable - Mecons Tag Helper</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../css/mkdocs.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Datatable";
+    var mkdocs_page_input_path = "components\\datatable.md";
+    var mkdocs_page_url = "/components/datatable.html";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Mecons Tag Helper</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../index.html">Overview</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../installation.html">Installation</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../localization.html">Localization</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../change-log.html">Change Log</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Layout</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../layout/grid-system.html">Grid System</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../layout/stack.html">Stack</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Components</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="alert.html">Alert</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="datatable.html">Datatable</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#datatable">Datatable</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#configuration">Configuration</a></li>
+        
+            <li><a class="toctree-l4" href="#column-configuration">Column Configuration</a></li>
+        
+            <li><a class="toctree-l4" href="#html-data-source">HTML Data Source</a></li>
+        
+            <li><a class="toctree-l4" href="#ajax-data-source">AJAX Data Source</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="modal.html">Modal</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="popover.html">Popover</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="progress.html">Progress</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="tooltip.html">Tooltip</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Content</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../content/anchor.html">Anchor</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../content/badge.html">Badge</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../content/icon.html">Icon</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../content/portlet.html">Portlet</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../content/progress-widget.html">Progress Widget</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../content/stats-widget.html">Stats Widget</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../content/table.html">Table</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../content/tabs.html">Tabs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../content/timeline.html">Timeline</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Forms</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../forms/form-layout.html">Form Layout</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/form-controls.html">Form Controls</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/label-and-help.html">Label and Help</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/input.html">Text</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/textarea.html">Textarea</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/select.html">Dropdown</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/static.html">Static</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/checkbox-list.html">Checkbox List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/radio-list.html">Radio List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/switch.html">Switch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/touchspin.html">Touchspin</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/data-annotation.html">Data Annotation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/validation.html">Validation</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Buttons</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../forms/button.html">Button</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/dropdown-button.html">Dropdown Button</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/button-group.html">Button Group</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Date and Time</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../forms/datepicker.html">Datepicker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/daterangepicker.html">Daterangepicker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/timepicker.html">Timepicker</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Editors</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../forms/markdown.html">Markdown</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/summernote.html">Summernote</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Miscellaneous</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../forms/dropzone.html">Dropzone</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../forms/nouislider.html">NoUiSlider</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Mecons Tag Helper</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Components &raquo;</li>
+        
+      
+    
+    <li>Datatable</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="datatable">Datatable</h1>
+<p>The Datatable is a highly flexible tool which extends the HTML table with advanced interaction controls.</p>
+<p><img src="img/datatable_01.png" width="922" alt="Mecons Datatable" /></p>
+<hr />
+<h2 id="configuration">Configuration</h2>
+<h3 id="sorting">Sorting</h3>
+<p>To enable column sorting for the Datatable, set the <code>bc-sorting</code> attribute to <code>true</code>. By default, all columns of the Datatable are sortable if this attribute is set. To disable sorting for specific columns check Sorting in the Column Configuration.</p>
+<p><img src="img/datatable_02.png" width="914" alt="Datatable Sorting" /></p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;datatable</span> <span class="na">bc-sorting=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/datatable&gt;</span>
+</pre></div>
+
+
+<h3 id="paging">Paging</h3>
+<p>Datatables can split the rows into individual pages, which is an efficient method of showing a large number of records in a small space. To enable paging set the <code>bc-paging</code> attribute to <code>true</code>.</p>
+<p><img src="img/datatable_03.png" width="924" alt="Datatable Paging" /></p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;datatable</span> <span class="na">bc-paging=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/datatable&gt;</span>
+</pre></div>
+
+
+<h3 id="page-size">Page Size</h3>
+<p>Define a number of rows to display on a single page with <code>bc-page-size</code> attribute when using pagination. This attribute only has an effect if the <code>bc-paging</code> attribute is set to <code>true</code>. By default, the page size is set to <code>10</code>.</p>
+<h3 id="height">Height</h3>
+<p>By default, the height of the table depends on its content. A fixed height can be set with the <code>bc-height</code> attribute. If the content is now higher than the defined height, a scroll bar is displayed. The height is expressed as an integer and in pixels (px).</p>
+<p><img src="img/datatable_04.png" width="919" alt="Datatable Height" /></p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;datatable</span> <span class="na">bc-height=</span><span class="s">&quot;200&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/datatable&gt;</span>
+</pre></div>
+
+
+<h3 id="header">Header</h3>
+<p>Set the <code>bc-header</code> attribute to <code>false</code> to hide the table header for the Datatable. By default, the table header is shown and the attribute is <code>true</code>.</p>
+<h3 id="footer">Footer</h3>
+<p>Set the <code>bc-footer</code> attribute to <code>true</code> to show a table footer at the bottom of the Datatable.</p>
+<h3 id="searching">Searching</h3>
+<p>This option allows the search abilities of Datatables to be enabled or disabled. To enable searching it is necessary to specify a search input field with the <code>bc-search-input</code> attribute. The value specified here is the <code>id</code> of the input field.</p>
+<p><img src="img/datatable_05.png" width="929" alt="Datatable Searching" /></p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;row&gt;</span>
+    <span class="nt">&lt;column</span> <span class="na">xs-size=</span><span class="s">&quot;4&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;generalSearch&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;form-control m-input m-input--solid&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Search...&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/column&gt;</span>
+<span class="nt">&lt;/row&gt;</span>
+<span class="nt">&lt;row&gt;</span>
+    <span class="nt">&lt;column&gt;</span>
+        <span class="nt">&lt;datatable</span> <span class="na">bc-search-input=</span><span class="s">&quot;generalSearch&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/column&gt;</span>
+<span class="nt">&lt;/row&gt;</span>
+</pre></div>
+
+
+<p>Control the speed of search and data load request to reduce the search call frequency automatically. Use the <code>bc-search-delay</code> attribute to set the number of milliseconds. By default, the search delay is <code>400</code> milliseconds.</p>
+<hr />
+<h2 id="column-configuration">Column Configuration</h2>
+<h3 id="field-mandatory">Field (Mandatory)</h3>
+<p>The data field name of the column will be set with the <code>bc-field</code> attribute. This attribute maps a field of the data source to the defined column.</p>
+<h3 id="title">Title</h3>
+<p>The title name will be displayed as header or footer and can set with <code>bc-title</code> attribute. This is the displayed title of the column.</p>
+<h3 id="sorting_1">Sorting</h3>
+<p>When the sorting is enabled on <code>&lt;datatable&gt;</code> level, by default all columns can be sorted. If you want to disable sorting for a column, set the <code>bc-sorting</code> attribute to <code>false</code>.</p>
+<h3 id="searching_1">Searching</h3>
+<p>When a search input field is specified on <code>&lt;datatable&gt;</code> level, by default all columns are searchable. If you want to disable searching for a column, set the <code>bc-searching</code> attribute to <code>false</code>.</p>
+<h3 id="width">Width</h3>
+<p>By default, all columns have the same width. Define a custom column width with the <code>bc-width</code> attribute. The width is expressed as an integer and in pixels (px).</p>
+<h3 id="alignment">Alignment</h3>
+<p>The horizontal alignment of cells text for a specific column can set with <code>bc-alignment</code> attribute. Possible alignments are <code>Left</code> (default), <code>Center</code> or <code>Right</code>.</p>
+<h3 id="overflow">Overflow</h3>
+<p>The <code>bc-overflow</code> attribute specifies what should happen if content overflows a cell in within a column. The possible values of this attribute equals the <a href="https://www.w3schools.com/cssref/pr_pos_overflow.asp">CSS Overflow Property</a>. By default, the overflow is set to <code>Initial</code>.</p>
+<h3 id="template">Template</h3>
+<p>There are two ways to influence the appearance of a column. The placeholder provides an easy way to enrich or modify the content of a cell. An own template script offers the full flexibility for the free design of the column content.</p>
+<h4 id="placeholder">Placeholder</h4>
+<p>Customize the cell content rendering with the <code>bc-template</code> attribute. Use placeholders (e.g. <code>{{FieldName}}</code>) to access the content of column fields and define a custom template. This mechanism is well known from the C# String Interpolation.</p>
+<p><img src="img/datatable_06.png" width="929" alt="Datatable Column Placeholder Template" /></p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;datatable</span> <span class="na">bc-ajax-url=</span><span class="s">&quot;/api/Demo/&quot;</span> <span class="na">bc-paging=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;datatable-column</span> <span class="na">bc-field=</span><span class="s">&quot;recordID&quot;</span> <span class="na">bc-title=</span><span class="s">&quot;#&quot;</span> <span class="na">bc-width=</span><span class="s">&quot;50&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;datatable-column</span> <span class="na">bc-field=</span><span class="s">&quot;shipCountry&quot;</span> <span class="na">bc-title=</span><span class="s">&quot;Ship Country&quot;</span> <span class="na">bc-template=</span><span class="s">&quot;</span><span class="cp">{{</span><span class="nv">shipCountry</span><span class="cp">}}</span><span class="s">-</span><span class="cp">{{</span><span class="nv">shipCity</span><span class="cp">}}</span><span class="s">&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;datatable-column</span> <span class="na">bc-field=</span><span class="s">&quot;shipCity&quot;</span> <span class="na">bc-title=</span><span class="s">&quot;Ship City&quot;</span> <span class="na">bc-width=</span><span class="s">&quot;110&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/datatable&gt;</span>
+</pre></div>
+
+
+<h4 id="script">Script</h4>
+<p>It is also possible to modify the content of a column using its own JavaScript. This provides more flexibility than a placeholder. The script is defined within the <code>&lt;datatable-column&gt;</code> tag helper and must be placed in HTML comments (<code>&lt;!--</code> and <code>--&gt;</code>).</p>
+<p><img src="img/datatable_07.png" width="913" alt="Datatable Column Script Template" /></p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;datatable</span> <span class="na">bc-ajax-url=</span><span class="s">&quot;/api/Demo/&quot;</span> <span class="na">bc-paging=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;datatable-column</span> <span class="na">bc-field=</span><span class="s">&quot;recordID&quot;</span> <span class="na">bc-title=</span><span class="s">&quot;#&quot;</span> <span class="na">bc-width=</span><span class="s">&quot;50&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;datatable-column</span> <span class="na">bc-field=</span><span class="s">&quot;shipCountry&quot;</span> <span class="na">bc-title=</span><span class="s">&quot;Ship Country&quot;</span> <span class="na">bc-template=</span><span class="s">&quot;</span><span class="cp">{{</span><span class="nv">shipCountry</span><span class="cp">}}</span><span class="s">-</span><span class="cp">{{</span><span class="nv">shipCity</span><span class="cp">}}</span><span class="s">&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;datatable-column</span> <span class="na">bc-field=</span><span class="s">&quot;shipCity&quot;</span> <span class="na">bc-title=</span><span class="s">&quot;Ship City&quot;</span> <span class="na">bc-width=</span><span class="s">&quot;110&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;datatable-column</span> <span class="na">bc-alignment=</span><span class="s">&quot;Right&quot;</span><span class="nt">&gt;</span>
+        <span class="c">&lt;!--</span>
+<span class="c">        function (row) {</span>
+<span class="c">        return &quot;&lt;a class=&#39;btn btn-info&#39; href=&#39;/Product/&quot; + row.recordID + &quot;&#39;&gt;Edit&lt;/a&gt;&quot;;</span>
+<span class="c">        }</span>
+<span class="c">        --&gt;</span>
+    <span class="nt">&lt;/datatable-column&gt;</span>
+<span class="nt">&lt;/datatable&gt;</span>
+</pre></div>
+
+
+<hr />
+<h2 id="html-data-source">HTML Data Source</h2>
+<p>The Mecons Datatable component supports initialization from HTML table. It also defines the schema model of the data source. In addition to the visualization, the Datatable provides built-in support for operations over data such as sorting, filtering and paging performed in user browser (frontend).</p>
+<p>To provide a traditional HTML table as Datatable, place your HTML table markup in your view and set your favorite Datatable attributes. No serverside code or processing is needed.</p>
+<p><img src="img/datatable_08.png" width="927" alt="Datatable HTML Datasource View" /></p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;datatable</span> <span class="na">bc-paging=</span><span class="s">&quot;true&quot;</span> <span class="na">bc-sorting=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;thead&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Order ID<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Owner<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Contact<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Car Make<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Car Model<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Color<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Deposit Paid<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Order Date<span class="nt">&lt;/th&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/thead&gt;</span>
+    <span class="nt">&lt;tbody&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>16590-107<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Zandra Fisbburne<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>(916) 6137523<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Pontiac<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Grand Am<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Puce<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$75343.80<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2016-09-08<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span> ... <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span> ... <span class="nt">&lt;/tr&gt;</span>
+        ...
+    <span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/datatable&gt;</span>
+</pre></div>
+
+
+<hr />
+<h2 id="ajax-data-source">AJAX Data Source</h2>
+<p>The Mecons Datatable component supports remote data binding. For remote data binding you can specify a remote data source that returns data in JSON/JSONP format. It also defines the schema model of the data source received from the remote data source. In addition to the visualization, the Datatable provides built-in support for operations over data such as sorting, filtering and paging performed in user browser (frontend).</p>
+<h3 id="url-mandatory">Url (Mandatory)</h3>
+<p>Use the <code>bc-ajax-url</code> attribute to specify the url to the web service which provides the data for the Datatable. This property is mandatory for remote data binding.</p>
+<h3 id="method">Method</h3>
+<p>Choose a HTTP method for requesting the web service by setting the <code>bc-ajax-method</code> attribute. Possible methods are <code>Post</code> (default), <code>Get</code>, <code>Put</code> and <code>Delete</code>.</p>
+<h3 id="timeout">Timeout</h3>
+<p>Set a number of milliseconds before the request ended. Default is <code>30000</code>, equal to 30 seconds.</p>
+<h3 id="params">Params</h3>
+<p>Your own API may requires some parameter to call for getting the data. E.g. token, search keywords, IDs, etc. Specify query parameters with the <code>bc-ajax-param-*</code> attribute. This query parameters will be sent along in the Datatable API request.</p>
+<h3 id="headers">Headers</h3>
+<p>Set custom HTTP headers with the <code>bc-ajax-header-*</code> attribute for the API call.</p>
+<h3 id="serverside-processing">Serverside Processing</h3>
+<p>With the Mecons Datatable it is possible to process the paging, filtering and sorting logic on serverside within your API method. It is possible to enable the serverside processing individually for this functionalities.</p>
+<ul>
+<li>Set the <code>bc-ajax-paging</code> to <code>true</code> to process the paging logic on serverside.</li>
+<li>Set the <code>bc-ajax-filtering</code> to <code>true</code> and handle the data filtering in the API method.</li>
+<li>Set the <code>bc-ajax-sorting</code> to <code>true</code> and sort your data by the specified column on serverside.</li>
+</ul>
+<hr />
+<h3 id="usage">Usage</h3>
+<p>In order to connect a remote data source (like a REST API) to a Datatable, it is necessary to provide a web service. Also, the necessary Tag Helper Markup must be accommodated on the corresponding view.</p>
+<p>Within the API controller it is very easy to receive all transmitted form data from the Datatable request. Use our Mecons <code>DatatableAjaxRequest</code> model class to parse the form data of the API action into a simple type-safe object.</p>
+<p>We also assist you in sorting, searching and selecting records. Import the <code>BSolutions.Mecons.Controls.Datatable.Extensions</code> namespace into your controller and use the <code>FilterExtensions</code> to proceed your data.</p>
+<p>The last challenge is to send the data back to the Datatable. Use the <code>DatatableAjaxResponse&lt;T&gt;</code> class, which transmits the data correctly in the right structure to the Datatable.</p>
+<div class="codehilite"><pre><span></span><span class="na">[HttpPost]</span>
+<span class="k">public</span> <span class="n">DatatableAjaxResponse</span><span class="p">&lt;</span><span class="n">ShipViewModel</span><span class="p">&gt;</span> <span class="n">Post</span><span class="p">(</span><span class="n">IFormCollection</span> <span class="n">data</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="c1">// Get all ships from database</span>
+    <span class="n">IQueryable</span><span class="p">&lt;</span><span class="n">ShipViewModel</span><span class="p">&gt;</span> <span class="n">items</span> <span class="p">=</span> <span class="k">this</span><span class="p">.</span><span class="n">GetAll</span><span class="p">();</span>
+
+    <span class="c1">// Get all form data from Datatable request</span>
+    <span class="kt">var</span> <span class="n">request</span> <span class="p">=</span> <span class="k">new</span> <span class="n">DatatableAjaxRequest</span><span class="p">(</span><span class="n">data</span><span class="p">);</span>
+
+    <span class="c1">// Initialize a new Datatable response object</span>
+    <span class="kt">var</span> <span class="n">response</span> <span class="p">=</span> <span class="k">new</span> <span class="n">DatatableAjaxResponse</span><span class="p">&lt;</span><span class="n">ShipViewModel</span><span class="p">&gt;</span> <span class="p">(</span><span class="n">items</span><span class="p">.</span><span class="n">Count</span><span class="p">(),</span> <span class="n">request</span><span class="p">);</span>
+
+    <span class="c1">// Ordering</span>
+    <span class="n">IQueryable</span><span class="p">&lt;</span><span class="n">ShipViewModel</span><span class="p">&gt;</span> <span class="n">query</span> <span class="p">=</span> <span class="n">items</span><span class="p">.</span><span class="n">Sort</span><span class="p">&lt;</span><span class="n">ShipViewModel</span><span class="p">&gt;(</span><span class="n">response</span><span class="p">);</span>
+
+    <span class="c1">// Searching</span>
+    <span class="n">query</span> <span class="p">=</span> <span class="n">query</span><span class="p">.</span><span class="n">Search</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">);</span>
+
+    <span class="c1">// Paging</span>
+    <span class="n">query</span> <span class="p">=</span> <span class="n">query</span><span class="p">.</span><span class="n">Select</span><span class="p">(</span><span class="n">response</span><span class="p">);</span>
+
+    <span class="n">response</span><span class="p">.</span><span class="n">Data</span> <span class="p">=</span> <span class="n">query</span><span class="p">.</span><span class="n">ToList</span><span class="p">();</span>
+
+    <span class="k">return</span> <span class="n">response</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Within the view place the <code>&lt;datatable&gt;</code> tag helper and define your columns with the <code>&lt;datatable-column&gt;</code> Tag Helper. Important is, that you set the <code>bc-field</code> attribute on each column with the name of the associated data field.</p>
+<p><img src="img/datatable_09.png" width="933" alt="Datatable AJAX Datasource View" /></p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;row&gt;</span>
+    <span class="nt">&lt;column</span> <span class="na">xs-size=</span><span class="s">&quot;4&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;form-control m-input m-input--solid&quot;</span>
+            <span class="na">placeholder=</span><span class="s">&quot;Search...&quot;</span> <span class="na">id=</span><span class="s">&quot;generalSearch&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/column&gt;</span>
+<span class="nt">&lt;/row&gt;</span>
+<span class="nt">&lt;row&gt;</span>
+    <span class="nt">&lt;column&gt;</span>
+        <span class="nt">&lt;datatable</span> <span class="na">bc-ajax-url=</span><span class="s">&quot;/api/Demo/&quot;</span> <span class="na">bc-ajax-sorting=</span><span class="s">&quot;true&quot;</span> <span class="na">bc-ajax-filtering=</span><span class="s">&quot;true&quot;</span> <span class="na">bc-ajax-paging=</span><span class="s">&quot;true&quot;</span> <span class="na">bc-search-input=</span><span class="s">&quot;generalSearch&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;datatable-column</span> <span class="na">bc-field=</span><span class="s">&quot;recordID&quot;</span> <span class="na">bc-title=</span><span class="s">&quot;#&quot;</span> <span class="na">bc-width=</span><span class="s">&quot;50&quot;</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;datatable-column</span> <span class="na">bc-field=</span><span class="s">&quot;shipCountry&quot;</span> <span class="na">bc-title=</span><span class="s">&quot;Ship Country&quot;</span> <span class="na">bc-template=</span><span class="s">&quot;</span><span class="cp">{{</span><span class="nv">shipCountry</span><span class="cp">}}</span><span class="s">-</span><span class="cp">{{</span><span class="nv">shipCity</span><span class="cp">}}</span><span class="s">&quot;</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;datatable-column</span> <span class="na">bc-field=</span><span class="s">&quot;shipCity&quot;</span> <span class="na">bc-title=</span><span class="s">&quot;Ship City&quot;</span> <span class="na">bc-width=</span><span class="s">&quot;110&quot;</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;datatable-column</span> <span class="na">class=</span><span class="s">&quot;actions&quot;</span><span class="nt">&gt;</span>
+            <span class="c">&lt;!--</span>
+<span class="c">            function (row) {</span>
+<span class="c">                return &quot;&lt;a class=&#39;btn btn-info&#39; href=&#39;/Product/&quot; + row.recordID + &quot;&#39;&gt;Edit&lt;/a&gt;&quot;;</span>
+<span class="c">            }</span>
+<span class="c">            --&gt;</span>
+            <span class="nt">&lt;/datatable-column&gt;</span>
+        <span class="nt">&lt;/datatable&gt;</span>
+    <span class="nt">&lt;/column&gt;</span>
+<span class="nt">&lt;/row&gt;</span>
+</pre></div>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="modal.html" class="btn btn-neutral float-right" title="Modal">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="alert.html" class="btn btn-neutral" title="Alert"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2017 - 2019 <a href="https://www.bremus-solutions.de">Bremus Solutions</a>. All Right Reserved.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="alert.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="modal.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
