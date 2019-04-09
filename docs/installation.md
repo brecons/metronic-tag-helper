@@ -99,6 +99,54 @@ After the package installation open `/Views/_ViewImports.cshtml` and insert the 
 
 ---
 
+## Mecons Licensing
+
+### License File
+
+Create a directory named `Mecons` within the project root. Copy the license file (e.g. `mecons-x-x-x.lic`) into this new directory:
+
+``` hl_lines="12 13"
+MyCompany.MyApplication
+├── wwwroot/
+    ├── css/
+    ├── js/
+    ├── lib/
+    ├── metronic/
+        ├── app/
+        ├── demo/
+        ├── snippets/
+        ├── vendors/
+├── Controllers/
+├── Mecons/
+    ├── mecons-x-x-x.lic
+├── Models/
+└── Views/
+```
+
+Right click on the license file and choose Properties. Select **Copy always** in the **Copy to Output Directory** menu:
+
+<img src="img/installation_06.png" width="603" alt="" />
+
+### License Key
+
+The Mecons License Key can be set in the `Startup.cs` within the `ConfigureServices` method:
+
+``` csharp hl_lines="12"
+using BSolutions.Mecons
+
+...
+
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddMvc();
+
+    services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+    // Mecons License
+    MeconsInfo.SetLicense("XXXXX-XXXXX-XXXXX-XXXXX-XXXXX");
+}
+```
+
 ## Mecons Rendering
 
 By default, the Mecons Tag Helper Rendering is enabled for each HTML element. To disable the Brecons Tag Helper Rendering for a specific HTML element, set the `disable-brecons` attribute. The `disable-brecons` attribute is minimizable and needs no value.
